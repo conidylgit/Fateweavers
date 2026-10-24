@@ -1,0 +1,3425 @@
+# FATEWEAVERS - class icons
+#
+# Every icon is ONE solid black silhouette: the class's path symbol, reshaped.
+# Classes that aren't listed here show their plain path symbol (triangle, D, square...).
+# Style guide: ICON_STYLE.md in this folder.
+#
+# ---------------------------------------------------------------------------------
+# FORMAT
+#   A class id on its own line (ids are in fateweavers_class_tree.json), then one shape per
+#   indented line. Shapes are on a 100 x 100 grid: (0,0) top-left, (100,100) bottom-right.
+#   Shapes are joined together in order; "cut" carves a shape out instead.
+#
+#   symbol                         the path's own plain symbol, to build on
+#   poly x1 y1 x2 y2 x3 y3 ...     straight-sided shape through the points
+#   circle cx cy r
+#   ellipse cx cy rx ry
+#   rect x y w h [round]           box, optional rounded corners
+#   line x1 y1 x2 y2 [width]       thick line with round ends (width default 6)
+#   path M x y L x y Q cx cy x y C c1x c1y c2x c2y x y Z
+#                                  curves, SVG-style, absolute coordinates only
+#                                  (you can paste paths from a drawing app if they use M L H V Q C Z)
+#
+#   Put these in front of a shape:
+#   cut                            carve it out of what's above
+#   wire                           only its thick outline (the Light Melee look)
+#   stroke W                       only its outline, W thick
+#
+#   Restart the game to see changes. Mistakes are printed in the run.bat window.
+# ---------------------------------------------------------------------------------
+
+
+# ================================ MAGIC: Tier 2 ================================
+
+T2_NOVICE_ELEMENTALIST          # split tip
+  poly 6 88 36 20 50 36 64 20 94 88
+
+T2_NOVICE_SUPPORT_MAGE          # orb at the tip
+  poly 6 88 50 22 94 88
+  circle 50 18 11
+
+T2_NOVICE_DARK_MAGE             # crescent bite (deeper)
+  symbol
+  cut circle 6 46 32
+
+T2_NOVICE_WIZARD                # hat brim
+  poly 18 78 50 6 82 78
+  rect 2 74 96 14 5
+
+T2_NOVICE_ARTIFICER             # stepped like machinery
+  poly 50 8 58 22 58 34 68 34 68 50 78 50 78 66 88 66 94 88 6 88 12 66 22 66 22 50 32 50 32 34 42 34 42 22
+
+
+# ================================ RANGED: Tier 2 ================================
+
+T2_BOWMAN                       # arrowhead
+  symbol
+  poly 80 38 99 50 80 62
+
+T2_NOVICE_HUNTER                # animal ears
+  symbol
+  poly 22 14 26 -2 40 12
+  poly 48 10 60 -2 64 16
+
+T2_GUNSLINGER                   # bullet: case rim at the back, seam, pointed nose
+  path M 20 18 L 50 18 Q 84 20 99 50 Q 84 80 50 82 L 20 82 Z
+  rect 8 10 14 80 3
+  cut rect 46 26 5 48 2
+
+T2_HURLER                       # chipped rock
+  poly 18 10 52 6 80 18 94 46 86 76 60 94 18 90 12 50
+
+T2_SLINGSHOTTER                 # band pulled back
+  path M 14 8 L 46 8 C 69.2 8 88 26.8 88 50 C 88 73.2 69.2 92 46 92 L 14 92 Q 36 50 14 8 Z
+
+
+# ================================ LIGHT MELEE: Tier 2 (all drawn as outlines) ================================
+
+T2_THIEF                        # tied sack
+  wire poly 22 30 40 22 34 14 66 14 60 22 78 30 86 84 14 84
+
+T2_SCOUT                        # flag
+  wire poly 16 30 84 30 84 88 16 88
+  line 22 30 22 2 11
+  poly 22 -4 50 6 22 16
+
+T2_ASSASSIN                     # tapers to a point
+  wire poly 16 14 84 14 84 58 50 92 16 58
+
+T2_BRAWLER                      # impact burst
+  wire poly 16 16 60 16 68 4 72 20 92 22 80 32 84 84 16 84
+
+T2_DUELIST                      # rapier through it
+  symbol
+  line 4 96 96 4 5
+
+
+# ================================ HEAVY MELEE: Tier 2 ================================
+
+T2_CROG                         # rough rock
+  poly 16 14 40 10 58 16 86 12 90 40 84 62 90 88 60 86 36 90 12 86 16 62 10 38
+
+T2_SQUIRE                       # visor slit
+  symbol
+  cut rect 24 38 52 9
+
+T2_INITIATE_PALADIN             # cross
+  symbol
+  cut rect 44 22 12 56
+  cut rect 28 36 44 12
+
+T2_HAMMERMAN                    # hammer
+  rect 10 8 80 52
+  rect 42 60 16 36
+
+T2_SHIELDBEARER                 # round shield
+  rect 12 10 76 40
+  ellipse 50 53 38 41
+
+
+# ================================ SUPPORTER: Tier 2 ================================
+
+T2_MEDIC                        # soft pill cross
+  rect 30 6 40 88 20
+  rect 6 30 88 40 20
+
+T2_HANDYMAN                     # wrench jaw
+  symbol
+  cut rect 42 -6 16 24 6
+
+T2_NOVICE_MYSTIC                # four-point star
+  poly 50 2 62 38 98 50 62 62 50 98 38 62 2 50 38 38
+
+T2_NOVICE_ALCHEMIST             # bubbles
+  symbol
+  circle 40 10 9
+  circle 58 6 7
+  circle 50 -2 5
+
+T2_JESTER                       # jester cap
+  rect 30 30 40 64 9
+  rect 6 30 88 40 9
+  poly 30 36 18 2 50 26 82 2 70 36
+  circle 18 4 6
+  circle 82 4 6
+
+
+# ================================ MAGIC: Tier 3 ================================
+
+T3_FIRE_MAGE                    # the whole body is a flame
+  path M 50 4 Q 52 26 62 34 Q 64 22 72 14 Q 74 40 86 60 Q 96 88 70 90 L 30 90 Q 4 88 14 60 Q 22 44 30 38 Q 32 50 40 52 Q 36 26 50 4 Z
+
+T3_ICE_MAGE                     # tips become ice shards
+  poly 6 88 22 50 28 60 36 6 46 44 50 36 56 44 66 12 72 60 78 50 94 88
+
+T3_EARTH_MAGE                   # lumpy rock mountain
+  poly 6 88 22 48 32 34 42 40 52 18 66 26 72 46 94 88
+
+T3_AIR_MAGE                     # a swirl cut into it
+  poly 6 88 36 20 50 36 64 20 94 88
+  cut stroke 6 path M 50 76 Q 34 76 36 62 Q 38 50 52 52 Q 62 56 56 64
+
+T3_PRIEST                       # orb becomes a cross
+  poly 6 88 50 30 94 88
+  rect 44 2 12 38 3
+  rect 33 11 34 12 3
+
+T3_DRUID                        # orb becomes a leaf
+  poly 6 88 50 30 94 88
+  path M 50 36 Q 30 10 76 0 Q 80 32 50 36 Z
+  cut line 56 30 70 10 3
+
+T3_VITALITY_MAGE                # orb becomes a heart
+  poly 6 88 50 30 94 88
+  circle 42 18 10
+  circle 58 18 10
+  poly 32.4 21 67.6 21 50 40
+
+T3_BARRIER_MAGE                 # orb becomes a bubble ward
+  poly 6 88 50 30 94 88
+  stroke 7 circle 50 24 18
+
+T3_NECROMANCER                  # skull face
+  symbol
+  cut circle 6 46 32
+  cut circle 50 62 8
+  cut circle 69 62 8
+  cut rect 52 76 15 5 2
+
+T3_BLOOD_MAGE                   # a bitten blood drop
+  path M 50 4 Q 72 40 86 64 Q 94 92 50 92 Q 6 92 14 64 Q 28 40 50 4 Z
+  cut circle 0 52 26
+
+T3_CURSE_MAGE                   # evil eye
+  symbol
+  cut circle 6 46 32
+  cut path M 38 66 Q 58 50 80 66 Q 58 82 38 66 Z
+  circle 59 66 5.5
+
+T3_ADVANCED_DARK_MAGE           # bitten from both sides
+  symbol
+  cut circle 6 46 32
+  cut circle 94 46 32
+
+T3_SPELLBLADE                   # hat turns into a sword
+  poly 37 74 50 0 63 74
+  rect 8 68 84 12 4
+  rect 44 78 12 16 2
+  circle 50 95 6
+
+T3_ARCANE_WIZARD                # star at the tip
+  poly 18 78 50 18 82 78
+  rect 2 74 96 14 5
+  poly 50 0 56 12 70 16 56 20 50 34 44 20 30 16 44 12
+
+T3_SPIRIT_MAGE                  # the hat becomes a ghost
+  path M 50 4 Q 76 40 84 84 Q 76 94 67 84 Q 58 94 50 84 Q 42 94 33 84 Q 24 94 16 84 Q 24 40 50 4 Z
+
+T3_ESOTERICIST                  # a keyhole
+  poly 18 78 50 6 82 78
+  rect 2 74 96 14 5
+  cut circle 50 46 8
+  cut poly 45 50 55 50 59 68 41 68
+
+T3_GOLEM_SMITH                  # the steps get a golem face
+  poly 50 8 58 22 58 34 68 34 68 50 78 50 78 66 88 66 94 88 6 88 12 66 22 66 22 50 32 50 32 34 42 34 42 22
+  cut rect 37 54 8 8
+  cut rect 55 54 8 8
+
+T3_ADVANCED_ARTIFICER           # a gear set into the steps
+  poly 50 8 58 22 58 34 68 34 68 50 78 50 78 66 88 66 94 88 6 88 12 66 22 66 22 50 32 50 32 34 42 34 42 22
+  cut circle 50 66 14
+  circle 50 66 6
+
+T3_RUNESMITH_ARMORNAUT          # a great helm
+  poly 50 6 66 20 80 60 90 88 10 88 20 60 34 20
+  cut rect 24 48 52 8
+  cut rect 46 48 8 28
+
+T3_TECHNOMANCER                 # a circuit trace
+  poly 50 8 58 22 58 34 68 34 68 50 78 50 78 66 88 66 94 88 6 88 12 66 22 66 22 50 32 50 32 34 42 34 42 22
+  cut line 50 92 50 66 5
+  cut line 50 66 64 52 5
+  cut circle 64 52 6
+
+# ================================ RANGED: Tier 3 ================================
+
+T3_LONGBOWMAN                   # a tall, long bow shape
+  path M 22 0 L 34 0 C 64 0 80 26 80 50 C 80 74 64 100 34 100 L 22 100 Z
+  poly 76 38 99 50 76 62
+
+T3_DEADEYE                      # a bullseye in the middle
+  symbol
+  poly 80 38 99 50 80 62
+  cut circle 44 50 20
+  circle 44 50 13
+  cut circle 44 50 7
+
+T3_CROSSBOWMAN                  # bolt and stock: a crossbow
+  symbol
+  poly 82 40 99 50 82 60
+  rect 0 42 18 16 3
+
+T3_HIGHWAYMAN                   # a hood peak
+  symbol
+  poly 14 14 20 -6 46 10
+  poly 80 38 99 50 80 62
+  cut rect 40 40 30 7 3
+
+T3_TAMER                        # a collar
+  symbol
+  poly 22 14 26 -2 40 12
+  poly 48 10 60 -2 64 16
+  cut rect 18 64 64 8 4
+  circle 50 84 9
+
+T3_TRAPPER                      # trap jaws
+  symbol
+  poly 22 14 26 -2 40 12
+  poly 48 10 60 -2 64 16
+  cut poly 100 26 58 50 100 74
+
+T3_TRACKER                      # a paw print
+  symbol
+  poly 22 14 26 -2 40 12
+  poly 48 10 60 -2 64 16
+  cut ellipse 50 66 13 11
+  cut circle 34 46 6
+  cut circle 50 38 6
+  cut circle 66 46 6
+
+T3_SURVIVALIST                  # a tent
+  path M 14 92 L 14 34 L 44 2 L 72 22 C 84 32 88 42 88 54 C 88 75 70 92 48 92 Z
+  cut poly 36 92 48 56 60 92
+
+T3_PISTOLERO                    # a pistol
+  rect 6 18 92 22 4
+  poly 10 36 42 36 36 94 4 94
+  stroke 7 circle 48 48 9
+
+T3_SOLDIER                      # an army helmet
+  path M 8 70 Q 10 12 50 10 Q 90 12 92 70 Z
+  rect 0 64 100 14 7
+
+T3_SNIPER                       # a long rifle round
+  path M 6 32 L 48 32 Q 82 34 100 50 Q 82 66 48 68 L 6 68 Z
+  rect 0 26 10 48 2
+
+T3_BUCKSHOT_BARRY               # a shotgun shell
+  rect 30 12 66 76 8
+  rect 6 6 28 88 4
+  cut rect 28 12 4 76
+
+T3_SPEAR_THROWER                # the rock becomes a spearhead
+  path M 50 0 Q 84 30 74 62 L 58 74 L 58 100 L 42 100 L 42 74 L 26 62 Q 16 30 50 0 Z
+
+T3_BOMBER                       # a round bomb
+  circle 46 58 38
+  rect 52 12 20 16 3
+  stroke 6 path M 66 14 Q 74 0 90 4
+  poly 92.0 -4.0 94.8 3.2 102.0 6.0 94.8 8.8 92.0 16.0 89.2 8.8 82.0 6.0 89.2 3.2
+
+T3_BIG_CHUCK                    # a huge boulder with a crack
+  poly 6 20 40 2 78 6 98 34 96 74 70 98 20 96 2 64
+  cut stroke 6 path M 40 4 L 48 30 L 38 46 L 50 64
+
+T3_BOOMERANGER                  # a thick curved throw
+  stroke 22 path M 22 10 Q 98 50 22 90
+
+T3_SLING_MASTER                 # a stone in the pouch
+  path M 14 8 L 46 8 C 69.2 8 88 26.8 88 50 C 88 73.2 69.2 92 46 92 L 14 92 Q 36 50 14 8 Z
+  circle 16 50 14
+
+T3_BLOWGUN_SPECIALIST           # a dart
+  path M 0 40 L 14 50 L 0 60 L 24 56 L 80 56 L 100 50 L 80 44 L 24 44 Z
+
+T3_NETCASTER                    # bola weights on the ends
+  path M 14 8 L 46 8 C 69.2 8 88 26.8 88 50 C 88 73.2 69.2 92 46 92 L 14 92 Q 36 50 14 8 Z
+  circle 16 10 12
+  circle 16 90 12
+
+T3_TRICKSTER                    # curled jester points
+  path M 14 8 L 46 8 C 69.2 8 88 26.8 88 50 C 88 73.2 69.2 92 46 92 L 14 92 Q 0 92 2 80 Q 12 86 18 78 Q 36 50 18 22 Q 12 14 2 20 Q 0 8 14 8 Z
+
+
+# ================================ LIGHT_MELEE: Tier 3 ================================
+
+T3_GOBLIN                       # a goblin head with big ears
+  wire poly 30 16 70 16 76 34 98 22 82 52 72 86 28 86 18 52 2 22 24 34
+
+T3_BURGLAR                      # a burglar's mask
+  wire path M 4 40 Q 4 26 26 28 Q 42 30 50 38 Q 58 30 74 28 Q 96 26 96 40 Q 96 66 70 64 Q 56 62 50 54 Q 44 62 30 64 Q 4 66 4 40 Z
+
+T3_CRIMINAL                     # handcuffs
+  wire circle 28 62 18
+  wire circle 72 62 18
+  line 44 52 56 52 11
+
+T3_OUTLAW                       # a cowboy hat
+  wire path M 6 66 Q 50 80 94 66 Q 88 56 76 58 L 70 24 Q 50 16 30 24 L 24 58 Q 12 56 6 66 Z
+
+T3_PATHFINDER                   # a compass
+  wire circle 50 50 38
+  poly 50 16 60 50 50 84 40 50
+
+T3_OUTRIDER                     # a lance with a pennant
+  line 10 92 82 20 11
+  poly 74 8 100 0 92 26
+  wire poly 52 44 62 30 70 58
+
+T3_VANGUARD_SCOUT               # a swallowtail banner
+  wire poly 16 30 84 30 84 88 16 88
+  line 22 30 22 2 11
+  poly 22 -4 62 -4 52 8 62 20 22 20
+
+T3_SURVEYOR                     # a map scroll
+  wire poly 20 20 80 20 80 80 20 80
+  wire circle 20 20 10
+  wire circle 80 80 10
+
+T3_SHADOWDANCER                 # a hood
+  wire poly 50 4 86 32 84 62 50 94 16 62 14 32
+
+T3_POISONER                     # a poison drop
+  wire path M 50 6 Q 82 46 78 66 Q 74 92 50 92 Q 26 92 22 66 Q 18 46 50 6 Z
+
+T3_EXECUTIONER                  # a half-moon axe
+  wire path M 64 38 L 40 28 Q 22 20 10 8 Q 0 46 10 84 Q 22 72 40 64 L 64 54 Z
+  line 68 2 68 98 11
+
+T3_MASTER_ASSASSIN              # the point gets a crown
+  wire poly 16 26 30 6 40 20 50 2 60 20 70 6 84 26 84 60 50 94 16 60
+
+T3_PUGILIST                     # a boxing glove
+  wire path M 24 92 L 24 62 Q 10 54 14 34 Q 20 8 52 8 Q 86 8 86 44 Q 86 64 72 70 L 72 92 Z
+
+T3_GRAPPLER                     # a champion's belt
+  wire poly 4 36 96 36 96 64 4 64
+  wire circle 50 50 20
+
+T3_KICKBOXER                    # a kicking boot
+  wire path M 22 6 L 50 6 L 52 56 Q 86 56 92 76 L 92 92 L 18 92 Z
+
+T3_MARTIAL_ARTIST               # yin and yang
+  wire circle 50 50 40
+  stroke 11 path M 50 10 Q 28 30 50 50 Q 72 70 50 90
+
+T3_FENCER                       # a foil with a bell guard
+  line 30 70 94 6 5
+  stroke 11 path M 12 54 Q 26 40 46 52
+  line 26 74 10 90 11
+
+T3_BLADE_DANCER                 # a curved scimitar
+  wire path M 20 92 Q 14 40 64 6 Q 52 46 34 92 Z
+
+T3_SWASHBUCKLER                 # a cutlass
+  wire path M 30 70 Q 40 30 86 6 Q 72 48 42 78 Z
+  stroke 11 path M 30 70 Q 12 84 28 94 Q 40 100 46 84
+
+T3_SWORDSMAN                    # a longsword
+  wire poly 42 64 42 14 50 2 58 14 58 64
+  line 18 70 82 70 11
+  line 50 76 50 96 11
+
+
+# ================================ HEAVY_MELEE: Tier 3 ================================
+
+T3_NEANDERTHAL                  # a caveman club
+  rect 10 4 80 58 28
+  poly 30 48 70 48 62 96 38 96
+
+T3_OGRE_KIN                     # big ears
+  poly 16 14 40 10 58 16 86 12 90 40 84 62 90 88 60 86 36 90 12 86 16 62 10 38
+  ellipse 6 46 10 16
+  ellipse 94 46 10 16
+
+T3_STICK_MASTER                 # a big knobbed stick
+  line 18 90 80 16 18
+  circle 82 14 14
+
+T3_THROGG                       # a smashing crack
+  poly 16 14 40 10 58 16 86 12 90 40 84 62 90 88 60 86 36 90 12 86 16 62 10 38
+  cut stroke 7 path M 54 14 L 44 40 L 58 56 L 46 84
+
+T3_KNIGHT                       # a chess knight
+  path M 18 94 L 82 94 L 76 80 L 70 80 Q 66 58 80 46 Q 88 30 68 12 L 56 2 L 50 14 Q 22 22 14 46 L 26 56 L 44 48 Q 40 66 30 80 L 24 80 Z
+  cut circle 56 26 5
+
+T3_SPEARMAN                     # a spearhead on top
+  rect 14 40 72 56
+  poly 32 42 50 0 68 42
+  cut rect 24 60 52 8
+
+T3_STRATEGIST                   # a crown
+  poly 12 30 26 8 38 22 50 2 62 22 74 8 88 30 88 92 12 92
+  cut rect 24 50 52 9
+
+T3_FLAG_BEARER                  # the square becomes a banner
+  rect 8 0 10 100 3
+  poly 18 6 92 6 92 74 55 60 18 74
+  cut rect 34 28 40 8
+
+T3_VALKYRIE                     # wings off the sides
+  symbol
+  cut rect 44 22 12 56
+  cut rect 28 36 44 12
+  poly 12 20 -4 8 4 44 12 52
+  poly 88 20 104 8 96 44 88 52
+
+T3_CRUSADER                     # a shield with a cross
+  poly 12 8 88 8 88 54 50 96 12 54
+  cut rect 44 20 12 54
+  cut rect 26 32 48 12
+
+T3_TEMPLAR                      # a flared cross
+  symbol
+  cut poly 40 20 60 20 54 44 80 40 80 60 54 56 60 80 40 80 46 56 20 60 20 40 46 44
+
+T3_THE_OATHBOUND                # a wax seal
+  symbol
+  cut rect 44 22 12 56
+  cut rect 28 36 44 12
+  circle 84 84 16
+  cut circle 84 84 6
+
+T3_VIKING                       # a bearded axe
+  path M 40 6 L 84 6 Q 98 24 94 58 Q 72 58 62 46 L 56 30 L 40 30 Z
+  rect 32 0 14 100 3
+
+T3_DWARF                        # a pickaxe
+  path M 2 36 Q 50 -8 98 36 L 92 42 Q 50 14 8 42 Z
+  rect 42 12 16 86 3
+
+T3_SMITH                        # an anvil
+  path M 2 26 Q 18 30 30 24 L 96 24 L 96 40 L 72 44 L 66 62 L 82 74 L 82 90 L 18 90 L 18 74 L 34 62 L 30 44 Q 14 40 2 26 Z
+
+T3_WRECKER                      # a cracked sledgehammer
+  rect 10 8 80 52
+  rect 42 60 16 36
+  cut stroke 6 path M 36 8 L 46 24 L 38 36 L 50 52
+
+T3_BULWARK                      # battlements on the shield
+  rect 12 10 76 40
+  ellipse 50 53 38 41
+  cut rect 30 10 12 14
+  cut rect 58 10 12 14
+
+T3_DEFENDER                     # a shield boss
+  rect 12 10 76 40
+  ellipse 50 53 38 41
+  cut stroke 7 circle 50 52 18
+
+T3_BASTION                      # a castle tower
+  rect 12 26 76 70
+  rect 12 6 18 24
+  rect 41 6 18 24
+  rect 70 6 18 24
+  cut path M 38 96 L 38 70 Q 50 56 62 70 L 62 96 Z
+
+T3_EVADE_TANK                   # a small buckler
+  circle 50 50 40
+  cut stroke 8 circle 50 50 22
+
+
+# ================================ SUPPORTER: Tier 3 ================================
+
+T3_DOCTOR                       # a doctor's bag
+  rect 6 30 88 62 12
+  stroke 8 path M 32 32 L 32 16 Q 32 8 40 8 L 60 8 Q 68 8 68 16 L 68 32
+  cut rect 44 42 12 40 3
+  cut rect 30 56 40 12 3
+
+T3_SANITARIAN                   # a clean sparkle
+  rect 30 6 40 88 20
+  rect 6 30 88 40 20
+  cut poly 50.0 32.0 53.5 46.5 68.0 50.0 53.5 53.5 50.0 68.0 46.5 53.5 32.0 50.0 46.5 46.5
+
+T3_GENETIC_ENGINEER             # a DNA twist
+  rect 30 6 40 88 20
+  rect 6 30 88 40 20
+  cut stroke 6 path M 40 14 Q 64 32 50 50 Q 36 68 60 86
+  cut stroke 6 path M 60 14 Q 36 32 50 50 Q 64 68 40 86
+
+T3_THERAPIST                    # a speech bubble with a heart
+  rect 4 10 92 64 22
+  poly 20 66 14 96 44 70
+  cut circle 42 36 9
+  cut circle 58 36 9
+  cut poly 33.6 40 66.4 40 50 60
+
+T3_REPAIRMAN                    # a wrench
+  line 18 84 60 42 18
+  circle 70 32 22
+  cut poly 70 32 96 10 100 34 82 46
+
+T3_BUILDER                      # a hard hat
+  path M 10 74 Q 10 14 50 14 Q 90 14 90 74 Z
+  rect 0 68 100 16 6
+  cut rect 44 18 12 46 4
+
+T3_DEMOLITIONIST                # a stick of dynamite
+  rect 30 26 40 70 6
+  cut rect 30 44 40 6
+  cut rect 30 70 40 6
+  stroke 6 path M 50 28 Q 50 10 66 8
+  poly 70.0 -4.0 72.8 5.2 82.0 8.0 72.8 10.8 70.0 20.0 67.2 10.8 58.0 8.0 67.2 5.2
+
+T3_ENGINEER                     # a gear
+  poly 84.0 50.0 95.6 55.8 93.2 65.7 80.2 65.5 76.0 71.9 81.3 83.8 73.0 89.8 63.2 81.3 55.9 83.5 52.2 95.9 42.0 95.3 39.9 82.5 33.0 79.4 22.2 86.6 14.8 79.6 21.4 68.4 18.1 61.6 5.1 60.2 4.0 50.0 16.3 45.7 18.1 38.4 9.1 29.0 14.8 20.4 26.9 25.1 33.0 20.6 32.2 7.6 42.0 4.7 48.3 16.0 55.9 16.5 63.6 6.1 73.0 10.2 70.6 22.9 76.0 28.1 88.7 25.1 93.2 34.3 83.2 42.5
+  cut circle 50 50 14
+
+T3_ORACLE                       # an eye in the star
+  poly 50 2 62 38 98 50 62 62 50 98 38 62 2 50 38 38
+  cut path M 30 50 Q 50 34 70 50 Q 50 66 30 50 Z
+  circle 50 50 6
+
+T3_WEAVER                       # a spindle
+  poly 50 0 66 30 66 70 50 100 34 70 34 30
+  cut poly 34 40 66 34 66 40 34 46
+  cut poly 34 60 66 54 66 60 34 66
+
+T3_WITCH                        # a crooked witch hat
+  poly 16 76 44 30 30 4 62 26 84 76
+  rect 0 72 100 14 6
+  cut rect 40 60 20 10 2
+
+T3_SAGE                         # an open book with a star
+  path M 2 40 Q 26 30 50 42 Q 74 30 98 40 L 98 92 Q 74 82 50 94 Q 26 82 2 92 Z
+  cut line 50 44 50 90 3
+  poly 50 0 56 18 74 24 56 30 50 46 44 30 26 24 44 18
+
+T3_ADVANCED_ALCHEMIST           # a round flask
+  circle 50 64 34
+  rect 39 14 22 30 3
+  rect 33 10 34 8 3
+  circle 40 8 7
+  circle 56 4 5
+  cut poly 20 66 80 66 78 72 22 72
+
+T3_TOXICOLOGIST                 # a toxic bottle with a skull
+  rect 36 4 28 14 3
+  poly 36 18 64 18 80 40 80 96 20 96 20 40
+  cut circle 40 58 7
+  cut circle 60 58 7
+  cut rect 44 72 12 6 2
+
+T3_TRANSMUTER                   # a transmutation circle
+  circle 50 50 44
+  cut circle 50 50 34
+  poly 50 12 84 70 16 70
+  cut poly 50 30 68 62 32 62
+
+T3_IMBUER                       # a cut gem
+  poly 24 10 76 10 98 36 50 96 2 36
+  cut poly 2 36 98 36 98 40 2 40
+
+T3_CLOWN                        # a clown face
+  circle 50 60 36
+  poly 22 40 14 4 50 26 86 4 78 40
+  circle 14 4 6
+  circle 86 4 6
+  cut circle 50 62 9
+  cut stroke 5 path M 34 78 Q 50 90 66 78
+
+T3_DRUNKARD                     # a tankard
+  rect 12 22 60 74 6
+  stroke 10 path M 70 36 Q 96 36 94 58 Q 92 76 70 74
+  circle 22 20 11
+  circle 42 14 12
+  circle 62 20 11
+
+T3_HARLOT                       # lips
+  path M 2 50 Q 20 22 38 30 Q 46 34 50 38 Q 54 34 62 30 Q 80 22 98 50 Q 78 84 50 84 Q 22 84 2 50 Z
+  cut path M 10 50 Q 50 60 90 50 Q 50 56 10 50 Z
+
+T3_ARTIST                       # a paint palette
+  path M 50 6 Q 96 6 96 50 Q 96 74 76 74 Q 62 74 62 86 Q 62 96 50 96 Q 4 96 4 50 Q 4 6 50 6 Z
+  cut circle 66 58 8
+  cut circle 30 32 7
+  cut circle 54 24 7
+  cut circle 24 58 7
+
+
+# ================================ MAGIC: Tier 4 ================================
+
+T4_LIGHTNING_MAGE               # the flame becomes a lightning bolt
+  poly 66 0 18 58 46 58 30 100 86 36 58 36 78 0
+
+T4_LAVA_MAGE                    # an erupting volcano
+  poly 0 100 34 50 66 50 100 100
+  path M 50 2 Q 51.3 15.8 57.5 20.8 Q 58.8 13.3 63.8 8.3 Q 65.1 24.6 72.6 37.2 Q 78.9 54.7 62.6 56 L 37.4 56 Q 21.1 54.7 27.4 37.2 Q 32.4 27.1 37.4 23.3 Q 38.7 30.9 43.7 32.1 Q 41.2 15.8 50 2 Z
+
+T4_FIRE_MASTER                  # a towering flame with a white-hot core
+  path M 50 0 Q 54 24 64 32 Q 66 18 76 8 Q 78 38 88 58 Q 98 94 68 96 L 32 96 Q 2 94 12 58 Q 20 42 28 34 Q 30 48 38 50 Q 34 22 50 0 Z
+  cut path M 50 46 Q 51 57.3 56.1 61.3 Q 57.2 55.2 61.3 51.1 Q 62.3 64.4 68.4 74.7 Q 73.5 89 60.2 90 L 39.8 90 Q 26.5 89 31.6 74.7 Q 35.7 66.5 39.8 63.4 Q 40.8 69.5 44.9 70.6 Q 42.8 57.3 50 46 Z
+
+T4_WATER_MAGE                   # a curling wave with foam
+  path M 2 98 C 2 54 24 18 60 10 C 84 6 100 20 98 40 C 96 54 84 60 74 56 C 66 52 66 42 74 40 C 80 38 84 44 80 48 C 90 44 90 30 80 26 C 66 22 52 32 50 50 C 48 70 60 88 82 98 Z
+  path M 2 98 L 98 98 L 98 92 Q 86 86 76 94 Q 64 84 52 94 Q 40 84 28 94 Q 16 84 2 92 Z
+
+T4_SLOWNESS_MAGE                # an icy hourglass
+  rect 14 2 72 10 3
+  rect 14 88 72 10 3
+  poly 20 12 80 12 80 20 56 50 80 80 80 88 20 88 20 80 44 50 20 20
+  cut poly 30 20 70 20 50 44
+  cut poly 50 62 66 80 34 80
+
+T4_ICE_MASTER                   # a towering ice crystal cluster
+  poly 4 96 14 52 22 60 30 20 40 50 50 0 60 50 70 20 78 60 86 52 96 96
+
+T4_METAL_MAGE                   # the mountain becomes a big hex nut
+  poly 50 6 89.8 29 89.8 75 50 98 10.2 75 10.2 29
+  cut circle 50 52 18
+
+T4_STONE_WARDEN                 # a standing-stone trilithon
+  poly 12 96 16 34 38 32 40 96
+  poly 60 96 62 32 84 34 88 96
+  poly 6 32 8 14 94 10 96 30
+
+T4_EARTH_MASTER                 # a great mountain with a snowcap
+  poly 2 96 30 36 40 44 52 6 64 30 74 26 98 96
+  cut stroke 5 path M 34 46 L 42 54 L 50 42 L 58 52 L 68 40
+
+T4_SPEED_MAGE                   # the shape becomes a swift wing
+  path M 4 96 Q 8 40 50 8 Q 90 -4 98 6 Q 84 16 66 22 Q 92 22 96 30 Q 80 38 62 40 Q 86 44 88 52 Q 70 60 52 58 Q 72 66 70 74 Q 40 80 30 96 Z
+  cut stroke 5 path M 40 76 Q 26 76 28 64 Q 30 54 42 56 Q 50 60 46 66
+
+T4_SPACE_MAGE                   # a ringed planet with a swirl
+  circle 50 50 32
+  cut stroke 6 ellipse 50 50 48 14
+  stroke 6 ellipse 50 50 48 14
+  cut stroke 5 path M 50 64 Q 38 64 40 52 Q 42 42 54 44 Q 62 48 58 55
+
+T4_AIR_MASTER                   # a tornado
+  path M 2 8 Q 50 -2 98 8 Q 96 24 78 34 Q 84 46 66 56 Q 70 70 54 76 Q 60 90 44 98 Q 46 84 38 78 Q 28 70 40 60 Q 22 52 30 40 Q 8 30 2 8 Z
+  cut stroke 5 path M 20 20 Q 50 28 82 18
+
+
+# ================================ MAGIC: Tier 4 (Support Mage, Dark Mage, Wizard, Artificer) ================================
+
+T4_BISHOP                       # a chess bishop
+  circle 50 8 6
+  path M 50 12 Q 70 28 66 48 Q 64 58 58 62 L 42 62 Q 36 58 34 48 Q 30 28 50 12 Z
+  cut line 58 26 46 42 4
+  rect 36 60 28 8 3
+  poly 40 66 60 66 66 88 34 88
+  rect 22 86 56 12 4
+
+T4_INQUISITOR                   # a holy sword, point down
+  circle 50 6 7
+  rect 44 6 12 22 3
+  rect 22 24 56 12 4
+  poly 37 34 63 34 50 99
+
+T4_MARTYR                       # a Celtic cross on a hill
+  poly 4 98 50 70 96 98
+  rect 44 4 12 76 3
+  rect 22 20 56 12 3
+  stroke 7 circle 50 26 16
+
+T4_GARDENER                     # a sprout in a pot
+  poly 22 58 78 58 70 98 30 98
+  rect 14 50 72 12 3
+  line 50 52 50 30 6
+  path M 50 32 Q 56 6 88 6 Q 86 34 50 32 Z
+  path M 50 36 Q 44 14 14 16 Q 16 40 50 36 Z
+
+T4_BEASTKIN                     # a wolf head
+  poly 50 98 22 62 14 40 18 4 38 26 62 26 82 4 86 40 78 62
+  cut poly 30 44 44 50 32 55
+  cut poly 70 44 56 50 68 55
+
+T4_REJUVENATOR                  # a big leaf with a healing plus
+  path M 10 96 Q 2 28 90 4 Q 98 82 10 96 Z
+  cut rect 44 34 12 36 3
+  cut rect 32 46 36 12 3
+
+T4_GROWTH_MAGE                  # an up arrow with a heart
+  poly 50 2 96 50 68 50 68 98 32 98 32 50 4 50
+  cut path M 50 62.5 C 50 56 37 56 37 63.8 C 37 71.6 50 74.7 50 80.7 C 50 74.7 63 71.6 63 63.8 C 63 56 50 56 50 62.5 Z
+
+T4_UNKILLABLE_JOE               # a heart with a plaster
+  path M 50 28 C 50 4 2 4 2 32.8 C 2 61.6 50 73.1 50 95.2 C 50 73.1 98 61.6 98 32.8 C 98 4 50 4 50 28 Z
+  cut stroke 5 path M 22 64 L 64 22 L 78 36 L 36 78 Z
+
+T4_LIFEBINDER                   # two hearts bound together
+  path M 36 24.5 C 36 8 3 8 3 27.8 C 3 47.6 36 55.5 36 70.7 C 36 55.5 69 47.6 69 27.8 C 69 8 36 8 36 24.5 Z
+  stroke 7 path M 66 44 C 66 30 38 30 38 46.8 C 38 63.6 66 70.3 66 83.2 C 66 70.3 94 63.6 94 46.8 C 94 30 66 30 66 44 Z
+
+T4_BASTION_WARD_MAGE            # a castle under a dome ward
+  rect 24 52 52 46
+  rect 24 40 12 14
+  rect 44 40 12 14
+  rect 64 40 12 14
+  cut path M 42 98 L 42 80 Q 50 70 58 80 L 58 98 Z
+  stroke 7 path M 6 98 L 6 54 Q 6 6 50 6 Q 94 6 94 54 L 94 98
+
+T4_BUBBLE_MAGE                  # three bubbles
+  stroke 7 circle 50 26 21
+  stroke 7 circle 27 70 23
+  stroke 7 circle 73 70 23
+
+T4_TELEKINESIS_MAGE             # a giant mouse cursor
+  poly 22 2 22 84 42 66 56 98 72 90 58 60 84 60
+
+T4_BONE_CRAFTER                 # a big bone
+  line 24 76 76 24 18
+  circle 12 76 12
+  circle 24 88 12
+  circle 76 12 12
+  circle 88 24 12
+
+T4_SOUL_REAPER                  # a scythe
+  line 32 98 68 6 9
+  path M 72 2 Q 22 -6 0 46 Q 26 18 72 24 Z
+
+T4_UNTETHERED_SOUL              # a soul flame with a skull face
+  path M 50 4 Q 52.1 27.5 62.8 36.1 Q 65 23.3 73.5 14.7 Q 75.7 42.5 88.5 63.9 Q 99.2 93.9 71.4 96 L 28.6 96 Q 0.8 93.9 11.5 63.9 Q 20 46.8 28.6 40.4 Q 30.7 53.2 39.3 55.3 Q 35 27.5 50 4 Z
+  cut circle 40 64 7
+  cut circle 60 64 7
+  cut rect 44 78 12 5 2
+
+T4_VAMPIRE                      # a coffin
+  poly 34 2 66 2 84 26 70 98 30 98 16 26
+  cut rect 45 18 10 42 2
+  cut rect 34 28 32 10 2
+
+T4_HEMOMANCER                   # a blood drop with a splash
+  path M 50 2 Q 65.3 31.5 75 51.1 Q 80.6 74 50 74 Q 19.4 74 25 51.1 Q 34.7 31.5 50 2 Z
+  path M 6 98 L 14 80 L 24 90 L 32 76 L 42 88 L 50 82 L 58 88 L 68 76 L 76 90 L 86 80 L 94 98 Z
+
+T4_WARLOCK                      # a pentagram in a circle
+  stroke 7 circle 50 50 45
+  poly 50 11 59.4 40.1 89.9 40 65.2 57.9 74.7 87 50 69 25.3 87 34.8 57.9 10.1 40 40.6 40.1
+
+T4_DEATH_MAGE                   # a gravestone
+  path M 16 98 L 16 40 Q 16 6 50 6 Q 84 6 84 40 L 84 98 Z
+  cut rect 45 20 10 44 2
+  cut rect 33 32 34 10 2
+
+T4_PAIN_MAGE                    # a broken heart
+  path M 50 29 C 50 6 4 6 4 33.6 C 4 61.2 50 72.2 50 93.4 C 50 72.2 96 61.2 96 33.6 C 96 6 50 6 50 29 Z
+  cut stroke 6 path M 50 22 L 42 40 L 56 54 L 46 72 L 50 90
+
+T4_CONTROL_MAGE                 # a hypnotic spiral eye
+  path M 2 50 Q 50 4 98 50 Q 50 96 2 50 Z
+  cut circle 50 50 25
+  stroke 5 path M 50 50 Q 56 50 56 44 Q 54 38 48 38 Q 40 40 40 50 Q 42 62 52 62 Q 64 60 64 48 Q 62 32 46 32
+
+T4_SHADE_ELEMENTAL              # a hooded shadow with glaring eyes
+  path M 50 4 Q 70 6 70 34 Q 70 54 66 62 Q 82 74 98 98 L 2 98 Q 18 74 34 62 Q 30 54 30 34 Q 30 6 50 4 Z
+  cut poly 35 30 47 35 37 40
+  cut poly 65 30 53 35 63 40
+
+T4_DARK_MASTER                  # a black sun
+  poly 50 0 59.9 19.6 79.4 9.5 75.9 31.2 97.6 34.5 82 50 97.6 65.5 75.9 68.8 79.4 90.5 59.9 80.4 50 100 40.1 80.4 20.6 90.5 24.1 68.8 2.4 65.5 18 50 2.4 34.5 24.1 31.2 20.6 9.5 40.1 19.6
+  cut stroke 4 circle 50 50 34
+
+T4_SEALED_PARAGON               # a locked padlock
+  stroke 12 path M 30 50 L 30 32 Q 30 10 50 10 Q 70 10 70 32 L 70 50
+  rect 14 44 72 52 8
+  cut circle 50 64 7
+  cut poly 46 66 54 66 57 84 43 84
+
+T4_SPELLSWORD                   # a flaming sword
+  path M 50 0 Q 56 20 62 30 Q 66 22 66 14 Q 74 40 62 64 L 38 64 Q 30 44 40 30 Q 42 40 46 42 Q 42 20 50 0 Z
+  rect 12 62 76 12 4
+  rect 44 72 12 18 2
+  circle 50 94 6
+
+T4_RUNE_BLADE                   # a broadsword with a rune
+  poly 33 68 33 14 50 0 67 14 67 68
+  rect 8 64 84 12 4
+  rect 44 74 12 16 2
+  circle 50 94 6
+  cut line 50 18 50 58 5
+  cut line 50 32 40 22 5
+  cut line 50 32 60 22 5
+
+T4_SPELL_EATER                  # the blade splits into jaws
+  poly 34 70 34 18 50 0 66 18 66 70
+  cut poly 42 -4 50 50 58 -4
+  rect 8 66 84 12 4
+  rect 44 76 12 14 2
+  circle 50 94 6
+
+T4_GRANDMASTER_WIZARD           # a bearded wizard
+  poly 26 46 52 0 76 46
+  rect 6 42 88 12 6
+  path M 20 52 L 80 52 Q 76 80 50 100 Q 24 80 20 52 Z
+  cut ellipse 38 60 5 3.5
+  cut ellipse 62 60 5 3.5
+
+T4_MANA_SAGE                    # a mana drop with a star
+  path M 50 2 Q 70.4 41.3 83.4 67.5 Q 90.8 98 50 98 Q 9.2 98 16.6 67.5 Q 29.6 41.3 50 2 Z
+  cut poly 50 50 53.5 62.5 66 66 53.5 69.5 50 82 46.5 69.5 34 66 46.5 62.5
+
+T4_RITUALIST                    # a ritual candle
+  path M 50 2 Q 50.7 9.2 53.9 11.8 Q 54.6 7.9 57.2 5.3 Q 57.8 13.7 61.7 20.2 Q 65 29.3 56.5 30 L 43.5 30 Q 35 29.3 38.3 20.2 Q 40.9 15 43.5 13.1 Q 44.1 17 46.7 17.6 Q 45.4 9.2 50 2 Z
+  rect 28 30 44 62 4
+  path M 64 30 L 76 30 L 76 62 Q 70 70 64 62 Z
+  rect 14 88 72 10 4
+
+T4_SPIRIT_ELEMENTALIST          # a ghost crowned with flame
+  path M 50 17.4 Q 72.4 48.4 79.2 86.2 Q 72.4 94.8 64.6 86.2 Q 56.9 94.8 50 86.2 Q 43.1 94.8 35.4 86.2 Q 27.6 94.8 20.8 86.2 Q 27.6 48.4 50 17.4 Z
+  path M 50 0 Q 50.9 10.2 55.6 14 Q 56.5 8.4 60.2 4.7 Q 61.2 16.7 66.7 26 Q 71.4 39.1 59.3 40 L 40.7 40 Q 28.6 39.1 33.3 26 Q 37 18.6 40.7 15.8 Q 41.6 21.4 45.3 22.3 Q 43.5 10.2 50 0 Z
+
+T4_PHANTASM                     # a spooky ghost face
+  path M 50 4 Q 76 40 84 84 Q 76 94 67 84 Q 58 94 50 84 Q 42 94 33 84 Q 24 94 16 84 Q 24 40 50 4 Z
+  cut ellipse 41 44 6 9
+  cut ellipse 59 44 6 9
+  cut ellipse 50 66 6 8
+
+T4_THE_SPIRITBOUND              # a spirit trapped in a lantern
+  stroke 6 circle 50 6 5
+  poly 28 20 72 20 62 8 38 8
+  rect 20 20 60 66 6
+  cut rect 28 28 44 50 4
+  path M 50 36.8 Q 60.9 54.1 64.3 75.2 Q 60.9 80 57.1 75.2 Q 53.4 80 50 75.2 Q 46.6 80 42.9 75.2 Q 39.1 80 35.7 75.2 Q 39.1 54.1 50 36.8 Z
+  rect 14 82 72 14 4
+
+T4_TIME_MAGE                    # a pocket watch
+  stroke 6 circle 50 8 7
+  rect 42 12 16 10 4
+  circle 50 60 38
+  cut circle 50 60 30
+  line 50 60 50 30 6
+  line 50 60 66 68 6
+  circle 50 60 6
+
+T4_TRANSCENDENT                 # a winged hat with a halo
+  poly 18 78 50 6 82 78
+  rect 2 74 96 14 5
+  cut circle 50 46 8
+  cut poly 45 50 55 50 59 68 41 68
+  stroke 6 ellipse 50 6 16 6
+  path M 34 46 Q 10 44 2 20 Q 14 30 24 30 Q 10 22 8 8 Q 22 24 38 32 Z
+  path M 66 46 Q 90 44 98 20 Q 86 30 76 30 Q 90 22 92 8 Q 78 24 62 32 Z
+
+T4_ELDRITCH_SCHOLAR             # a forbidden book with an eye
+  path M 2 28 Q 26 16 50 30 Q 74 16 98 28 L 98 90 Q 74 78 50 94 Q 26 78 2 90 Z
+  cut path M 28 58 Q 50 38 72 58 Q 50 78 28 58 Z
+  circle 50 58 7
+
+T4_FORGESMITH_ASCENDANT         # a forge furnace
+  rect 62 0 16 30 2
+  path M 10 98 L 10 40 Q 10 24 26 24 L 74 24 Q 90 24 90 40 L 90 98 Z
+  cut path M 28 90 L 28 68 Q 50 44 72 68 L 72 90 Z
+  path M 50 58 Q 50.7 66.2 54.5 69.2 Q 55.2 64.7 58.2 61.7 Q 58.9 71.4 63.4 78.8 Q 67.1 89.3 57.4 90 L 42.6 90 Q 32.9 89.3 36.6 78.8 Q 39.6 72.9 42.6 70.7 Q 43.3 75.1 46.3 75.9 Q 44.8 66.2 50 58 Z
+
+T4_AUTOMATON_LORD               # a crowned robot head
+  rect 16 32 68 62 8
+  poly 20 34 20 6 35 20 50 2 65 20 80 6 80 34
+  cut rect 28 48 16 14 2
+  cut rect 56 48 16 14 2
+  cut rect 32 74 36 7 2
+
+T4_SWARM_SMITH                  # a honeycomb
+  stroke 7 poly 69 22 59.5 38.5 40.5 38.5 31 22 40.5 5.5 59.5 5.5
+  stroke 7 poly 41.5 38 32 54.5 13 54.5 3.5 38 13 21.5 32 21.5
+  stroke 7 poly 96.5 38 87 54.5 68 54.5 58.5 38 68 21.5 87 21.5
+  stroke 7 poly 69 54 59.5 70.5 40.5 70.5 31 54 40.5 37.5 59.5 37.5
+  stroke 7 poly 41.5 70 32 86.5 13 86.5 3.5 70 13 53.5 32 53.5
+  stroke 7 poly 96.5 70 87 86.5 68 86.5 58.5 70 68 53.5 87 53.5
+
+T4_MASTER_ARTIFICER             # a gear with a star
+  poly 84.0 50.0 95.6 55.8 93.2 65.7 80.2 65.5 76.0 71.9 81.3 83.8 73.0 89.8 63.2 81.3 55.9 83.5 52.2 95.9 42.0 95.3 39.9 82.5 33.0 79.4 22.2 86.6 14.8 79.6 21.4 68.4 18.1 61.6 5.1 60.2 4.0 50.0 16.3 45.7 18.1 38.4 9.1 29.0 14.8 20.4 26.9 25.1 33.0 20.6 32.2 7.6 42.0 4.7 48.3 16.0 55.9 16.5 63.6 6.1 73.0 10.2 70.6 22.9 76.0 28.1 88.7 25.1 93.2 34.3 83.2 42.5
+  cut poly 50 26 55.7 44.3 74 50 55.7 55.7 50 74 44.3 55.7 26 50 44.3 44.3
+
+T4_GUNSMITH                     # a cannon
+  poly 4 52 82 18 92 40 14 70
+  poly 78 12 92 6 102 38 88 44
+  circle 42 72 24
+  cut circle 42 72 9
+
+T4_MAGITECH_ARCHITECT           # a swirling portal gate
+  path M 16 98 L 16 44 Q 16 4 50 4 Q 84 4 84 44 L 84 98 Z
+  cut stroke 6 path M 50 62 Q 38 62 40 50 Q 42 40 54 42 Q 66 46 64 58 Q 60 76 44 76 Q 26 74 26 54
+
+T4_THE_RUNEBOUND                # a helm with a glowing rune
+  poly 50 6 66 20 80 60 90 88 10 88 20 60 34 20
+  cut line 50 30 50 76 6
+  cut line 50 48 34 32 6
+  cut line 50 48 66 32 6
+
+T4_RESEARCH_AND_DEVELOPMENT     # a lab flask
+  rect 38 2 24 8 2
+  poly 42 10 58 10 58 36 92 96 8 96 42 36
+  cut poly 47 14 53 14 53 40 68 64 32 64 47 40
+
+T4_SCHOLAR                      # a graduation cap
+  poly 2 32 50 12 98 32 50 52
+  path M 22 40 L 22 66 Q 50 82 78 66 L 78 40 L 50 52 Z
+  line 88 34 88 66 5
+  rect 84 64 8 16 2
+
+T4_CYBORG                       # a half-machine head
+  path M 20 98 L 20 40 Q 20 6 50 6 Q 80 6 80 40 L 80 98 Z
+  cut ellipse 35 44 8 5
+  cut circle 64 44 11
+  circle 64 44 5
+  cut line 64 58 64 80 4
+  cut line 64 80 52 90 4
+
+T4_WATCHDOG                     # a security camera
+  poly 12 18 86 34 80 60 6 44
+  cut circle 20 33 7
+  line 62 54 72 84 10
+  rect 58 82 36 14 3
+
+T4_HACKER                       # a hood with a command prompt
+  path M 50 2 Q 86 10 90 60 L 96 98 L 4 98 L 10 60 Q 14 10 50 2 Z
+  cut stroke 6 path M 32 42 L 44 52 L 32 62
+  cut rect 50 58 18 6 2
+
+
+# ================================ RANGED: Tier 4 ================================
+
+T4_SHARPSHOOTER                 # a drawn bow with an arrow
+  stroke 10 path M 34 4 Q 92 50 34 96
+  line 34 4 22 50 4
+  line 22 50 34 96 4
+  line 14 50 90 50 6
+  poly 84 40 100 50 84 60
+  poly 14 50 4 42 10 50 4 58
+
+T4_FLETCHER                     # an arrow's feathered tail
+  line 50 16 50 98 8
+  poly 36 22 50 0 64 22
+  poly 50 56 26 70 26 98 50 84
+  poly 50 56 74 70 74 98 50 84
+
+T4_LOOKOUT                      # a watchtower
+  poly 16 32 50 4 84 32
+  rect 24 30 52 28
+  cut rect 36 36 28 14
+  line 30 58 16 98 9
+  line 70 58 84 98 9
+  line 24 80 76 80 7
+
+T4_AMBUSHER                     # eyes hidden in a bush
+  circle 28 56 22
+  circle 50 40 26
+  circle 74 54 22
+  rect 8 56 84 40 14
+  cut poly 32 56 46 60 34 66
+  cut poly 68 56 54 60 66 66
+
+T4_TRICKSHOTTER                 # an arrow that bends around
+  stroke 11 path M 8 92 Q 4 18 66 22
+  poly 60 8 92 24 62 38
+  poly 4 98 2 78 14 84 20 96
+
+T4_BULLSEYE                     # a target with an arrow in the centre
+  circle 50 54 44
+  cut stroke 6 circle 50 54 28
+  cut stroke 6 circle 50 54 12
+  line 50 54 92 8 6
+  poly 86 2 96 4 98 14 90 16
+
+T4_ARBALIST                     # a heavy crossbow
+  stroke 12 path M 4 38 Q 50 10 96 38
+  rect 42 14 16 84 4
+  rect 34 70 32 16 4
+  line 4 38 50 50 3
+  line 96 38 50 50 3
+
+T4_SEMI_AUTOMATIC_CROSSBOWMAN   # a crossbow with a drum magazine
+  symbol
+  poly 82 40 99 50 82 60
+  rect 0 42 18 16 3
+  circle 40 78 20
+  cut circle 40 78 7
+
+T4_PAVISE_BEARER                # a tall pavise shield
+  path M 16 96 L 16 18 Q 50 0 84 18 L 84 96 Z
+  cut rect 46 18 8 70 3
+
+T4_HITMAN                       # a fedora
+  path M 4 72 Q 50 88 96 72 Q 92 62 80 62 L 76 30 Q 72 18 60 22 L 50 28 L 40 22 Q 28 18 24 30 L 20 62 Q 8 62 4 72 Z
+  cut rect 21 50 58 7
+
+T4_STALKER                      # a hooded head with glaring eyes
+  symbol
+  poly 14 14 20 -6 46 10
+  poly 80 38 99 50 80 62
+  cut poly 30 40 44 46 32 50
+  cut poly 64 40 50 46 62 50
+
+T4_DRIFTER                      # three claw marks
+  path M 24 2 Q 34 50 4 98 Q 50 54 34 2 Z
+  path M 54 2 Q 64 50 34 98 Q 80 54 64 2 Z
+  path M 84 2 Q 94 50 64 98 Q 110 54 94 2 Z
+
+T4_BEAST_MASTER                 # a coiled whip
+  rect 6 70 12 28 4
+  stroke 8 path M 12 70 Q 14 30 50 24 Q 88 22 88 50 Q 86 76 58 74 Q 36 72 40 52 Q 44 40 60 44
+
+T4_SHAPE_SHIFTER                # half human, half wolf
+  path M 50 8 Q 14 8 14 52 Q 16 92 50 96 Z
+  circle 14 50 9
+  poly 50 96 50 8 64 10 84 -2 82 30 96 56 66 96
+  cut line 50 6 50 98 3
+  cut circle 34 46 6
+  cut poly 60 42 76 38 70 50
+
+T4_COMMUNICATOR                 # a speech bubble with a paw
+  rect 4 6 92 66 24
+  poly 20 64 12 98 46 70
+  cut ellipse 50 46 11 9
+  cut circle 36 30 5
+  cut circle 50 24 5
+  cut circle 64 30 5
+
+T4_SWEEPER                      # a broom
+  line 80 4 46 56 8
+  path M 40 50 L 58 62 L 46 98 L 4 74 Z
+  cut line 34 62 20 84 3
+  cut line 44 68 34 92 3
+
+T4_WEBWEAVER                    # a spider web
+  line 50 50 50 2 5
+  line 50 50 50 98 5
+  line 50 50 2 50 5
+  line 50 50 98 50 5
+  line 50 50 16 16 5
+  line 50 50 84 16 5
+  line 50 50 16 84 5
+  line 50 50 84 84 5
+  stroke 5 poly 50 32 62.7 37.3 68 50 62.7 62.7 50 68 37.3 62.7 32 50 37.3 37.3
+  stroke 5 poly 50 14 75.5 24.5 86 50 75.5 75.5 50 86 24.5 75.5 14 50 24.5 24.5
+
+T4_BIG_RED_BUTTON_GUY           # a big button
+  path M 22 60 Q 22 22 50 22 Q 78 22 78 60 Z
+  rect 4 56 92 18 6
+  rect 10 72 80 24 4
+  cut path M 34 46 Q 38 34 48 32
+
+T4_ANALYST                      # a clipboard
+  rect 14 12 72 86 6
+  rect 34 4 32 14 4
+  cut rect 24 26 52 62 3
+  stroke 8 path M 32 56 L 44 68 L 68 40
+
+T4_TRIBESMAN                    # a tribal mask
+  path M 50 2 Q 86 6 84 42 Q 82 76 50 98 Q 18 76 16 42 Q 14 6 50 2 Z
+  cut poly 26 36 44 40 28 48
+  cut poly 74 36 56 40 72 48
+  cut rect 38 66 24 6 3
+  cut line 50 10 50 26 5
+
+T4_HIKER                        # a hiking boot
+  path M 24 4 L 56 4 L 58 52 Q 90 54 96 74 L 96 86 L 18 86 Z
+  rect 14 84 84 12 3
+  cut rect 30 18 20 4
+  cut rect 30 30 20 4
+
+T4_STOIC                        # Sisyphus pushing his boulder uphill
+  poly 0 100 0 94 100 74 100 100
+  circle 68 52 24
+  line 18 92 24 72 8
+  line 12 94 18 80 7
+  line 24 72 34 54 11
+  circle 30 44 7.5
+  line 34 56 46 52 7
+
+T4_SCAVENGER                    # a sack of salvage
+  path M 16 96 Q 8 52 34 36 L 66 36 Q 92 52 84 96 Z
+  rect 36 26 28 12 4
+  poly 82.2 12 86.4 14.1 85.6 17.7 80.9 17.6 79.4 19.9 81.3 24.2 78.3 26.3 74.8 23.3 72.1 24.1 70.8 28.5 67.1 28.3 66.4 23.7 63.9 22.6 60 25.2 57.3 22.7 59.7 18.6 58.5 16.2 53.8 15.7 53.4 12 57.9 10.5 58.5 7.8 55.3 4.4 57.3 1.3 61.7 3 63.9 1.4 63.6 -3.3 67.1 -4.3 69.4 -0.2 72.1 -0.1 74.9 -3.8 78.3 -2.3 77.4 2.2 79.4 4.1 83.9 3 85.6 6.3 82 9.3
+  line 30 30 18 4 8
+
+T4_PRIMAL                       # a cave-painting handprint
+  path M 24 98 L 22 60 Q 16 48 8 38 Q 4 30 12 30 Q 20 32 28 44 L 28 14 Q 28 6 34 6 Q 40 6 40 14 L 42 38 L 44 6 Q 44 0 50 0 Q 56 0 56 6 L 58 38 L 62 10 Q 62 4 68 4 Q 74 4 74 10 L 72 42 L 78 22 Q 80 16 86 18 Q 92 20 90 28 L 82 64 L 80 98 Z
+
+T4_SHERIFF                      # a sheriff's star badge
+  poly 50 4 62 31.2 91.6 28 74 52 91.6 76 62 72.8 50 100 38 72.8 8.4 76 26 52 8.4 28 38 31.2
+  circle 50 52 22
+  circle 50 6 6
+  circle 89.8 29 6
+  circle 89.8 75 6
+  circle 50 98 6
+  circle 10.2 75 6
+  circle 10.2 29 6
+  cut stroke 4 circle 50 52 14
+
+T4_DESPERADO                    # a wanted poster
+  rect 12 4 76 92 4
+  cut circle 50 42 18
+  circle 50 46 12
+  cut rect 24 68 52 6
+  cut rect 30 80 40 5
+  cut rect 24 14 52 6
+
+T4_GUNGHO_GARRY                 # a pistol with a speed trail
+  rect 34 22 64 16 3
+  poly 37 34 60 34 56 78 34 78
+  stroke 5 circle 60 46 7
+  line 4 26 34 26 6
+  line 12 40 34 40 6
+  line 2 54 34 54 6
+
+T4_COMMANDER                    # the helmet with rank chevrons
+  path M 8 70 Q 10 12 50 10 Q 90 12 92 70 Z
+  rect 0 64 100 14 7
+  cut stroke 6 path M 32 52 L 50 40 L 68 52
+  cut stroke 6 path M 32 36 L 50 24 L 68 36
+
+T4_MACHINE_GUNNER               # an ammo box
+  rect 6 48 88 48 6
+  cut rect 6 62 88 5
+  path M 18 50 L 18 22 Q 25 6 32 22 L 32 50 Z
+  path M 43 50 L 43 22 Q 50 6 57 22 L 57 50 Z
+  path M 68 50 L 68 22 Q 75 6 82 22 L 82 50 Z
+
+T4_COMBAT_MEDIC                 # the helmet with a medic cross
+  path M 8 70 Q 10 12 50 10 Q 90 12 92 70 Z
+  rect 0 64 100 14 7
+  cut rect 44 20 12 38 3
+  cut rect 31 33 38 12 3
+
+T4_RECONNAISSANCE_SNIPER        # binoculars
+  rect 10 30 32 60 12
+  rect 58 30 32 60 12
+  rect 36 40 28 22 4
+  rect 16 14 20 20 4
+  rect 64 14 20 20 4
+  cut circle 26 74 9
+  cut circle 74 74 9
+
+T4_RAILGUNNER                   # the rifle round with a lightning bolt
+  path M 6 32 L 48 32 Q 82 34 100 50 Q 82 66 48 68 L 6 68 Z
+  rect 0 26 10 48 2
+  cut poly 56 30 40 52 52 52 44 70 66 46 54 46 62 30
+
+T4_GHILLIE_SUIT_SNIPER          # a leafy bush with a barrel poking out
+  circle 30 62 26
+  circle 52 44 26
+  circle 70 66 24
+  rect 6 66 86 30 12
+  rect 56 38 44 9 3
+
+T4_FLAMETHROWER_FRANKIE         # a flamethrower nozzle with flame
+  rect 2 54 46 18 4
+  rect 6 70 14 24 3
+  rect 40 50 14 26 3
+  path M 104 60 Q 90.2 61.3 85.2 67.5 Q 92.7 68.8 97.7 73.8 Q 81.4 75.1 68.8 82.6 Q 51.3 88.9 50 72.6 L 50 47.4 Q 51.3 31.1 68.8 37.4 Q 78.9 42.4 82.7 47.4 Q 75.1 48.7 73.9 53.7 Q 90.2 51.2 104 60 Z
+
+T4_ROCKET_LAUNCHER_RANDY        # a rocket launcher tube
+  rect 2 30 80 30 6
+  path M 80 30 L 86 30 Q 100 45 86 60 L 80 60 Z
+  rect 24 58 12 26 3
+  rect 46 58 12 18 3
+  rect 30 18 16 14 3
+
+T4_BUCKSHOT_BARRY_WITH_ANOTHER_SHOTGUN # two shotgun shells
+  rect 10 14 34 70 6
+  rect 56 14 34 70 6
+  rect 4 80 92 16 3
+  cut rect 10 74 34 4
+  cut rect 56 74 34 4
+  cut rect 48 80 4 16
+
+T4_TRIDENT_MASTER               # a trident
+  rect 44 40 12 60 3
+  path M 16 48 L 16 14 L 24 0 L 30 14 L 30 34 L 70 34 L 70 14 L 76 0 L 84 14 L 84 48 Z
+  poly 42 36 50 0 58 36
+
+T4_HARPOONER                    # a barbed harpoon with rope
+  line 50 30 50 98 8
+  poly 50 0 68 30 58 28 58 42 42 42 42 28 32 30
+  stroke 6 path M 54 98 Q 86 92 84 70 Q 82 54 66 62
+
+T4_IMPALER                      # a spearhead dripping blood
+  path M 50 0 Q 84 30 74 62 L 58 74 L 58 100 L 42 100 L 42 74 L 26 62 Q 16 30 50 0 Z
+  path M 72 64 Q 78.4 76.3 82.4 84.5 Q 84.8 94 72 94 Q 59.2 94 61.6 84.5 Q 65.6 76.3 72 64 Z
+
+T4_ARSONIST                     # a Molotov cocktail
+  path M 32 98 L 32 54 Q 32 42 42 38 L 42 22 L 58 22 L 58 38 Q 68 42 68 54 L 68 98 Z
+  cut rect 32 64 36 8
+  rect 40 14 20 10 3
+  path M 54 -8 Q 54.6 -1.9 57.3 0.4 Q 57.9 -3 60.1 -5.2 Q 60.7 2 64 7.6 Q 66.8 15.4 59.6 16 L 48.4 16 Q 41.2 15.4 44 7.6 Q 46.2 3.2 48.4 1.5 Q 49 4.8 51.2 5.4 Q 50.1 -1.9 54 -8 Z
+
+T4_INCISIONIST                  # a grenade
+  ellipse 50 62 32 36
+  rect 38 14 24 16 3
+  stroke 6 circle 76 18 10
+  path M 60 18 L 80 30 L 76 54 L 68 40 Z
+  cut rect 18 56 64 6
+  cut rect 47 26 6 72
+
+T4_ANARCHIST                    # a bundle of dynamite
+  rect 8 30 26 66 5
+  rect 37 30 26 66 5
+  rect 66 30 26 66 5
+  rect 4 56 92 10 3
+  stroke 6 path M 50 30 Q 50 12 66 10
+  poly 74 -2 76.8 5.2 84 8 76.8 10.8 74 18 71.2 10.8 64 8 71.2 5.2
+
+T4_BOWLING_BOB                  # a bowling ball
+  circle 50 50 46
+  cut circle 38 32 7
+  cut circle 56 26 7
+  cut circle 48 48 7
+
+T4_CINDER_BLOCK_CINDY           # a cinder block
+  rect 2 26 96 54 3
+  cut rect 12 36 32 34 2
+  cut rect 56 36 32 34 2
+
+T4_BIGGER_CHUCK                 # an even bigger boulder, cracked twice
+  poly 0 18 36 0 80 2 100 30 100 76 74 100 18 100 0 70
+  cut stroke 6 path M 36 0 L 46 30 L 34 48 L 48 70
+  cut stroke 6 path M 100 50 L 76 56 L 70 76
+
+T4_GLAIVE_THROWER               # a bladed chakram ring
+  poly 50 0 64.5 14.9 85.4 14.6 85.1 35.5 100 50 85.1 64.5 85.4 85.4 64.5 85.1 50 100 35.5 85.1 14.6 85.4 14.9 64.5 0 50 14.9 35.5 14.6 14.6 35.5 14.9
+  cut circle 50 50 24
+
+T4_REELER                       # a fishing hook
+  stroke 11 path M 64 6 L 64 66 Q 64 92 40 92 Q 18 92 18 70
+  poly 10 74 18 56 28 72
+  stroke 7 circle 64 6 6
+
+T4_THE_BUSHRANGER               # a bush hat with a boomerang
+  path M 2 66 Q 50 80 98 66 Q 90 56 78 58 L 72 26 Q 50 14 28 26 L 22 58 Q 10 56 2 66 Z
+  cut stroke 6 path M 30 50 Q 50 36 70 50
+
+T4_HUNTER_OF_GIANTS             # a cracked giant's helmet
+  path M 14 98 L 14 46 Q 14 10 50 10 Q 86 10 86 46 L 86 98 Z
+  path M 14 44 Q 0 30 4 4 Q 16 22 24 30 Z
+  path M 86 44 Q 100 30 96 4 Q 84 22 76 30 Z
+  cut rect 24 52 52 9
+  cut stroke 5 path M 50 10 L 42 26 L 54 36 L 46 50
+
+T4_SLING_SAVANT                 # a flying stone with a trail
+  circle 64 60 30
+  poly 2 18 50 34 42 80
+
+T4_FLAIL_LORD                   # a flail: ball and chain
+  rect 6 66 14 32 4
+  stroke 6 path M 13 66 Q 20 40 46 36
+  circle 66 36 24
+  poly 66 2 74.4 15.7 90 12 86.3 27.6 100 36 86.3 44.4 90 60 74.4 56.3 66 70 57.6 56.3 42 60 45.7 44.4 32 36 45.7 27.6 42 12 57.6 15.7
+
+T4_TRANQUILIZER                 # a sleepy closed eye
+  path M 2 36 Q 50 96 98 36 Q 50 66 2 36 Z
+  line 20 56 10 74 7
+  line 50 66 50 88 7
+  line 80 56 90 74 7
+
+T4_WITCH_DOCTOR                 # a tall tribal mask
+  path M 50 0 Q 80 8 78 48 Q 76 82 50 100 Q 24 82 22 48 Q 20 8 50 0 Z
+  cut ellipse 38 38 8 5
+  cut ellipse 62 38 8 5
+  cut rect 38 70 24 10 3
+  poly 22 30 2 22 22 44
+  poly 78 30 98 22 78 44
+
+T4_BLOWGUN_SNIPER               # a blowpipe with a scope
+  rect 2 44 96 12 4
+  rect 30 26 34 12 4
+  rect 40 36 8 10
+  rect 2 40 12 20 3
+
+T4_BOLA_MASTER                  # a spinning two-ball bola
+  circle 18 22 16
+  circle 82 78 16
+  stroke 7 path M 18 22 Q 70 20 50 50 Q 30 80 82 78
+  circle 50 50 8
+
+T4_GOO_GUNNER                   # a goo gun
+  path M 4 30 L 64 30 Q 80 30 80 46 Q 80 62 64 62 L 4 62 Z
+  rect 10 56 18 34 4
+  circle 86 46 12
+  path M 86 60 Q 91.1 69.8 94.3 76.4 Q 96.2 84 86 84 Q 75.8 84 77.7 76.4 Q 80.9 69.8 86 60 Z
+
+T4_ICE_MONKEY                   # a monkey face with snowflakes
+  circle 50 48 34
+  circle 12 48 13
+  circle 88 48 13
+  cut path M 26 50 Q 26 30 42 32 Q 50 36 58 32 Q 74 30 74 50 Q 74 74 50 76 Q 26 74 26 50 Z
+  circle 42 46 5
+  circle 58 46 5
+  rect 40 60 20 4 2
+  line 15 9 15 31 3.5
+  line 5.5 14.5 24.5 25.5 3.5
+  line 5.5 25.5 24.5 14.5 3.5
+  line 85 9 85 31 3.5
+  line 75.5 14.5 94.5 25.5 3.5
+  line 75.5 25.5 94.5 14.5 3.5
+
+T4_JOKER                        # a joker playing card
+  rect 14 4 72 92 8
+  cut rect 22 12 56 76 4
+  path M 30 72 L 30 44 L 22 26 L 40 38 L 50 20 L 60 38 L 78 26 L 70 44 L 70 72 Z
+
+T4_ILLUSIONIST                  # a magic wand with a sparkle
+  line 10 94 64 40 9
+  cut line 18 86 26 78 10
+  line 18 86 26 78 4
+  poly 74 2 80.4 21.6 100 28 80.4 34.4 74 54 67.6 34.4 48 28 67.6 21.6
+
+T4_NINJA                        # a shuriken
+  poly 85.4 14.6 66 50 85.4 85.4 50 66 14.6 85.4 34 50 14.6 14.6 50 34
+  cut circle 50 50 8
+
+
+# ================================ LIGHT MELEE: Tier 4 ================================
+
+T4_GOBLIN_CHIEFTAIN             # a goblin head with a crown
+  wire poly 32.8 27.8 67.2 27.8 72.4 43.2 91.3 32.9 77.5 58.7 68.9 88 31.1 88 22.5 58.7 8.7 32.9 27.6 43.2
+  wire poly 32 26 32 4 42 14 50 2 58 14 68 4 68 26
+
+T4_HOBGOBLIN                    # a bigger goblin with horns
+  wire poly 30 16 70 16 76 34 98 22 82 52 72 86 28 86 18 52 2 22 24 34
+  path M 34 18 Q 24 8 28 -4 Q 36 6 42 14 Z
+  path M 66 18 Q 76 8 72 -4 Q 64 6 58 14 Z
+  poly 38 64 44 64 41 74
+  poly 56 64 62 64 59 74
+
+T4_GOBLIN_SHAMAN                # a goblin with a bone headdress
+  wire poly 32.8 27.8 67.2 27.8 72.4 43.2 91.3 32.9 77.5 58.7 68.9 88 31.1 88 22.5 58.7 8.7 32.9 27.6 43.2
+  line 50 26 50 0 7
+  line 38 26 28 4 7
+  line 62 26 72 4 7
+  circle 50 0 5
+  circle 28 4 5
+  circle 72 4 5
+
+T4_HEISTER                      # a money bag with a dollar sign
+  wire path M 18 96 Q 8 56 36 38 L 64 38 Q 92 56 82 96 Z
+  wire poly 34 30 40 16 60 16 66 30
+  stroke 7 path M 60 56 Q 50 48 42 54 Q 36 62 50 66 Q 64 70 58 80 Q 50 86 40 78
+  line 50 46 50 90 5
+
+T4_CAT_BURGLAR                  # a cat in a burglar's mask
+  wire path M 14 90 L 14 30 L 10 4 L 34 22 L 66 22 L 90 4 L 86 30 L 86 90 Z
+  path M 14 44 Q 50 34 86 44 L 86 58 Q 50 50 14 58 Z
+
+T4_ARCHAEOLOGIST                # an amphora
+  wire path M 38 10 L 62 10 L 60 26 Q 86 38 82 64 Q 78 90 50 96 Q 22 90 18 64 Q 14 38 40 26 Z
+  stroke 8 path M 40 22 Q 22 22 24 40
+  stroke 8 path M 60 22 Q 78 22 76 40
+
+T4_DRUG_DEALER                  # a pill capsule
+  wire poly 63.8 61.6 59.8 66.1 55.7 70.3 51.4 74.2 47.2 77.6 42.9 80.6 38.8 83.1 34.9 85 31.3 86.3 28 87 25 87 22.5 86.4 20.4 85.2 18.9 83.4 17.9 81 17.4 78.1 17.5 74.7 18.1 70.9 19.3 66.7 21.1 62.3 23.3 57.6 25.9 52.8 29 47.9 32.5 43.1 36.2 38.4 40.2 33.9 44.3 29.7 48.6 25.8 52.8 22.4 57.1 19.4 61.2 16.9 65.1 15 68.7 13.7 72 13 75 13 77.5 13.6 79.6 14.8 81.1 16.6 82.1 19 82.6 21.9 82.5 25.3 81.9 29.1 80.7 33.3 78.9 37.7 76.7 42.4 74.1 47.2 71 52.1 67.5 56.9
+  line 36 38 64 62 8
+
+T4_KINGPIN                      # a throne
+  wire path M 26 60 L 26 18 L 50 2 L 74 18 L 74 60
+  rect 10 56 80 14 3
+  line 22 66 22 98 11
+  line 78 66 78 98 11
+  line 10 40 10 64 10
+  line 90 40 90 64 10
+
+T4_PSYCHO                       # a wide manic grin
+  wire circle 50 50 42
+  circle 36 38 7
+  circle 64 38 5
+  path M 22 56 Q 50 86 78 56 Q 50 70 22 56 Z
+
+T4_REBEL                        # a raised fist
+  wire path M 22 98 L 22 56 Q 14 44 18 30 L 20 18 Q 22 10 30 12 L 30 8 Q 32 2 40 4 L 44 6 Q 48 0 56 4 L 60 8 Q 66 4 72 10 Q 82 12 80 26 L 78 56 L 78 98 Z
+  line 30 30 72 30 6
+
+T4_RIOTER                       # a pitchfork
+  line 50 30 50 100 10
+  stroke 9 path M 22 4 L 22 22 Q 22 32 50 32 Q 78 32 78 22 L 78 4
+  line 50 4 50 32 9
+
+T4_LONE_WOLF                    # a howling wolf
+  wire path M 24 98 L 28 60 Q 20 50 22 38 L 30 30 L 32 8 L 44 24 L 62 22 L 92 6 L 74 32 Q 66 44 66 60 L 72 98 Z
+  line 46 34 54 32 5
+
+T4_BEACON                       # a lighthouse
+  wire poly 30 96 38 40 62 40 70 96
+  wire rect 34 22 32 18 3
+  poly 30 22 50 4 70 22
+  line 38 66 62 66 7
+
+T4_TREASURE_HUNTER              # a map with an X
+  wire poly 8 16 36 8 64 16 92 8 92 84 64 92 36 84 8 92
+  line 50 38 72 60 9
+  line 72 38 50 60 9
+  line 20 72 40 52 5
+
+T4_CARTOGRAPHER                 # a drafting compass
+  line 50 16 20 96 10
+  line 50 16 80 96 10
+  wire circle 50 12 9
+  stroke 7 path M 30 70 Q 50 80 70 70
+
+T4_ATHLETE                      # a medal on a ribbon
+  poly 26 2 42 2 56 42 44 46
+  poly 74 2 58 2 44 42 56 46
+  wire circle 50 66 26
+  poly 50 54 52.9 62 61.4 62.3 54.8 67.5 57.1 75.7 50 71 42.9 75.7 45.2 67.5 38.6 62.3 47.1 62
+
+T4_MESSENGER                    # a sealed letter
+  wire rect 6 20 88 60 4
+  stroke 8 path M 6 20 L 50 54 L 94 20
+  circle 50 54 11
+
+T4_STRIDEWALKER                 # a winged boot
+  wire path M 30 10 L 56 10 L 58 56 Q 90 58 94 76 L 94 90 L 24 90 Z
+  path M 30 30 Q 10 26 2 8 Q 14 14 30 18 Z
+  path M 30 42 Q 8 42 0 28 Q 14 32 30 34 Z
+
+T4_SPY                          # dark glasses
+  path M 4 34 L 96 34 L 94 42 L 86 42 Q 84 70 64 68 Q 52 66 50 46 Q 48 66 36 68 Q 16 70 14 42 L 6 42 Z
+  line 2 36 2 50 6
+  line 98 36 98 50 6
+
+T4_SHADOW                       # the banner turns to shadow
+  poly 16 30 84 30 84 88 16 88
+  line 22 30 22 2 11
+  poly 22 -4 62 -4 52 8 62 20 22 20
+
+T4_ELITE_SCOUT                  # the banner with a star
+  wire poly 16 30 84 30 84 88 16 88
+  line 22 30 22 2 11
+  poly 22 -4 62 -4 52 8 62 20 22 20
+  poly 50 41 54.1 53.3 67.1 53.4 56.7 61.2 60.6 73.6 50 66 39.4 73.6 43.3 61.2 32.9 53.4 45.9 53.3
+
+T4_OBSERVER                     # a watching eye
+  wire path M 2 50 Q 50 2 98 50 Q 50 98 2 50 Z
+  circle 50 50 16
+
+T4_SEER                         # a crystal ball
+  wire circle 50 42 36
+  path M 22 80 L 78 80 L 70 96 L 30 96 Z
+  stroke 6 path M 34 30 Q 38 18 50 16
+
+T4_PANOPTICON                   # a security dome camera
+  wire path M 10 30 L 90 30 Q 90 82 50 86 Q 10 82 10 30 Z
+  rect 4 16 92 14 4
+  circle 50 58 12
+
+T4_SHADOWJUMPER                 # a doorway into darkness
+  wire path M 14 98 L 14 40 Q 14 4 50 4 Q 86 4 86 40 L 86 98
+  path M 26 98 L 26 42 Q 26 16 50 16 Q 74 16 74 42 L 74 98 Z
+
+T4_HAUNTER                      # a hood trailing a ghostly tail
+  wire path M 50 4 Q 82 22 84 56 Q 76 66 67 56 Q 58 66 50 56 Q 42 66 33 56 Q 24 66 16 56 Q 18 22 50 4 Z
+  poly 30 30 44 36 32 40
+  poly 70 30 56 36 68 40
+
+T4_MALIGNANCE                   # a black splat
+  path M 50 8 Q 62 10 64 26 Q 82 14 88 28 Q 94 42 78 48 Q 98 58 90 72 Q 82 84 66 74 Q 64 96 50 94 Q 34 96 34 74 Q 18 84 10 72 Q 2 58 22 48 Q 6 42 12 28 Q 18 14 36 26 Q 38 10 50 8 Z
+
+T4_SNAKE_KIN                    # a cobra with its hood spread
+  wire path M 50 6 Q 84 16 82 46 Q 78 64 58 70 L 58 98 L 42 98 L 42 70 Q 22 64 18 46 Q 16 16 50 6 Z
+  circle 42 30 4
+  circle 58 30 4
+
+T4_BLIGHTER                     # a wilted flower
+  stroke 9 path M 40 98 L 40 50 Q 40 26 64 24
+  wire path M 62 18 Q 84 14 88 34 Q 86 56 70 52 Q 60 40 62 18 Z
+  path M 40 72 Q 20 70 14 56 Q 30 56 40 64 Z
+
+T4_ENVENOMER                    # a dagger dripping poison
+  wire poly 42 60 42 14 50 2 58 14 58 60
+  line 24 64 76 64 10
+  line 50 70 50 92 10
+  path M 74 70 Q 79.5 80.6 83 87.7 Q 85 96 74 96 Q 63 96 65 87.7 Q 68.5 80.6 74 70 Z
+
+T4_JUDGE                        # the scales of justice
+  line 50 10 50 92 9
+  line 14 22 86 22 9
+  rect 30 88 40 10 3
+  wire path M 4 56 L 32 56 Q 30 70 18 70 Q 6 70 4 56 Z
+  wire path M 68 56 L 96 56 Q 94 70 82 70 Q 70 70 68 56 Z
+  line 18 22 8 54 4
+  line 18 22 28 54 4
+  line 82 22 72 54 4
+  line 82 22 92 54 4
+
+T4_DISINTEGRATOR                # a skull breaking apart
+  wire path M 22 88 L 22 70 Q 6 60 8 40 Q 12 8 50 8 Q 88 8 92 40 Q 94 60 78 70 L 78 88 Z
+  circle 36 44 9
+  circle 64 44 9
+  stroke 6 path M 50 8 L 44 26 L 56 40 L 50 60
+
+T4_OBLIVION                     # a swirling void
+  circle 50 50 18
+  stroke 10 path M 50 32 Q 80 30 82 56 Q 80 84 52 86
+  stroke 10 path M 50 68 Q 20 70 18 44 Q 20 16 48 14
+
+T4_EXCOMMUNICATED_CONTRACT_KILLER # a contract sealed with a dagger
+  wire path M 14 10 L 74 10 L 74 90 L 14 90 Z
+  line 24 30 60 30 6
+  line 24 46 60 46 6
+  line 52 96 96 52 8
+  poly 92 56 100 40 84 48
+  line 70 78 82 90 9
+
+T4_GRANDMASTER_ASSASSIN         # a hood with a crown
+  wire poly 50 17.4 81 41.5 79.2 67.3 50 94.8 20.8 67.3 19 41.5
+  poly 30 22 30 2 40 12 50 0 60 12 70 2 70 22
+
+T4_MARKSMAN                     # the crowned point with a crosshair
+  wire poly 16 26 30 6 40 20 50 2 60 20 70 6 84 26 84 60 50 94 16 60
+  line 50 36 50 72 7
+  line 32 54 68 54 7
+
+T4_PUNCHER                      # a glove landing a punch
+  wire path M 10 92 L 10 64 Q 0 56 2 40 Q 6 18 32 18 Q 58 18 58 46 Q 58 62 48 68 L 48 92 Z
+  poly 80 16 83.5 28.8 95.6 23.5 87.8 34.2 99.5 40.5 86.3 41 88.7 54 80 44 71.3 54 73.7 41 60.5 40.5 72.2 34.2 64.4 23.5 76.5 28.8
+
+T4_BOXER                        # a pair of boxing gloves
+  wire path M 6 96 L 6 72 Q -2 64 0 50 Q 4 30 24 30 Q 44 30 44 54 Q 44 68 36 74 L 36 96 Z
+  wire path M 56 86 L 56 62 Q 48 54 50 40 Q 54 20 74 20 Q 94 20 94 44 Q 94 58 86 64 L 86 86 Z
+  stroke 6 path M 22 30 Q 40 4 70 20
+
+T4_IRON_FIST                    # a fist glowing with power
+  wire path M 22 46 Q 22 30 36 30 L 64 30 Q 78 30 78 46 L 78 70 Q 78 86 60 86 L 40 86 Q 22 86 22 70 Z
+  stroke 4 poly 50 0 60.4 11.4 75 6.7 78.3 21.7 93.3 25 88.6 39.6 100 50 88.6 60.4 93.3 75 78.3 78.3 75 93.3 60.4 88.6 50 100 39.6 88.6 25 93.3 21.7 78.3 6.7 75 11.4 60.4 0 50 11.4 39.6 6.7 25 21.7 21.7 25 6.7 39.6 11.4
+
+T4_WRESTLER                     # a wrestling ring
+  wire poly 6 30 94 30 94 94 6 94
+  line 6 50 94 50 6
+  line 6 70 94 70 6
+  line 6 30 6 94 11
+  line 94 30 94 94 11
+
+T4_BOUNCER                      # a guarded door
+  wire rect 22 6 56 90 4
+  circle 66 54 6
+  line 4 98 96 98 8
+
+T4_JUDOKA                       # a judoka's gi and belt
+  wire path M 4 40 L 30 12 L 50 34 L 70 12 L 96 40 L 84 54 L 76 46 L 76 96 L 24 96 L 24 46 L 16 54 Z
+  line 32 16 62 64 7
+  line 18 66 82 66 11
+  poly 44 66 34 94 46 94 52 68
+  poly 56 66 66 94 54 94 50 68
+
+T4_KANGAROO                     # a kangaroo in a boxing glove
+  wire path M 66 4 L 74 22 Q 84 26 80 36 L 70 40 Q 74 60 66 72 L 84 92 L 56 92 Q 36 92 30 74 Q 18 80 4 96 Q 14 70 30 62 Q 40 40 56 36 Z
+  circle 86 52 13
+
+T4_NUT_KICKER                   # a cracked walnut
+  wire ellipse 50 52 36 42
+  stroke 7 path M 50 10 L 44 30 L 56 46 L 46 66 L 52 94
+
+T4_MMA_FIGHTER                  # an octagon cage
+  wire poly 67.6 7.5 92.5 32.4 92.5 67.6 67.6 92.5 32.4 92.5 7.5 67.6 7.5 32.4 32.4 7.5
+  wire poly 58.4 29.7 70.3 41.6 70.3 58.4 58.4 70.3 41.6 70.3 29.7 58.4 29.7 41.6 41.6 29.7
+
+T4_DAOIST                       # a gourd
+  wire path M 50 18 Q 66 18 66 34 Q 66 42 60 46 Q 88 56 86 76 Q 82 98 50 98 Q 18 98 14 76 Q 12 56 40 46 Q 34 42 34 34 Q 34 18 50 18 Z
+  rect 44 4 12 16 3
+  line 32 46 68 46 6
+
+T4_SENSEI                       # a bonsai tree
+  wire path M 22 80 L 78 80 L 70 98 L 30 98 Z
+  stroke 9 path M 46 80 Q 40 60 54 52 Q 66 44 56 30
+  wire ellipse 30 40 18 10
+  wire ellipse 66 22 20 11
+
+T4_MONK                         # a temple bell
+  wire path M 50 10 Q 76 10 76 42 L 80 82 L 20 82 L 24 42 Q 24 10 50 10 Z
+  rect 44 0 12 12 3
+  circle 50 92 7
+
+T4_BLOODLETTER                  # a foil with a drop of blood
+  line 30 70 94 6 5
+  stroke 11 path M 12 54 Q 26 40 46 52
+  line 26 74 10 90 11
+  path M 86 30 Q 91.5 40.6 95 47.7 Q 97 56 86 56 Q 75 56 77 47.7 Q 80.5 40.6 86 30 Z
+
+T4_SKIRMISHER                   # two crossed foils
+  line 20 74 90 6 5
+  line 80 74 10 6 5
+  stroke 11 path M 6 58 Q 18 46 34 56
+  stroke 11 path M 94 58 Q 82 46 66 56
+  line 18 76 6 90 11
+  line 82 76 94 90 11
+
+T4_SKYPIERCER                   # a foil piercing a cloud
+  line 30 70 94 6 5
+  stroke 11 path M 12 54 Q 26 40 46 52
+  line 26 74 10 90 11
+  wire path M 54 40 Q 50 22 66 20 Q 70 8 84 12 Q 98 12 96 28 Q 100 42 86 42 Z
+
+T4_DERVISH                      # twin scimitars in a spin
+  wire path M 14 86 Q 6 40 50 10 Q 40 44 26 86 Z
+  wire path M 86 14 Q 94 60 50 90 Q 60 56 74 14 Z
+
+T4_BLADE_DEMON                  # a horned demon head
+  wire path M 50 98 Q 20 84 18 54 Q 20 30 50 28 Q 80 30 82 54 Q 80 84 50 98 Z
+  path M 26 40 Q 8 26 12 2 Q 22 22 38 32 Z
+  path M 74 40 Q 92 26 88 2 Q 78 22 62 32 Z
+  poly 30 54 46 60 32 64
+  poly 70 54 54 60 68 64
+
+T4_SONG_OF_STEEL                # a music note made of blades
+  wire poly 62 76 62 14 70 2 78 14 78 76
+  wire path M 78 16 Q 98 26 94 50 Q 88 36 78 34 Z
+  line 52 76 88 76 9
+  wire ellipse 48 84 15 11
+
+T4_PIRATE_CAPTAIN               # a tricorn hat with a skull
+  wire path M 4 40 Q 50 64 96 40 Q 90 76 50 84 Q 10 76 4 40 Z
+  wire path M 22 50 Q 22 16 50 16 Q 78 16 78 50
+  circle 50 40 9
+  line 42 54 58 54 5
+
+T4_QUARTERMASTER                # an anchor
+  line 50 18 50 92 10
+  wire circle 50 12 9
+  line 30 30 70 30 9
+  stroke 10 path M 10 62 Q 14 92 50 92 Q 86 92 90 62
+  poly 2 66 10 50 20 66
+  poly 80 66 90 50 98 66
+
+T4_THE_DAMNED                   # a skull in a pirate bandana
+  wire path M 22 88 L 22 70 Q 6 60 8 40 Q 12 8 50 8 Q 88 8 92 40 Q 94 60 78 70 L 78 88 Z
+  path M 8 36 Q 50 0 92 36 L 92 28 Q 50 -8 8 28 Z
+  circle 36 48 9
+  circle 64 48 9
+  poly 92 30 100 40 96 50
+
+T4_GRANDMASTER_SWORDSMAN        # the longsword with a crown
+  wire poly 42 70 42 30 50 18 58 30 58 70
+  line 18 76 82 76 11
+  line 50 82 50 98 11
+  poly 30 16 30 0 40 8 50 -2 60 8 70 0 70 16
+
+T4_JEDI                         # a light sword
+  wire rect 40 4 20 62 10
+  rect 38 66 24 30 3
+  line 30 70 70 70 8
+
+T4_KENSAI                       # a katana
+  wire path M 22 76 Q 50 30 92 6 Q 66 44 30 82 Z
+  wire ellipse 24 78 12 6
+  line 22 80 6 96 11
+
+
+# ================================ HEAVY MELEE: Tier 4 ================================
+
+T4_APE                          # a gorilla face
+  path M 50 4 Q 86 6 88 40 Q 90 70 72 86 Q 60 96 50 96 Q 40 96 28 86 Q 10 70 12 40 Q 14 6 50 4 Z
+  cut path M 22 40 Q 22 28 36 30 L 64 30 Q 78 28 78 40 Q 74 50 64 48 L 36 48 Q 26 50 22 40 Z
+  cut path M 32 64 Q 50 54 68 64 Q 70 84 50 86 Q 30 84 32 64 Z
+  circle 44 70 3
+  circle 56 70 3
+
+T4_DINOSAUR_TAMER               # a T-rex head
+  path M 8 30 Q 20 8 56 8 Q 88 10 96 30 L 96 56 Q 80 56 70 62 L 70 70 L 46 70 L 30 92 L 10 92 L 14 62 Q 6 50 8 30 Z
+  cut circle 60 24 6
+  cut poly 70 56 96 56 96 50 70 50
+
+T4_THE_PRIMAL_HUNTER            # a stone-tipped spear
+  line 26 98 64 26 9
+  poly 60 2 84 18 70 46 50 34
+
+T4_OGRE_BRAWLER                 # a spiked club
+  poly 30 98 42 98 60 50 46 46
+  path M 40 50 Q 26 26 40 10 Q 56 0 72 12 Q 86 30 64 54 Z
+  poly 36 20 22 14 34 32
+  poly 62 4 66 -6 70 8
+  poly 80 22 94 20 82 34
+  poly 70 50 82 60 66 58
+
+T4_OGRE_CHIEFTAIN               # the ogre head with a crown
+  poly 21.4 33.8 41.6 30.4 56.7 35.4 80.2 32.1 83.6 55.6 78.6 74.1 83.6 95.9 58.4 94.2 38.2 97.6 18.1 94.2 21.4 74.1 16.4 53.9
+  ellipse 13 60.6 8.4 13.4
+  ellipse 87 60.6 8.4 13.4
+  poly 26 26 26 2 38 12 50 -2 62 12 74 2 74 26
+  cut rect 20 26 60 4
+
+T4_SMALL_OGRE                   # an ogre in a tiny hat
+  poly 16 14 40 10 58 16 86 12 90 40 84 62 90 88 60 86 36 90 12 86 16 62 10 38
+  ellipse 6 46 10 16
+  ellipse 94 46 10 16
+  rect 40 0 20 14 2
+  rect 34 12 32 5 2
+
+T4_THRUSTLORD                   # the knobbed stick thrusting forward
+  line 4 50 76 50 18
+  circle 80 50 15
+  line 90 26 100 20 6
+  line 92 74 100 80 6
+  line 96 50 100 50 6
+
+T4_SWINGLORD                    # the stick swinging in an arc
+  line 20 92 64 34 16
+  circle 68 28 13
+  stroke 7 path M 30 20 Q 60 -4 92 22
+  poly 86 10 100 30 82 32
+
+T4_SWIPELORD                    # a low sweeping swipe
+  line 6 70 80 70 16
+  circle 84 70 13
+  stroke 7 path M 10 40 Q 50 20 92 42
+  poly 86 30 100 48 82 52
+
+T4_GIANT_KIN                    # a giant footprint
+  ellipse 50 60 26 36
+  circle 26 16 8
+  circle 42 10 8
+  circle 58 10 8
+  circle 74 16 8
+  rect 24 16 52 30 10
+
+T4_HERACLES                     # a broken Greek column
+  rect 14 82 72 16 3
+  rect 20 74 60 10 2
+  poly 26 74 74 74 74 22 60 14 48 24 36 8 26 18
+  cut line 38 74 38 26 4
+  cut line 50 74 50 30 4
+  cut line 62 74 62 22 4
+
+T4_THRAXX                       # a huge horned skull
+  path M 26 96 L 26 78 Q 10 68 12 48 Q 14 18 50 18 Q 86 18 88 48 Q 90 68 74 78 L 74 96 Z
+  path M 18 36 Q -2 26 2 0 Q 12 22 30 26 Z
+  path M 82 36 Q 102 26 98 0 Q 88 22 70 26 Z
+  cut circle 36 52 10
+  cut circle 64 52 10
+  cut poly 50 62 44 74 56 74
+
+T4_AURABLADE_KNIGHT             # a glowing sword
+  poly 42 66 42 14 50 2 58 14 58 66
+  rect 18 64 64 12 4
+  rect 44 74 12 18 2
+  circle 50 95 5
+  stroke 4 poly 34 70 34 12 50 -6 66 12 66 70
+
+T4_LORD                         # the chess knight with a crown
+  path M 24.8 95.1 L 77.2 95.1 L 72.3 83.6 L 67.4 83.6 Q 64.1 65.6 75.6 55.7 Q 82.2 42.6 65.8 27.8 L 55.9 19.6 L 51 29.5 Q 28 36 21.5 55.7 L 31.3 63.9 L 46.1 57.4 Q 42.8 72.1 34.6 83.6 L 29.7 83.6 Z
+  cut circle 55.9 39.3 4.1
+  poly 46 22 46 4 54 12 60 0 66 12 74 4 74 22
+
+T4_PRINCE_CHARMING              # a single rose
+  path M 50 6 Q 74 6 72 26 Q 70 44 50 46 Q 30 44 28 26 Q 26 6 50 6 Z
+  cut stroke 4 path M 40 20 Q 50 30 60 18
+  line 50 46 50 98 7
+  path M 50 70 Q 70 60 82 66 Q 70 78 50 74 Z
+
+T4_PHALANX                      # a wall of shields with spears
+  rect 2 46 32 50 4
+  rect 34 46 32 50 4
+  rect 66 46 32 50 4
+  cut line 34 46 34 96 3
+  cut line 66 46 66 96 3
+  line 18 46 18 6 6
+  line 50 46 50 6 6
+  line 82 46 82 6 6
+  poly 12 10 18 -2 24 10
+  poly 44 10 50 -2 56 10
+  poly 76 10 82 -2 88 10
+
+T4_DRAGOON                      # a winged helmet with a spear
+  line 50 0 50 30 7
+  poly 44 6 50 -6 56 6
+  path M 22 90 L 22 50 Q 22 22 50 22 Q 78 22 78 50 L 78 90 Z
+  cut rect 30 52 40 8
+  path M 22 50 Q 2 40 2 16 Q 14 30 24 34 Z
+  path M 78 50 Q 98 40 98 16 Q 86 30 76 34 Z
+
+T4_GLADIATOR                    # a gladiator's helmet
+  path M 16 92 L 16 46 Q 16 14 50 12 Q 84 14 84 46 L 84 92 Z
+  path M 6 48 Q 50 30 94 48 L 94 56 Q 50 40 6 56 Z
+  rect 46 0 8 16 2
+  path M 50 0 Q 80 0 90 20 Q 70 12 52 14 Z
+  cut rect 28 58 44 26 4
+  rect 46 58 8 26
+  rect 28 69 44 5
+
+T4_AUGUR                        # a spiral augur's staff
+  line 50 98 50 40 10
+  stroke 10 path M 50 42 Q 50 6 72 8 Q 90 12 86 30 Q 80 42 68 34
+
+T4_TACTICIAN                    # a chess pawn
+  circle 50 20 16
+  path M 38 34 L 62 34 L 58 50 Q 70 62 72 82 L 28 82 Q 30 62 42 50 Z
+  rect 18 80 64 16 4
+
+T4_LEADER                       # a star badge
+  circle 50 50 46
+  cut poly 50 18 58.2 40.7 82.3 41.5 63.3 56.3 70 79.5 50 66 30 79.5 36.7 56.3 17.7 41.5 41.8 40.7
+
+T4_WELL_OF_HOPE                 # a banner with a heart
+  rect 8 0 10 100 3
+  poly 18 6 92 6 92 74 55 60 18 74
+  cut path M 55 28.5 C 55 20 38 20 38 30.2 C 38 40.4 55 44.5 55 52.3 C 55 44.5 72 40.4 72 30.2 C 72 20 55 20 55 28.5 Z
+
+T4_WARCALLER                    # a war drum
+  ellipse 50 30 40 14
+  path M 10 30 L 10 76 Q 50 96 90 76 L 90 30 Z
+  cut ellipse 50 30 32 8
+  cut stroke 5 path M 10 40 L 30 80 L 50 40 L 70 80 L 90 40
+  line 70 4 96 22 6
+
+T4_DREAD_HERALD                 # a skull banner
+  rect 8 0 10 100 3
+  poly 18 6 92 6 92 74 55 60 18 74
+  cut circle 55 32 14
+  cut rect 46 40 18 12 3
+  circle 49 32 4
+  circle 61 32 4
+
+T4_STORM_MAIDEN                 # a winged lightning bolt
+  poly 60 0 28 56 48 56 36 100 76 38 54 38 70 0
+  path M 34 36 Q 10 34 2 14 Q 14 22 34 24 Z
+  path M 66 54 Q 90 56 98 76 Q 86 68 66 66 Z
+
+T4_EINHERJAR_VANGUARD           # a Valhalla winged helmet
+  path M 14 80 Q 14 30 50 28 Q 86 30 86 80 Z
+  rect 6 74 88 14 6
+  rect 44 28 12 66 2
+  path M 14 56 Q -4 40 4 10 Q 16 34 24 40 Z
+  path M 86 56 Q 104 40 96 10 Q 84 34 76 40 Z
+
+T4_SHIELD_MAIDEN                # a round shield with a wing
+  circle 56 54 40
+  cut stroke 6 circle 56 54 28
+  circle 56 54 10
+  path M 20 40 Q 0 30 2 4 Q 14 24 26 26 Z
+
+T4_HOLY_KNIGHT                  # a great helm with a cross
+  path M 16 94 L 16 34 Q 16 8 50 8 Q 84 8 84 34 L 84 94 Z
+  cut rect 46 22 8 56
+  cut rect 26 40 48 8
+
+T4_JUSTICAR                     # a sword over the scales
+  line 50 0 50 92 8
+  line 36 14 64 14 8
+  line 12 34 88 34 7
+  path M 4 64 L 30 64 Q 28 78 17 78 Q 6 78 4 64 Z
+  path M 70 64 L 96 64 Q 94 78 83 78 Q 72 78 70 64 Z
+  line 17 34 8 62 4
+  line 17 34 26 62 4
+  line 83 34 74 62 4
+  line 83 34 92 62 4
+  rect 34 90 32 8 3
+
+T4_ZEALOT                       # a cross shield in flames
+  path M 50 0 Q 52.2 24.6 63.4 33.5 Q 65.6 20.1 74.6 11.2 Q 76.8 40.2 90.2 62.5 Q 101.3 93.8 72.3 96 L 27.7 96 Q -1.3 93.8 9.8 62.5 Q 18.7 44.7 27.7 38 Q 29.9 51.3 38.8 53.6 Q 34.4 24.6 50 0 Z
+  cut rect 44 34 12 48 3
+  cut rect 30 46 40 12 3
+
+T4_SPELLBREAKER                 # a broken star
+  poly 50 4 61.8 35.8 95.7 37.2 69 58.2 78.2 90.8 50 72 21.8 90.8 31 58.2 4.3 37.2 38.2 35.8
+  cut stroke 7 path M 50 4 L 42 30 L 56 46 L 46 70 L 52 100
+
+T4_HIEROPHANT                   # a triple cross
+  rect 45 4 10 94 2
+  rect 34 14 32 8 2
+  rect 26 30 48 8 2
+  rect 18 48 64 8 2
+
+T4_DAWNGUARD                    # the flared cross with a sun behind
+  poly 50 0 59.3 15.2 75 6.7 75.5 24.5 93.3 25 84.8 40.7 100 50 84.8 59.3 93.3 75 75.5 75.5 75 93.3 59.3 84.8 50 100 40.7 84.8 25 93.3 24.5 75.5 6.7 75 15.2 59.3 0 50 15.2 40.7 6.7 25 24.5 24.5 25 6.7 40.7 15.2
+  symbol
+  cut poly 40 20 60 20 54 44 80 40 80 60 54 56 60 80 40 80 46 56 20 60 20 40 46 44
+
+T4_OATHBREAKER                  # a broken sword
+  poly 40 94 40 52 60 46 60 94
+  rect 18 46 64 12 4
+  rect 44 56 12 30 2
+  poly 42 40 42 24 62 20 62 32
+  poly 46 16 50 2 62 12
+
+T4_ANGELIC_WARRIOR              # a winged sword with a halo
+  poly 44 92 44 30 50 18 56 30 56 92
+  rect 26 80 48 10 4
+  stroke 6 ellipse 50 8 16 6
+  path M 44 60 Q 14 58 2 28 Q 18 40 44 44 Z
+  path M 56 60 Q 86 58 98 28 Q 82 40 56 44 Z
+
+T4_DEMONIC_WARRIOR              # a horned demon sword
+  poly 44 96 44 34 50 20 56 34 56 96
+  rect 24 82 52 10 4
+  path M 44 40 Q 22 30 26 6 Q 34 26 44 28 Z
+  path M 56 40 Q 78 30 74 6 Q 66 26 56 28 Z
+
+T4_BERSERKER                    # a double-bladed axe
+  rect 44 0 12 100 3
+  path M 44 14 Q 10 6 4 30 Q 2 46 10 62 Q 20 50 44 48 Z
+  path M 56 14 Q 90 6 96 30 Q 98 46 90 62 Q 80 50 56 48 Z
+
+T4_STORM_HERALD                 # the bearded axe with a lightning bolt
+  path M 40 6 L 84 6 Q 98 24 94 58 Q 72 58 62 46 L 56 30 L 40 30 Z
+  rect 32 0 14 100 3
+  cut poly 76 10 60 32 70 32 64 50 84 24 74 24 80 10
+
+T4_RUNE_WARRIOR                 # the bearded axe with a rune
+  path M 40 6 L 84 6 Q 98 24 94 58 Q 72 58 62 46 L 56 30 L 40 30 Z
+  rect 32 0 14 100 3
+  cut line 74 14 74 46 4
+  cut line 74 24 66 16 4
+  cut line 74 24 82 16 4
+
+T4_DWARVEN_WARRIOR              # a double-headed war axe
+  rect 44 6 12 94 3
+  path M 44 10 L 10 2 Q 2 26 10 50 L 44 42 Z
+  path M 56 10 L 90 2 Q 98 26 90 50 L 56 42 Z
+
+T4_DWARVEN_ENGINEER             # a drill
+  rect 6 30 44 40 6
+  rect 14 66 18 30 4
+  poly 50 34 70 38 70 62 50 66
+  poly 70 40 98 50 70 60
+  cut stroke 3 path M 74 44 L 86 56
+
+T4_DWARVEN_BLACKSMITH           # blacksmith's tongs
+  stroke 9 path M 20 98 L 46 40 Q 52 26 70 14 L 90 4
+  stroke 9 path M 40 98 L 50 46 Q 56 30 76 22 L 96 18
+
+T4_ARTISANAL_BLADESMITH         # a sword on the anvil
+  path M 2 26 Q 18 30 30 24 L 96 24 L 96 40 L 72 44 L 66 62 L 82 74 L 82 90 L 18 90 L 18 74 L 34 62 L 30 44 Q 14 40 2 26 Z
+  cut rect 30 24 66 6
+  poly 22 10 82 10 96 17 82 24 22 24
+  rect 10 6 12 22 3
+
+T4_FURNACE_LORD                 # a crowned furnace
+  path M 10 98 L 10 44 Q 10 30 26 30 L 74 30 Q 90 30 90 44 L 90 98 Z
+  cut path M 28 90 L 28 72 Q 50 50 72 72 L 72 90 Z
+  path M 50 60 Q 50.7 67.7 54.2 70.5 Q 54.9 66.3 57.7 63.5 Q 58.4 72.6 62.6 79.5 Q 66 89.3 57 90 L 43 90 Q 34 89.3 37.4 79.5 Q 40.2 74 43 71.9 Q 43.7 76 46.5 76.7 Q 45.1 67.7 50 60 Z
+  poly 22 30 22 6 36 18 50 2 64 18 78 6 78 30
+
+T4_FORGE_MASTER                 # the anvil with a crown
+  path M 2 26 Q 18 30 30 24 L 96 24 L 96 40 L 72 44 L 66 62 L 82 74 L 82 90 L 18 90 L 18 74 L 34 62 L 30 44 Q 14 40 2 26 Z
+  poly 40 22 40 4 50 12 58 0 66 12 76 4 76 22
+
+T4_DESTRUCTOR                   # a wrecking ball
+  line 50 0 50 34 5
+  circle 50 64 32
+  rect 40 28 20 8 3
+
+T4_CRUSHER                      # a hydraulic press
+  rect 6 4 88 12 3
+  rect 44 14 12 24
+  rect 20 36 60 16 3
+  rect 6 84 88 12 3
+  path M 22 84 L 26 64 L 40 72 L 50 62 L 60 72 L 74 64 L 78 84 Z
+  line 10 16 10 84 6
+  line 90 16 90 84 6
+
+T4_OBLITERATOR                  # a shattered hammer
+  poly 10 8 44 8 40 30 48 60 10 60
+  poly 52 6 90 8 90 60 56 60 48 34
+  rect 42 66 16 32 3
+
+T4_THE_IRON_GATE                # a portcullis
+  rect 4 6 92 14 3
+  rect 10 18 12 72
+  rect 30 18 12 72
+  rect 50 18 12 72
+  rect 70 18 12 72
+  rect 4 40 92 10
+  rect 4 66 92 10
+  poly 10 90 22 90 16 98
+  poly 30 90 42 90 36 98
+  poly 50 90 62 90 56 98
+  poly 70 90 82 90 76 98
+
+T4_FORTRESS_LORD                # a castle with a crown
+  rect 8 46 84 50
+  rect 8 34 14 14
+  rect 30 34 14 14
+  rect 56 34 14 14
+  rect 78 34 14 14
+  cut path M 38 96 L 38 76 Q 50 62 62 76 L 62 96 Z
+  poly 30 30 30 6 40 16 50 2 60 16 70 6 70 30
+
+T4_ROOK                         # a chess rook
+  rect 22 4 14 16
+  rect 43 4 14 16
+  rect 64 4 14 16
+  rect 22 18 56 12 2
+  poly 30 30 70 30 66 74 34 74
+  rect 24 72 52 8 2
+  rect 16 82 68 14 4
+
+T4_THE_CASTLE_DOCTRINARIAN      # a rulebook with a shield
+  rect 8 6 84 88 6
+  cut rect 8 78 84 4
+  cut poly 30 20 70 20 70 44 50 64 30 44
+
+T4_HOME_ALONE_KID               # a house-shaped shield
+  poly 50 2 96 40 86 40 86 96 14 96 14 40 4 40
+  cut path M 40 96 L 40 70 L 60 70 L 60 96 Z
+  cut rect 26 48 16 14
+  cut rect 58 48 16 14
+
+T4_KNOCKOFF_WALUIGI             # a tall, lanky shield
+  poly 34 2 66 2 66 80 50 98 34 80
+  cut line 50 10 50 84 4
+
+T4_JUGGERNAUT                   # a massive helmet
+  path M 8 96 L 8 40 Q 8 4 50 4 Q 92 4 92 40 L 92 96 Z
+  cut rect 20 44 60 10
+  cut rect 46 54 8 30
+
+T4_FORTRESS_INCARNATE           # a tower with a face
+  rect 12 26 76 70
+  rect 12 6 18 24
+  rect 41 6 18 24
+  rect 70 6 18 24
+  rect 12 26 76 70
+  cut rect 26 42 14 10
+  cut rect 60 42 14 10
+  cut rect 34 70 32 8
+
+T4_TITAN_SHIELD                 # a huge tower shield
+  path M 6 4 L 94 4 L 94 70 Q 94 92 50 98 Q 6 92 6 70 Z
+  cut stroke 6 path M 18 14 L 82 14 L 82 66 Q 82 84 50 88 Q 18 84 18 66 Z
+  circle 50 50 12
+
+T4_PARRY_LORD                   # a sword and buckler crossed
+  line 10 90 86 14 9
+  line 22 66 42 86 9
+  circle 62 62 30
+  cut stroke 6 circle 62 62 16
+
+T4_GURU                         # a meditating figure
+  circle 50 16 12
+  path M 34 32 L 66 32 L 70 66 L 30 66 Z
+  path M 6 86 Q 6 66 30 64 L 70 64 Q 94 66 94 86 Q 50 96 6 86 Z
+  line 34 38 22 62 8
+  line 66 38 78 62 8
+
+T4_MATADOR                      # a bull's head
+  path M 30 30 Q 30 16 50 16 Q 70 16 70 30 L 66 76 Q 60 96 50 96 Q 40 96 34 76 Z
+  path M 30 30 Q 6 30 2 6 Q 18 18 34 18 Z
+  path M 70 30 Q 94 30 98 6 Q 82 18 66 18 Z
+  cut circle 40 46 5
+  cut circle 60 46 5
+  cut circle 44 80 4
+  cut circle 56 80 4
+
+
+# ================================ SUPPORTER: Tier 4 ================================
+
+T4_SURGEON                      # a surgical mask
+  path M 14 30 Q 50 22 86 30 L 86 64 Q 50 86 14 64 Z
+  stroke 6 path M 14 34 Q 2 34 2 22
+  stroke 6 path M 86 34 Q 98 34 98 22
+  cut rect 20 42 60 4
+  cut rect 22 54 56 4
+
+T4_NURSE                        # a nurse's cap
+  path M 6 70 L 14 30 Q 50 14 86 30 L 94 70 Q 50 60 6 70 Z
+  cut rect 44 30 12 30 3
+  cut rect 35 39 30 12 3
+
+T4_MAD_DOCTOR                   # a syringe with a skull
+  rect 28 26 44 54 4
+  rect 20 20 60 8 3
+  rect 44 4 12 18
+  line 50 80 50 98 4
+  cut circle 50 46 10
+  cut rect 44 54 12 8 2
+  circle 46 46 2.5
+  circle 54 46 2.5
+
+T4_HAZMAT_HANK                  # a gas mask
+  path M 50 6 Q 84 6 86 42 Q 86 70 66 80 L 34 80 Q 14 70 14 42 Q 16 6 50 6 Z
+  cut circle 34 40 11
+  cut circle 66 40 11
+  circle 50 82 14
+  cut circle 50 82 6
+  rect 4 52 14 22 4
+  rect 82 52 14 22 4
+
+T4_PURIFICATOR                  # a sparkling drop
+  path M 50 2 Q 70.4 41.3 83.4 67.5 Q 90.8 98 50 98 Q 9.2 98 16.6 67.5 Q 29.6 41.3 50 2 Z
+  cut poly 50 44 54.2 59.8 70 64 54.2 68.2 50 84 45.8 68.2 30 64 45.8 59.8
+
+T4_JANICE                       # a spray bottle
+  path M 28 38 L 66 38 L 72 96 L 22 96 Z
+  rect 34 22 28 18 3
+  path M 34 22 L 34 10 L 82 10 L 92 20 L 62 22 Z
+  path M 60 22 L 66 36 L 56 36 Z
+  cut rect 30 60 36 14 3
+
+T4_MUTAGENIST                   # a three-eyed face
+  circle 50 52 44
+  cut circle 32 48 8
+  cut circle 68 48 8
+  cut circle 50 28 9
+  cut path M 34 70 Q 50 82 66 70 Q 50 76 34 70 Z
+
+T4_CLONER                       # a figure and its copy
+  circle 32 22 14
+  path M 12 98 L 14 52 Q 16 38 32 38 Q 48 38 50 52 L 52 98 Z
+  stroke 6 circle 70 22 12
+  stroke 6 path M 52 98 L 54 54 Q 56 42 70 42 Q 84 42 86 54 L 88 98
+
+T4_THE_MENAGERIE                # a birdcage
+  path M 50 4 Q 86 10 86 50 L 86 90 L 14 90 L 14 50 Q 14 10 50 4 Z
+  cut rect 22 30 10 56
+  cut rect 45 22 10 64
+  cut rect 68 30 10 56
+  rect 6 88 88 10 4
+  stroke 5 circle 50 4 4
+
+T4_HYPNOTIST                    # a hypnotic spiral
+  stroke 9 path M 50 50 Q 58 50 58 42 Q 56 32 46 32 Q 32 34 32 50 Q 34 70 54 70 Q 76 68 76 46 Q 74 16 46 14 Q 12 16 12 52 Q 14 90 54 90 Q 90 88 94 56
+
+T4_SERENE_PRESENCE              # a cairn of zen stones
+  ellipse 50 84 40 13
+  ellipse 50 58 30 11
+  ellipse 50 36 22 9
+  ellipse 50 16 14 7
+  cut rect 0 70 100 2
+  cut rect 0 46 100 2
+  cut rect 0 26 100 2
+
+T4_DARK_MANGO_PSYCHOLOGY_EXPERT # a dark mango
+  path M 46 18 Q 86 14 90 52 Q 92 90 52 96 Q 14 96 12 62 Q 12 24 46 18 Z
+  line 48 18 52 4 6
+  path M 52 10 Q 70 -2 86 8 Q 72 20 52 14 Z
+
+T4_REPAIR_O_BOTS                # a robot head with a wrench
+  rect 14 30 62 56 8
+  line 44 30 44 14 5
+  circle 44 10 6
+  cut rect 24 46 14 12 2
+  cut rect 52 46 14 12 2
+  cut rect 30 70 30 6 2
+  line 70 92 92 70 10
+  circle 94 66 8
+
+T4_MASTER_REPAIRMAN             # a wrench and screwdriver crossed
+  line 16 88 70 34 13
+  circle 76 26 16
+  cut poly 76 26 96 6 100 24 86 34
+  line 84 88 40 44 7
+  line 34 38 18 22 12
+
+T4_GOOD_OL_DAVE                 # a trucker cap
+  path M 14 64 Q 14 16 50 16 Q 86 16 86 64 Z
+  path M 50 60 L 100 60 Q 100 76 80 76 L 50 76 Z
+  rect 10 60 50 10 4
+  circle 50 16 5
+  cut stroke 5 path M 34 28 L 34 56
+
+T4_FOREMAN                      # a hard hat with a star
+  path M 10 74 Q 10 14 50 14 Q 90 14 90 74 Z
+  rect 0 68 100 16 6
+  cut poly 50 26 54.1 38.3 67.1 38.4 56.7 46.2 60.6 58.6 50 51 39.4 58.6 43.3 46.2 32.9 38.4 45.9 38.3
+
+T4_MASTER_MASON                 # a mason's trowel
+  path M 4 48 L 62 30 L 74 60 L 16 78 Z
+  line 66 46 82 40 7
+  line 82 40 96 70 8
+
+T4_MACGYVER                     # a paperclip
+  stroke 9 path M 70 92 L 70 20 Q 70 6 56 6 Q 42 6 42 20 L 42 76 Q 42 84 50 84 Q 58 84 58 76 L 58 28
+
+T4_RAZER                        # a chainsaw
+  rect 4 34 40 40 8
+  path M 44 42 L 92 42 Q 100 54 92 66 L 44 66 Z
+  cut stroke 4 path M 50 54 L 88 54
+  stroke 7 path M 12 34 Q 12 16 30 16 Q 42 16 42 30
+
+T4_WORLD_EATER                  # a huge toothy mouth
+  path M 4 30 Q 50 10 96 30 Q 96 80 50 96 Q 4 80 4 30 Z
+  cut path M 16 38 Q 50 26 84 38 Q 84 72 50 84 Q 16 72 16 38 Z
+  poly 18 38 26 54 32 36
+  poly 38 33 46 50 54 32
+  poly 62 33 70 50 78 36
+  poly 26 74 34 60 40 78
+  poly 48 80 54 64 60 78
+  poly 66 74 72 60 76 72
+
+T4_PRUNER                       # pruning shears
+  path M 50 46 Q 62 10 92 4 Q 80 30 58 54 Z
+  path M 50 46 Q 30 24 40 4 Q 56 22 58 48 Z
+  line 52 52 16 96 10
+  line 56 52 76 96 10
+  circle 54 50 6
+
+T4_CHIEF_ENGINEER               # a gear with a star badge
+  poly 84.0 50.0 95.6 55.8 93.2 65.7 80.2 65.5 76.0 71.9 81.3 83.8 73.0 89.8 63.2 81.3 55.9 83.5 52.2 95.9 42.0 95.3 39.9 82.5 33.0 79.4 22.2 86.6 14.8 79.6 21.4 68.4 18.1 61.6 5.1 60.2 4.0 50.0 16.3 45.7 18.1 38.4 9.1 29.0 14.8 20.4 26.9 25.1 33.0 20.6 32.2 7.6 42.0 4.7 48.3 16.0 55.9 16.5 63.6 6.1 73.0 10.2 70.6 22.9 76.0 28.1 88.7 25.1 93.2 34.3 83.2 42.5
+  cut poly 50 28 55.3 42.7 70.9 43.2 58.6 52.8 62.9 67.8 50 59 37.1 67.8 41.4 52.8 29.1 43.2 44.7 42.7
+
+T4_OVERCLOCKER                  # a gear with a lightning bolt
+  poly 84.0 50.0 95.6 55.8 93.2 65.7 80.2 65.5 76.0 71.9 81.3 83.8 73.0 89.8 63.2 81.3 55.9 83.5 52.2 95.9 42.0 95.3 39.9 82.5 33.0 79.4 22.2 86.6 14.8 79.6 21.4 68.4 18.1 61.6 5.1 60.2 4.0 50.0 16.3 45.7 18.1 38.4 9.1 29.0 14.8 20.4 26.9 25.1 33.0 20.6 32.2 7.6 42.0 4.7 48.3 16.0 55.9 16.5 63.6 6.1 73.0 10.2 70.6 22.9 76.0 28.1 88.7 25.1 93.2 34.3 83.2 42.5
+  cut circle 50 50 26
+  poly 56 26 38 54 50 54 42 76 64 44 52 44 60 26
+
+T4_AUTOMATON_MECHANIC           # an oil can
+  path M 10 96 L 14 50 Q 16 40 26 40 L 54 40 Q 64 40 66 50 L 70 96 Z
+  rect 30 26 20 16 3
+  poly 64 50 98 20 100 26 70 64
+  stroke 7 path M 14 56 Q 0 56 2 72 Q 4 86 14 84
+
+T4_DOOMSAYER                    # a tolling bell
+  path M 50 10 Q 78 10 78 44 L 84 82 L 16 82 L 22 44 Q 22 10 50 10 Z
+  rect 44 0 12 12 3
+  circle 50 92 7
+  stroke 5 path M 88 50 Q 96 62 88 74
+  stroke 5 path M 12 50 Q 4 62 12 74
+
+T4_STAR_GAZER                   # a telescope on a tripod
+  poly 8 54 70 18 80 36 18 72
+  poly 66 12 90 0 100 22 76 34
+  line 46 50 26 98 6
+  line 46 50 66 98 6
+  line 46 50 46 98 6
+
+T4_PROPHET                      # stone tablets
+  path M 6 96 L 6 24 Q 6 4 26 4 Q 46 4 46 24 L 46 96 Z
+  path M 54 96 L 54 24 Q 54 4 74 4 Q 94 4 94 24 L 94 96 Z
+  cut rect 14 34 24 5
+  cut rect 14 50 24 5
+  cut rect 62 34 24 5
+  cut rect 62 50 24 5
+
+T4_THREAD_SPINNER               # a spinning wheel
+  stroke 8 circle 40 44 34
+  line 40 44 72 44 5
+  line 40 44 56 71.7 5
+  line 40 44 24 71.7 5
+  line 40 44 8 44 5
+  line 40 44 24 16.3 5
+  line 40 44 56 16.3 5
+  circle 40 44 7
+  line 40 78 26 98 8
+  line 40 78 60 98 8
+  line 74 44 94 30 6
+  rect 86 22 12 18 4
+
+T4_SPINDLE_GUARD                # a spindle on a shield
+  poly 10 6 90 6 90 50 50 96 10 50
+  cut poly 50 14 62 34 62 58 50 80 38 58 38 34
+  poly 38 40 62 36 62 40 38 44
+
+T4_TAPESTRY_CUTTER              # a spindle with its thread cut
+  poly 50 0 66 30 66 70 50 100 34 70 34 30
+  cut poly 34 40 66 34 66 40 34 46
+  cut poly 34 60 66 54 66 60 34 66
+  stroke 5 path M 66 50 Q 86 50 90 30
+  stroke 5 path M 66 60 Q 82 66 84 86
+  cut rect 80 36 16 6
+
+T4_CAULDRON_HAG                 # a bubbling cauldron
+  path M 6 40 L 94 40 Q 96 92 50 94 Q 4 92 6 40 Z
+  rect 2 34 96 12 6
+  circle 34 24 9
+  circle 56 16 11
+  circle 72 28 7
+  line 22 92 14 100 6
+  line 78 92 86 100 6
+
+T4_HEX_WEAVER                   # a witch hat with a spider web
+  poly 16 76 44 30 30 4 62 26 84 76
+  rect 0 72 100 14 6
+  cut stroke 3 path M 30 60 Q 50 48 70 60
+  cut line 50 30 50 66 3
+  cut line 36 44 64 66 3
+  cut line 64 44 36 66 3
+
+T4_COVEN_MATRIARCH              # the witch hat with a crown
+  poly 16 76 44 30 30 4 62 26 84 76
+  rect 0 72 100 14 6
+  cut stroke 4 poly 30 70 30 54 40 62 50 50 60 62 70 54 70 70
+
+T4_SAVANT                       # a lightbulb
+  path M 50 4 Q 84 6 84 40 Q 84 58 66 70 L 66 78 L 34 78 L 34 70 Q 16 58 16 40 Q 16 6 50 4 Z
+  rect 36 80 28 8 3
+  rect 40 90 20 8 3
+  cut stroke 4 path M 30 34 Q 32 20 46 16
+
+T4_FORBIDDEN_SCHOLAR            # the open book with a skull
+  path M 2 40 Q 26 30 50 42 Q 74 30 98 40 L 98 92 Q 74 82 50 94 Q 26 82 2 92 Z
+  cut line 50 44 50 90 3
+  circle 50 18 15
+  rect 42 28 16 10 3
+  cut circle 45 18 4
+  cut circle 55 18 4
+
+T4_ENLIGHTENED                  # the open book with a halo
+  path M 2 40 Q 26 30 50 42 Q 74 30 98 40 L 98 92 Q 74 82 50 94 Q 26 82 2 92 Z
+  cut line 50 44 50 90 3
+  stroke 6 ellipse 50 18 24 8
+
+T4_CHEMIST                      # a molecule
+  line 50 50 18 22 8
+  line 50 50 84 26 8
+  line 50 50 50 88 8
+  circle 50 50 16
+  circle 18 22 13
+  circle 84 26 11
+  circle 50 88 11
+
+T4_ELIXIR_SPECIALIST            # an ornate elixir bottle
+  path M 50 26 Q 86 40 80 70 Q 74 98 50 98 Q 26 98 20 70 Q 14 40 50 26 Z
+  rect 42 10 16 20 3
+  circle 50 8 8
+  cut poly 50 52 54.2 63.8 66 68 54.2 72.2 50 84 45.8 72.2 34 68 45.8 63.8
+
+T4_VAPOUR_ADDICT                # a flask breathing vapour
+  circle 50 64 34
+  rect 39 14 22 30 3
+  rect 33 10 34 8 3
+  circle 30 6 8
+  circle 46 0 7
+  circle 64 4 9
+  circle 80 10 7
+
+T4_MIASMA_LORD                  # a toxic cloud with a skull
+  circle 28 56 22
+  circle 50 38 28
+  circle 74 54 22
+  rect 8 56 84 32 14
+  cut circle 42 50 6
+  cut circle 58 50 6
+  cut rect 44 62 12 6 2
+
+T4_DRAGONKIN_ALCHEMIST          # a flask with a dragon wing
+  circle 50 64 34
+  rect 39 14 22 30 3
+  rect 33 10 34 8 3
+  path M 80 60 Q 100 40 96 10 Q 88 26 76 28 Q 82 40 76 52 Z
+  path M 20 60 Q 0 40 4 10 Q 12 26 24 28 Q 18 40 24 52 Z
+
+T4_THE_GOOBOUND                 # a slime with eyes
+  path M 6 92 Q 4 60 22 44 Q 34 14 54 14 Q 78 16 84 44 Q 98 60 94 92 Z
+  cut ellipse 38 52 6 8
+  cut ellipse 62 52 6 8
+  circle 39 54 2.5
+  circle 63 54 2.5
+
+T4_MATTER_SHIFTER               # a cube becoming a sphere
+  poly 4 30 28 18 52 30 52 70 28 82 4 70
+  cut line 28 42 28 80 3
+  cut line 4 30 28 42 3
+  cut line 52 30 28 42 3
+  circle 70 50 28
+  cut stroke 4 path M 58 36 Q 64 30 72 30
+
+T4_PHILOSOPHERS_ALCHEMIST       # the philosopher's stone
+  poly 30 10 70 10 94 40 70 92 30 92 6 40
+  cut poly 30 10 70 10 60 32 40 32
+  cut stroke 3 path M 6 40 L 40 32 L 30 92
+  cut stroke 3 path M 94 40 L 60 32 L 70 92
+
+T4_UNSTABLE_TRANSFORMER         # the transmutation circle cracked
+  circle 50 50 44
+  cut circle 50 50 34
+  poly 50 12 84 70 16 70
+  cut poly 50 30 68 62 32 62
+  cut stroke 6 path M 50 2 L 44 28 L 58 46 L 46 70 L 54 98
+
+T4_ATTUNER                      # a tuning fork
+  stroke 11 path M 30 4 L 30 44 Q 30 62 50 62 Q 70 62 70 44 L 70 4
+  line 50 62 50 98 11
+  stroke 5 path M 84 18 Q 94 30 84 42
+  stroke 5 path M 16 18 Q 6 30 16 42
+
+T4_ENCHANTER                    # a gem with a sparkle
+  poly 24 10 76 10 98 36 50 96 2 36
+  cut poly 2 36 98 36 98 40 2 40
+  poly 84 -4 87.5 8.5 100 12 87.5 15.5 84 28 80.5 15.5 68 12 80.5 8.5
+
+T4_AWAKENER                     # a gem with an opening eye
+  poly 24 10 76 10 98 36 50 96 2 36
+  cut path M 24 50 Q 50 30 76 50 Q 50 70 24 50 Z
+  circle 50 50 9
+
+T4_CHAOS_GOD                    # a wide clown grin
+  circle 50 60 36
+  poly 22 40 14 4 50 26 86 4 78 40
+  circle 14 4 6
+  circle 86 4 6
+  cut circle 50 62 9
+  cut path M 24 62 Q 50 98 76 62 Q 50 80 24 62 Z
+  cut circle 38 48 5
+  cut circle 62 48 5
+
+T4_COMEDIAN                     # a laughing mask
+  path M 10 8 Q 50 22 90 8 Q 96 62 50 96 Q 4 62 10 8 Z
+  cut path M 22 40 Q 32 28 44 40 Q 32 34 22 40 Z
+  cut path M 56 40 Q 68 28 78 40 Q 68 34 56 40 Z
+  cut path M 28 58 Q 50 90 72 58 Z
+
+T4_TWITCH_STREAMER              # a gaming headset
+  stroke 9 path M 16 60 L 16 44 Q 16 10 50 10 Q 84 10 84 44 L 84 60
+  rect 6 48 22 36 8
+  rect 72 48 22 36 8
+  stroke 6 path M 22 84 Q 30 98 46 94
+  circle 50 94 6
+
+T4_TAVERN_BRAWLER               # a tavern barstool
+  ellipse 50 20 40 12
+  rect 10 18 80 8
+  line 22 26 12 98 8
+  line 78 26 88 98 8
+  line 40 28 36 98 7
+  line 60 28 64 98 7
+  line 16 72 84 72 6
+
+T4_THE_DRUNKEN_FIST             # a fist with bubbles
+  path M 14 54 Q 14 34 32 34 L 72 34 Q 90 34 90 54 L 90 76 Q 90 96 66 96 L 36 96 Q 14 96 14 76 Z
+  cut line 36 36 36 56 5
+  cut line 54 36 54 56 5
+  cut line 72 36 72 56 5
+  circle 30 14 9
+  circle 52 8 7
+  circle 70 18 6
+
+T4_ALCOHOL_MISUSE_DISORDER      # a bottle and an empty glass
+  path M 6 98 L 6 54 Q 6 42 16 38 L 16 10 L 36 10 L 36 38 Q 46 42 46 54 L 46 98 Z
+  path M 56 50 L 94 50 L 88 98 L 62 98 Z
+  cut path M 62 56 L 88 56 L 84 92 L 66 92 Z
+
+T4_SIREN                        # a mermaid's tail
+  path M 40 2 L 60 2 Q 66 40 58 66 Q 70 80 96 82 Q 74 96 50 90 Q 26 96 4 82 Q 30 80 42 66 Q 34 40 40 2 Z
+  cut stroke 3 path M 42 26 Q 50 32 58 26
+  cut stroke 3 path M 42 44 Q 50 50 58 44
+
+T4_SUCCUBUS                     # a heart with bat wings
+  path M 50 36 C 50 22 22 22 22 38.8 C 22 55.6 50 62.3 50 75.2 C 50 62.3 78 55.6 78 38.8 C 78 22 50 22 50 36 Z
+  path M 26 40 L 2 24 L 6 44 L 0 54 L 22 56 Z
+  path M 74 40 L 98 24 L 94 44 L 100 54 L 78 56 Z
+  path M 34 28 Q 28 12 34 2 Q 38 16 42 22 Z
+  path M 66 28 Q 72 12 66 2 Q 62 16 58 22 Z
+
+T4_CHARMER                      # the lips with a heart
+  path M 2 50 Q 20 22 38 30 Q 46 34 50 38 Q 54 34 62 30 Q 80 22 98 50 Q 78 84 50 84 Q 22 84 2 50 Z
+  cut path M 10 50 Q 50 60 90 50 Q 50 56 10 50 Z
+  path M 80 10.5 C 80 4 67 4 67 11.8 C 67 19.6 80 22.7 80 28.7 C 80 22.7 93 19.6 93 11.8 C 93 4 80 4 80 10.5 Z
+
+T4_BARD                         # a lute
+  path M 30 58 Q 6 66 10 86 Q 16 100 36 96 Q 56 92 58 70 Q 60 54 48 50 Z
+  line 46 54 86 14 8
+  rect 80 4 16 16 3
+  cut circle 32 76 7
+
+T4_PAINTER                      # an easel
+  line 50 2 22 98 7
+  line 50 2 78 98 7
+  line 50 2 50 98 7
+  rect 12 18 76 48 3
+  rect 8 64 84 8 3
+
+T4_ACTOR                        # a star on a dressing-room door
+  rect 18 4 64 92 4
+  cut poly 50 18 55.3 32.7 70.9 33.2 58.6 42.8 62.9 57.8 50 49 37.1 57.8 41.4 42.8 29.1 33.2 44.7 32.7
+  cut circle 70 60 4
+
+
+# ================================ MAGIC: Tier 5 ================================
+
+T5_LIGHTNING_ELEMENTAL          # it comes alive, with glaring eyes
+  poly 66 0 18 58 46 58 30 100 86 36 58 36 78 0
+  cut poly 32 42 42.4 46 33.6 50
+  cut poly 68 42 57.6 46 66.4 50
+
+T5_LAVA_ELEMENTAL               # it comes alive, with glaring eyes
+  poly 0 100 34 50 66 50 100 100
+  path M 50 2 Q 51.3 15.8 57.5 20.8 Q 58.8 13.3 63.8 8.3 Q 65.1 24.6 72.6 37.2 Q 78.9 54.7 62.6 56 L 37.4 56 Q 21.1 54.7 27.4 37.2 Q 32.4 27.1 37.4 23.3 Q 38.7 30.9 43.7 32.1 Q 41.2 15.8 50 2 Z
+  cut poly 32 76 42.4 80 33.6 84
+  cut poly 68 76 57.6 80 66.4 84
+
+T5_METAL_ELEMENTAL              # it comes alive, with glaring eyes
+  poly 50 6 89.8 29 89.8 75 50 98 10.2 75 10.2 29
+  cut circle 50 52 18
+  poly 34 48.5 43.1 52 35.4 55.5
+  poly 66 48.5 56.9 52 64.6 55.5
+
+T5_STONE_ELEMENTAL              # it comes alive, with glaring eyes
+  poly 12 96 16 34 38 32 40 96
+  poly 60 96 62 32 84 34 88 96
+  poly 6 32 8 14 94 10 96 30
+  cut poly 32 18 42.4 22 33.6 26
+  cut poly 68 18 57.6 22 66.4 26
+
+T5_SPACE_ELEMENTAL              # it comes alive, with glaring eyes
+  circle 50 50 32
+  cut circle 40 46 6
+  cut circle 60 46 6
+  cut stroke 6 ellipse 50 50 48 14
+  stroke 6 ellipse 50 50 48 14
+
+T5_POPE                         # a papal tiara
+  path M 28 96 L 28 60 Q 28 14 50 8 Q 72 14 72 60 L 72 96 Z
+  rect 20 88 60 10 4
+  cut rect 28 46 44 5
+  cut rect 28 66 44 5
+  rect 46 0 8 14 2
+  rect 41 3 18 5 2
+
+T5_UNHOLY_ARCHBISHOP            # the chess bishop with horns
+  circle 50 8 6
+  path M 50 12 Q 70 28 66 48 Q 64 58 58 62 L 42 62 Q 36 58 34 48 Q 30 28 50 12 Z
+  cut line 58 26 46 42 4
+  rect 36 60 28 8 3
+  poly 40 66 60 66 66 88 34 88
+  rect 22 86 56 12 4
+  path M 40 20 Q 26 10 30 -4 Q 36 10 44 14 Z
+  path M 60 20 Q 74 10 70 -4 Q 64 10 56 14 Z
+
+T5_VAMPIRE_HUNTER               # a hunter's wide hat over the sword
+  circle 50 34.2 4.9
+  rect 45.8 34.2 8.4 15.4 2.1
+  rect 30.4 46.8 39.2 8.4 2.8
+  poly 40.9 53.8 59.1 53.8 50 99.3
+  path M 2 30 Q 50 40 98 30 Q 90 22 76 24 L 70 4 Q 50 -2 30 4 L 24 24 Q 10 22 2 30 Z
+
+T5_EXORCIST                     # the holy sword in a burst of light
+  poly 50 0 58.8 17.2 75 6.7 74 26 93.3 25 82.8 41.2 100 50 82.8 58.8 93.3 75 74 74 75 93.3 58.8 82.8 50 100 41.2 82.8 25 93.3 26 74 6.7 75 17.2 58.8 0 50 17.2 41.2 6.7 25 26 26 25 6.7 41.2 17.2
+  cut circle 50 50 30
+  circle 50 23.6 4.2
+  rect 46.4 23.6 7.2 13.2 1.8
+  rect 33.2 34.4 33.6 7.2 2.4
+  poly 42.2 40.4 57.8 40.4 50 79.4
+
+T5_SAINT                        # praying hands with a halo
+  path M 48 96 L 48 34 Q 48 24 40 30 L 22 62 Q 16 76 26 86 Z
+  path M 52 96 L 52 34 Q 52 24 60 30 L 78 62 Q 84 76 74 86 Z
+  stroke 6 ellipse 50 12 20 7
+
+T5_APOTHECARY                   # a mortar and pestle with a leaf
+  path M 10 56 L 90 56 Q 88 92 50 94 Q 12 92 10 56 Z
+  rect 6 50 88 10 4
+  line 56 54 80 14 10
+  path M 50 36 Q 44 14 14 16 Q 16 40 50 36 Z
+
+T5_WORLD_TREE                   # a great tree with roots
+  rect 42 46 16 36
+  path M 42 80 Q 20 86 6 98 L 94 98 Q 80 86 58 80 Z
+  circle 50 28 26
+  circle 24 40 18
+  circle 76 40 18
+  circle 34 18 16
+  circle 66 18 16
+
+T5_BEASTKIN_CHIEFTAIN           # the wolf head with a crown
+  poly 50 98.4 27.6 69.6 21.2 52 24.4 23.2 40.4 40.8 59.6 40.8 75.6 23.2 78.8 52 72.4 69.6
+  cut poly 34 55.2 45.2 60 35.6 64
+  cut poly 66 55.2 54.8 60 64.4 64
+  poly 34 31 30 22 30 3.3 40 13.2 50 0 60 13.2 70 3.3 70 22 66 31
+
+T5_GREAT_WHITE_WOLF             # a hollow white wolf head
+  poly 50 98 22 62 14 40 18 4 38 26 62 26 82 4 86 40 78 62
+  cut poly 50 88 28 60 22 42 24 16 40 34 60 34 76 16 78 42 72 60
+  poly 34 46 46 52 36 56
+  poly 66 46 54 52 64 56
+
+T5_INVIGORATOR                  # the leaf charged with a lightning bolt
+  path M 10 96 Q 2 28 90 4 Q 98 82 10 96 Z
+  cut poly 58 18 36 54 50 54 40 84 68 44 54 44 64 18
+
+T5_UNYIELDING_GROWTH            # an arrow made of a growing vine
+  stroke 10 path M 50 98 Q 30 70 50 50 Q 70 30 50 14
+  poly 32 22 50 0 68 22
+  path M 44 66 Q 20 64 14 48 Q 32 50 44 58 Z
+  path M 56 40 Q 80 38 86 22 Q 68 24 56 32 Z
+
+T5_SIZE_MANIPULATOR             # a heart with resize arrows
+  path M 50 38.5 C 50 26 25 26 25 41 C 25 56 50 62 50 73.5 C 50 62 75 56 75 41 C 75 26 50 26 50 38.5 Z
+  line 10 10 30 30 6
+  poly 4 4 24 4 4 24
+  line 90 90 70 70 6
+  poly 96 96 76 96 96 76
+
+T5_UNMOVEABLE_OBJECT            # the heart locked in an iron block
+  rect 4 4 92 92 6
+  cut path M 50 34.5 C 50 18 17 18 17 37.8 C 17 57.6 50 65.5 50 80.7 C 50 65.5 83 57.6 83 37.8 C 83 18 50 18 50 34.5 Z
+  circle 14 14 4
+  circle 86 14 4
+  circle 14 86 4
+  circle 86 86 4
+
+T5_INDOMITABLE_JOE              # the plastered heart flexing an arm
+  path M 37 46.7 C 37 29 1.5 29 1.5 50.3 C 1.5 71.6 37 80.1 37 96.4 C 37 80.1 72.5 71.6 72.5 50.3 C 72.5 29 37 29 37 46.7 Z
+  cut stroke 5 path M 16.3 73.4 L 47.4 42.3 L 57.7 52.6 L 26.6 83.7 Z
+  path M 70 60 L 84 60 Q 96 40 86 24 Q 80 16 72 22 Q 80 34 74 46 L 66 46 Z
+  circle 82 22 9
+
+T5_SOULBINDER                   # two soul flames chained together
+  path M 28 10 Q 29.4 25.3 36.4 30.9 Q 37.8 22.6 43.3 17 Q 44.7 35.1 53.1 49.1 Q 60.1 68.6 42 70 L 14 70 Q -4.1 68.6 2.9 49.1 Q 8.5 37.9 14 33.7 Q 15.4 42.1 21 43.5 Q 18.2 25.3 28 10 Z
+  path M 72 36 Q 73.4 51.3 80.4 56.9 Q 81.8 48.6 87.3 43 Q 88.7 61.1 97.1 75.1 Q 104.1 94.6 86 96 L 58 96 Q 39.9 94.6 46.9 75.1 Q 52.5 63.9 58 59.7 Q 59.4 68.1 65 69.5 Q 62.2 51.3 72 36 Z
+  stroke 6 ellipse 50 66 12 7
+
+T5_FOUNTAIN_OF_VITALITY         # a fountain pouring a heart
+  path M 6 78 L 94 78 L 84 96 L 16 96 Z
+  rect 44 40 12 40
+  path M 24 44 L 76 44 L 70 52 L 30 52 Z
+  path M 50 12.5 C 50 4 33 4 33 14.2 C 33 24.4 50 28.5 50 36.3 C 50 28.5 67 24.4 67 14.2 C 67 4 50 4 50 12.5 Z
+  stroke 5 path M 30 48 Q 14 54 14 76
+  stroke 5 path M 70 48 Q 86 54 86 76
+
+T5_THE_LAST_FORTRESS_MAGE       # the warded castle with a crown
+  rect 28.7 60.6 42.6 37.7
+  rect 28.7 50.8 9.8 11.5
+  rect 45.1 50.8 9.8 11.5
+  rect 61.5 50.8 9.8 11.5
+  cut path M 43.4 98.4 L 43.4 83.6 Q 50 75.4 56.6 83.6 L 56.6 98.4 Z
+  stroke 7 path M 13.9 98.4 L 13.9 62.3 Q 13.9 22.9 50 22.9 Q 86.1 22.9 86.1 62.3 L 86.1 98.4
+  poly 36.4 27 33 18 33 2.7 41.5 10.8 50 0 58.5 10.8 67 2.7 67 18 63.6 27
+
+T5_SANCTUARY_MAGE               # a temple under the ward
+  stroke 7 path M 6 98 L 6 54 Q 6 6 50 6 Q 94 6 94 54 L 94 98
+  poly 22 46 50 30 78 46
+  rect 26 46 48 6
+  rect 28 54 8 34
+  rect 46 54 8 34
+  rect 64 54 8 34
+  rect 22 88 56 8
+
+T5_AEGIS_CUSTODIAN              # a bubble guarding a figure
+  stroke 7 circle 50 50 44
+  circle 50 34 10
+  path M 34 82 L 36 56 Q 38 46 50 46 Q 62 46 64 56 L 66 82 Z
+
+T5_ATMOSPHERIC_DOME             # a dome over three bubbles
+  stroke 7 path M 4 96 L 4 60 Q 4 8 50 8 Q 96 8 96 60 L 96 96
+  stroke 7 circle 50 49.6 12.6
+  stroke 7 circle 36.2 76 13.8
+  stroke 7 circle 63.8 76 13.8
+  rect 0 92 100 6
+
+T5_EDITOR_PRIVILEGES_ENABLED    # the cursor clicking with a burst
+  poly 37.6 21.6 37.6 87.2 53.6 72.8 64.8 98.4 77.6 92 66.4 68 87.2 68
+  line 14 22 2 22 5
+  line 19.5 14.4 15.8 3 5
+  line 28.5 17.3 38.2 10.2 5
+  line 28.5 26.7 38.2 33.8 5
+  line 19.5 29.6 15.8 41 5
+
+T5_TRUE_TELEKINETIC             # a head with rocks orbiting it
+  path M 30 98 L 30 80 Q 14 74 14 50 Q 16 24 46 22 Q 76 22 80 46 Q 82 58 76 64 L 80 74 L 72 76 L 70 98 Z
+  stroke 4 ellipse 50 18 44 12
+  poly 4 14 12 6 18 14 12 22
+  poly 86 26 94 20 98 30 90 34
+  poly 44 2 52 0 54 8 46 10
+
+T5_SKELETON_LORD                # a skull wearing a crown
+  circle 50 50 27
+  rect 35.6 64.4 28.8 18 4.5
+  cut circle 40.1 50 7.2
+  cut circle 59.9 50 7.2
+  cut poly 50 59 45.5 66.2 54.5 66.2
+  poly 30 31 25 22 25 3.3 37.5 13.2 50 0 62.5 13.2 75 3.3 75 22 70 31
+
+T5_LORD_OF_BONE                 # a skull on a pile of bones
+  circle 50 28 21
+  rect 38.8 39.2 22.4 14 3.5
+  cut circle 42.3 28 5.6
+  cut circle 57.7 28 5.6
+  cut poly 50 35 46.5 40.6 53.5 40.6
+  line 6 96 94 70 10
+  line 6 70 94 96 10
+  line 30 98 70 98 10
+
+T5_GRIM_REAPER                  # a hooded skull with a scythe
+  path M 46 4 Q 80 14 82 54 L 86 98 L 10 98 L 16 54 Q 18 14 46 4 Z
+  cut path M 48 30 Q 66 34 64 58 Q 60 76 48 76 Q 36 76 32 58 Q 30 34 48 30 Z
+  circle 48 54 13
+  cut circle 43 52 4
+  cut circle 53 52 4
+  line 90 98 92 4 6
+  path M 92 4 Q 60 -4 50 20 Q 70 8 92 14 Z
+
+T5_SOUL_HARVESTER               # a sickle with souls on its edge
+  line 14 96 34 70 10
+  stroke 12 path M 34 70 Q 20 30 52 14 Q 86 2 92 34
+  path M 60 32 Q 60.6 38.7 63.6 41.1 Q 64.2 37.4 66.7 35 Q 67.3 42.9 70.9 48.9 Q 73.9 57.4 66 58 L 54 58 Q 46.1 57.4 49.1 48.9 Q 51.5 44.1 54 42.3 Q 54.6 45.9 57 46.5 Q 55.8 38.7 60 32 Z
+  path M 84 38 Q 84.5 43.6 87.1 45.7 Q 87.6 42.6 89.6 40.6 Q 90.1 47.2 93.2 52.3 Q 95.8 59.5 89.1 60 L 78.9 60 Q 72.2 59.5 74.8 52.3 Q 76.8 48.2 78.9 46.7 Q 79.4 49.8 81.4 50.3 Q 80.4 43.6 84 38 Z
+
+T5_LICH                         # a phylactery gem on a chain
+  stroke 5 path M 30 4 Q 50 30 70 4
+  poly 50 30 76 50 64 96 36 96 24 50
+  circle 50 62 10
+  cut circle 46 60 3
+  cut circle 54 60 3
+
+T5_ABOMINATION                  # a blob covered in eyes
+  path M 8 92 Q 2 56 22 40 Q 34 8 60 12 Q 90 18 92 50 Q 100 74 90 92 Z
+  cut circle 36 40 7
+  cut circle 62 32 6
+  cut circle 74 56 8
+  cut circle 46 64 9
+  cut circle 26 72 5
+  cut circle 66 80 5
+
+T5_ROYAL_PUREBLOOD_VAMPIRE      # the coffin with a crown
+  poly 37.2 21.6 62.8 21.6 77.2 40.8 66 98.4 34 98.4 22.8 40.8
+  cut rect 46 34.4 8 33.6 1.6
+  cut rect 37.2 42.4 25.6 8 1.6
+  poly 34 31 30 22 30 3.3 40 13.2 50 0 60 13.2 70 3.3 70 22 66 31
+
+T5_SANGUINE_HORROR              # a clawed hand bursting from the coffin
+  poly 34 2 66 2 84 26 70 98 30 98 16 26
+  cut rect 45 18 10 42 2
+  cut rect 34 28 32 10 2
+  path M 70 30 L 86 6 L 90 8 L 80 30 L 96 14 L 98 18 L 84 36 L 100 30 L 100 36 L 80 46 Z
+
+T5_SANGUINE_ELEMENTAL           # the blood drop comes alive
+  path M 50 2 Q 65.3 31.5 75 51.1 Q 80.6 74 50 74 Q 19.4 74 25 51.1 Q 34.7 31.5 50 2 Z
+  path M 6 98 L 14 80 L 24 90 L 32 76 L 42 88 L 50 82 L 58 88 L 68 76 L 76 90 L 86 80 L 94 98 Z
+  cut poly 34 46.5 43.1 50 35.4 53.5
+  cut poly 66 46.5 56.9 50 64.6 53.5
+
+T5_DEMONIC_MASTER               # the pentagram crowned with horns
+  stroke 7 circle 50 62 34.2
+  poly 50 32.4 57.1 54.5 80.3 54.4 61.6 68 68.8 90.1 50 76.4 31.2 90.1 38.4 68 19.7 54.4 42.9 54.5
+  poly 34 33 30 24 30 5.3 40 15.2 50 2 60 15.2 70 5.3 70 24 66 33
+  path M 30 20 Q 14 10 18 -6 Q 24 8 34 12 Z
+  path M 70 20 Q 86 10 82 -6 Q 76 8 66 12 Z
+
+T5_THE_FORGOTTEN_ONE            # a blank gravestone in a cobweb
+  path M 16 98 L 16 40 Q 16 6 50 6 Q 84 6 84 40 L 84 98 Z
+  cut line 16 6 46 36 3
+  cut line 32 6 46 36 3
+  cut line 16 22 46 36 3
+  cut stroke 3 path M 24 10 Q 26 22 18 28
+  cut stroke 3 path M 38 8 Q 36 22 22 26
+
+T5_SOULSHATTERED_MAGE           # the gravestone shattering, a soul escaping
+  poly 16 98 16 46 28 30 40 40 48 30 52 98
+  poly 56 98 58 36 66 44 74 28 84 42 84 98
+  path M 52 -0 Q 52.7 7.2 55.9 9.8 Q 56.6 5.9 59.2 3.3 Q 59.8 11.7 63.7 18.2 Q 67 27.3 58.5 28 L 45.5 28 Q 37 27.3 40.3 18.2 Q 42.9 13 45.5 11.1 Q 46.1 15 48.7 15.6 Q 47.4 7.2 52 -0 Z
+
+T5_VIVACIOUS_TORTURER           # the broken heart pierced by a dagger
+  path M 50 29 C 50 6 4 6 4 33.6 C 4 61.2 50 72.2 50 93.4 C 50 72.2 96 61.2 96 33.6 C 96 6 50 6 50 29 Z
+  cut stroke 6 path M 50 22 L 42 40 L 56 54 L 46 72 L 50 90
+  line 6 94 34 66 6
+  poly 30 58 90 2 96 8 40 68
+  line 22 70 36 84 8
+
+T5_HE_WHO_KNOWS_PAIN            # the broken heart with a crown of thorns
+  path M 50 45.2 C 50 26.8 13.2 26.8 13.2 48.9 C 13.2 71 50 79.8 50 96.7 C 50 79.8 86.8 71 86.8 48.9 C 86.8 26.8 50 26.8 50 45.2 Z
+  cut stroke 6 path M 50 39.6 L 43.6 54 L 54.8 65.2 L 46.8 79.6 L 50 94
+  stroke 6 path M 14 22 Q 50 2 86 22
+  poly 20 18 24 6 28 18
+  poly 40 10 44 -2 48 10
+  poly 56 10 60 -2 64 10
+  poly 74 18 78 6 82 18
+
+T5_MACHIAVELLI                  # the hypnotic eye with a crown
+  path M 9.7 58 Q 50 19.4 90.3 58 Q 50 96.6 9.7 58 Z
+  cut circle 50 58 21
+  stroke 5 path M 50 58 Q 55 58 55 53 Q 53.4 47.9 48.3 47.9 Q 41.6 49.6 41.6 58 Q 43.3 68.1 51.7 68.1 Q 61.8 66.4 61.8 56.3 Q 60.1 42.9 46.6 42.9
+  poly 34 31 30 22 30 3.3 40 13.2 50 0 60 13.2 70 3.3 70 22 66 31
+
+T5_SLAVER                       # a shackle with an eye
+  stroke 12 path M 24 50 L 24 30 Q 24 6 50 6 Q 76 6 76 30 L 76 50
+  rect 10 44 80 52 8
+  cut path M 22 70 Q 50 52 78 70 Q 50 88 22 70 Z
+  circle 50 70 8
+
+T5_SHADOW_FROM_BEYOND           # the shade with tentacles
+  path M 50 3.2 Q 66 4.8 66 27.2 Q 66 43.2 62.8 49.6 Q 75.6 59.2 88.4 78.4 L 11.6 78.4 Q 24.4 59.2 37.2 49.6 Q 34 43.2 34 27.2 Q 34 4.8 50 3.2 Z
+  cut poly 38 24 47.6 28 39.6 32
+  cut poly 62 24 52.4 28 60.4 32
+  stroke 8 path M 20 80 Q 10 92 2 86
+  stroke 8 path M 40 84 Q 36 96 26 100
+  stroke 8 path M 60 84 Q 64 96 74 100
+  stroke 8 path M 80 80 Q 90 92 98 86
+
+T5_LEGION_OF_SHADES             # three hooded shades
+  path M 28 46.2 Q 39.2 47.4 39.2 63 Q 39.2 74.2 37 78.7 Q 45.9 85.4 54.9 98.9 L 1.1 98.9 Q 10.1 85.4 19 78.7 Q 16.8 74.2 16.8 63 Q 16.8 47.4 28 46.2 Z
+  cut poly 19.6 60.8 26.3 63.6 20.7 66.4
+  cut poly 36.4 60.8 29.7 63.6 35.3 66.4
+  path M 72 46.2 Q 83.2 47.4 83.2 63 Q 83.2 74.2 81 78.7 Q 89.9 85.4 98.9 98.9 L 45.1 98.9 Q 54.1 85.4 63 78.7 Q 60.8 74.2 60.8 63 Q 60.8 47.4 72 46.2 Z
+  cut poly 63.6 60.8 70.3 63.6 64.7 66.4
+  cut poly 80.4 60.8 73.7 63.6 79.3 66.4
+  path M 50 2.6 Q 62.8 3.8 62.8 21.8 Q 62.8 34.6 60.2 39.7 Q 70.5 47.4 80.7 62.7 L 19.3 62.7 Q 29.5 47.4 39.8 39.7 Q 37.2 34.6 37.2 21.8 Q 37.2 3.8 50 2.6 Z
+  cut poly 40.4 19.2 48.1 22.4 41.7 25.6
+  cut poly 59.6 19.2 51.9 22.4 58.3 25.6
+
+T5_ETERNAL_NIGHT                # a closed eye beneath a black sun
+  poly 50 0 55.5 11 66.5 5.3 64.5 17.5 76.7 19.3 67.9 28 76.7 36.7 64.5 38.5 66.5 50.7 55.5 45 50 56 44.5 45 33.5 50.7 35.5 38.5 23.3 36.7 32.1 28 23.3 19.3 35.5 17.5 33.5 5.3 44.5 11
+  cut stroke 4 circle 50 28 19
+  path M 4 70 Q 50 104 96 70 Q 50 86 4 70 Z
+  line 22 86 16 98 5
+  line 50 92 50 100 5
+  line 78 86 84 98 5
+
+T5_LORD_OF_STARS                # the black sun with a crown of stars
+  poly 50 24 57.5 38.9 72.3 31.2 69.7 47.7 86.2 50.2 74.3 62 86.2 73.8 69.7 76.3 72.3 92.8 57.5 85.1 50 100 42.5 85.1 27.7 92.8 30.3 76.3 13.8 73.8 25.7 62 13.8 50.2 30.3 47.7 27.7 31.2 42.5 38.9
+  cut stroke 4 circle 50 62 25.8
+  poly 50 -2 52.4 4.8 59.5 4.9 53.8 9.2 55.9 16.1 50 12 44.1 16.1 46.2 9.2 40.5 4.9 47.6 4.8
+  poly 26 8 27.8 13.6 33.6 13.5 28.9 16.9 30.7 22.5 26 19 21.3 22.5 23.1 16.9 18.4 13.5 24.2 13.6
+  poly 74 8 75.8 13.6 81.6 13.5 76.9 16.9 78.7 22.5 74 19 69.3 22.5 71.1 16.9 66.4 13.5 72.2 13.6
+
+T5_THE_UNSHACKLED_SOVEREIGN     # broken chains under a crown
+  poly 27.6 41 22 32 22 6.5 36 20 50 2 64 20 78 6.5 78 32 72.4 41
+  stroke 8 rect 4 52 30 20 10
+  stroke 8 path M 40 62 L 46 62
+  stroke 8 path M 96 56 Q 90 50 80 50 L 64 50 Q 54 50 54 62 Q 54 74 64 74 L 80 74 Q 90 74 96 68
+
+T5_THE_SHATTERED_APEX           # a cracked crown
+  poly 13.2 89 4 80 4 20.5 27 52 50 10 73 52 96 20.5 96 80 86.8 89
+  cut stroke 6 path M 50 10 L 42 36 L 58 52 L 48 80
+  cut rect 4 70 92 5
+
+T5_SWORD_OF_FIRE                # a greatsword shaped like a flame
+  path M 50 0 Q 60 18 66 26 Q 72 16 72 8 Q 86 40 66 70 L 34 70 Q 14 40 28 8 Q 28 16 34 26 Q 40 18 50 0 Z
+  rect 6 66 88 12 4
+  rect 44 76 12 16 2
+  circle 50 95 6
+
+T5_SWORD_OF_ICE                 # an ice-crystal sword
+  poly 50 0 62 20 58 66 42 66 38 20
+  poly 38 24 26 14 36 40
+  poly 62 24 74 14 64 40
+  rect 12 62 76 12 4
+  rect 44 72 12 18 2
+  circle 50 94 6
+
+T5_ZERO_POINT_EDGE              # a sword with a void hole in the blade
+  poly 33 68 33 14 50 0 67 14 67 68
+  rect 8 64 84 12 4
+  rect 44 74 12 16 2
+  circle 50 94 6
+  cut circle 50 36 12
+  circle 50 36 5
+
+T5_CURSED_BLADE                 # the broadsword with a skull pommel
+  poly 33 68 33 14 50 0 67 14 67 68
+  rect 8 64 84 12 4
+  rect 44 74 12 16 2
+  cut line 50 18 50 58 5
+  cut line 50 32 40 22 5
+  cut line 50 32 60 22 5
+  circle 50 90 10
+  cut circle 46 88 3
+  cut circle 54 88 3
+
+T5_THE_ANTI_MAGIC_BLADE         # the sword as the slash of a no-magic sign
+  stroke 10 circle 50 50 44
+  line 30 70 86 14 11
+  line 16 56 44 84 10
+  line 30 70 14 86 9
+
+T5_ARCHMAGE                     # the bearded wizard with a star staff
+  poly 21.8 54.6 43.7 16 63.8 54.6
+  rect 5 51.3 73.9 10.1 5
+  path M 16.8 59.7 L 67.2 59.7 Q 63.8 83.2 42 100 Q 20.2 83.2 16.8 59.7 Z
+  cut ellipse 31.9 66.4 4.2 2.9
+  cut ellipse 52.1 66.4 4.2 2.9
+  line 90 30 90 100 6
+  poly 90 4 93.5 14.5 104 18 93.5 21.5 90 32 86.5 21.5 76 18 86.5 14.5
+
+T5_ARCANE_ELEMENTAL             # an arcane star with eyes
+  poly 50 0 65.6 34.4 100 50 65.6 65.6 50 100 34.4 65.6 0 50 34.4 34.4
+  poly 78.3 21.7 64 50 78.3 78.3 50 64 21.7 78.3 36 50 21.7 21.7 50 36
+  cut poly 34 46 46 50 36 54
+  cut poly 66 46 54 50 64 54
+
+T5_WELL_OF_MANA                 # a stone well brimming with mana
+  rect 12 60 76 36 4
+  cut rect 12 72 76 4
+  rect 8 52 84 12 3
+  path M 50 2 Q 61 23.3 68.1 37.5 Q 72.1 54 50 54 Q 27.9 54 31.9 37.5 Q 39 23.3 50 2 Z
+  cut poly 50 22 52.5 29.5 60 32 52.5 34.5 50 42 47.5 34.5 40 32 47.5 29.5
+
+T5_MANA_ELEMENTAL               # the mana drop comes alive
+  path M 50 2 Q 70.4 41.3 83.4 67.5 Q 90.8 98 50 98 Q 9.2 98 16.6 67.5 Q 29.6 41.3 50 2 Z
+  cut poly 32 60 42.4 64 33.6 68
+  cut poly 68 60 57.6 64 66.4 68
+
+T5_GRAND_RITUALIST              # the candle inside a ritual circle
+  stroke 6 circle 50 50 46
+  path M 50 20.2 Q 50.4 24.7 52.4 26.3 Q 52.9 23.9 54.5 22.3 Q 54.8 27.5 57.3 31.5 Q 59.3 37.2 54 37.6 L 46 37.6 Q 40.7 37.2 42.7 31.5 Q 44.4 28.3 46 27.1 Q 46.3 29.5 48 29.9 Q 47.1 24.7 50 20.2 Z
+  rect 36.4 37.6 27.3 38.4 2.5
+  path M 58.7 37.6 L 66.1 37.6 L 66.1 57.4 Q 62.4 62.4 58.7 57.4 Z
+  rect 27.7 73.6 44.6 6.2 2.5
+
+T5_SHAMAN                       # a feathered shaman staff
+  line 50 30 50 100 8
+  circle 50 22 16
+  cut circle 50 22 7
+  path M 40 34 Q 26 50 30 74 Q 38 56 46 44 Z
+  path M 60 34 Q 74 50 70 74 Q 62 56 54 44 Z
+
+T5_SPIRIT_CONDUIT               # the flame ghost with four element orbs
+  stroke 4 ellipse 50 54 42 38
+  path M 50 27.2 Q 65.7 48.9 70.4 75.3 Q 65.7 81.4 60.2 75.3 Q 54.8 81.4 50 75.3 Q 45.2 81.4 39.8 75.3 Q 34.3 81.4 29.6 75.3 Q 34.3 48.9 50 27.2 Z
+  path M 50 15 Q 50.6 22.1 53.9 24.8 Q 54.5 20.9 57.1 18.3 Q 57.8 26.7 61.7 33.2 Q 65 42.4 56.5 43 L 43.5 43 Q 35 42.4 38.3 33.2 Q 40.9 28 43.5 26.1 Q 44.1 30 46.7 30.6 Q 45.5 22.1 50 15 Z
+  path M 10 12 Q 10.4 16.6 12.5 18.3 Q 12.9 15.8 14.6 14.1 Q 15 19.5 17.5 23.7 Q 19.6 29.6 14.2 30 L 5.8 30 Q 0.4 29.6 2.5 23.7 Q 4.1 20.4 5.8 19.1 Q 6.2 21.6 7.9 22 Q 7.1 16.6 10 12 Z
+  path M 90 16 Q 93.8 23.4 96.3 28.3 Q 97.7 34 90 34 Q 82.3 34 83.7 28.3 Q 86.2 23.4 90 16 Z
+  poly 84 74 96 74 90 90
+  poly 4 74 16 72 10 88 6 84
+
+T5_SPIRIT_CALLER                # a ghost summoning smaller ghosts
+  path M 50 30.8 Q 68.2 56 73.8 86.8 Q 68.2 93.8 61.9 86.8 Q 55.6 93.8 50 86.8 Q 44.4 93.8 38.1 86.8 Q 31.8 93.8 26.2 86.8 Q 31.8 56 50 30.8 Z
+  path M 16 3.3 Q 24.3 14.8 26.9 28.9 Q 24.3 32.1 21.4 28.9 Q 18.6 32.1 16 28.9 Q 13.4 32.1 10.6 28.9 Q 7.7 32.1 5.1 28.9 Q 7.7 14.8 16 3.3 Z
+  path M 84 3.3 Q 92.3 14.8 94.9 28.9 Q 92.3 32.1 89.4 28.9 Q 86.6 32.1 84 28.9 Q 81.4 32.1 78.6 28.9 Q 75.7 32.1 73.1 28.9 Q 75.7 14.8 84 3.3 Z
+
+T5_ETHEREAL_SPECTER             # the ghost as a hollow outline
+  stroke 7 path M 50 4 Q 76 40 84 84 Q 76 94 67 84 Q 58 94 50 84 Q 42 94 33 84 Q 24 94 16 84 Q 24 40 50 4 Z
+  ellipse 41 44 6 9
+  ellipse 59 44 6 9
+
+T5_POLTERGEIST                  # an angry ghost with a flying chair
+  path M 39 23.1 Q 59.3 51.2 65.5 85.5 Q 59.3 93.3 52.3 85.5 Q 45.2 93.3 39 85.5 Q 32.8 93.3 25.7 85.5 Q 18.7 93.3 12.5 85.5 Q 18.7 51.2 39 23.1 Z
+  cut poly 18 54 32 60 20 64
+  cut poly 46 54 32 60 44 64
+  rect 70 4 6 26
+  rect 70 22 24 6
+  line 72 28 70 46 5
+  line 92 28 94 46 5
+
+T5_ULTIMATE_SPIRIT_AVATAR       # the lantern bursting with light
+  stroke 6 circle 50 34.2 3.5
+  poly 34.6 44 65.4 44 58.4 35.6 41.6 35.6
+  rect 29 44 42 46.2 4.2
+  cut rect 34.6 49.6 30.8 35 2.8
+  path M 50 55.8 Q 57.6 67.9 60 82.6 Q 57.6 86 55 82.6 Q 52.4 86 50 82.6 Q 47.6 86 45 82.6 Q 42.4 86 40 82.6 Q 42.4 67.9 50 55.8 Z
+  rect 24.8 87.4 50.4 9.8 2.8
+  line 50 18 50 4 6
+  line 74 28 83.9 18.1 6
+  line 84 52 98 52 6
+  line 74 76 83.9 85.9 6
+  line 50 86 50 100 6
+  line 26 76 16.1 85.9 6
+  line 16 52 2 52 6
+  line 26 28 16.1 18.1 6
+
+T5_SPIRIT_GORGED_VESSEL         # a bloated ghost with ghosts inside
+  path M 50 4 Q 96 30 92 84 Q 82 94 72 84 Q 62 94 50 84 Q 38 94 28 84 Q 18 94 8 84 Q 4 30 50 4 Z
+  cut path M 34 47.2 Q 41.8 58.7 44.2 72.8 Q 41.8 76 39.1 72.8 Q 36.4 76 34 72.8 Q 31.6 76 28.9 72.8 Q 26.2 76 23.8 72.8 Q 26.2 58.7 34 47.2 Z
+  cut path M 66 47.2 Q 73.8 58.7 76.2 72.8 Q 73.8 76 71.1 72.8 Q 68.4 76 66 72.8 Q 63.6 76 60.9 72.8 Q 58.2 76 55.8 72.8 Q 58.2 58.7 66 47.2 Z
+  cut ellipse 40 34 5 7
+  cut ellipse 60 34 5 7
+
+T5_THE_CLOCKMAKER               # a clock tower
+  rect 26 30 48 68
+  poly 22 32 50 2 78 32
+  cut circle 50 50 14
+  line 50 50 50 40 4
+  line 50 50 58 54 4
+  cut path M 42 98 L 42 80 Q 50 72 58 80 L 58 98 Z
+
+T5_THE_WATCHER                  # the pocket watch with an eye for a face
+  stroke 6 circle 50 8 7
+  rect 42 12 16 10 4
+  circle 50 60 38
+  cut circle 50 60 30
+  path M 22 60 Q 50 36 78 60 Q 50 84 22 60 Z
+  cut circle 50 60 9
+
+T5_DESCENDED_DEITY              # a radiant figure descending
+  line 50 8 50 -10 5
+  line 62.9 12.2 73.5 -2.4 5
+  line 70.9 23.2 88 17.6 5
+  line 70.9 36.8 88 42.4 5
+  line 62.9 47.8 73.5 62.4 5
+  line 50 52 50 70 5
+  line 37.1 47.8 26.5 62.4 5
+  line 29.1 36.8 12 42.4 5
+  line 29.1 23.2 12 17.6 5
+  line 37.1 12.2 26.5 -2.4 5
+  circle 50 30 12
+  path M 30 98 L 34 52 Q 36 44 50 44 Q 64 44 66 52 L 70 98 Z
+  path M 34 56 Q 10 50 2 30 Q 18 40 34 46 Z
+  path M 66 56 Q 90 50 98 30 Q 82 40 66 46 Z
+
+T5_PEACEWALKER                  # a dove with a halo
+  path M 6 56 Q 30 40 46 46 Q 52 30 66 28 L 84 22 L 74 34 Q 82 52 66 64 L 90 84 Q 60 82 44 72 Q 20 74 6 56 Z
+  path M 40 50 Q 34 20 56 4 Q 54 28 52 46 Z
+  stroke 6 ellipse 70 14 14 5
+
+T5_VESSEL_OF_THE_NAMELESS_VOID  # a hooded figure with a void for a face
+  path M 50 4 Q 84 12 86 50 L 94 98 L 6 98 L 14 50 Q 16 12 50 4 Z
+  cut circle 50 44 22
+  stroke 4 circle 50 44 12
+  circle 50 44 4
+
+T5_INHABITANT_OF_THE_IMPOSSIBLE # an impossible cube
+  stroke 8 poly 20 30 60 30 60 70 20 70
+  stroke 8 poly 40 14 80 14 80 54 40 54
+  line 20 30 40 14 8
+  line 60 30 80 14 8
+  line 60 70 80 54 8
+  line 20 70 40 54 8
+
+T5_LIVING_MASTER_RUNE           # a giant rune with eyes
+  line 50 8 50 96 16
+  line 50 44 18 12 14
+  line 50 44 82 12 14
+  cut poly 40 64 48 66 40 70
+  cut poly 60 64 52 66 60 70
+
+T5_ATOM_SPLITTER                # an atom cracking in two
+  stroke 6 poly 96 50 95.6 52.1 94.4 54.1 92.5 56.1 89.8 58 86.5 59.7 82.5 61.3 78 62.7 73 63.9 67.6 64.8 61.9 65.5 56 65.9 50 66 44 65.9 38.1 65.5 32.4 64.8 27 63.9 22 62.7 17.5 61.3 13.5 59.7 10.2 58 7.5 56.1 5.6 54.1 4.4 52.1 4 50 4.4 47.9 5.6 45.9 7.5 43.9 10.2 42 13.5 40.3 17.5 38.7 22 37.3 27 36.1 32.4 35.2 38.1 34.5 44 34.1 50 34 56 34.1 61.9 34.5 67.6 35.2 73 36.1 78 37.3 82.5 38.7 86.5 40.3 89.8 42 92.5 43.9 94.4 45.9 95.6 47.9
+  stroke 6 poly 73 89.8 71 90.5 68.6 90.6 65.9 89.9 63 88.5 59.8 86.5 56.5 83.8 53 80.6 49.5 76.8 46 72.6 42.6 68 39.3 63.1 36.1 58 33.3 52.7 30.7 47.4 28.4 42.1 26.5 37 25 32.1 23.9 27.5 23.3 23.3 23.2 19.5 23.4 16.3 24.2 13.6 25.4 11.5 27 10.2 29 9.5 31.4 9.4 34.1 10.1 37 11.5 40.2 13.5 43.5 16.2 47 19.4 50.5 23.2 54 27.4 57.4 32 60.7 36.9 63.9 42 66.7 47.3 69.3 52.6 71.6 57.9 73.5 63 75 67.9 76.1 72.5 76.7 76.7 76.8 80.5 76.6 83.7 75.8 86.4 74.6 88.5
+  stroke 6 poly 27 89.8 25.4 88.5 24.2 86.4 23.4 83.7 23.2 80.5 23.3 76.7 23.9 72.5 25 67.9 26.5 63 28.4 57.9 30.7 52.6 33.3 47.3 36.1 42 39.3 36.9 42.6 32 46 27.4 49.5 23.2 53 19.4 56.5 16.2 59.8 13.5 63 11.5 65.9 10.1 68.6 9.4 71 9.5 73 10.2 74.6 11.5 75.8 13.6 76.6 16.3 76.8 19.5 76.7 23.3 76.1 27.5 75 32.1 73.5 37 71.6 42.1 69.3 47.4 66.7 52.7 63.9 58 60.7 63.1 57.4 68 54 72.6 50.5 76.8 47 80.6 43.5 83.8 40.2 86.5 37 88.5 34.1 89.9 31.4 90.6 29 90.5
+  circle 50 50 12
+  cut stroke 5 path M 50 0 L 44 30 L 56 48 L 44 70 L 50 100
+
+T5_EXPERIMENTAL_WEAPONS_DEPARTMENT # the flask with a radiation sign
+  rect 38 2 24 8 2
+  poly 42 10 58 10 58 36 92 96 8 96 42 36
+  cut circle 50 76 5
+  cut path M 50 76 L 40 58 Q 50 54 60 58 Z
+  cut path M 50 76 L 70 76 Q 70 86 62 92 Z
+  cut path M 50 76 L 38 92 Q 30 86 30 76 Z
+
+T5_ABSOLUTE_TRUE_GENIUS         # the graduation cap with a star
+  poly 2 32 50 12 98 32 50 52
+  path M 22 40 L 22 66 Q 50 82 78 66 L 78 40 L 50 52 Z
+  line 88 34 88 66 5
+  rect 84 64 8 16 2
+  cut poly 50 52 52.4 60.8 61.4 60.3 53.8 65.2 57.1 73.7 50 68 42.9 73.7 46.2 65.2 38.6 60.3 47.6 60.8
+
+T5_MIND_SHATTERED_SAVANT_OF_RUIN # the graduation cap shattering
+  poly 2 32 46 14 40 40 30 46
+  poly 54 14 98 32 70 46 58 38
+  path M 22 46 L 22 66 Q 36 74 46 76 L 44 52 Z
+  path M 78 46 L 78 66 Q 64 74 54 76 L 56 52 Z
+  line 88 36 88 66 5
+
+T5_FULLY_CHROMED_SOVEREIGN      # a fully metal head with a crown
+  path M 20 98 L 20 50 Q 20 22 50 22 Q 80 22 80 50 L 80 98 Z
+  cut circle 36 56 9
+  circle 36 56 4
+  cut circle 64 56 9
+  circle 64 56 4
+  cut rect 34 78 32 6
+  poly 30 33 25 24 25 3.6 37.5 14.4 50 0 62.5 14.4 75 3.6 75 24 70 33
+
+T5_TECHNOLOGICAL_TERROR         # a robot skull with a laser eye
+  path M 22 90 L 22 72 Q 6 62 8 42 Q 12 8 50 8 Q 88 8 92 42 Q 94 62 78 72 L 78 90 Z
+  cut rect 26 34 20 16 2
+  cut circle 64 42 10
+  circle 64 42 4
+  line 70 42 100 30 4
+  cut rect 34 72 32 6
+
+T5_OVERSEER                     # a camera with a great eye
+  poly 6 14 90 30 84 66 0 50
+  cut path M 18 40 Q 44 22 70 44 Q 44 62 18 40 Z
+  circle 44 42 8
+  line 64 60 72 86 10
+  rect 56 84 36 14 3
+
+T5_FIREWALL                     # a brick wall in flames
+  path M 50 2 Q 51.3 16.8 58.1 22.2 Q 59.4 14.1 64.8 8.7 Q 66.2 26.3 74.3 39.8 Q 81 58.7 63.5 60 L 36.5 60 Q 19 58.7 25.7 39.8 Q 31.1 29 36.5 24.9 Q 37.9 33 43.3 34.4 Q 40.6 16.8 50 2 Z
+  rect 4 52 92 46 2
+  cut rect 4 66 92 4
+  cut rect 4 82 92 4
+  cut rect 48 52 4 14
+  cut rect 24 70 4 12
+  cut rect 72 70 4 12
+  cut rect 48 86 4 12
+
+T5_BLACK_HAT                    # a black fedora with a command prompt
+  path M 4 72 Q 50 88 96 72 Q 92 62 80 62 L 76 30 Q 72 18 60 22 L 50 28 L 40 22 Q 28 18 24 30 L 20 62 Q 8 62 4 72 Z
+  cut stroke 5 path M 32 40 L 42 47 L 32 54
+  cut rect 46 52 16 5
+
+T5_WHITE_HAT                    # a white fedora, drawn in outline
+  stroke 7 path M 4 72 Q 50 88 96 72 Q 92 62 80 62 L 76 30 Q 72 18 60 22 L 50 28 L 40 22 Q 28 18 24 30 L 20 62 Q 8 62 4 72 Z
+  stroke 5 path M 32 40 L 42 47 L 32 54
+  rect 46 52 16 5
+
+T5_LIGHTNING_MASTER             # an outline that hugs the shape
+  stroke 20 poly 62.8 10 24.4 56.4 46.8 56.4 34 90 78.8 38.8 56.4 38.8 72.4 10
+  cut stroke 10 poly 62.8 10 24.4 56.4 46.8 56.4 34 90 78.8 38.8 56.4 38.8 72.4 10
+  poly 62.8 10 24.4 56.4 46.8 56.4 34 90 78.8 38.8 56.4 38.8 72.4 10
+
+T5_LAVA_MASTER                  # an outline that hugs the shape
+  stroke 20 poly 10 90 37.2 50 62.8 50 90 90
+  stroke 20 path M 50 11.6 Q 51 22.6 56 26.6 Q 57 20.6 61 16.6 Q 62.1 29.7 68.1 39.8 Q 73.1 53.8 60.1 54.8 L 39.9 54.8 Q 26.9 53.8 31.9 39.8 Q 35.9 31.7 39.9 28.6 Q 41 34.7 45 35.7 Q 43 22.6 50 11.6 Z
+  cut stroke 10 poly 10 90 37.2 50 62.8 50 90 90
+  cut stroke 10 path M 50 11.6 Q 51 22.6 56 26.6 Q 57 20.6 61 16.6 Q 62.1 29.7 68.1 39.8 Q 73.1 53.8 60.1 54.8 L 39.9 54.8 Q 26.9 53.8 31.9 39.8 Q 35.9 31.7 39.9 28.6 Q 41 34.7 45 35.7 Q 43 22.6 50 11.6 Z
+  poly 10 90 37.2 50 62.8 50 90 90
+  path M 50 11.6 Q 51 22.6 56 26.6 Q 57 20.6 61 16.6 Q 62.1 29.7 68.1 39.8 Q 73.1 53.8 60.1 54.8 L 39.9 54.8 Q 26.9 53.8 31.9 39.8 Q 35.9 31.7 39.9 28.6 Q 41 34.7 45 35.7 Q 43 22.6 50 11.6 Z
+
+T5_WATER_MASTER                 # an outline that hugs the shape
+  stroke 20 path M 11.6 88.4 C 11.6 53.2 29.2 24.4 58 18 C 77.2 14.8 90 26 88.4 42 C 86.8 53.2 77.2 58 69.2 54.8 C 62.8 51.6 62.8 43.6 69.2 42 C 74 40.4 77.2 45.2 74 48.4 C 82 45.2 82 34 74 30.8 C 62.8 27.6 51.6 35.6 50 50 C 48.4 66 58 80.4 75.6 88.4 Z
+  stroke 20 path M 11.6 88.4 L 88.4 88.4 L 88.4 83.6 Q 78.8 78.8 70.8 85.2 Q 61.2 77.2 51.6 85.2 Q 42 77.2 32.4 85.2 Q 22.8 77.2 11.6 83.6 Z
+  cut stroke 10 path M 11.6 88.4 C 11.6 53.2 29.2 24.4 58 18 C 77.2 14.8 90 26 88.4 42 C 86.8 53.2 77.2 58 69.2 54.8 C 62.8 51.6 62.8 43.6 69.2 42 C 74 40.4 77.2 45.2 74 48.4 C 82 45.2 82 34 74 30.8 C 62.8 27.6 51.6 35.6 50 50 C 48.4 66 58 80.4 75.6 88.4 Z
+  cut stroke 10 path M 11.6 88.4 L 88.4 88.4 L 88.4 83.6 Q 78.8 78.8 70.8 85.2 Q 61.2 77.2 51.6 85.2 Q 42 77.2 32.4 85.2 Q 22.8 77.2 11.6 83.6 Z
+  path M 11.6 88.4 C 11.6 53.2 29.2 24.4 58 18 C 77.2 14.8 90 26 88.4 42 C 86.8 53.2 77.2 58 69.2 54.8 C 62.8 51.6 62.8 43.6 69.2 42 C 74 40.4 77.2 45.2 74 48.4 C 82 45.2 82 34 74 30.8 C 62.8 27.6 51.6 35.6 50 50 C 48.4 66 58 80.4 75.6 88.4 Z
+  path M 11.6 88.4 L 88.4 88.4 L 88.4 83.6 Q 78.8 78.8 70.8 85.2 Q 61.2 77.2 51.6 85.2 Q 42 77.2 32.4 85.2 Q 22.8 77.2 11.6 83.6 Z
+
+T5_SLOWNESS_MASTER              # an outline that hugs the shape
+  stroke 20 rect 21.2 11.6 57.6 8 2.4
+  stroke 20 rect 21.2 80.4 57.6 8 2.4
+  stroke 20 poly 26 19.6 74 19.6 74 26 54.8 50 74 74 74 80.4 26 80.4 26 74 45.2 50 26 26
+  cut stroke 10 rect 21.2 11.6 57.6 8 2.4
+  cut stroke 10 rect 21.2 80.4 57.6 8 2.4
+  cut stroke 10 poly 26 19.6 74 19.6 74 26 54.8 50 74 74 74 80.4 26 80.4 26 74 45.2 50 26 26
+  rect 21.2 11.6 57.6 8 2.4
+  rect 21.2 80.4 57.6 8 2.4
+  poly 26 19.6 74 19.6 74 26 54.8 50 74 74 74 80.4 26 80.4 26 74 45.2 50 26 26
+  cut poly 34 26 66 26 50 45.2
+  cut poly 50 59.6 62.8 74 37.2 74
+
+T5_METAL_MASTER                 # an outline that hugs the shape
+  stroke 20 poly 50 14.8 81.8 33.2 81.8 70 50 88.4 18.2 70 18.2 33.2
+  cut stroke 10 poly 50 14.8 81.8 33.2 81.8 70 50 88.4 18.2 70 18.2 33.2
+  poly 50 14.8 81.8 33.2 81.8 70 50 88.4 18.2 70 18.2 33.2
+  cut circle 50 51.6 14.4
+
+T5_STONE_MASTER                 # an outline that hugs the shape
+  stroke 20 poly 19.6 86.8 22.8 37.2 40.4 35.6 42 86.8
+  stroke 20 poly 58 86.8 59.6 35.6 77.2 37.2 80.4 86.8
+  stroke 20 poly 14.8 35.6 16.4 21.2 85.2 18 86.8 34
+  cut stroke 10 poly 19.6 86.8 22.8 37.2 40.4 35.6 42 86.8
+  cut stroke 10 poly 58 86.8 59.6 35.6 77.2 37.2 80.4 86.8
+  cut stroke 10 poly 14.8 35.6 16.4 21.2 85.2 18 86.8 34
+  poly 19.6 86.8 22.8 37.2 40.4 35.6 42 86.8
+  poly 58 86.8 59.6 35.6 77.2 37.2 80.4 86.8
+  poly 14.8 35.6 16.4 21.2 85.2 18 86.8 34
+
+T5_SPEED_MASTER                 # an outline that hugs the shape
+  stroke 20 path M 13.2 86.8 Q 16.4 42 50 16.4 Q 82 6.8 88.4 14.8 Q 77.2 22.8 62.8 27.6 Q 83.6 27.6 86.8 34 Q 74 40.4 59.6 42 Q 78.8 45.2 80.4 51.6 Q 66 58 51.6 56.4 Q 67.6 62.8 66 69.2 Q 42 74 34 86.8 Z
+  cut stroke 10 path M 13.2 86.8 Q 16.4 42 50 16.4 Q 82 6.8 88.4 14.8 Q 77.2 22.8 62.8 27.6 Q 83.6 27.6 86.8 34 Q 74 40.4 59.6 42 Q 78.8 45.2 80.4 51.6 Q 66 58 51.6 56.4 Q 67.6 62.8 66 69.2 Q 42 74 34 86.8 Z
+  path M 13.2 86.8 Q 16.4 42 50 16.4 Q 82 6.8 88.4 14.8 Q 77.2 22.8 62.8 27.6 Q 83.6 27.6 86.8 34 Q 74 40.4 59.6 42 Q 78.8 45.2 80.4 51.6 Q 66 58 51.6 56.4 Q 67.6 62.8 66 69.2 Q 42 74 34 86.8 Z
+  cut stroke 5 path M 42 70.8 Q 30.8 70.8 32.4 61.2 Q 34 53.2 43.6 54.8 Q 50 58 46.8 62.8
+
+T5_SPACE_MASTER                 # an outline that hugs the shape
+  stroke 20 circle 50 50 25.6
+  stroke 26 ellipse 50 50 38.4 11.2
+  cut stroke 10 circle 50 50 25.6
+  cut stroke 16 ellipse 50 50 38.4 11.2
+  circle 50 50 25.6
+  cut stroke 6 ellipse 50 50 38.4 11.2
+  stroke 6 ellipse 50 50 38.4 11.2
+  cut stroke 5 path M 50 61.2 Q 40.4 61.2 42 51.6 Q 43.6 43.6 53.2 45.2 Q 59.6 48.4 56.4 54
+
+T5_WATER_ELEMENTAL              # the wave comes alive, with glaring eyes
+  path M 2 98 C 2 54 24 18 60 10 C 84 6 100 20 98 40 C 96 54 84 60 74 56 C 66 52 66 42 74 40 C 80 38 84 44 80 48 C 90 44 90 30 80 26 C 66 22 52 32 50 50 C 48 70 60 88 82 98 Z
+  path M 2 98 L 98 98 L 98 92 Q 86 86 76 94 Q 64 84 52 94 Q 40 84 28 94 Q 16 84 2 92 Z
+  cut poly 13 66.5 22.1 70 14.4 73.5
+  cut poly 43 66.5 33.9 70 41.6 73.5
+
+T5_SLOWNESS_ELEMENTAL           # the hourglass with big glaring eyes
+  rect 14 2 72 10 3
+  rect 14 88 72 10 3
+  poly 20 12 80 12 80 20 56 50 80 80 80 88 20 88 20 80 44 50 20 20
+  cut poly 50 62 66 80 34 80
+  cut path M 26 22 L 46 30 L 44 38 L 30 34 Z
+  cut path M 74 22 L 54 30 L 56 38 L 70 34 Z
+
+T5_SPEED_ELEMENTAL              # the wing with clear glaring eyes
+  path M 4 96 Q 8 40 50 8 Q 90 -4 98 6 Q 84 16 66 22 Q 92 22 96 30 Q 80 38 62 40 Q 86 44 88 52 Q 70 60 52 58 Q 72 66 70 74 Q 40 80 30 96 Z
+  cut path M 18 62 L 38 56 L 40 66 Q 26 72 18 62 Z
+  cut path M 60 50 L 42 56 L 44 66 Q 56 64 60 50 Z
+
+T5_REVENGER                     # a sword plunged into the hill
+  poly 2 100 50 80 98 100
+  circle 50 7 7
+  rect 45 10 10 14 2
+  path M 18 20 Q 30 26 50 24 Q 70 26 82 20 L 80 32 Q 66 30 50 32 Q 34 30 20 32 Z
+  poly 42 32 58 32 56 80 50 94 44 80
+  cut line 50 36 50 76 3
+
+T5_REVITALISER                  # the healing leaf with big sparkles
+  path M 12 90.8 Q 5.6 36.4 76 17.2 Q 82.4 79.6 12 90.8 Z
+  cut rect 39.2 41.2 9.6 28.8 2.4
+  cut rect 29.6 50.8 28.8 9.6 2.4
+  poly 84 -2 87.5 12.5 102 16 87.5 19.5 84 34 80.5 19.5 66 16 80.5 12.5
+  poly 16 73 18.8 83.2 29 86 18.8 88.8 16 99 13.2 88.8 3 86 13.2 83.2
+  poly 92 43 94.1 49.9 101 52 94.1 54.1 92 61 89.9 54.1 83 52 89.9 49.9
+
+
+# ================================ MAGIC: Tier 5 (redrawn) ================================
+
+T5_FIRE_PARAGON                 # a phoenix rising
+  path M 50 34 Q 40 50 44 70 L 36 98 L 50 88 L 64 98 L 56 70 Q 60 50 50 34 Z
+  circle 50 26 9
+  poly 54 22 66 24 56 30
+  path M 46 50 Q 20 46 2 14 Q 14 22 20 20 Q 14 30 30 36 Q 22 24 26 12 Q 34 30 46 40 Z
+  path M 54 50 Q 80 46 98 14 Q 86 22 80 20 Q 86 30 70 36 Q 78 24 74 12 Q 66 30 54 40 Z
+  path M 46 16 Q 40 6 46 0 Q 48 10 52 12 Z
+
+T5_FIRE_INCARNATION             # a fire titan with a flaming head
+  path M 50 0 Q 50.9 10.2 55.6 14 Q 56.5 8.4 60.2 4.7 Q 61.2 16.7 66.7 26 Q 71.4 39.1 59.3 40 L 40.7 40 Q 28.6 39.1 33.3 26 Q 37 18.6 40.7 15.8 Q 41.6 21.4 45.3 22.3 Q 43.5 10.2 50 0 Z
+  circle 50 30 10
+  cut poly 42 28 49 31 43 34
+  cut poly 58 28 51 31 57 34
+  path M 34 40 L 66 40 L 72 72 L 60 72 L 62 98 L 52 98 L 50 78 L 48 98 L 38 98 L 40 72 L 28 72 Z
+  path M 34 42 Q 14 34 6 12 Q 18 22 24 18 Q 20 30 32 34 Z
+  path M 66 42 Q 86 34 94 12 Q 82 22 76 18 Q 80 30 68 34 Z
+
+T5_ICE_PARAGON                  # a crown of ice crystals
+  poly 6 60 6 30 18 46 26 6 38 40 50 0 62 40 74 6 82 46 94 30 94 60
+  rect 6 58 88 26 4
+  cut poly 50 64 58 71 50 78 42 71
+  cut poly 22 66 28 71 22 76 16 71
+  cut poly 78 66 84 71 78 76 72 71
+
+T5_ICE_INCARNATION              # an ice golem with crystal shoulders
+  poly 36 4 64 4 70 30 30 30
+  cut poly 38 14 47 18 39 22
+  cut poly 62 14 53 18 61 22
+  poly 26 30 74 30 70 70 30 70
+  poly 26 32 6 0 14 40 24 52
+  poly 74 32 94 0 86 40 76 52
+  poly 30 70 46 70 44 98 28 98
+  poly 54 70 70 70 72 98 56 98
+  cut poly 50 38 58 50 50 62 42 50
+
+T5_EARTH_PARAGON                # a mountain with a gem at its heart
+  poly 0 98 28 34 38 44 50 12 62 44 72 34 100 98
+  cut poly 50 44 66 64 50 86 34 64
+  poly 50 50 60 64 50 78 40 64
+
+T5_EARTH_INCARNATION            # a stone golem
+  poly 34 4 66 4 70 28 30 28
+  cut rect 38 12 8 6
+  cut rect 54 12 8 6
+  poly 18 28 82 28 78 70 22 70
+  poly 4 30 20 30 22 66 6 72
+  poly 80 30 96 30 94 72 78 66
+  poly 26 70 46 70 46 98 22 98
+  poly 54 70 74 70 78 98 54 98
+  cut stroke 4 path M 50 34 L 44 46 L 54 56 L 48 68
+
+T5_AIR_PARAGON                  # the eye of a cyclone
+  circle 50 50 14
+  stroke 11 path M 50 36 Q 78 30 84 56 Q 86 80 60 88
+  stroke 11 path M 64 50 Q 70 78 44 84 Q 18 86 12 60
+  stroke 11 path M 50 64 Q 22 70 16 44 Q 14 20 40 12
+  stroke 11 path M 36 50 Q 30 22 56 16 Q 82 14 88 40
+  cut poly 50 41 52.1 47.9 59 50 52.1 52.1 50 59 47.9 52.1 41 50 47.9 47.9
+
+T5_AIR_INCARNATION              # a wind spirit: a tornado with a face and arms
+  path M 2 8 Q 50 -2 98 8 Q 96 24 78 34 Q 84 46 66 56 Q 70 70 54 76 Q 60 90 44 98 Q 46 84 38 78 Q 28 70 40 60 Q 22 52 30 40 Q 8 30 2 8 Z
+  cut poly 30 12 44 16 32 20
+  cut poly 70 12 56 16 68 20
+  path M 20 26 Q 2 30 0 50 Q 10 40 22 38 Z
+  path M 80 26 Q 98 30 100 50 Q 90 40 78 38 Z
+
+T5_THE_DEVILBOUND               # a devil's contract sealed in blood
+  path M 14 6 L 74 6 Q 86 6 86 18 L 86 96 L 26 96 Q 14 96 14 84 Z
+  cut rect 26 18 46 5
+  cut rect 26 30 46 5
+  cut rect 26 42 30 5
+  cut circle 60 70 16
+  poly 60 57 63.5 66.1 73.3 66.7 65.7 72.9 68.2 82.3 60 77 51.8 82.3 54.3 72.9 46.7 66.7 56.5 66.1
+  cut path M 30 62 Q 35.5 72.6 39 79.7 Q 41 88 30 88 Q 19 88 21 79.7 Q 24.5 72.6 30 62 Z
+
+T5_BLOOD_BENDER                 # a hand pulling blood on strings
+  rect 26 2 48 20 8
+  rect 26 18 9 20 4
+  rect 39 18 9 24 4
+  rect 52 18 9 24 4
+  rect 65 18 9 20 4
+  path M 74 8 Q 90 10 92 26 L 84 26 Q 82 18 74 16 Z
+  line 30 38 18 64 3
+  line 50 42 50 60 3
+  line 70 38 82 64 3
+  path M 18 62 Q 25.2 75.9 29.8 85.2 Q 32.5 96 18 96 Q 3.6 96 6.2 85.2 Q 10.8 75.9 18 62 Z
+  path M 50 58 Q 58.1 73.5 63.2 83.9 Q 66.2 96 50 96 Q 33.9 96 36.8 83.9 Q 41.9 73.5 50 58 Z
+  path M 82 62 Q 89.2 75.9 93.8 85.2 Q 96.5 96 82 96 Q 67.5 96 70.2 85.2 Q 74.8 75.9 82 62 Z
+
+T5_MAGIC_DEVOURER               # a black hole with a swirling disk
+  circle 50 50 20
+  cut stroke 4 circle 50 50 24
+  stroke 9 path M 50 26 Q 80 22 86 50
+  stroke 9 path M 74 50 Q 78 80 50 86
+  stroke 9 path M 50 74 Q 20 78 14 50
+  stroke 9 path M 26 50 Q 22 20 50 14
+  poly 90 0 92.8 7.2 100 10 92.8 12.8 90 20 87.2 12.8 80 10 87.2 7.2
+
+T5_MONOLITH_OF_BALANCE          # a monolith with a true yin-yang
+  rect 22 4 56 92 3
+  cut circle 50 50 22
+  path M 50 28 A 0 0 0 0 0 50 28 Q 38 39 50 50 Q 62 61 50 72 Q 72 72 72 50 Q 72 28 50 28 Z
+  cut circle 50 39 4
+  circle 50 61 4
+
+
+# ================================ MAGIC: Tier 5 (Artificer) ================================
+
+T5_ARMOUR_LORD                  # a suit of armour
+  path M 50 4 Q 66 4 66 20 Q 66 30 58 32 L 86 40 L 92 70 L 78 70 L 74 52 L 70 98 L 30 98 L 26 52 L 22 70 L 8 70 L 14 40 L 42 32 Q 34 30 34 20 Q 34 4 50 4 Z
+  cut rect 40 16 20 4
+  cut line 50 40 50 90 4
+
+T5_POWER_EXOSKELETON            # a mech suit
+  rect 30 4 40 26 6
+  cut rect 36 12 28 6
+  rect 20 30 60 36 6
+  rect 4 30 16 44 6
+  rect 80 30 16 44 6
+  rect 26 66 18 32 4
+  rect 56 66 18 32 4
+  cut circle 50 46 8
+
+T5_CLOCKWORK_KING               # the crowned robot with a wind-up key
+  rect 13.1 44.2 55.8 50.8 6.6
+  poly 16.4 45.9 16.4 22.9 28.7 34.4 41 19.6 53.3 34.4 65.6 22.9 65.6 45.9
+  cut rect 23 57.4 13.1 11.5 1.6
+  cut rect 45.9 57.4 13.1 11.5 1.6
+  cut rect 26.2 78.7 29.5 5.7 1.6
+  rect 82 58 10 8
+  circle 94 48 7
+  circle 94 74 7
+
+T5_FACTORY_DESIGNER             # a factory with chimneys
+  poly 4 98 4 50 30 66 30 50 56 66 56 50 96 70 96 98
+  rect 70 16 14 50
+  rect 50 30 12 30
+  circle 78 8 7
+  circle 90 4 5
+  cut rect 14 76 12 10
+  cut rect 40 76 12 10
+  cut rect 66 78 12 10
+
+T5_GREY_GOO_GUY                 # a goo figure
+  path M 10 98 Q 4 80 18 74 Q 22 52 34 46 Q 26 36 30 24 Q 36 6 50 6 Q 64 6 70 24 Q 74 36 66 46 Q 78 52 82 74 Q 96 80 90 98 Z
+  cut circle 42 26 5
+  cut circle 58 26 5
+
+T5_NANITE_PARAGON               # the honeycomb with a crown
+  stroke 7 poly 65.2 37.6 57.6 50.8 42.4 50.8 34.8 37.6 42.4 24.4 57.6 24.4
+  stroke 7 poly 43.2 50.4 35.6 63.6 20.4 63.6 12.8 50.4 20.4 37.2 35.6 37.2
+  stroke 7 poly 87.2 50.4 79.6 63.6 64.4 63.6 56.8 50.4 64.4 37.2 79.6 37.2
+  stroke 7 poly 65.2 63.2 57.6 76.4 42.4 76.4 34.8 63.2 42.4 50 57.6 50
+  stroke 7 poly 43.2 76 35.6 89.2 20.4 89.2 12.8 76 20.4 62.8 35.6 62.8
+  stroke 7 poly 87.2 76 79.6 89.2 64.4 89.2 56.8 76 64.4 62.8 79.6 62.8
+  poly 34 31 30 22 30 3.3 40 13.2 50 0 60 13.2 70 3.3 70 22 66 31
+
+T5_UNSHACKLED_CREATOR           # a hand shaping a star
+  path M 10 98 L 14 70 Q 10 56 22 50 L 36 46 L 40 30 Q 42 24 48 26 L 48 44 L 56 22 Q 60 16 66 20 L 62 46 L 76 34 Q 82 30 86 36 L 70 62 L 66 98 Z
+  poly 78 -2 82.2 9.8 94 14 82.2 18.2 78 30 73.8 18.2 62 14 73.8 9.8
+
+T5_LEADER_OF_CREATION           # the star gear raised on a banner
+  rect 8 0 8 100 3
+  poly 16 4 92 4 92 70 54 56 16 70
+  poly 71 33 76.8 35.9 75.6 40.9 69.1 40.8 67 44 69.7 49.9 65.5 52.9 60.6 48.6 57 49.8 55.1 56 50 55.6 49 49.2 45.5 47.7 40.1 51.3 36.4 47.8 39.7 42.2 38 38.8 31.6 38.1 31 33 37.1 30.9 38 27.2 33.5 22.5 36.4 18.2 42.5 20.6 45.5 18.3 45.1 11.8 50 10.3 53.1 16 57 16.2 60.8 11.1 65.5 13.1 64.3 19.4 67 22.1 73.3 20.6 75.6 25.1 70.6 29.2
+  cut poly 54 21 56.9 30.1 66 33 56.9 35.9 54 45 51.1 35.9 42 33 51.1 30.1
+
+T5_ARTISANAL_CANNONEER          # the cannon firing
+  poly 3.2 61.6 65.6 34.4 73.6 52 11.2 76
+  poly 62.4 29.6 73.6 24.8 81.6 50.4 70.4 55.2
+  circle 33.6 77.6 19.2
+  cut circle 33.6 77.6 7.2
+  poly 88 4 90.3 12.5 97.9 8.1 93.5 15.7 102 18 93.5 20.3 97.9 27.9 90.3 23.5 88 32 85.7 23.5 78.1 27.9 82.5 20.3 74 18 82.5 15.7 78.1 8.1 85.7 12.5
+
+T5_HYPERFIXATED_GUN_NERD        # a pistol with a heart
+  rect 6 18 92 22 4
+  poly 10 36 42 36 36 94 4 94
+  stroke 7 circle 48 48 9
+  path M 78 61.5 C 78 54 63 54 63 63 C 63 72 78 75.6 78 82.5 C 78 75.6 93 72 93 63 C 93 54 78 54 78 61.5 Z
+
+T5_TELEPORTATION_GRIDMASTER     # a three-by-three portal grid
+  stroke 5 rect 4 4 26 26 6
+  stroke 5 rect 4 37 26 26 6
+  stroke 5 rect 4 70 26 26 6
+  stroke 5 rect 37 4 26 26 6
+  stroke 5 rect 37 37 26 26 6
+  stroke 5 rect 37 70 26 26 6
+  stroke 5 rect 70 4 26 26 6
+  stroke 5 rect 70 37 26 26 6
+  stroke 5 rect 70 70 26 26 6
+  rect 37 37 26 26 6
+
+T5_THE_MASTER_OF_THE_CITADEL    # a citadel with a crown
+  rect 10 46 80 52
+  rect 10 34 14 14
+  rect 32 34 14 14
+  rect 54 34 14 14
+  rect 76 34 14 14
+  cut path M 38 98 L 38 74 Q 50 60 62 74 L 62 98 Z
+  poly 34 33 30 24 30 3.6 40 14.4 50 0 60 14.4 70 3.6 70 24 66 33

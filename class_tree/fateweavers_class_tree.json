@@ -1,0 +1,4410 @@
+[
+ {
+  "id": "T0_UNCLASSED_SURVIVOR",
+  "name": "Unclassed Survivor",
+  "tier": 0,
+  "path": "NEUTRAL",
+  "parent_id": null,
+  "status": "locked"
+ },
+ {
+  "id": "T1_MAGIC_USER",
+  "name": "Magic User",
+  "tier": 1,
+  "path": "MAGIC",
+  "parent_id": "T0_UNCLASSED_SURVIVOR",
+  "status": "locked"
+ },
+ {
+  "id": "T2_NOVICE_ELEMENTALIST",
+  "name": "Novice Elementalist",
+  "tier": 2,
+  "path": "MAGIC",
+  "parent_id": "T1_MAGIC_USER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_FIRE_MAGE",
+  "name": "Fire Mage",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_ELEMENTALIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_LIGHTNING_MAGE",
+  "name": "Lightning Mage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_FIRE_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_LIGHTNING_MASTER",
+  "name": "Lightning Master",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_LIGHTNING_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_LIGHTNING_ELEMENTAL",
+  "name": "Lightning Elemental",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_LIGHTNING_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_LAVA_MAGE",
+  "name": "Lava Mage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_FIRE_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_LAVA_MASTER",
+  "name": "Lava Master",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_LAVA_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_LAVA_ELEMENTAL",
+  "name": "Lava Elemental",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_LAVA_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_FIRE_MASTER",
+  "name": "Fire Master",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_FIRE_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_FIRE_PARAGON",
+  "name": "Fire Paragon",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_FIRE_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_FIRE_INCARNATION",
+  "name": "Fire Incarnation",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_FIRE_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_ICE_MAGE",
+  "name": "Ice Mage",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_ELEMENTALIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_WATER_MAGE",
+  "name": "Water Mage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_ICE_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_WATER_MASTER",
+  "name": "Water Master",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_WATER_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_WATER_ELEMENTAL",
+  "name": "Water Elemental",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_WATER_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SLOWNESS_MAGE",
+  "name": "Slowness Mage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_ICE_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SLOWNESS_MASTER",
+  "name": "Slowness Master",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SLOWNESS_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SLOWNESS_ELEMENTAL",
+  "name": "Slowness Elemental",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SLOWNESS_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ICE_MASTER",
+  "name": "Ice Master",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_ICE_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_ICE_PARAGON",
+  "name": "Ice Paragon",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_ICE_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_ICE_INCARNATION",
+  "name": "Ice Incarnation",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_ICE_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_EARTH_MAGE",
+  "name": "Earth Mage",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_ELEMENTALIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_METAL_MAGE",
+  "name": "Metal Mage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_EARTH_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_METAL_MASTER",
+  "name": "Metal Master",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_METAL_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_METAL_ELEMENTAL",
+  "name": "Metal Elemental",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_METAL_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_STONE_WARDEN",
+  "name": "Stone Warden",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_EARTH_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_STONE_MASTER",
+  "name": "Stone Master",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_STONE_WARDEN",
+  "status": "locked"
+ },
+ {
+  "id": "T5_STONE_ELEMENTAL",
+  "name": "Stone Elemental",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_STONE_WARDEN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_EARTH_MASTER",
+  "name": "Earth Master",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_EARTH_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_EARTH_PARAGON",
+  "name": "Earth Paragon",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_EARTH_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_EARTH_INCARNATION",
+  "name": "Earth Incarnation",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_EARTH_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_AIR_MAGE",
+  "name": "Air Mage",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_ELEMENTALIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SPEED_MAGE",
+  "name": "Speed Mage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_AIR_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SPEED_MASTER",
+  "name": "Speed Master",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SPEED_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SPEED_ELEMENTAL",
+  "name": "Speed Elemental",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SPEED_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SPACE_MAGE",
+  "name": "Space Mage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_AIR_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SPACE_MASTER",
+  "name": "Space Master",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SPACE_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SPACE_ELEMENTAL",
+  "name": "Space Elemental",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SPACE_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_AIR_MASTER",
+  "name": "Air Master",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_AIR_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_AIR_PARAGON",
+  "name": "Air Paragon",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_AIR_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_AIR_INCARNATION",
+  "name": "Air Incarnation",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_AIR_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T2_NOVICE_SUPPORT_MAGE",
+  "name": "Novice Support Mage",
+  "tier": 2,
+  "path": "MAGIC",
+  "parent_id": "T1_MAGIC_USER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_PRIEST",
+  "name": "Priest",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_SUPPORT_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BISHOP",
+  "name": "Bishop",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_PRIEST",
+  "status": "locked"
+ },
+ {
+  "id": "T5_POPE",
+  "name": "Pope",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_BISHOP",
+  "status": "locked"
+ },
+ {
+  "id": "T5_UNHOLY_ARCHBISHOP",
+  "name": "Unholy Archbishop",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_BISHOP",
+  "status": "locked"
+ },
+ {
+  "id": "T4_INQUISITOR",
+  "name": "Inquisitor",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_PRIEST",
+  "status": "locked"
+ },
+ {
+  "id": "T5_VAMPIRE_HUNTER",
+  "name": "Vampire Hunter",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_INQUISITOR",
+  "status": "locked"
+ },
+ {
+  "id": "T5_EXORCIST",
+  "name": "Exorcist",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_INQUISITOR",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MARTYR",
+  "name": "Martyr",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_PRIEST",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SAINT",
+  "name": "Saint",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_MARTYR",
+  "status": "locked"
+ },
+ {
+  "id": "T5_REVENGER",
+  "name": "Revenger",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_MARTYR",
+  "status": "locked"
+ },
+ {
+  "id": "T3_DRUID",
+  "name": "Druid",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_SUPPORT_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GARDENER",
+  "name": "Gardener",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_DRUID",
+  "status": "locked"
+ },
+ {
+  "id": "T5_APOTHECARY",
+  "name": "Apothecary",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_GARDENER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_WORLD_TREE",
+  "name": "World Tree",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_GARDENER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BEASTKIN",
+  "name": "Beastkin",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_DRUID",
+  "status": "locked"
+ },
+ {
+  "id": "T5_BEASTKIN_CHIEFTAIN",
+  "name": "Beastkin Chieftain",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_BEASTKIN",
+  "status": "locked"
+ },
+ {
+  "id": "T5_GREAT_WHITE_WOLF",
+  "name": "Great White Wolf",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_BEASTKIN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_REJUVENATOR",
+  "name": "Rejuvenator",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_DRUID",
+  "status": "locked"
+ },
+ {
+  "id": "T5_REVITALISER",
+  "name": "Revitaliser",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_REJUVENATOR",
+  "status": "locked"
+ },
+ {
+  "id": "T5_INVIGORATOR",
+  "name": "Invigorator",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_REJUVENATOR",
+  "status": "locked"
+ },
+ {
+  "id": "T3_VITALITY_MAGE",
+  "name": "Vitality Mage",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_SUPPORT_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GROWTH_MAGE",
+  "name": "Growth Mage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_VITALITY_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_UNYIELDING_GROWTH",
+  "name": "Unyielding Growth",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_GROWTH_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SIZE_MANIPULATOR",
+  "name": "Size Manipulator",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_GROWTH_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_UNKILLABLE_JOE",
+  "name": "Unkillable Joe",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_VITALITY_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_UNMOVEABLE_OBJECT",
+  "name": "Unmoveable Object",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_UNKILLABLE_JOE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_INDOMITABLE_JOE",
+  "name": "Indomitable Joe",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_UNKILLABLE_JOE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_LIFEBINDER",
+  "name": "Lifebinder",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_VITALITY_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SOULBINDER",
+  "name": "Soulbinder",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_LIFEBINDER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_FOUNTAIN_OF_VITALITY",
+  "name": "Fountain of Vitality",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_LIFEBINDER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_BARRIER_MAGE",
+  "name": "Barrier Mage",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_SUPPORT_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BASTION_WARD_MAGE",
+  "name": "Bastion Ward Mage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_BARRIER_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_THE_LAST_FORTRESS_MAGE",
+  "name": "The Last Fortress Mage",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_BASTION_WARD_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SANCTUARY_MAGE",
+  "name": "Sanctuary Mage",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_BASTION_WARD_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BUBBLE_MAGE",
+  "name": "Bubble Mage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_BARRIER_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_AEGIS_CUSTODIAN",
+  "name": "Aegis Custodian",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_BUBBLE_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_ATMOSPHERIC_DOME",
+  "name": "Atmospheric Dome",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_BUBBLE_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_TELEKINESIS_MAGE",
+  "name": "Telekinesis Mage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_BARRIER_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_EDITOR_PRIVILEGES_ENABLED",
+  "name": "Editor Privileges Enabled",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_TELEKINESIS_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_TRUE_TELEKINETIC",
+  "name": "True Telekinetic",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_TELEKINESIS_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T2_NOVICE_DARK_MAGE",
+  "name": "Novice Dark Mage",
+  "tier": 2,
+  "path": "MAGIC",
+  "parent_id": "T1_MAGIC_USER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_NECROMANCER",
+  "name": "Necromancer",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_DARK_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BONE_CRAFTER",
+  "name": "Bone Crafter",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_NECROMANCER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SKELETON_LORD",
+  "name": "Skeleton Lord",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_BONE_CRAFTER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_LORD_OF_BONE",
+  "name": "Lord of Bone",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_BONE_CRAFTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SOUL_REAPER",
+  "name": "Soul Reaper",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_NECROMANCER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_GRIM_REAPER",
+  "name": "Grim Reaper",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SOUL_REAPER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SOUL_HARVESTER",
+  "name": "Soul Harvester",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SOUL_REAPER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_UNTETHERED_SOUL",
+  "name": "Untethered Soul",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_NECROMANCER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_LICH",
+  "name": "Lich",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_UNTETHERED_SOUL",
+  "status": "locked"
+ },
+ {
+  "id": "T5_ABOMINATION",
+  "name": "Abomination",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_UNTETHERED_SOUL",
+  "status": "locked"
+ },
+ {
+  "id": "T3_BLOOD_MAGE",
+  "name": "Blood Mage",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_DARK_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_VAMPIRE",
+  "name": "Vampire",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_BLOOD_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_ROYAL_PUREBLOOD_VAMPIRE",
+  "name": "Royal Pureblood Vampire",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_VAMPIRE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SANGUINE_HORROR",
+  "name": "Sanguine Horror",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_VAMPIRE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HEMOMANCER",
+  "name": "Hemomancer",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_BLOOD_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SANGUINE_ELEMENTAL",
+  "name": "Sanguine Elemental",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_HEMOMANCER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_BLOOD_BENDER",
+  "name": "Blood-bender",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_HEMOMANCER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_WARLOCK",
+  "name": "Warlock",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_BLOOD_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_THE_DEVILBOUND",
+  "name": "\"The Devilbound\"",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_WARLOCK",
+  "status": "locked"
+ },
+ {
+  "id": "T5_DEMONIC_MASTER",
+  "name": "Demonic Master",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_WARLOCK",
+  "status": "locked"
+ },
+ {
+  "id": "T3_CURSE_MAGE",
+  "name": "Curse Mage",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_DARK_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DEATH_MAGE",
+  "name": "Death Mage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_CURSE_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_THE_FORGOTTEN_ONE",
+  "name": "The Forgotten One",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_DEATH_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SOULSHATTERED_MAGE",
+  "name": "SoulShattered Mage",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_DEATH_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PAIN_MAGE",
+  "name": "Pain Mage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_CURSE_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_VIVACIOUS_TORTURER",
+  "name": "Vivacious Torturer",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_PAIN_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_HE_WHO_KNOWS_PAIN",
+  "name": "\"He Who Knows Pain\"",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_PAIN_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_CONTROL_MAGE",
+  "name": "Control Mage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_CURSE_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_MACHIAVELLI",
+  "name": "Machiavelli",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_CONTROL_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SLAVER",
+  "name": "Slaver",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_CONTROL_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T3_ADVANCED_DARK_MAGE",
+  "name": "Advanced Dark Mage",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_DARK_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SHADE_ELEMENTAL",
+  "name": "Shade Elemental",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_ADVANCED_DARK_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SHADOW_FROM_BEYOND",
+  "name": "Shadow From Beyond",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SHADE_ELEMENTAL",
+  "status": "locked"
+ },
+ {
+  "id": "T5_LEGION_OF_SHADES",
+  "name": "Legion of Shades",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SHADE_ELEMENTAL",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DARK_MASTER",
+  "name": "Dark Master",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_ADVANCED_DARK_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_ETERNAL_NIGHT",
+  "name": "Eternal Night",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_DARK_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_LORD_OF_STARS",
+  "name": "Lord of Stars",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_DARK_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SEALED_PARAGON",
+  "name": "Sealed Paragon",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_ADVANCED_DARK_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_THE_UNSHACKLED_SOVEREIGN",
+  "name": "The Unshackled Sovereign",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SEALED_PARAGON",
+  "status": "locked"
+ },
+ {
+  "id": "T5_THE_SHATTERED_APEX",
+  "name": "The Shattered Apex",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SEALED_PARAGON",
+  "status": "locked"
+ },
+ {
+  "id": "T2_NOVICE_WIZARD",
+  "name": "Novice Wizard",
+  "tier": 2,
+  "path": "MAGIC",
+  "parent_id": "T1_MAGIC_USER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_SPELLBLADE",
+  "name": "Spellblade",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_WIZARD",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SPELLSWORD",
+  "name": "Spellsword",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_SPELLBLADE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SWORD_OF_FIRE",
+  "name": "Sword of Fire",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SPELLSWORD",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SWORD_OF_ICE",
+  "name": "Sword of Ice",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SPELLSWORD",
+  "status": "locked"
+ },
+ {
+  "id": "T4_RUNE_BLADE",
+  "name": "Rune-Blade",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_SPELLBLADE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_ZERO_POINT_EDGE",
+  "name": "Zero Point Edge",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_RUNE_BLADE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_CURSED_BLADE",
+  "name": "Cursed Blade",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_RUNE_BLADE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SPELL_EATER",
+  "name": "Spell-Eater",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_SPELLBLADE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_MAGIC_DEVOURER",
+  "name": "Magic Devourer",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SPELL_EATER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_THE_ANTI_MAGIC_BLADE",
+  "name": "The Anti-Magic Blade",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SPELL_EATER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_ARCANE_WIZARD",
+  "name": "Arcane Wizard",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_WIZARD",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GRANDMASTER_WIZARD",
+  "name": "Grandmaster Wizard",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_ARCANE_WIZARD",
+  "status": "locked"
+ },
+ {
+  "id": "T5_ARCHMAGE",
+  "name": "Archmage",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_GRANDMASTER_WIZARD",
+  "status": "locked"
+ },
+ {
+  "id": "T5_ARCANE_ELEMENTAL",
+  "name": "Arcane Elemental",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_GRANDMASTER_WIZARD",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MANA_SAGE",
+  "name": "Mana Sage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_ARCANE_WIZARD",
+  "status": "locked"
+ },
+ {
+  "id": "T5_WELL_OF_MANA",
+  "name": "Well of Mana",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_MANA_SAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_MANA_ELEMENTAL",
+  "name": "Mana Elemental",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_MANA_SAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_RITUALIST",
+  "name": "Ritualist",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_ARCANE_WIZARD",
+  "status": "locked"
+ },
+ {
+  "id": "T5_GRAND_RITUALIST",
+  "name": "Grand Ritualist",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_RITUALIST",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SHAMAN",
+  "name": "Shaman",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_RITUALIST",
+  "status": "locked"
+ },
+ {
+  "id": "T3_SPIRIT_MAGE",
+  "name": "Spirit Mage",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_WIZARD",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SPIRIT_ELEMENTALIST",
+  "name": "Spirit Elementalist",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_SPIRIT_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SPIRIT_CONDUIT",
+  "name": "Spirit Conduit",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SPIRIT_ELEMENTALIST",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SPIRIT_CALLER",
+  "name": "Spirit Caller",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SPIRIT_ELEMENTALIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PHANTASM",
+  "name": "Phantasm",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_SPIRIT_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_ETHEREAL_SPECTER",
+  "name": "Ethereal Specter",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_PHANTASM",
+  "status": "locked"
+ },
+ {
+  "id": "T5_POLTERGEIST",
+  "name": "Poltergeist",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_PHANTASM",
+  "status": "locked"
+ },
+ {
+  "id": "T4_THE_SPIRITBOUND",
+  "name": "\"The Spiritbound\"",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_SPIRIT_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_ULTIMATE_SPIRIT_AVATAR",
+  "name": "Ultimate Spirit Avatar",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_THE_SPIRITBOUND",
+  "status": "locked"
+ },
+ {
+  "id": "T5_SPIRIT_GORGED_VESSEL",
+  "name": "Spirit-Gorged Vessel",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_THE_SPIRITBOUND",
+  "status": "locked"
+ },
+ {
+  "id": "T3_ESOTERICIST",
+  "name": "Esotericist",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_WIZARD",
+  "status": "locked"
+ },
+ {
+  "id": "T4_TIME_MAGE",
+  "name": "Time Mage",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_ESOTERICIST",
+  "status": "locked"
+ },
+ {
+  "id": "T5_THE_CLOCKMAKER",
+  "name": "The Clockmaker",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_TIME_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T5_THE_WATCHER",
+  "name": "The Watcher",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_TIME_MAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_TRANSCENDENT",
+  "name": "Transcendent",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_ESOTERICIST",
+  "status": "locked"
+ },
+ {
+  "id": "T5_DESCENDED_DEITY",
+  "name": "Descended Deity",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_TRANSCENDENT",
+  "status": "locked"
+ },
+ {
+  "id": "T5_PEACEWALKER",
+  "name": "Peacewalker",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_TRANSCENDENT",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ELDRITCH_SCHOLAR",
+  "name": "Eldritch Scholar",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_ESOTERICIST",
+  "status": "locked"
+ },
+ {
+  "id": "T5_VESSEL_OF_THE_NAMELESS_VOID",
+  "name": "Vessel of the Nameless Void",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_ELDRITCH_SCHOLAR",
+  "status": "check"
+ },
+ {
+  "id": "T5_INHABITANT_OF_THE_IMPOSSIBLE",
+  "name": "Inhabitant of the Impossible",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_ELDRITCH_SCHOLAR",
+  "status": "locked"
+ },
+ {
+  "id": "T2_NOVICE_ARTIFICER",
+  "name": "Novice Artificer",
+  "tier": 2,
+  "path": "MAGIC",
+  "parent_id": "T1_MAGIC_USER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_GOLEM_SMITH",
+  "name": "Golem Smith",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_ARTIFICER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_FORGESMITH_ASCENDANT",
+  "name": "Forgesmith Ascendant",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_GOLEM_SMITH",
+  "status": "locked"
+ },
+ {
+  "id": "T5_ARMOUR_LORD",
+  "name": "Armour Lord",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_FORGESMITH_ASCENDANT",
+  "status": "locked"
+ },
+ {
+  "id": "T5_POWER_EXOSKELETON",
+  "name": "Power Exoskeleton",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_FORGESMITH_ASCENDANT",
+  "status": "locked"
+ },
+ {
+  "id": "T4_AUTOMATON_LORD",
+  "name": "Automaton Lord",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_GOLEM_SMITH",
+  "status": "locked"
+ },
+ {
+  "id": "T5_CLOCKWORK_KING",
+  "name": "Clockwork King",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_AUTOMATON_LORD",
+  "status": "locked"
+ },
+ {
+  "id": "T5_FACTORY_DESIGNER",
+  "name": "Factory Designer",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_AUTOMATON_LORD",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SWARM_SMITH",
+  "name": "Swarm-Smith",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_GOLEM_SMITH",
+  "status": "locked"
+ },
+ {
+  "id": "T5_GREY_GOO_GUY",
+  "name": "Grey Goo Guy",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SWARM_SMITH",
+  "status": "locked"
+ },
+ {
+  "id": "T5_NANITE_PARAGON",
+  "name": "Nanite Paragon",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SWARM_SMITH",
+  "status": "locked"
+ },
+ {
+  "id": "T3_ADVANCED_ARTIFICER",
+  "name": "Advanced Artificer",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_ARTIFICER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MASTER_ARTIFICER",
+  "name": "Master Artificer",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_ADVANCED_ARTIFICER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_UNSHACKLED_CREATOR",
+  "name": "Unshackled Creator",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_MASTER_ARTIFICER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_LEADER_OF_CREATION",
+  "name": "Leader of Creation",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_MASTER_ARTIFICER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GUNSMITH",
+  "name": "Gunsmith",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_ADVANCED_ARTIFICER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_ARTISANAL_CANNONEER",
+  "name": "Artisanal Cannoneer",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_GUNSMITH",
+  "status": "locked"
+ },
+ {
+  "id": "T5_HYPERFIXATED_GUN_NERD",
+  "name": "Hyperfixated Gun Nerd",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_GUNSMITH",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MAGITECH_ARCHITECT",
+  "name": "Magitech Architect",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_ADVANCED_ARTIFICER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_TELEPORTATION_GRIDMASTER",
+  "name": "Teleportation Gridmaster",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_MAGITECH_ARCHITECT",
+  "status": "locked"
+ },
+ {
+  "id": "T5_THE_MASTER_OF_THE_CITADEL",
+  "name": "The Master of the Citadel",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_MAGITECH_ARCHITECT",
+  "status": "locked"
+ },
+ {
+  "id": "T3_RUNESMITH_ARMORNAUT",
+  "name": "Runesmith / Armornaut",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_ARTIFICER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_THE_RUNEBOUND",
+  "name": "\"The Runebound\"",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_RUNESMITH_ARMORNAUT",
+  "status": "locked"
+ },
+ {
+  "id": "T5_LIVING_MASTER_RUNE",
+  "name": "Living Master Rune",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_THE_RUNEBOUND",
+  "status": "locked"
+ },
+ {
+  "id": "T5_MONOLITH_OF_BALANCE",
+  "name": "Monolith of Balance",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_THE_RUNEBOUND",
+  "status": "locked"
+ },
+ {
+  "id": "T4_RESEARCH_AND_DEVELOPMENT",
+  "name": "\"Research & Development\"",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_RUNESMITH_ARMORNAUT",
+  "status": "locked"
+ },
+ {
+  "id": "T5_ATOM_SPLITTER",
+  "name": "Atom Splitter",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_RESEARCH_AND_DEVELOPMENT",
+  "status": "locked"
+ },
+ {
+  "id": "T5_EXPERIMENTAL_WEAPONS_DEPARTMENT",
+  "name": "\"Experimental Weapons Department\"",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_RESEARCH_AND_DEVELOPMENT",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SCHOLAR",
+  "name": "Scholar",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_RUNESMITH_ARMORNAUT",
+  "status": "locked"
+ },
+ {
+  "id": "T5_ABSOLUTE_TRUE_GENIUS",
+  "name": "Absolute True Genius",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SCHOLAR",
+  "status": "locked"
+ },
+ {
+  "id": "T5_MIND_SHATTERED_SAVANT_OF_RUIN",
+  "name": "Mind Shattered Savant of Ruin",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_SCHOLAR",
+  "status": "locked"
+ },
+ {
+  "id": "T3_TECHNOMANCER",
+  "name": "Technomancer",
+  "tier": 3,
+  "path": "MAGIC",
+  "parent_id": "T2_NOVICE_ARTIFICER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_CYBORG",
+  "name": "Cyborg",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_TECHNOMANCER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_FULLY_CHROMED_SOVEREIGN",
+  "name": "Fully Chromed Sovereign",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_CYBORG",
+  "status": "locked"
+ },
+ {
+  "id": "T5_TECHNOLOGICAL_TERROR",
+  "name": "Technological Terror",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_CYBORG",
+  "status": "locked"
+ },
+ {
+  "id": "T4_WATCHDOG",
+  "name": "Watchdog",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_TECHNOMANCER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_OVERSEER",
+  "name": "Overseer",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_WATCHDOG",
+  "status": "locked"
+ },
+ {
+  "id": "T5_FIREWALL",
+  "name": "Firewall",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_WATCHDOG",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HACKER",
+  "name": "Hacker",
+  "tier": 4,
+  "path": "MAGIC",
+  "parent_id": "T3_TECHNOMANCER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_BLACK_HAT",
+  "name": "Black Hat",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_HACKER",
+  "status": "locked"
+ },
+ {
+  "id": "T5_WHITE_HAT",
+  "name": "White Hat",
+  "tier": 5,
+  "path": "MAGIC",
+  "parent_id": "T4_HACKER",
+  "status": "locked"
+ },
+ {
+  "id": "T1_RANGED_USER",
+  "name": "Ranged User",
+  "tier": 1,
+  "path": "RANGED",
+  "parent_id": "T0_UNCLASSED_SURVIVOR",
+  "status": "locked"
+ },
+ {
+  "id": "T2_BOWMAN",
+  "name": "Bowman",
+  "tier": 2,
+  "path": "RANGED",
+  "parent_id": "T1_RANGED_USER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_LONGBOWMAN",
+  "name": "Longbowman",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_BOWMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SHARPSHOOTER",
+  "name": "Sharpshooter",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_LONGBOWMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_FLETCHER",
+  "name": "Fletcher",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_LONGBOWMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_LOOKOUT",
+  "name": "Lookout",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_LONGBOWMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T3_DEADEYE",
+  "name": "Deadeye",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_BOWMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_AMBUSHER",
+  "name": "Ambusher",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_DEADEYE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_TRICKSHOTTER",
+  "name": "Trickshotter",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_DEADEYE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BULLSEYE",
+  "name": "Bullseye",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_DEADEYE",
+  "status": "locked"
+ },
+ {
+  "id": "T3_CROSSBOWMAN",
+  "name": "Crossbowman",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_BOWMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ARBALIST",
+  "name": "Arbalist",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_CROSSBOWMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SEMI_AUTOMATIC_CROSSBOWMAN",
+  "name": "Semi-Automatic Crossbowman",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_CROSSBOWMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PAVISE_BEARER",
+  "name": "Pavise Bearer",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_CROSSBOWMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T3_HIGHWAYMAN",
+  "name": "Highwayman",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_BOWMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HITMAN",
+  "name": "Hitman",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_HIGHWAYMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_STALKER",
+  "name": "Stalker",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_HIGHWAYMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DRIFTER",
+  "name": "Drifter",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_HIGHWAYMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T2_NOVICE_HUNTER",
+  "name": "Novice Hunter",
+  "tier": 2,
+  "path": "RANGED",
+  "parent_id": "T1_RANGED_USER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_TAMER",
+  "name": "Tamer",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_NOVICE_HUNTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BEAST_MASTER",
+  "name": "Beast Master",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_TAMER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SHAPE_SHIFTER",
+  "name": "Shape Shifter",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_TAMER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_COMMUNICATOR",
+  "name": "Communicator",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_TAMER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_TRAPPER",
+  "name": "Trapper",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_NOVICE_HUNTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SWEEPER",
+  "name": "Sweeper",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_TRAPPER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_WEBWEAVER",
+  "name": "Webweaver",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_TRAPPER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BIG_RED_BUTTON_GUY",
+  "name": "\"Big Red Button Guy\"",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_TRAPPER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_TRACKER",
+  "name": "Tracker",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_NOVICE_HUNTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ANALYST",
+  "name": "Analyst",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_TRACKER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_TRIBESMAN",
+  "name": "Tribesman",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_TRACKER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HIKER",
+  "name": "Hiker",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_TRACKER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_SURVIVALIST",
+  "name": "Survivalist",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_NOVICE_HUNTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_STOIC",
+  "name": "Stoic",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_SURVIVALIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SCAVENGER",
+  "name": "Scavenger",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_SURVIVALIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_THE_PRIMAL_HUNTER",
+  "name": "The Primal Hunter",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_SURVIVALIST",
+  "status": "locked"
+ },
+ {
+  "id": "T2_GUNSLINGER",
+  "name": "Gunslinger",
+  "tier": 2,
+  "path": "RANGED",
+  "parent_id": "T1_RANGED_USER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_PISTOLERO",
+  "name": "Pistolero",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_GUNSLINGER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SHERIFF",
+  "name": "Sheriff",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_PISTOLERO",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DESPERADO",
+  "name": "Desperado",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_PISTOLERO",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GUNGHO_GARRY",
+  "name": "\"Gungho Garry\"",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_PISTOLERO",
+  "status": "locked"
+ },
+ {
+  "id": "T3_SOLDIER",
+  "name": "Soldier",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_GUNSLINGER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_COMMANDER",
+  "name": "Commander",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_SOLDIER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MACHINE_GUNNER",
+  "name": "Machine Gunner",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_SOLDIER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_COMBAT_MEDIC",
+  "name": "Combat Medic",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_SOLDIER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_SNIPER",
+  "name": "Sniper",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_GUNSLINGER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_RECONNAISSANCE_SNIPER",
+  "name": "Reconnaissance Sniper",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_SNIPER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_RAILGUNNER",
+  "name": "Railgunner",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_SNIPER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GHILLIE_SUIT_SNIPER",
+  "name": "Ghillie Suit Sniper",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_SNIPER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_BUCKSHOT_BARRY",
+  "name": "\"Buckshot Barry\"",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_GUNSLINGER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_FLAMETHROWER_FRANKIE",
+  "name": "Flamethrower Frankie",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_BUCKSHOT_BARRY",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ROCKET_LAUNCHER_RANDY",
+  "name": "Rocket Launcher Randy",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_BUCKSHOT_BARRY",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BUCKSHOT_BARRY_WITH_ANOTHER_SHOTGUN",
+  "name": "Buckshot Barry (with another shotgun!)",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_BUCKSHOT_BARRY",
+  "status": "locked"
+ },
+ {
+  "id": "T2_HURLER",
+  "name": "Hurler",
+  "tier": 2,
+  "path": "RANGED",
+  "parent_id": "T1_RANGED_USER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_SPEAR_THROWER",
+  "name": "Spear Thrower",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_HURLER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_TRIDENT_MASTER",
+  "name": "Trident Master",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_SPEAR_THROWER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HARPOONER",
+  "name": "Harpooner",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_SPEAR_THROWER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_IMPALER",
+  "name": "Impaler",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_SPEAR_THROWER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_BOMBER",
+  "name": "Bomber",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_HURLER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ARSONIST",
+  "name": "Arsonist",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_BOMBER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_INCISIONIST",
+  "name": "Incisionist",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_BOMBER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ANARCHIST",
+  "name": "Anarchist",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_BOMBER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_BIG_CHUCK",
+  "name": "Big Chuck",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_HURLER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BOWLING_BOB",
+  "name": "Bowling Bob",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_BIG_CHUCK",
+  "status": "locked"
+ },
+ {
+  "id": "T4_CINDER_BLOCK_CINDY",
+  "name": "Cinder Block Cindy",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_BIG_CHUCK",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BIGGER_CHUCK",
+  "name": "Bigger Chuck",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_BIG_CHUCK",
+  "status": "locked"
+ },
+ {
+  "id": "T3_BOOMERANGER",
+  "name": "Boomeranger",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_HURLER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GLAIVE_THROWER",
+  "name": "Glaive Thrower",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_BOOMERANGER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_REELER",
+  "name": "Reeler",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_BOOMERANGER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_THE_BUSHRANGER",
+  "name": "The Bushranger",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_BOOMERANGER",
+  "status": "locked"
+ },
+ {
+  "id": "T2_SLINGSHOTTER",
+  "name": "Slingshotter",
+  "tier": 2,
+  "path": "RANGED",
+  "parent_id": "T1_RANGED_USER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_SLING_MASTER",
+  "name": "Sling Master",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_SLINGSHOTTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HUNTER_OF_GIANTS",
+  "name": "Hunter of Giants",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_SLING_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SLING_SAVANT",
+  "name": "Sling Savant",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_SLING_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_FLAIL_LORD",
+  "name": "Flail Lord",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_SLING_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_BLOWGUN_SPECIALIST",
+  "name": "Blowgun Specialist",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_SLINGSHOTTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_TRANQUILIZER",
+  "name": "Tranquilizer",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_BLOWGUN_SPECIALIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_WITCH_DOCTOR",
+  "name": "Witch Doctor",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_BLOWGUN_SPECIALIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BLOWGUN_SNIPER",
+  "name": "Blowgun Sniper",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_BLOWGUN_SPECIALIST",
+  "status": "locked"
+ },
+ {
+  "id": "T3_NETCASTER",
+  "name": "Netcaster",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_SLINGSHOTTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BOLA_MASTER",
+  "name": "Bola Master",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_NETCASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GOO_GUNNER",
+  "name": "Goo Gunner",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_NETCASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ICE_MONKEY",
+  "name": "Ice Monkey",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_NETCASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_TRICKSTER",
+  "name": "Trickster",
+  "tier": 3,
+  "path": "RANGED",
+  "parent_id": "T2_SLINGSHOTTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_JOKER",
+  "name": "Joker",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_TRICKSTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ILLUSIONIST",
+  "name": "Illusionist",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_TRICKSTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_NINJA",
+  "name": "Ninja",
+  "tier": 4,
+  "path": "RANGED",
+  "parent_id": "T3_TRICKSTER",
+  "status": "locked"
+ },
+ {
+  "id": "T1_LIGHT_MELEE",
+  "name": "Light Melee",
+  "tier": 1,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T0_UNCLASSED_SURVIVOR",
+  "status": "locked"
+ },
+ {
+  "id": "T2_THIEF",
+  "name": "Thief",
+  "tier": 2,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T1_LIGHT_MELEE",
+  "status": "locked"
+ },
+ {
+  "id": "T3_GOBLIN",
+  "name": "Goblin",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_THIEF",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GOBLIN_CHIEFTAIN",
+  "name": "Goblin Chieftain",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_GOBLIN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HOBGOBLIN",
+  "name": "Hobgoblin",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_GOBLIN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GOBLIN_SHAMAN",
+  "name": "Goblin Shaman",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_GOBLIN",
+  "status": "locked"
+ },
+ {
+  "id": "T3_BURGLAR",
+  "name": "Burglar",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_THIEF",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HEISTER",
+  "name": "Heister",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_BURGLAR",
+  "status": "locked"
+ },
+ {
+  "id": "T4_CAT_BURGLAR",
+  "name": "Cat Burglar",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_BURGLAR",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ARCHAEOLOGIST",
+  "name": "Archaeologist",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_BURGLAR",
+  "status": "locked"
+ },
+ {
+  "id": "T3_CRIMINAL",
+  "name": "Criminal",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_THIEF",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DRUG_DEALER",
+  "name": "Drug Dealer",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_CRIMINAL",
+  "status": "locked"
+ },
+ {
+  "id": "T4_KINGPIN",
+  "name": "Kingpin",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_CRIMINAL",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PSYCHO",
+  "name": "Psycho",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_CRIMINAL",
+  "status": "locked"
+ },
+ {
+  "id": "T3_OUTLAW",
+  "name": "Outlaw",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_THIEF",
+  "status": "locked"
+ },
+ {
+  "id": "T4_REBEL",
+  "name": "Rebel",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_OUTLAW",
+  "status": "locked"
+ },
+ {
+  "id": "T4_RIOTER",
+  "name": "Rioter",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_OUTLAW",
+  "status": "locked"
+ },
+ {
+  "id": "T4_LONE_WOLF",
+  "name": "Lone Wolf",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_OUTLAW",
+  "status": "locked"
+ },
+ {
+  "id": "T2_SCOUT",
+  "name": "Scout",
+  "tier": 2,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T1_LIGHT_MELEE",
+  "status": "locked"
+ },
+ {
+  "id": "T3_PATHFINDER",
+  "name": "Pathfinder",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_SCOUT",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BEACON",
+  "name": "Beacon",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_PATHFINDER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_TREASURE_HUNTER",
+  "name": "Treasure Hunter",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_PATHFINDER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_CARTOGRAPHER",
+  "name": "Cartographer",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_PATHFINDER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_OUTRIDER",
+  "name": "Outrider",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_SCOUT",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ATHLETE",
+  "name": "Athlete",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_OUTRIDER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MESSENGER",
+  "name": "Messenger",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_OUTRIDER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_STRIDEWALKER",
+  "name": "Stridewalker",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_OUTRIDER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_VANGUARD_SCOUT",
+  "name": "Vanguard Scout",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_SCOUT",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SPY",
+  "name": "Spy",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_VANGUARD_SCOUT",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SHADOW",
+  "name": "Shadow",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_VANGUARD_SCOUT",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ELITE_SCOUT",
+  "name": "Elite Scout",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_VANGUARD_SCOUT",
+  "status": "locked"
+ },
+ {
+  "id": "T3_SURVEYOR",
+  "name": "Surveyor",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_SCOUT",
+  "status": "locked"
+ },
+ {
+  "id": "T4_OBSERVER",
+  "name": "Observer",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_SURVEYOR",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SEER",
+  "name": "Seer",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_SURVEYOR",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PANOPTICON",
+  "name": "Panopticon",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_SURVEYOR",
+  "status": "locked"
+ },
+ {
+  "id": "T2_ASSASSIN",
+  "name": "Assassin",
+  "tier": 2,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T1_LIGHT_MELEE",
+  "status": "locked"
+ },
+ {
+  "id": "T3_SHADOWDANCER",
+  "name": "Shadowdancer",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_ASSASSIN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SHADOWJUMPER",
+  "name": "Shadowjumper",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_SHADOWDANCER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HAUNTER",
+  "name": "Haunter",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_SHADOWDANCER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MALIGNANCE",
+  "name": "Malignance",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_SHADOWDANCER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_POISONER",
+  "name": "Poisoner",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_ASSASSIN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SNAKE_KIN",
+  "name": "Snake Kin",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_POISONER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BLIGHTER",
+  "name": "Blighter",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_POISONER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ENVENOMER",
+  "name": "Envenomer",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_POISONER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_EXECUTIONER",
+  "name": "Executioner",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_ASSASSIN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_JUDGE",
+  "name": "Judge",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_EXECUTIONER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DISINTEGRATOR",
+  "name": "Disintegrator",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_EXECUTIONER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_OBLIVION",
+  "name": "Oblivion",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_EXECUTIONER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_MASTER_ASSASSIN",
+  "name": "Master Assassin",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_ASSASSIN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_EXCOMMUNICATED_CONTRACT_KILLER",
+  "name": "Excommunicated Contract Killer",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_MASTER_ASSASSIN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GRANDMASTER_ASSASSIN",
+  "name": "Grandmaster Assassin",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_MASTER_ASSASSIN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MARKSMAN",
+  "name": "Marksman",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_MASTER_ASSASSIN",
+  "status": "locked"
+ },
+ {
+  "id": "T2_BRAWLER",
+  "name": "Brawler",
+  "tier": 2,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T1_LIGHT_MELEE",
+  "status": "locked"
+ },
+ {
+  "id": "T3_PUGILIST",
+  "name": "Pugilist",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_BRAWLER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PUNCHER",
+  "name": "Puncher",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_PUGILIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BOXER",
+  "name": "Boxer",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_PUGILIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_IRON_FIST",
+  "name": "Iron Fist",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_PUGILIST",
+  "status": "locked"
+ },
+ {
+  "id": "T3_GRAPPLER",
+  "name": "Grappler",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_BRAWLER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_WRESTLER",
+  "name": "Wrestler",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_GRAPPLER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BOUNCER",
+  "name": "Bouncer",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_GRAPPLER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_JUDOKA",
+  "name": "Judoka",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_GRAPPLER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_KICKBOXER",
+  "name": "Kickboxer",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_BRAWLER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_KANGAROO",
+  "name": "Kangaroo",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_KICKBOXER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_NUT_KICKER",
+  "name": "Nut Kicker",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_KICKBOXER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MMA_FIGHTER",
+  "name": "MMA Fighter",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_KICKBOXER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_MARTIAL_ARTIST",
+  "name": "Martial Artist",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_BRAWLER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DAOIST",
+  "name": "Daoist",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_MARTIAL_ARTIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SENSEI",
+  "name": "Sensei",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_MARTIAL_ARTIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MONK",
+  "name": "Monk",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_MARTIAL_ARTIST",
+  "status": "locked"
+ },
+ {
+  "id": "T2_DUELIST",
+  "name": "Duelist",
+  "tier": 2,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T1_LIGHT_MELEE",
+  "status": "locked"
+ },
+ {
+  "id": "T3_FENCER",
+  "name": "Fencer",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_DUELIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BLOODLETTER",
+  "name": "Bloodletter",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_FENCER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SKIRMISHER",
+  "name": "Skirmisher",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_FENCER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SKYPIERCER",
+  "name": "Skypiercer",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_FENCER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_BLADE_DANCER",
+  "name": "Blade Dancer",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_DUELIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DERVISH",
+  "name": "Dervish",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_BLADE_DANCER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BLADE_DEMON",
+  "name": "Blade Demon",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_BLADE_DANCER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SONG_OF_STEEL",
+  "name": "Song of Steel",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_BLADE_DANCER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_SWASHBUCKLER",
+  "name": "Swashbuckler",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_DUELIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PIRATE_CAPTAIN",
+  "name": "Pirate Captain",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_SWASHBUCKLER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_QUARTERMASTER",
+  "name": "Quartermaster",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_SWASHBUCKLER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_THE_DAMNED",
+  "name": "\"The Damned\"",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_SWASHBUCKLER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_SWORDSMAN",
+  "name": "Swordsman",
+  "tier": 3,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T2_DUELIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GRANDMASTER_SWORDSMAN",
+  "name": "Grandmaster Swordsman",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_SWORDSMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_JEDI",
+  "name": "Jedi",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_SWORDSMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_KENSAI",
+  "name": "Kensai",
+  "tier": 4,
+  "path": "LIGHT_MELEE",
+  "parent_id": "T3_SWORDSMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T1_HEAVY_MELEE",
+  "name": "Heavy Melee",
+  "tier": 1,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T0_UNCLASSED_SURVIVOR",
+  "status": "locked"
+ },
+ {
+  "id": "T2_CROG",
+  "name": "Crog",
+  "tier": 2,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T1_HEAVY_MELEE",
+  "status": "locked"
+ },
+ {
+  "id": "T3_NEANDERTHAL",
+  "name": "Neanderthal",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_CROG",
+  "status": "locked"
+ },
+ {
+  "id": "T4_APE",
+  "name": "Ape",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_NEANDERTHAL",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DINOSAUR_TAMER",
+  "name": "Dinosaur Tamer",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_NEANDERTHAL",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PRIMAL",
+  "name": "Primal",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_NEANDERTHAL",
+  "status": "locked"
+ },
+ {
+  "id": "T3_OGRE_KIN",
+  "name": "Ogre-Kin",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_CROG",
+  "status": "locked"
+ },
+ {
+  "id": "T4_OGRE_BRAWLER",
+  "name": "Ogre Brawler",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_OGRE_KIN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_OGRE_CHIEFTAIN",
+  "name": "Ogre Chieftain",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_OGRE_KIN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SMALL_OGRE",
+  "name": "\"Small\" Ogre",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_OGRE_KIN",
+  "status": "locked"
+ },
+ {
+  "id": "T3_STICK_MASTER",
+  "name": "Stick Master",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_CROG",
+  "status": "locked"
+ },
+ {
+  "id": "T4_THRUSTLORD",
+  "name": "ThrustLord",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_STICK_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SWINGLORD",
+  "name": "SwingLord",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_STICK_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SWIPELORD",
+  "name": "SwipeLord",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_STICK_MASTER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_THROGG",
+  "name": "Throgg",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_CROG",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GIANT_KIN",
+  "name": "Giant-kin",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_THROGG",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HERACLES",
+  "name": "Heracles",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_THROGG",
+  "status": "locked"
+ },
+ {
+  "id": "T4_THRAXX",
+  "name": "Thraxx",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_THROGG",
+  "status": "locked"
+ },
+ {
+  "id": "T2_SQUIRE",
+  "name": "Squire",
+  "tier": 2,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T1_HEAVY_MELEE",
+  "status": "locked"
+ },
+ {
+  "id": "T3_KNIGHT",
+  "name": "Knight",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_SQUIRE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_AURABLADE_KNIGHT",
+  "name": "Aurablade Knight",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_KNIGHT",
+  "status": "locked"
+ },
+ {
+  "id": "T4_LORD",
+  "name": "Lord",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_KNIGHT",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PRINCE_CHARMING",
+  "name": "Prince Charming",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_KNIGHT",
+  "status": "locked"
+ },
+ {
+  "id": "T3_SPEARMAN",
+  "name": "Spearman",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_SQUIRE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PHALANX",
+  "name": "Phalanx",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_SPEARMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DRAGOON",
+  "name": "Dragoon",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_SPEARMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GLADIATOR",
+  "name": "Gladiator",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_SPEARMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T3_STRATEGIST",
+  "name": "Strategist",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_SQUIRE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_AUGUR",
+  "name": "Augur",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_STRATEGIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_TACTICIAN",
+  "name": "Tactician",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_STRATEGIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_LEADER",
+  "name": "Leader",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_STRATEGIST",
+  "status": "locked"
+ },
+ {
+  "id": "T3_FLAG_BEARER",
+  "name": "Flag Bearer",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_SQUIRE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_WELL_OF_HOPE",
+  "name": "Well of Hope",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_FLAG_BEARER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_WARCALLER",
+  "name": "Warcaller",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_FLAG_BEARER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DREAD_HERALD",
+  "name": "Dread Herald",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_FLAG_BEARER",
+  "status": "locked"
+ },
+ {
+  "id": "T2_INITIATE_PALADIN",
+  "name": "Initiate Paladin",
+  "tier": 2,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T1_HEAVY_MELEE",
+  "status": "locked"
+ },
+ {
+  "id": "T3_VALKYRIE",
+  "name": "Valkyrie",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_INITIATE_PALADIN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_STORM_MAIDEN",
+  "name": "Storm Maiden",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_VALKYRIE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_EINHERJAR_VANGUARD",
+  "name": "Einherjar Vanguard",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_VALKYRIE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SHIELD_MAIDEN",
+  "name": "Shield Maiden",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_VALKYRIE",
+  "status": "locked"
+ },
+ {
+  "id": "T3_CRUSADER",
+  "name": "Crusader",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_INITIATE_PALADIN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HOLY_KNIGHT",
+  "name": "Holy Knight",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_CRUSADER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_JUSTICAR",
+  "name": "Justicar",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_CRUSADER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ZEALOT",
+  "name": "Zealot",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_CRUSADER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_TEMPLAR",
+  "name": "Templar",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_INITIATE_PALADIN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SPELLBREAKER",
+  "name": "Spellbreaker",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_TEMPLAR",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HIEROPHANT",
+  "name": "Hierophant",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_TEMPLAR",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DAWNGUARD",
+  "name": "Dawnguard",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_TEMPLAR",
+  "status": "locked"
+ },
+ {
+  "id": "T3_THE_OATHBOUND",
+  "name": "\"The Oathbound\"",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_INITIATE_PALADIN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_OATHBREAKER",
+  "name": "Oathbreaker",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_THE_OATHBOUND",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ANGELIC_WARRIOR",
+  "name": "Angelic Warrior",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_THE_OATHBOUND",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DEMONIC_WARRIOR",
+  "name": "Demonic Warrior",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_THE_OATHBOUND",
+  "status": "locked"
+ },
+ {
+  "id": "T2_HAMMERMAN",
+  "name": "Hammerman",
+  "tier": 2,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T1_HEAVY_MELEE",
+  "status": "locked"
+ },
+ {
+  "id": "T3_VIKING",
+  "name": "Viking",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_HAMMERMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BERSERKER",
+  "name": "Berserker",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_VIKING",
+  "status": "locked"
+ },
+ {
+  "id": "T4_STORM_HERALD",
+  "name": "Storm-Herald",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_VIKING",
+  "status": "locked"
+ },
+ {
+  "id": "T4_RUNE_WARRIOR",
+  "name": "Rune Warrior",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_VIKING",
+  "status": "locked"
+ },
+ {
+  "id": "T3_DWARF",
+  "name": "Dwarf",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_HAMMERMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DWARVEN_WARRIOR",
+  "name": "Dwarven Warrior",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_DWARF",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DWARVEN_ENGINEER",
+  "name": "Dwarven Engineer",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_DWARF",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DWARVEN_BLACKSMITH",
+  "name": "Dwarven Blacksmith",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_DWARF",
+  "status": "locked"
+ },
+ {
+  "id": "T3_SMITH",
+  "name": "Smith",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_HAMMERMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ARTISANAL_BLADESMITH",
+  "name": "Artisanal Bladesmith",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_SMITH",
+  "status": "locked"
+ },
+ {
+  "id": "T4_FURNACE_LORD",
+  "name": "Furnace Lord",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_SMITH",
+  "status": "locked"
+ },
+ {
+  "id": "T4_FORGE_MASTER",
+  "name": "Forge Master",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_SMITH",
+  "status": "locked"
+ },
+ {
+  "id": "T3_WRECKER",
+  "name": "Wrecker",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_HAMMERMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DESTRUCTOR",
+  "name": "Destructor",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_WRECKER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_CRUSHER",
+  "name": "Crusher",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_WRECKER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_OBLITERATOR",
+  "name": "Obliterator",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_WRECKER",
+  "status": "locked"
+ },
+ {
+  "id": "T2_SHIELDBEARER",
+  "name": "Shieldbearer",
+  "tier": 2,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T1_HEAVY_MELEE",
+  "status": "locked"
+ },
+ {
+  "id": "T3_BULWARK",
+  "name": "Bulwark",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_SHIELDBEARER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_THE_IRON_GATE",
+  "name": "The Iron Gate",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_BULWARK",
+  "status": "locked"
+ },
+ {
+  "id": "T4_FORTRESS_LORD",
+  "name": "Fortress Lord",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_BULWARK",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ROOK",
+  "name": "Rook",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_BULWARK",
+  "status": "locked"
+ },
+ {
+  "id": "T3_DEFENDER",
+  "name": "Defender",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_SHIELDBEARER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_THE_CASTLE_DOCTRINARIAN",
+  "name": "The Castle Doctrinarian",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_DEFENDER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HOME_ALONE_KID",
+  "name": "Home Alone Kid",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_DEFENDER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_KNOCKOFF_WALUIGI",
+  "name": "Knockoff Waluigi",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_DEFENDER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_BASTION",
+  "name": "Bastion",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_SHIELDBEARER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_JUGGERNAUT",
+  "name": "Juggernaut",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_BASTION",
+  "status": "locked"
+ },
+ {
+  "id": "T4_FORTRESS_INCARNATE",
+  "name": "Fortress Incarnate",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_BASTION",
+  "status": "locked"
+ },
+ {
+  "id": "T4_TITAN_SHIELD",
+  "name": "Titan-Shield",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_BASTION",
+  "status": "locked"
+ },
+ {
+  "id": "T3_EVADE_TANK",
+  "name": "Evade Tank",
+  "tier": 3,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T2_SHIELDBEARER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PARRY_LORD",
+  "name": "Parry Lord",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_EVADE_TANK",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GURU",
+  "name": "Guru",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_EVADE_TANK",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MATADOR",
+  "name": "Matador",
+  "tier": 4,
+  "path": "HEAVY_MELEE",
+  "parent_id": "T3_EVADE_TANK",
+  "status": "locked"
+ },
+ {
+  "id": "T1_SUPPORTER",
+  "name": "Supporter",
+  "tier": 1,
+  "path": "SUPPORTER",
+  "parent_id": "T0_UNCLASSED_SURVIVOR",
+  "status": "locked"
+ },
+ {
+  "id": "T2_MEDIC",
+  "name": "Medic",
+  "tier": 2,
+  "path": "SUPPORTER",
+  "parent_id": "T1_SUPPORTER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_DOCTOR",
+  "name": "Doctor",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_MEDIC",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SURGEON",
+  "name": "Surgeon",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_DOCTOR",
+  "status": "locked"
+ },
+ {
+  "id": "T4_NURSE",
+  "name": "Nurse",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_DOCTOR",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MAD_DOCTOR",
+  "name": "Mad Doctor",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_DOCTOR",
+  "status": "locked"
+ },
+ {
+  "id": "T3_SANITARIAN",
+  "name": "Sanitarian",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_MEDIC",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HAZMAT_HANK",
+  "name": "Hazmat Hank",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_SANITARIAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PURIFICATOR",
+  "name": "Purificator",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_SANITARIAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_JANICE",
+  "name": "Janice",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_SANITARIAN",
+  "status": "locked"
+ },
+ {
+  "id": "T3_GENETIC_ENGINEER",
+  "name": "Genetic Engineer",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_MEDIC",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MUTAGENIST",
+  "name": "Mutagenist",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_GENETIC_ENGINEER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_CLONER",
+  "name": "Cloner",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_GENETIC_ENGINEER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_THE_MENAGERIE",
+  "name": "The Menagerie",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_GENETIC_ENGINEER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_THERAPIST",
+  "name": "Therapist",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_MEDIC",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HYPNOTIST",
+  "name": "Hypnotist",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_THERAPIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SERENE_PRESENCE",
+  "name": "Serene Presence",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_THERAPIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DARK_MANGO_PSYCHOLOGY_EXPERT",
+  "name": "Dark Mango Psychology Expert",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_THERAPIST",
+  "status": "locked"
+ },
+ {
+  "id": "T2_HANDYMAN",
+  "name": "Handyman",
+  "tier": 2,
+  "path": "SUPPORTER",
+  "parent_id": "T1_SUPPORTER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_REPAIRMAN",
+  "name": "Repairman",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_HANDYMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_REPAIR_O_BOTS",
+  "name": "Repair-O-Bots",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_REPAIRMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MASTER_REPAIRMAN",
+  "name": "Master Repairman",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_REPAIRMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_GOOD_OL_DAVE",
+  "name": "Good Ol' Dave",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_REPAIRMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T3_BUILDER",
+  "name": "Builder",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_HANDYMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_FOREMAN",
+  "name": "Foreman",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_BUILDER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MASTER_MASON",
+  "name": "Master Mason",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_BUILDER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MACGYVER",
+  "name": "MacGyver",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_BUILDER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_DEMOLITIONIST",
+  "name": "Demolitionist",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_HANDYMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_RAZER",
+  "name": "Razer",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_DEMOLITIONIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_WORLD_EATER",
+  "name": "World Eater",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_DEMOLITIONIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PRUNER",
+  "name": "Pruner",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_DEMOLITIONIST",
+  "status": "check"
+ },
+ {
+  "id": "T3_ENGINEER",
+  "name": "Engineer",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_HANDYMAN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_CHIEF_ENGINEER",
+  "name": "Chief Engineer",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_ENGINEER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_OVERCLOCKER",
+  "name": "Overclocker",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_ENGINEER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_AUTOMATON_MECHANIC",
+  "name": "Automaton Mechanic",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_ENGINEER",
+  "status": "locked"
+ },
+ {
+  "id": "T2_NOVICE_MYSTIC",
+  "name": "Novice Mystic",
+  "tier": 2,
+  "path": "SUPPORTER",
+  "parent_id": "T1_SUPPORTER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_ORACLE",
+  "name": "Oracle",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_NOVICE_MYSTIC",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DOOMSAYER",
+  "name": "Doomsayer",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_ORACLE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_STAR_GAZER",
+  "name": "Star-Gazer",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_ORACLE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PROPHET",
+  "name": "Prophet",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_ORACLE",
+  "status": "locked"
+ },
+ {
+  "id": "T3_WEAVER",
+  "name": "Weaver",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_NOVICE_MYSTIC",
+  "status": "locked"
+ },
+ {
+  "id": "T4_THREAD_SPINNER",
+  "name": "Thread-Spinner",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_WEAVER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SPINDLE_GUARD",
+  "name": "Spindle-Guard",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_WEAVER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_TAPESTRY_CUTTER",
+  "name": "Tapestry-Cutter",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_WEAVER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_WITCH",
+  "name": "Witch",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_NOVICE_MYSTIC",
+  "status": "locked"
+ },
+ {
+  "id": "T4_CAULDRON_HAG",
+  "name": "Cauldron Hag",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_WITCH",
+  "status": "locked"
+ },
+ {
+  "id": "T4_HEX_WEAVER",
+  "name": "Hex-Weaver",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_WITCH",
+  "status": "locked"
+ },
+ {
+  "id": "T4_COVEN_MATRIARCH",
+  "name": "Coven Matriarch",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_WITCH",
+  "status": "locked"
+ },
+ {
+  "id": "T3_SAGE",
+  "name": "Sage",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_NOVICE_MYSTIC",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SAVANT",
+  "name": "Savant",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_SAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_FORBIDDEN_SCHOLAR",
+  "name": "Forbidden Scholar",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_SAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ENLIGHTENED",
+  "name": "\"Enlightened\"",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_SAGE",
+  "status": "locked"
+ },
+ {
+  "id": "T2_NOVICE_ALCHEMIST",
+  "name": "Novice Alchemist",
+  "tier": 2,
+  "path": "SUPPORTER",
+  "parent_id": "T1_SUPPORTER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_ADVANCED_ALCHEMIST",
+  "name": "Advanced Alchemist",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_NOVICE_ALCHEMIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_CHEMIST",
+  "name": "Chemist",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_ADVANCED_ALCHEMIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ELIXIR_SPECIALIST",
+  "name": "Elixir Specialist",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_ADVANCED_ALCHEMIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_VAPOUR_ADDICT",
+  "name": "Vapour Addict",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_ADVANCED_ALCHEMIST",
+  "status": "locked"
+ },
+ {
+  "id": "T3_TOXICOLOGIST",
+  "name": "Toxicologist",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_NOVICE_ALCHEMIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MIASMA_LORD",
+  "name": "Miasma Lord",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_TOXICOLOGIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_DRAGONKIN_ALCHEMIST",
+  "name": "Dragonkin Alchemist",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_TOXICOLOGIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_THE_GOOBOUND",
+  "name": "\"The Goobound\"",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_TOXICOLOGIST",
+  "status": "locked"
+ },
+ {
+  "id": "T3_TRANSMUTER",
+  "name": "Transmuter",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_NOVICE_ALCHEMIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_MATTER_SHIFTER",
+  "name": "Matter Shifter",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_TRANSMUTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PHILOSOPHERS_ALCHEMIST",
+  "name": "Philosopher's Alchemist",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_TRANSMUTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_UNSTABLE_TRANSFORMER",
+  "name": "Unstable Transformer",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_TRANSMUTER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_IMBUER",
+  "name": "Imbuer",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_NOVICE_ALCHEMIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ATTUNER",
+  "name": "Attuner",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_IMBUER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ENCHANTER",
+  "name": "Enchanter",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_IMBUER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_AWAKENER",
+  "name": "Awakener",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_IMBUER",
+  "status": "locked"
+ },
+ {
+  "id": "T2_JESTER",
+  "name": "Jester",
+  "tier": 2,
+  "path": "SUPPORTER",
+  "parent_id": "T1_SUPPORTER",
+  "status": "locked"
+ },
+ {
+  "id": "T3_CLOWN",
+  "name": "Clown",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_JESTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_CHAOS_GOD",
+  "name": "Chaos God",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_CLOWN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_COMEDIAN",
+  "name": "Comedian",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_CLOWN",
+  "status": "locked"
+ },
+ {
+  "id": "T4_TWITCH_STREAMER",
+  "name": "Twitch Streamer",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_CLOWN",
+  "status": "locked"
+ },
+ {
+  "id": "T3_DRUNKARD",
+  "name": "Drunkard",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_JESTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_TAVERN_BRAWLER",
+  "name": "Tavern Brawler",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_DRUNKARD",
+  "status": "locked"
+ },
+ {
+  "id": "T4_THE_DRUNKEN_FIST",
+  "name": "The Drunken Fist",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_DRUNKARD",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ALCOHOL_MISUSE_DISORDER",
+  "name": "Alcohol Misuse Disorder",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_DRUNKARD",
+  "status": "locked"
+ },
+ {
+  "id": "T3_HARLOT",
+  "name": "Harlot",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_JESTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SIREN",
+  "name": "Siren",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_HARLOT",
+  "status": "locked"
+ },
+ {
+  "id": "T4_SUCCUBUS",
+  "name": "Succubus",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_HARLOT",
+  "status": "locked"
+ },
+ {
+  "id": "T4_CHARMER",
+  "name": "Charmer",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_HARLOT",
+  "status": "locked"
+ },
+ {
+  "id": "T3_ARTIST",
+  "name": "Artist",
+  "tier": 3,
+  "path": "SUPPORTER",
+  "parent_id": "T2_JESTER",
+  "status": "locked"
+ },
+ {
+  "id": "T4_BARD",
+  "name": "Bard",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_ARTIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_PAINTER",
+  "name": "Painter",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_ARTIST",
+  "status": "locked"
+ },
+ {
+  "id": "T4_ACTOR",
+  "name": "Actor",
+  "tier": 4,
+  "path": "SUPPORTER",
+  "parent_id": "T3_ARTIST",
+  "status": "locked"
+ }
+]

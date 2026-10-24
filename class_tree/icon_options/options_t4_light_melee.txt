@@ -1,0 +1,647 @@
+# Tier 4 Light Melee options. Same format as class_glyphs.txt.
+
+# ---- Thief family
+T4_GOBLIN_CHIEFTAIN.A           # a goblin head with a crown
+  wire poly 32.8 27.8 67.2 27.8 72.4 43.2 91.3 32.9 77.5 58.7 68.9 88 31.1 88 22.5 58.7 8.7 32.9 27.6 43.2
+  wire poly 32 26 32 4 42 14 50 2 58 14 68 4 68 26
+T4_GOBLIN_CHIEFTAIN.B           # a goblin head with a horned helmet
+  wire poly 32.8 27.8 67.2 27.8 72.4 43.2 91.3 32.9 77.5 58.7 68.9 88 31.1 88 22.5 58.7 8.7 32.9 27.6 43.2
+  path M 30 30 Q 30 10 50 10 Q 70 10 70 30 Z
+  path M 30 22 Q 16 14 18 0 Q 26 12 34 16 Z
+  path M 70 22 Q 84 14 82 0 Q 74 12 66 16 Z
+
+T4_HOBGOBLIN.A                  # a bigger goblin with horns
+  wire poly 30 16 70 16 76 34 98 22 82 52 72 86 28 86 18 52 2 22 24 34
+  path M 34 18 Q 24 8 28 -4 Q 36 6 42 14 Z
+  path M 66 18 Q 76 8 72 -4 Q 64 6 58 14 Z
+  poly 38 64 44 64 41 74
+  poly 56 64 62 64 59 74
+T4_HOBGOBLIN.B                  # a goblin in a soldier's helmet
+  wire poly 32 24.4 68 24.4 73.4 40.6 93.2 29.8 78.8 56.8 69.8 87.4 30.2 87.4 21.2 56.8 6.8 29.8 26.6 40.6
+  path M 26 34 Q 26 6 50 6 Q 74 6 74 34 Z
+  rect 46 30 8 22 2
+
+T4_GOBLIN_SHAMAN.A              # a goblin with a bone headdress
+  wire poly 32.8 27.8 67.2 27.8 72.4 43.2 91.3 32.9 77.5 58.7 68.9 88 31.1 88 22.5 58.7 8.7 32.9 27.6 43.2
+  line 50 26 50 0 7
+  line 38 26 28 4 7
+  line 62 26 72 4 7
+  circle 50 0 5
+  circle 28 4 5
+  circle 72 4 5
+T4_GOBLIN_SHAMAN.B              # a staff topped with a skull
+  line 50 50 50 100 11
+  wire circle 50 28 22
+  circle 42 28 5
+  circle 58 28 5
+  line 28 54 72 54 9
+
+T4_HEISTER.A                    # a vault door
+  wire circle 50 50 42
+  line 50 26 50 74 8
+  line 29.2 38 70.8 62 8
+  line 29.2 62 70.8 38 8
+  circle 50 50 10
+T4_HEISTER.B                    # a money bag with a dollar sign
+  wire path M 18 96 Q 8 56 36 38 L 64 38 Q 92 56 82 96 Z
+  wire poly 34 30 40 16 60 16 66 30
+  stroke 7 path M 60 56 Q 50 48 42 54 Q 36 62 50 66 Q 64 70 58 80 Q 50 86 40 78
+  line 50 46 50 90 5
+
+T4_CAT_BURGLAR.A                # a cat in a burglar's mask
+  wire path M 14 90 L 14 30 L 10 4 L 34 22 L 66 22 L 90 4 L 86 30 L 86 90 Z
+  path M 14 44 Q 50 34 86 44 L 86 58 Q 50 50 14 58 Z
+T4_CAT_BURGLAR.B                # a grappling hook
+  line 50 30 50 100 9
+  wire circle 50 22 10
+  stroke 9 path M 50 70 Q 20 70 16 46
+  stroke 9 path M 50 70 Q 80 70 84 46
+  poly 10 44 16 30 24 44
+  poly 76 44 84 30 90 44
+
+T4_ARCHAEOLOGIST.A              # an ancient idol head
+  wire path M 24 96 L 22 40 Q 22 8 50 8 Q 78 8 78 40 L 76 96 Z
+  rect 32 40 14 8 2
+  rect 54 40 14 8 2
+  rect 40 66 20 8 2
+T4_ARCHAEOLOGIST.B              # an amphora
+  wire path M 38 10 L 62 10 L 60 26 Q 86 38 82 64 Q 78 90 50 96 Q 22 90 18 64 Q 14 38 40 26 Z
+  stroke 8 path M 40 22 Q 22 22 24 40
+  stroke 8 path M 60 22 Q 78 22 76 40
+
+T4_DRUG_DEALER.A                # a briefcase of cash
+  wire rect 6 30 88 62 8
+  wire path M 36 30 L 36 16 L 64 16 L 64 30
+  line 6 52 94 52 7
+T4_DRUG_DEALER.B                # a pill capsule
+  wire poly 63.8 61.6 59.8 66.1 55.7 70.3 51.4 74.2 47.2 77.6 42.9 80.6 38.8 83.1 34.9 85 31.3 86.3 28 87 25 87 22.5 86.4 20.4 85.2 18.9 83.4 17.9 81 17.4 78.1 17.5 74.7 18.1 70.9 19.3 66.7 21.1 62.3 23.3 57.6 25.9 52.8 29 47.9 32.5 43.1 36.2 38.4 40.2 33.9 44.3 29.7 48.6 25.8 52.8 22.4 57.1 19.4 61.2 16.9 65.1 15 68.7 13.7 72 13 75 13 77.5 13.6 79.6 14.8 81.1 16.6 82.1 19 82.6 21.9 82.5 25.3 81.9 29.1 80.7 33.3 78.9 37.7 76.7 42.4 74.1 47.2 71 52.1 67.5 56.9
+  line 36 38 64 62 8
+
+T4_KINGPIN.A                    # a signet ring
+  wire circle 50 62 30
+  wire rect 30 10 40 30 8
+  poly 50 16 52.5 22.5 59 25 52.5 27.5 50 34 47.5 27.5 41 25 47.5 22.5
+T4_KINGPIN.B                    # a throne
+  wire path M 26 60 L 26 18 L 50 2 L 74 18 L 74 60
+  rect 10 56 80 14 3
+  line 22 66 22 98 11
+  line 78 66 78 98 11
+  line 10 40 10 64 10
+  line 90 40 90 64 10
+
+T4_PSYCHO.A                     # a wide manic grin
+  wire circle 50 50 42
+  circle 36 38 7
+  circle 64 38 5
+  path M 22 56 Q 50 86 78 56 Q 50 70 22 56 Z
+T4_PSYCHO.B                     # a cracked mask
+  wire path M 18 14 Q 50 4 82 14 Q 90 60 50 96 Q 10 60 18 14 Z
+  rect 28 36 16 8 3
+  rect 56 36 16 8 3
+  stroke 6 path M 50 8 L 44 30 L 56 46 L 48 66
+
+T4_REBEL.A                      # a raised fist
+  wire path M 22 98 L 22 56 Q 14 44 18 30 L 20 18 Q 22 10 30 12 L 30 8 Q 32 2 40 4 L 44 6 Q 48 0 56 4 L 60 8 Q 66 4 72 10 Q 82 12 80 26 L 78 56 L 78 98 Z
+  line 30 30 72 30 6
+T4_REBEL.B                      # a spray-paint can
+  wire rect 26 34 48 62 8
+  wire rect 36 18 28 16 3
+  rect 44 6 12 12 2
+  line 26 56 74 56 7
+
+T4_RIOTER.A                     # a pitchfork
+  line 50 30 50 100 10
+  stroke 9 path M 22 4 L 22 22 Q 22 32 50 32 Q 78 32 78 22 L 78 4
+  line 50 4 50 32 9
+T4_RIOTER.B                     # a thrown brick
+  wire poly 30 30 92 18 92 50 30 62
+  line 4 40 22 40 7
+  line 10 56 22 54 7
+
+T4_LONE_WOLF.A                  # a howling wolf
+  wire path M 24 98 L 28 60 Q 20 50 22 38 L 30 30 L 32 8 L 44 24 L 62 22 L 92 6 L 74 32 Q 66 44 66 60 L 72 98 Z
+  line 46 34 54 32 5
+T4_LONE_WOLF.B                  # a wolf head, front on
+  wire poly 50 96 22 62 14 40 18 6 38 26 62 26 82 6 86 40 78 62
+  poly 32 44 44 50 34 54
+  poly 68 44 56 50 66 54
+
+
+# ---- Scout family
+T4_BEACON.A                     # a lighthouse
+  wire poly 30 96 38 40 62 40 70 96
+  wire rect 34 22 32 18 3
+  poly 30 22 50 4 70 22
+  line 38 66 62 66 7
+T4_BEACON.B                     # a signal brazier
+  wire path M 14 46 L 86 46 Q 80 74 50 76 Q 20 74 14 46 Z
+  line 50 76 50 98 10
+  line 26 98 74 98 10
+  path M 50 2 Q 51 13.3 56.1 17.3 Q 57.2 11.2 61.3 7.1 Q 62.3 20.4 68.4 30.7 Q 73.5 45 60.2 46 L 39.8 46 Q 26.5 45 31.6 30.7 Q 35.7 22.5 39.8 19.4 Q 40.8 25.5 44.9 26.6 Q 42.8 13.3 50 2 Z
+
+T4_TREASURE_HUNTER.A            # a treasure chest
+  wire rect 8 46 84 48 4
+  wire path M 8 46 L 8 34 Q 8 12 50 12 Q 92 12 92 34 L 92 46
+  rect 42 40 16 18 3
+T4_TREASURE_HUNTER.B            # a map with an X
+  wire poly 8 16 36 8 64 16 92 8 92 84 64 92 36 84 8 92
+  line 50 38 72 60 9
+  line 72 38 50 60 9
+  line 20 72 40 52 5
+
+T4_CARTOGRAPHER.A               # a drafting compass
+  line 50 16 20 96 10
+  line 50 16 80 96 10
+  wire circle 50 12 9
+  stroke 7 path M 30 70 Q 50 80 70 70
+T4_CARTOGRAPHER.B               # a compass rose
+  wire poly 50 2 59.9 40.1 98 50 59.9 59.9 50 98 40.1 59.9 2 50 40.1 40.1
+  poly 69.8 30.2 58 50 69.8 69.8 50 58 30.2 69.8 42 50 30.2 30.2 50 42
+
+T4_ATHLETE.A                    # a medal on a ribbon
+  poly 26 2 42 2 56 42 44 46
+  poly 74 2 58 2 44 42 56 46
+  wire circle 50 66 26
+  poly 50 54 52.9 62 61.4 62.3 54.8 67.5 57.1 75.7 50 71 42.9 75.7 45.2 67.5 38.6 62.3 47.1 62
+T4_ATHLETE.B                    # a trophy cup
+  wire path M 24 8 L 76 8 L 74 36 Q 70 60 50 62 Q 30 60 26 36 Z
+  stroke 8 path M 24 16 Q 6 16 8 30 Q 10 42 26 42
+  stroke 8 path M 76 16 Q 94 16 92 30 Q 90 42 74 42
+  rect 44 60 12 20
+  rect 26 82 48 14 3
+
+T4_MESSENGER.A                  # a sealed letter
+  wire rect 6 20 88 60 4
+  stroke 8 path M 6 20 L 50 54 L 94 20
+  circle 50 54 11
+T4_MESSENGER.B                  # a post horn
+  wire path M 14 44 Q 14 20 40 20 Q 64 20 64 44 Q 64 64 44 64
+  poly 62 30 98 10 98 78 62 58
+  line 4 44 18 44 9
+
+T4_STRIDEWALKER.A               # a winged boot
+  wire path M 30 10 L 56 10 L 58 56 Q 90 58 94 76 L 94 90 L 24 90 Z
+  path M 30 30 Q 10 26 2 8 Q 14 14 30 18 Z
+  path M 30 42 Q 8 42 0 28 Q 14 32 30 34 Z
+T4_STRIDEWALKER.B               # a signpost
+  line 50 10 50 98 10
+  wire poly 14 14 76 14 90 26 76 38 14 38
+  wire poly 86 48 24 48 10 60 24 72 86 72
+
+T4_SPY.A                        # dark glasses
+  path M 4 34 L 96 34 L 94 42 L 86 42 Q 84 70 64 68 Q 52 66 50 46 Q 48 66 36 68 Q 16 70 14 42 L 6 42 Z
+  line 2 36 2 50 6
+  line 98 36 98 50 6
+T4_SPY.B                        # an eye at a keyhole
+  wire circle 50 50 44
+  wire path M 42 30 Q 42 18 50 18 Q 58 18 58 30 Q 58 38 54 42 L 60 80 L 40 80 L 46 42 Q 42 38 42 30 Z
+  circle 50 30 5
+
+T4_SHADOW.A                     # the banner turns to shadow
+  poly 16 30 84 30 84 88 16 88
+  line 22 30 22 2 11
+  poly 22 -4 62 -4 52 8 62 20 22 20
+T4_SHADOW.B                     # a hooded figure with glowing eyes
+  wire path M 50 4 Q 80 10 82 50 L 92 96 L 8 96 L 18 50 Q 20 10 50 4 Z
+  poly 32 44 46 50 34 54
+  poly 68 44 54 50 66 54
+
+T4_ELITE_SCOUT.A                # the banner with a star
+  wire poly 16 30 84 30 84 88 16 88
+  line 22 30 22 2 11
+  poly 22 -4 62 -4 52 8 62 20 22 20
+  poly 50 41 54.1 53.3 67.1 53.4 56.7 61.2 60.6 73.6 50 66 39.4 73.6 43.3 61.2 32.9 53.4 45.9 53.3
+T4_ELITE_SCOUT.B                # a winged pennant
+  line 22 98 22 4 11
+  wire poly 22 10 90 28 22 46
+  path M 22 60 Q 2 54 0 36 Q 10 46 22 50 Z
+  path M 22 60 Q 42 54 44 36 Q 34 46 22 50 Z
+
+T4_OBSERVER.A                   # a watching eye
+  wire path M 2 50 Q 50 2 98 50 Q 50 98 2 50 Z
+  circle 50 50 16
+T4_OBSERVER.B                   # a periscope
+  wire path M 30 98 L 30 30 L 30 14 L 72 14 L 72 32 L 50 32 L 50 98
+  rect 70 12 16 22 2
+
+T4_SEER.A                       # a crystal ball
+  wire circle 50 42 36
+  path M 22 80 L 78 80 L 70 96 L 30 96 Z
+  stroke 6 path M 34 30 Q 38 18 50 16
+T4_SEER.B                       # a tarot card with an eye
+  wire rect 18 4 64 92 6
+  path M 30 50 Q 50 30 70 50 Q 50 70 30 50 Z
+  poly 50 13 52.1 17.9 57 20 52.1 22.1 50 27 47.9 22.1 43 20 47.9 17.9
+  poly 50 73 52.1 77.9 57 80 52.1 82.1 50 87 47.9 82.1 43 80 47.9 77.9
+
+T4_PANOPTICON.A                 # a round tower with an eye
+  wire rect 22 30 56 66 4
+  wire poly 16 32 50 6 84 32
+  path M 30 62 Q 50 46 70 62 Q 50 78 30 62 Z
+T4_PANOPTICON.B                 # a security dome camera
+  wire path M 10 30 L 90 30 Q 90 82 50 86 Q 10 82 10 30 Z
+  rect 4 16 92 14 4
+  circle 50 58 12
+
+
+# ---- Assassin family
+T4_SHADOWJUMPER.A               # a hood with a swirl
+  wire poly 50 4 86 32 84 62 50 94 16 62 14 32
+  stroke 7 path M 50 66 Q 36 66 38 52 Q 40 40 54 42 Q 64 46 60 56
+T4_SHADOWJUMPER.B               # a shadow doorway
+  wire path M 16 98 L 16 40 Q 16 4 50 4 Q 84 4 84 40 L 84 98
+  poly 50 42.2 70.2 57.9 69 74.7 50 92.6 31 74.7 29.8 57.9
+
+T4_HAUNTER.A                    # a ghost
+  wire path M 50 4 Q 76 40 84 84 Q 76 94 67 84 Q 58 94 50 84 Q 42 94 33 84 Q 24 94 16 84 Q 24 40 50 4 Z
+  ellipse 40 44 5 8
+  ellipse 60 44 5 8
+T4_HAUNTER.B                    # a hood trailing a ghostly tail
+  wire path M 50 4 Q 82 22 84 56 Q 76 66 67 56 Q 58 66 50 56 Q 42 66 33 56 Q 24 66 16 56 Q 18 22 50 4 Z
+  poly 30 30 44 36 32 40
+  poly 70 30 56 36 68 40
+
+T4_MALIGNANCE.A                 # a skull in a hood
+  wire poly 50 4 86 32 84 62 50 94 16 62 14 32
+  circle 50 50 18
+  rect 42 60 16 12 3
+  cut circle 43 48 5
+  cut circle 57 48 5
+T4_MALIGNANCE.B                 # a black splat
+  path M 50 8 Q 62 10 64 26 Q 82 14 88 28 Q 94 42 78 48 Q 98 58 90 72 Q 82 84 66 74 Q 64 96 50 94 Q 34 96 34 74 Q 18 84 10 72 Q 2 58 22 48 Q 6 42 12 28 Q 18 14 36 26 Q 38 10 50 8 Z
+
+T4_SNAKE_KIN.A                  # a coiled snake
+  stroke 12 path M 20 90 Q 80 90 80 70 Q 80 54 50 56 Q 20 58 22 40 Q 24 22 60 24
+  wire ellipse 68 22 16 11
+T4_SNAKE_KIN.B                  # a cobra with its hood spread
+  wire path M 50 6 Q 84 16 82 46 Q 78 64 58 70 L 58 98 L 42 98 L 42 70 Q 22 64 18 46 Q 16 16 50 6 Z
+  circle 42 30 4
+  circle 58 30 4
+
+T4_BLIGHTER.A                   # a wilted flower
+  stroke 9 path M 40 98 L 40 50 Q 40 26 64 24
+  wire path M 62 18 Q 84 14 88 34 Q 86 56 70 52 Q 60 40 62 18 Z
+  path M 40 72 Q 20 70 14 56 Q 30 56 40 64 Z
+T4_BLIGHTER.B                   # a rotten apple with a worm
+  wire path M 50 38 C 50 18 10 18 10 42 C 10 66 50 75.6 50 94 C 50 75.6 90 66 90 42 C 90 18 50 18 50 38 Z
+  stroke 8 path M 60 50 Q 72 40 80 52 Q 88 62 98 56
+  line 50 18 54 4 7
+
+T4_ENVENOMER.A                  # a dagger dripping poison
+  wire poly 42 60 42 14 50 2 58 14 58 60
+  line 24 64 76 64 10
+  line 50 70 50 92 10
+  path M 74 70 Q 79.5 80.6 83 87.7 Q 85 96 74 96 Q 63 96 65 87.7 Q 68.5 80.6 74 70 Z
+T4_ENVENOMER.B                  # a fang dripping venom
+  wire path M 22 6 Q 50 0 78 6 Q 72 40 50 78 Q 28 40 22 6 Z
+  path M 50 76 Q 55.1 85.8 58.3 92.4 Q 60.2 100 50 100 Q 39.8 100 41.7 92.4 Q 44.9 85.8 50 76 Z
+
+T4_JUDGE.A                      # a gavel
+  wire rect 18 14 48 26 6
+  line 46 40 86 92 11
+  rect 6 82 46 12 3
+T4_JUDGE.B                      # the scales of justice
+  line 50 10 50 92 9
+  line 14 22 86 22 9
+  rect 30 88 40 10 3
+  wire path M 4 56 L 32 56 Q 30 70 18 70 Q 6 70 4 56 Z
+  wire path M 68 56 L 96 56 Q 94 70 82 70 Q 70 70 68 56 Z
+  line 18 22 8 54 4
+  line 18 22 28 54 4
+  line 82 22 72 54 4
+  line 82 22 92 54 4
+
+T4_DISINTEGRATOR.A              # the axe crumbling to pieces
+  wire path M 64 38 L 40 28 Q 22 20 10 8 Q 0 46 10 84 Q 22 72 40 64 L 64 54 Z
+  line 68 2 68 98 11
+  rect 6 4 10 10
+  rect 2 22 8 8
+  rect 18 0 7 7
+T4_DISINTEGRATOR.B              # a skull breaking apart
+  wire path M 22 88 L 22 70 Q 6 60 8 40 Q 12 8 50 8 Q 88 8 92 40 Q 94 60 78 70 L 78 88 Z
+  circle 36 44 9
+  circle 64 44 9
+  stroke 6 path M 50 8 L 44 26 L 56 40 L 50 60
+
+T4_OBLIVION.A                   # a swirling void
+  circle 50 50 18
+  stroke 10 path M 50 32 Q 80 30 82 56 Q 80 84 52 86
+  stroke 10 path M 50 68 Q 20 70 18 44 Q 20 16 48 14
+T4_OBLIVION.B                   # a doorway into darkness
+  wire path M 14 98 L 14 40 Q 14 4 50 4 Q 86 4 86 40 L 86 98
+  path M 26 98 L 26 42 Q 26 16 50 16 Q 74 16 74 42 L 74 98 Z
+
+T4_EXCOMMUNICATED_CONTRACT_KILLER.A # a gold coin with a skull
+  wire circle 50 50 42
+  circle 50 44 16
+  rect 42 54 16 12 3
+  cut circle 44 42 4.5
+  cut circle 56 42 4.5
+T4_EXCOMMUNICATED_CONTRACT_KILLER.B # a contract sealed with a dagger
+  wire path M 14 10 L 74 10 L 74 90 L 14 90 Z
+  line 24 30 60 30 6
+  line 24 46 60 46 6
+  line 52 96 96 52 8
+  poly 92 56 100 40 84 48
+  line 70 78 82 90 9
+
+T4_GRANDMASTER_ASSASSIN.A       # a hood with a crown
+  wire poly 50 17.4 81 41.5 79.2 67.3 50 94.8 20.8 67.3 19 41.5
+  poly 30 22 30 2 40 12 50 0 60 12 70 2 70 22
+T4_GRANDMASTER_ASSASSIN.B       # two crossed daggers
+  wire poly 20 70 66 14 76 4 74 22 30 78
+  wire poly 80 70 34 14 24 4 26 22 70 78
+  line 10 74 26 90 10
+  line 90 74 74 90 10
+
+T4_MARKSMAN.A                   # a throwing knife in a target
+  wire circle 50 54 42
+  wire circle 50 54 18
+  line 50 54 86 18 7
+  poly 80 6 98 12 92 30
+T4_MARKSMAN.B                   # the crowned point with a crosshair
+  wire poly 16 26 30 6 40 20 50 2 60 20 70 6 84 26 84 60 50 94 16 60
+  line 50 36 50 72 7
+  line 32 54 68 54 7
+
+
+# ---- Brawler family
+T4_PUNCHER.A                    # a fist
+  wire path M 14 40 Q 14 20 32 20 L 72 20 Q 90 20 90 40 L 90 70 Q 90 92 66 92 L 36 92 Q 14 92 14 70 Z
+  line 36 22 36 46 6
+  line 54 22 54 46 6
+  line 72 22 72 46 6
+  path M 14 50 L 40 50 Q 48 58 40 66 L 14 66 Z
+T4_PUNCHER.B                    # a glove landing a punch
+  wire path M 10 92 L 10 64 Q 0 56 2 40 Q 6 18 32 18 Q 58 18 58 46 Q 58 62 48 68 L 48 92 Z
+  poly 80 16 83.5 28.8 95.6 23.5 87.8 34.2 99.5 40.5 86.3 41 88.7 54 80 44 71.3 54 73.7 41 60.5 40.5 72.2 34.2 64.4 23.5 76.5 28.8
+
+T4_BOXER.A                      # a pair of boxing gloves
+  wire path M 6 96 L 6 72 Q -2 64 0 50 Q 4 30 24 30 Q 44 30 44 54 Q 44 68 36 74 L 36 96 Z
+  wire path M 56 86 L 56 62 Q 48 54 50 40 Q 54 20 74 20 Q 94 20 94 44 Q 94 58 86 64 L 86 86 Z
+  stroke 6 path M 22 30 Q 40 4 70 20
+T4_BOXER.B                      # a punching bag
+  wire rect 22 22 56 72 24
+  line 50 2 50 22 7
+  line 22 40 78 40 7
+
+T4_IRON_FIST.A                  # an iron gauntlet
+  path M 14 40 Q 14 20 32 20 L 72 20 Q 90 20 90 40 L 90 70 Q 90 92 66 92 L 36 92 Q 14 92 14 70 Z
+  cut line 36 22 36 46 4
+  cut line 54 22 54 46 4
+  cut line 72 22 72 46 4
+  cut circle 30 70 5
+  cut circle 74 70 5
+T4_IRON_FIST.B                  # a fist glowing with power
+  wire path M 22 46 Q 22 30 36 30 L 64 30 Q 78 30 78 46 L 78 70 Q 78 86 60 86 L 40 86 Q 22 86 22 70 Z
+  stroke 4 poly 50 0 60.4 11.4 75 6.7 78.3 21.7 93.3 25 88.6 39.6 100 50 88.6 60.4 93.3 75 78.3 78.3 75 93.3 60.4 88.6 50 100 39.6 88.6 25 93.3 21.7 78.3 6.7 75 11.4 60.4 0 50 11.4 39.6 6.7 25 21.7 21.7 25 6.7 39.6 11.4
+
+T4_WRESTLER.A                   # a luchador mask
+  wire path M 50 4 Q 88 4 88 44 Q 88 82 50 96 Q 12 82 12 44 Q 12 4 50 4 Z
+  path M 24 40 Q 34 28 46 42 Q 36 54 24 40 Z
+  path M 76 40 Q 66 28 54 42 Q 64 54 76 40 Z
+  rect 40 70 20 8 4
+  line 50 4 50 30 6
+T4_WRESTLER.B                   # a wrestling ring
+  wire poly 6 30 94 30 94 94 6 94
+  line 6 50 94 50 6
+  line 6 70 94 70 6
+  line 6 30 6 94 11
+  line 94 30 94 94 11
+
+T4_BOUNCER.A                    # a velvet rope barrier
+  line 16 34 16 92 10
+  line 84 34 84 92 10
+  circle 16 26 9
+  circle 84 26 9
+  stroke 8 path M 16 40 Q 50 70 84 40
+  rect 4 90 24 8 3
+  rect 72 90 24 8 3
+T4_BOUNCER.B                    # a guarded door
+  wire rect 22 6 56 90 4
+  circle 66 54 6
+  line 4 98 96 98 8
+
+T4_THROWER.A                    # a kettlebell
+  wire path M 50 34 Q 90 34 90 66 Q 90 96 50 96 Q 10 96 10 66 Q 10 34 50 34 Z
+  stroke 11 path M 30 40 L 30 26 Q 30 6 50 6 Q 70 6 70 26 L 70 40
+T4_THROWER.B                    # a hammer-throw ball and chain
+  wire circle 64 64 28
+  stroke 7 path M 40 50 Q 24 30 22 14
+  rect 8 4 28 12 5
+
+T4_KANGAROO.A                   # a kangaroo
+  wire path M 66 4 L 74 22 Q 84 26 80 36 L 70 40 Q 74 60 66 72 L 84 92 L 56 92 Q 36 92 30 74 Q 18 80 4 96 Q 14 70 30 62 Q 40 40 56 36 Z
+T4_KANGAROO.B                   # a kangaroo in a boxing glove
+  wire path M 66 4 L 74 22 Q 84 26 80 36 L 70 40 Q 74 60 66 72 L 84 92 L 56 92 Q 36 92 30 74 Q 18 80 4 96 Q 14 70 30 62 Q 40 40 56 36 Z
+  circle 86 52 13
+
+T4_NUT_KICKER.A                 # a cracked walnut
+  wire ellipse 50 52 36 42
+  stroke 7 path M 50 10 L 44 30 L 56 46 L 46 66 L 52 94
+T4_NUT_KICKER.B                 # a boot kicking a nut
+  wire path M 6 8 L 30 8 L 32 50 Q 58 52 62 66 L 62 78 L 4 78 Z
+  wire ellipse 82 56 14 16
+
+T4_MMA_FIGHTER.A                # an octagon cage
+  wire poly 67.6 7.5 92.5 32.4 92.5 67.6 67.6 92.5 32.4 92.5 7.5 67.6 7.5 32.4 32.4 7.5
+  wire poly 58.4 29.7 70.3 41.6 70.3 58.4 58.4 70.3 41.6 70.3 29.7 58.4 29.7 41.6 41.6 29.7
+T4_MMA_FIGHTER.B                # a fist inside the octagon
+  wire poly 67.6 7.5 92.5 32.4 92.5 67.6 67.6 92.5 32.4 92.5 7.5 67.6 7.5 32.4 32.4 7.5
+  path M 30 44 Q 30 32 40 32 L 62 32 Q 72 32 72 44 L 72 60 Q 72 72 58 72 L 42 72 Q 30 72 30 60 Z
+  cut line 44 34 44 46 3
+  cut line 56 34 56 46 3
+
+T4_DAOIST.A                     # a gourd
+  wire path M 50 18 Q 66 18 66 34 Q 66 42 60 46 Q 88 56 86 76 Q 82 98 50 98 Q 18 98 14 76 Q 12 56 40 46 Q 34 42 34 34 Q 34 18 50 18 Z
+  rect 44 4 12 16 3
+  line 32 46 68 46 6
+T4_DAOIST.B                     # a paper talisman
+  wire rect 28 4 44 92 3
+  circle 50 26 8
+  line 50 40 50 80 6
+  line 38 56 62 56 6
+
+T4_SENSEI.A                     # a tied black belt
+  line 4 50 96 50 14
+  wire rect 38 36 24 28 4
+  poly 44 60 30 96 44 96 50 64
+  poly 56 60 70 96 56 96 50 64
+T4_SENSEI.B                     # a bonsai tree
+  wire path M 22 80 L 78 80 L 70 98 L 30 98 Z
+  stroke 9 path M 46 80 Q 40 60 54 52 Q 66 44 56 30
+  wire ellipse 30 40 18 10
+  wire ellipse 66 22 20 11
+
+T4_MONK.A                       # a temple bell
+  wire path M 50 10 Q 76 10 76 42 L 80 82 L 20 82 L 24 42 Q 24 10 50 10 Z
+  rect 44 0 12 12 3
+  circle 50 92 7
+T4_MONK.B                       # a ring of prayer beads
+  line 50 80 50 98 6
+  circle 50 96 6
+  circle 50 8 10
+  circle 68 12.8 10
+  circle 81.2 26 10
+  circle 86 44 10
+  circle 81.2 62 10
+  circle 68 75.2 10
+  circle 50 80 10
+  circle 32 75.2 10
+  circle 18.8 62 10
+  circle 14 44 10
+  circle 18.8 26 10
+  circle 32 12.8 10
+
+
+# ---- Duelist family
+T4_BLOODLETTER.A                # a foil with a drop of blood
+  line 30 70 94 6 5
+  stroke 11 path M 12 54 Q 26 40 46 52
+  line 26 74 10 90 11
+  path M 86 30 Q 91.5 40.6 95 47.7 Q 97 56 86 56 Q 75 56 77 47.7 Q 80.5 40.6 86 30 Z
+T4_BLOODLETTER.B                # a thin blade bleeding down
+  line 50 2 50 70 6
+  line 26 70 74 70 11
+  line 50 76 50 98 11
+  path M 66 30 Q 71.5 40.6 75 47.7 Q 77 56 66 56 Q 55 56 57 47.7 Q 60.5 40.6 66 30 Z
+
+T4_SKIRMISHER.A                 # two crossed foils
+  line 20 74 90 6 5
+  line 80 74 10 6 5
+  stroke 11 path M 6 58 Q 18 46 34 56
+  stroke 11 path M 94 58 Q 82 46 66 56
+  line 18 76 6 90 11
+  line 82 76 94 90 11
+T4_SKIRMISHER.B                 # a foil and a parrying dagger
+  line 30 70 94 6 5
+  stroke 11 path M 12 54 Q 26 40 46 52
+  line 26 74 10 90 11
+  wire poly 60 96 60 66 66 54 72 66 72 96
+  line 52 80 80 80 9
+
+T4_SKYPIERCER.A                 # a foil piercing a cloud
+  line 30 70 94 6 5
+  stroke 11 path M 12 54 Q 26 40 46 52
+  line 26 74 10 90 11
+  wire path M 54 40 Q 50 22 66 20 Q 70 8 84 12 Q 98 12 96 28 Q 100 42 86 42 Z
+T4_SKYPIERCER.B                 # a foil with a star at the tip
+  line 30 70 94 6 5
+  stroke 11 path M 12 54 Q 26 40 46 52
+  line 26 74 10 90 11
+  poly 88 -2 91.5 8.5 102 12 91.5 15.5 88 26 84.5 15.5 74 12 84.5 8.5
+
+T4_DERVISH.A                    # a whirling dervish's tall hat
+  wire path M 30 90 L 36 10 Q 50 4 64 10 L 70 90 Z
+  line 14 92 86 92 10
+T4_DERVISH.B                    # twin scimitars in a spin
+  wire path M 14 86 Q 6 40 50 10 Q 40 44 26 86 Z
+  wire path M 86 14 Q 94 60 50 90 Q 60 56 74 14 Z
+
+T4_BLADE_DEMON.A                # a horned demon head
+  wire path M 50 98 Q 20 84 18 54 Q 20 30 50 28 Q 80 30 82 54 Q 80 84 50 98 Z
+  path M 26 40 Q 8 26 12 2 Q 22 22 38 32 Z
+  path M 74 40 Q 92 26 88 2 Q 78 22 62 32 Z
+  poly 30 54 46 60 32 64
+  poly 70 54 54 60 68 64
+T4_BLADE_DEMON.B                # a scimitar wreathed in flame
+  wire path M 20 92 Q 14 40 64 6 Q 52 46 34 92 Z
+  path M 66 0 Q 66.7 7.7 70.2 10.5 Q 70.9 6.3 73.7 3.5 Q 74.4 12.6 78.6 19.5 Q 82 29.3 73 30 L 59 30 Q 50 29.3 53.4 19.5 Q 56.2 14 59 11.9 Q 59.7 16 62.5 16.7 Q 61.1 7.7 66 0 Z
+
+T4_SONG_OF_STEEL.A              # a music note made of a blade
+  wire poly 64 76 64 10 92 2 92 18 72 24 72 76
+  wire ellipse 52 80 18 13
+T4_SONG_OF_STEEL.B              # a lyre with a sword
+  wire path M 22 90 L 78 90 Q 92 54 84 18 Q 76 6 70 18 Q 72 46 60 60 L 40 60 Q 28 46 30 18 Q 24 6 16 18 Q 8 54 22 90 Z
+  line 50 2 50 98 6
+  line 36 30 64 30 6
+
+T4_PIRATE_CAPTAIN.A             # a tricorn hat with a skull
+  wire path M 4 40 Q 50 64 96 40 Q 90 76 50 84 Q 10 76 4 40 Z
+  wire path M 22 50 Q 22 16 50 16 Q 78 16 78 50
+  circle 50 40 9
+  line 42 54 58 54 5
+T4_PIRATE_CAPTAIN.B             # a ship's wheel
+  wire circle 50 50 30
+  circle 50 50 9
+  line 70 50 96 50 8
+  line 64.1 64.1 82.5 82.5 8
+  line 50 70 50 96 8
+  line 35.9 64.1 17.5 82.5 8
+  line 30 50 4 50 8
+  line 35.9 35.9 17.5 17.5 8
+  line 50 30 50 4 8
+  line 64.1 35.9 82.5 17.5 8
+
+T4_QUARTERMASTER.A              # an anchor
+  line 50 18 50 92 10
+  wire circle 50 12 9
+  line 30 30 70 30 9
+  stroke 10 path M 10 62 Q 14 92 50 92 Q 86 92 90 62
+  poly 2 66 10 50 20 66
+  poly 80 66 90 50 98 66
+T4_QUARTERMASTER.B              # a supply barrel
+  wire path M 22 6 L 78 6 Q 90 50 78 94 L 22 94 Q 10 50 22 6 Z
+  line 14 32 86 32 7
+  line 14 68 86 68 7
+
+T4_THE_DAMNED.A                 # a skull in a pirate bandana
+  wire path M 22 88 L 22 70 Q 6 60 8 40 Q 12 8 50 8 Q 88 8 92 40 Q 94 60 78 70 L 78 88 Z
+  path M 8 36 Q 50 0 92 36 L 92 28 Q 50 -8 8 28 Z
+  circle 36 48 9
+  circle 64 48 9
+  poly 92 30 100 40 96 50
+T4_THE_DAMNED.B                 # a cursed coin
+  wire circle 50 50 42
+  circle 42 44 6
+  circle 58 44 6
+  stroke 5 path M 36 66 Q 50 56 64 66
+
+T4_GRANDMASTER_SWORDSMAN.A      # the longsword with a crown
+  wire poly 42 70 42 30 50 18 58 30 58 70
+  line 18 76 82 76 11
+  line 50 82 50 98 11
+  poly 30 16 30 0 40 8 50 -2 60 8 70 0 70 16
+T4_GRANDMASTER_SWORDSMAN.B      # two crossed longswords
+  wire poly 26 70 70 14 78 6 76 20 32 76
+  wire poly 74 70 30 14 22 6 24 20 68 76
+  line 14 64 36 86 9
+  line 86 64 64 86 9
+
+T4_JEDI.A                       # a light sword
+  wire rect 40 4 20 62 10
+  rect 38 66 24 30 3
+  line 30 70 70 70 8
+T4_JEDI.B                       # a hooded robe
+  wire path M 50 4 Q 80 10 82 46 L 94 96 L 6 96 L 18 46 Q 20 10 50 4 Z
+  path M 34 50 Q 34 26 50 24 Q 66 26 66 50 Q 50 60 34 50 Z
+
+T4_KENSAI.A                     # a katana
+  wire path M 22 76 Q 50 30 92 6 Q 66 44 30 82 Z
+  wire ellipse 24 78 12 6
+  line 22 80 6 96 11
+T4_KENSAI.B                     # a samurai helmet
+  wire path M 14 66 Q 14 20 50 20 Q 86 20 86 66 Z
+  path M 14 60 L 2 80 L 20 74 Z
+  path M 86 60 L 98 80 L 80 74 Z
+  stroke 8 path M 34 22 Q 26 6 14 2
+  stroke 8 path M 66 22 Q 74 6 86 2
+  rect 40 66 20 12 3
+
+
+T4_SHADOWJUMPER.C               # a doorway into darkness
+  wire path M 14 98 L 14 40 Q 14 4 50 4 Q 86 4 86 40 L 86 98
+  path M 26 98 L 26 42 Q 26 16 50 16 Q 74 16 74 42 L 74 98 Z
+
+T4_THROWER.C                    # a judoka's gi and belt
+  wire path M 20 96 L 20 30 L 40 10 L 50 28 L 60 10 L 80 30 L 80 96 Z
+  line 40 12 62 62 7
+  line 12 64 88 64 11
+  poly 44 66 34 94 46 94 52 68
+  poly 56 66 66 94 54 94 50 68
+
+T4_SONG_OF_STEEL.C              # a music note made of blades
+  wire poly 62 76 62 14 70 2 78 14 78 76
+  wire path M 78 16 Q 98 26 94 50 Q 88 36 78 34 Z
+  line 52 76 88 76 9
+  wire ellipse 48 84 15 11

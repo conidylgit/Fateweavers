@@ -1,0 +1,750 @@
+# Tier 4 Supporter options. Same format as class_glyphs.txt.
+
+# ---- Medic family
+T4_SURGEON.A                    # a scalpel
+  path M 10 92 L 54 48 L 62 56 L 18 100 Z
+  path M 54 48 Q 70 20 96 4 Q 90 34 62 56 Z
+  cut line 22 86 46 62 3
+T4_SURGEON.B                    # a surgical mask
+  path M 14 30 Q 50 22 86 30 L 86 64 Q 50 86 14 64 Z
+  stroke 6 path M 14 34 Q 2 34 2 22
+  stroke 6 path M 86 34 Q 98 34 98 22
+  cut rect 20 42 60 4
+  cut rect 22 54 56 4
+
+T4_NURSE.A                      # a nurse's cap
+  path M 6 70 L 14 30 Q 50 14 86 30 L 94 70 Q 50 60 6 70 Z
+  cut rect 44 30 12 30 3
+  cut rect 35 39 30 12 3
+T4_NURSE.B                      # a syringe
+  rect 30 30 40 50 4
+  rect 22 24 56 8 3
+  rect 44 6 12 20
+  rect 30 2 40 8 3
+  line 50 80 50 98 4
+  cut rect 36 50 28 4
+  cut rect 36 62 28 4
+
+T4_MAD_DOCTOR.A                 # a brain in a jar
+  rect 16 6 68 12 4
+  stroke 7 path M 22 18 L 22 82 Q 22 94 34 94 L 66 94 Q 78 94 78 82 L 78 18
+  path M 30 60 Q 26 40 40 38 Q 46 30 56 34 Q 70 32 72 46 Q 76 62 62 68 L 38 68 Q 28 66 30 60 Z
+  cut stroke 3 path M 50 36 Q 46 50 52 66
+T4_MAD_DOCTOR.B                 # a syringe with a skull
+  rect 28 26 44 54 4
+  rect 20 20 60 8 3
+  rect 44 4 12 18
+  line 50 80 50 98 4
+  cut circle 50 46 10
+  cut rect 44 54 12 8 2
+  circle 46 46 2.5
+  circle 54 46 2.5
+
+T4_HAZMAT_HANK.A                # a gas mask
+  path M 50 6 Q 84 6 86 42 Q 86 70 66 80 L 34 80 Q 14 70 14 42 Q 16 6 50 6 Z
+  cut circle 34 40 11
+  cut circle 66 40 11
+  circle 50 82 14
+  cut circle 50 82 6
+  rect 4 52 14 22 4
+  rect 82 52 14 22 4
+T4_HAZMAT_HANK.B                # a hazard sign
+  path M 50 4 L 98 90 L 2 90 Z
+  cut rect 45 30 10 32 3
+  cut circle 50 74 6
+
+T4_PURIFICATOR.A                # a sparkling drop
+  path M 50 2 Q 70.4 41.3 83.4 67.5 Q 90.8 98 50 98 Q 9.2 98 16.6 67.5 Q 29.6 41.3 50 2 Z
+  cut poly 50 44 54.2 59.8 70 64 54.2 68.2 50 84 45.8 68.2 30 64 45.8 59.8
+T4_PURIFICATOR.B                # a soap bar with bubbles
+  rect 6 52 72 40 12
+  cut stroke 4 path M 18 70 Q 30 62 44 66
+  stroke 6 circle 66 30 14
+  stroke 6 circle 88 12 8
+  circle 86 40 6
+
+T4_JANICE.A                     # a mop and bucket
+  line 66 2 66 60 7
+  path M 50 58 L 82 58 L 90 76 L 42 76 Z
+  path M 6 56 L 50 56 L 44 98 L 12 98 Z
+  stroke 5 path M 8 56 Q 28 34 48 56
+T4_JANICE.B                     # a spray bottle
+  path M 28 38 L 66 38 L 72 96 L 22 96 Z
+  rect 34 22 28 18 3
+  path M 34 22 L 34 10 L 82 10 L 92 20 L 62 22 Z
+  path M 60 22 L 66 36 L 56 36 Z
+  cut rect 30 60 36 14 3
+
+T4_MUTAGENIST.A                 # a DNA strand bursting
+  rect 30 6 40 88 20
+  rect 6 30 88 40 20
+  cut stroke 6 path M 40 14 Q 64 32 50 50 Q 36 68 60 86
+  cut stroke 6 path M 60 14 Q 36 32 50 50 Q 64 68 40 86
+  poly 80 0 83.9 11.9 95.6 7.5 88.8 18 99.5 24.5 87 25.6 88.7 38 80 29 71.3 38 73 25.6 60.5 24.5 71.2 18 64.4 7.5 76.1 11.9
+T4_MUTAGENIST.B                 # a three-eyed face
+  circle 50 52 44
+  cut circle 32 48 8
+  cut circle 68 48 8
+  cut circle 50 28 9
+  cut path M 34 70 Q 50 82 66 70 Q 50 76 34 70 Z
+
+T4_CLONER.A                     # a figure and its copy
+  circle 32 22 14
+  path M 12 98 L 14 52 Q 16 38 32 38 Q 48 38 50 52 L 52 98 Z
+  stroke 6 circle 70 22 12
+  stroke 6 path M 52 98 L 54 54 Q 56 42 70 42 Q 84 42 86 54 L 88 98
+T4_CLONER.B                     # a clone in a tube
+  rect 22 2 56 10 4
+  rect 22 88 56 10 4
+  stroke 6 rect 26 12 48 76 10
+  circle 50 34 9
+  path M 38 86 L 40 52 Q 42 46 50 46 Q 58 46 60 52 L 62 86 Z
+
+T4_THE_MENAGERIE.A              # a birdcage
+  path M 50 4 Q 86 10 86 50 L 86 90 L 14 90 L 14 50 Q 14 10 50 4 Z
+  cut rect 22 30 10 56
+  cut rect 45 22 10 64
+  cut rect 68 30 10 56
+  rect 6 88 88 10 4
+  stroke 5 circle 50 4 4
+T4_THE_MENAGERIE.B              # a circus tent
+  path M 50 4 L 94 56 L 94 96 L 6 96 L 6 56 Z
+  cut path M 38 96 L 50 64 L 62 96 Z
+  line 50 4 50 -2 4
+  cut stroke 5 path M 6 56 Q 28 66 50 56 Q 72 66 94 56
+
+T4_HYPNOTIST.A                  # a swinging pocket watch
+  line 50 0 50 34 5
+  circle 50 64 30
+  cut circle 50 64 22
+  line 50 64 50 46 5
+  line 50 64 62 70 5
+  rect 44 30 12 8 3
+T4_HYPNOTIST.B                  # a hypnotic spiral
+  stroke 9 path M 50 50 Q 58 50 58 42 Q 56 32 46 32 Q 32 34 32 50 Q 34 70 54 70 Q 76 68 76 46 Q 74 16 46 14 Q 12 16 12 52 Q 14 90 54 90 Q 90 88 94 56
+
+T4_SERENE_PRESENCE.A            # a still candle flame
+  path M 50 4 Q 51 14.7 55.9 18.7 Q 56.8 12.8 60.7 8.9 Q 61.7 21.6 67.6 31.3 Q 72.5 45 59.8 46 L 40.2 46 Q 27.5 45 32.4 31.3 Q 36.3 23.5 40.2 20.6 Q 41.2 26.5 45.1 27.4 Q 43.2 14.7 50 4 Z
+  rect 34 46 32 44 4
+  rect 22 86 56 10 4
+T4_SERENE_PRESENCE.B            # a cairn of zen stones
+  ellipse 50 84 40 13
+  ellipse 50 58 30 11
+  ellipse 50 36 22 9
+  ellipse 50 16 14 7
+  cut rect 0 70 100 2
+  cut rect 0 46 100 2
+  cut rect 0 26 100 2
+
+T4_DARK_MANGO_PSYCHOLOGY_EXPERT.A # a dark mango
+  path M 46 18 Q 86 14 90 52 Q 92 90 52 96 Q 14 96 12 62 Q 12 24 46 18 Z
+  line 48 18 52 4 6
+  path M 52 10 Q 70 -2 86 8 Q 72 20 52 14 Z
+T4_DARK_MANGO_PSYCHOLOGY_EXPERT.B # a therapist's couch
+  path M 6 70 L 6 40 Q 6 28 18 28 Q 30 28 30 40 L 30 54 L 94 54 L 94 76 L 6 76 Z
+  rect 10 74 10 20 2
+  rect 80 74 10 20 2
+  rect 34 44 56 12 6
+
+
+# ---- Handyman family
+T4_REPAIR_O_BOTS.A              # a robot head with a wrench
+  rect 14 30 62 56 8
+  line 44 30 44 14 5
+  circle 44 10 6
+  cut rect 24 46 14 12 2
+  cut rect 52 46 14 12 2
+  cut rect 30 70 30 6 2
+  line 70 92 92 70 10
+  circle 94 66 8
+T4_REPAIR_O_BOTS.B              # a little robot holding a wrench
+  rect 30 10 40 30 6
+  rect 24 42 52 40 6
+  rect 30 82 14 16 3
+  rect 56 82 14 16 3
+  cut rect 38 20 8 8
+  cut rect 54 20 8 8
+  line 76 50 94 34 9
+  circle 94 26 9
+  cut circle 98 22 5
+
+T4_MASTER_REPAIRMAN.A           # a wrench and screwdriver crossed
+  line 16 88 70 34 13
+  circle 76 26 16
+  cut poly 76 26 96 6 100 24 86 34
+  line 84 88 40 44 7
+  line 34 38 18 22 12
+T4_MASTER_REPAIRMAN.B           # a toolbox
+  rect 6 40 88 54 6
+  stroke 8 path M 32 40 L 32 22 L 68 22 L 68 40
+  cut rect 6 56 88 5
+  rect 42 50 16 14 3
+
+T4_GOOD_OL_DAVE.A               # a trucker cap
+  path M 14 64 Q 14 16 50 16 Q 86 16 86 64 Z
+  path M 50 60 L 100 60 Q 100 76 80 76 L 50 76 Z
+  rect 10 60 50 10 4
+  circle 50 16 5
+  cut stroke 5 path M 34 28 L 34 56
+T4_GOOD_OL_DAVE.B               # a roll of duct tape
+  circle 46 50 40
+  cut circle 46 50 18
+  path M 64 86 L 98 92 L 94 100 L 56 92 Z
+
+T4_FOREMAN.A                    # a hard hat with a star
+  path M 10 74 Q 10 14 50 14 Q 90 14 90 74 Z
+  rect 0 68 100 16 6
+  cut poly 50 26 54.1 38.3 67.1 38.4 56.7 46.2 60.6 58.6 50 51 39.4 58.6 43.3 46.2 32.9 38.4 45.9 38.3
+T4_FOREMAN.B                    # a blueprint roll
+  rect 14 26 72 52 4
+  circle 14 52 12
+  circle 86 52 12
+  cut stroke 4 poly 30 36 70 36 70 68 30 68
+  cut line 50 36 50 68 4
+
+T4_MASTER_MASON.A               # a mason's trowel
+  path M 4 48 L 62 30 L 74 60 L 16 78 Z
+  line 66 46 82 40 7
+  line 82 40 96 70 8
+T4_MASTER_MASON.B               # a brick wall
+  rect 4 14 92 76 2
+  cut rect 4 36 92 4
+  cut rect 4 62 92 4
+  cut rect 48 14 4 22
+  cut rect 24 40 4 22
+  cut rect 72 40 4 22
+  cut rect 48 66 4 24
+
+T4_MACGYVER.A                   # a folding pocket knife
+  rect 6 46 70 26 13
+  path M 60 50 L 96 18 L 98 24 L 70 56 Z
+  line 40 46 54 14 6
+  cut circle 20 59 5
+T4_MACGYVER.B                   # a paperclip
+  stroke 9 path M 70 92 L 70 20 Q 70 6 56 6 Q 42 6 42 20 L 42 76 Q 42 84 50 84 Q 58 84 58 76 L 58 28
+
+T4_RAZER.A                      # a circular saw blade
+  poly 50 0 58.5 13 71.7 5 73.7 20.3 89.1 18.8 84.2 33.5 98.7 38.9 88 50 98.7 61.1 84.2 66.5 89.1 81.2 73.7 79.7 71.7 95 58.5 87 50 100 41.5 87 28.3 95 26.3 79.7 10.9 81.2 15.8 66.5 1.3 61.1 12 50 1.3 38.9 15.8 33.5 10.9 18.8 26.3 20.3 28.3 5 41.5 13
+  cut circle 50 50 10
+T4_RAZER.B                      # a chainsaw
+  rect 4 34 40 40 8
+  path M 44 42 L 92 42 Q 100 54 92 66 L 44 66 Z
+  cut stroke 4 path M 50 54 L 88 54
+  stroke 7 path M 12 34 Q 12 16 30 16 Q 42 16 42 30
+
+T4_WORLD_EATER.A                # a globe with a bite out of it
+  circle 50 50 46
+  cut circle 98 22 22
+  cut circle 82 4 14
+  cut stroke 4 path M 10 40 Q 50 30 80 48
+  cut stroke 4 path M 30 8 Q 20 50 40 94
+T4_WORLD_EATER.B                # a huge toothy mouth
+  path M 4 30 Q 50 10 96 30 Q 96 80 50 96 Q 4 80 4 30 Z
+  cut path M 16 38 Q 50 26 84 38 Q 84 72 50 84 Q 16 72 16 38 Z
+  poly 18 38 26 54 32 36
+  poly 38 33 46 50 54 32
+  poly 62 33 70 50 78 36
+  poly 26 74 34 60 40 78
+  poly 48 80 54 64 60 78
+  poly 66 74 72 60 76 72
+
+T4_PRUNER.A                     # pruning shears
+  path M 50 46 Q 62 10 92 4 Q 80 30 58 54 Z
+  path M 50 46 Q 30 24 40 4 Q 56 22 58 48 Z
+  line 52 52 16 96 10
+  line 56 52 76 96 10
+  circle 54 50 6
+T4_PRUNER.B                     # a lopped-off branch
+  line 14 90 70 34 10
+  path M 70 34 Q 90 22 96 4 Q 76 8 64 28 Z
+  path M 40 64 Q 30 40 10 38 Q 18 58 36 68 Z
+  cut stroke 5 path M 50 64 L 62 42
+
+T4_CHIEF_ENGINEER.A             # a gear with a hard hat
+  poly 84.0 50.0 95.6 55.8 93.2 65.7 80.2 65.5 76.0 71.9 81.3 83.8 73.0 89.8 63.2 81.3 55.9 83.5 52.2 95.9 42.0 95.3 39.9 82.5 33.0 79.4 22.2 86.6 14.8 79.6 21.4 68.4 18.1 61.6 5.1 60.2 4.0 50.0 16.3 45.7 18.1 38.4 9.1 29.0 14.8 20.4 26.9 25.1 33.0 20.6 32.2 7.6 42.0 4.7 48.3 16.0 55.9 16.5 63.6 6.1 73.0 10.2 70.6 22.9 76.0 28.1 88.7 25.1 93.2 34.3 83.2 42.5
+  cut circle 50 50 14
+  path M 22 30 Q 22 2 50 2 Q 78 2 78 30 Z
+  rect 14 26 72 10 4
+T4_CHIEF_ENGINEER.B             # a gear with a star badge
+  poly 84.0 50.0 95.6 55.8 93.2 65.7 80.2 65.5 76.0 71.9 81.3 83.8 73.0 89.8 63.2 81.3 55.9 83.5 52.2 95.9 42.0 95.3 39.9 82.5 33.0 79.4 22.2 86.6 14.8 79.6 21.4 68.4 18.1 61.6 5.1 60.2 4.0 50.0 16.3 45.7 18.1 38.4 9.1 29.0 14.8 20.4 26.9 25.1 33.0 20.6 32.2 7.6 42.0 4.7 48.3 16.0 55.9 16.5 63.6 6.1 73.0 10.2 70.6 22.9 76.0 28.1 88.7 25.1 93.2 34.3 83.2 42.5
+  cut poly 50 28 55.3 42.7 70.9 43.2 58.6 52.8 62.9 67.8 50 59 37.1 67.8 41.4 52.8 29.1 43.2 44.7 42.7
+
+T4_OVERCLOCKER.A                # a gauge in the red
+  path M 4 74 Q 4 18 50 18 Q 96 18 96 74 Z
+  cut path M 16 70 Q 16 30 50 30 Q 84 30 84 70 Z
+  line 50 70 82 36 7
+  circle 50 70 9
+  rect 4 72 92 10 3
+T4_OVERCLOCKER.B                # a gear with a lightning bolt
+  poly 84.0 50.0 95.6 55.8 93.2 65.7 80.2 65.5 76.0 71.9 81.3 83.8 73.0 89.8 63.2 81.3 55.9 83.5 52.2 95.9 42.0 95.3 39.9 82.5 33.0 79.4 22.2 86.6 14.8 79.6 21.4 68.4 18.1 61.6 5.1 60.2 4.0 50.0 16.3 45.7 18.1 38.4 9.1 29.0 14.8 20.4 26.9 25.1 33.0 20.6 32.2 7.6 42.0 4.7 48.3 16.0 55.9 16.5 63.6 6.1 73.0 10.2 70.6 22.9 76.0 28.1 88.7 25.1 93.2 34.3 83.2 42.5
+  cut circle 50 50 26
+  poly 56 26 38 54 50 54 42 76 64 44 52 44 60 26
+
+T4_AUTOMATON_MECHANIC.A         # a robot head and a wrench
+  rect 8 28 54 52 8
+  line 34 28 34 12 5
+  circle 34 8 6
+  cut rect 16 42 12 10 2
+  cut rect 42 42 12 10 2
+  line 58 96 84 60 11
+  circle 88 52 12
+  cut poly 88 52 100 40 100 56
+T4_AUTOMATON_MECHANIC.B         # an oil can
+  path M 10 96 L 14 50 Q 16 40 26 40 L 54 40 Q 64 40 66 50 L 70 96 Z
+  rect 30 26 20 16 3
+  poly 64 50 98 20 100 26 70 64
+  stroke 7 path M 14 56 Q 0 56 2 72 Q 4 86 14 84
+
+
+# ---- Mystic family
+T4_DOOMSAYER.A                  # a sandwich-board sign
+  poly 14 96 30 8 70 8 86 96 74 96 62 22 38 22 26 96
+  rect 26 30 48 50 3
+  cut rect 32 40 36 5
+  cut rect 32 52 36 5
+  cut rect 32 64 22 5
+T4_DOOMSAYER.B                  # a tolling bell
+  path M 50 10 Q 78 10 78 44 L 84 82 L 16 82 L 22 44 Q 22 10 50 10 Z
+  rect 44 0 12 12 3
+  circle 50 92 7
+  stroke 5 path M 88 50 Q 96 62 88 74
+  stroke 5 path M 12 50 Q 4 62 12 74
+
+T4_STAR_GAZER.A                 # a telescope on a tripod
+  poly 8 54 70 18 80 36 18 72
+  poly 66 12 90 0 100 22 76 34
+  line 46 50 26 98 6
+  line 46 50 66 98 6
+  line 46 50 46 98 6
+T4_STAR_GAZER.B                 # the star with a constellation
+  poly 50 2 62 38 98 50 62 62 50 98 38 62 2 50 38 38
+  cut circle 50 50 6
+  cut circle 70 30 4
+  cut circle 30 66 4
+  cut line 50 50 70 30 3
+  cut line 50 50 30 66 3
+
+T4_PROPHET.A                    # stone tablets
+  path M 6 96 L 6 24 Q 6 4 26 4 Q 46 4 46 24 L 46 96 Z
+  path M 54 96 L 54 24 Q 54 4 74 4 Q 94 4 94 24 L 94 96 Z
+  cut rect 14 34 24 5
+  cut rect 14 50 24 5
+  cut rect 62 34 24 5
+  cut rect 62 50 24 5
+T4_PROPHET.B                    # a prophet's staff with a star
+  stroke 10 path M 50 98 L 50 40 Q 50 14 70 14 Q 86 14 86 30
+  poly 30 6 35.7 22.3 52 28 35.7 33.7 30 50 24.3 33.7 8 28 24.3 22.3
+
+T4_THREAD_SPINNER.A             # a spinning wheel
+  stroke 8 circle 40 44 34
+  line 40 44 72 44 5
+  line 40 44 56 71.7 5
+  line 40 44 24 71.7 5
+  line 40 44 8 44 5
+  line 40 44 24 16.3 5
+  line 40 44 56 16.3 5
+  circle 40 44 7
+  line 40 78 26 98 8
+  line 40 78 60 98 8
+  line 74 44 94 30 6
+  rect 86 22 12 18 4
+T4_THREAD_SPINNER.B             # a spool of thread
+  rect 14 4 72 14 4
+  rect 14 82 72 14 4
+  rect 24 16 52 68
+  cut line 24 32 76 28 4
+  cut line 24 48 76 44 4
+  cut line 24 64 76 60 4
+  stroke 5 path M 76 70 Q 96 76 92 96
+
+T4_SPINDLE_GUARD.A              # a spindle with a shield
+  poly 50 0 66 30 66 70 50 100 34 70 34 30
+  poly 4 40 40 40 40 70 22 90 4 70
+  cut poly 10 46 34 46 34 68 22 82 10 68
+T4_SPINDLE_GUARD.B              # a spindle on a shield
+  poly 10 6 90 6 90 50 50 96 10 50
+  cut poly 50 14 62 34 62 58 50 80 38 58 38 34
+  poly 38 40 62 36 62 40 38 44
+
+T4_TAPESTRY_CUTTER.A            # scissors
+  line 50 50 92 6 9
+  line 50 50 8 6 9
+  stroke 8 circle 28 76 16
+  stroke 8 circle 72 76 16
+  line 50 50 36 64 9
+  line 50 50 64 64 9
+T4_TAPESTRY_CUTTER.B            # a spindle with its thread cut
+  poly 50 0 66 30 66 70 50 100 34 70 34 30
+  cut poly 34 40 66 34 66 40 34 46
+  cut poly 34 60 66 54 66 60 34 66
+  stroke 5 path M 66 50 Q 86 50 90 30
+  stroke 5 path M 66 60 Q 82 66 84 86
+  cut rect 80 36 16 6
+
+T4_CAULDRON_HAG.A               # a bubbling cauldron
+  path M 6 40 L 94 40 Q 96 92 50 94 Q 4 92 6 40 Z
+  rect 2 34 96 12 6
+  circle 34 24 9
+  circle 56 16 11
+  circle 72 28 7
+  line 22 92 14 100 6
+  line 78 92 86 100 6
+T4_CAULDRON_HAG.B               # a broomstick
+  line 6 6 64 64 8
+  path M 56 56 L 74 50 L 100 92 L 92 100 L 50 74 Z
+  cut line 66 70 88 92 3
+  cut line 72 62 94 84 3
+
+T4_HEX_WEAVER.A                 # a witch hat with a spider web
+  poly 16 76 44 30 30 4 62 26 84 76
+  rect 0 72 100 14 6
+  cut stroke 3 path M 30 60 Q 50 48 70 60
+  cut line 50 30 50 66 3
+  cut line 36 44 64 66 3
+  cut line 64 44 36 66 3
+T4_HEX_WEAVER.B                 # a witch's hand spinning a thread
+  path M 30 98 L 30 60 Q 20 50 22 40 L 30 26 L 32 40 L 38 16 L 44 40 L 50 12 L 54 40 L 62 18 L 64 46 Q 72 56 70 66 L 66 98 Z
+  stroke 5 path M 62 18 Q 80 30 76 50 Q 72 68 92 74
+
+T4_COVEN_MATRIARCH.A            # the witch hat with a crown
+  poly 16 76 44 30 30 4 62 26 84 76
+  rect 0 72 100 14 6
+  cut stroke 4 poly 30 70 30 54 40 62 50 50 60 62 70 54 70 70
+T4_COVEN_MATRIARCH.B            # three witch hats
+  poly 8 84 22 61 15 48 31 59 42 84
+  rect 0 82 50 7 3
+  poly 58 84 72 61 65 48 81 59 92 84
+  rect 50 82 50 7 3
+  poly 28.9 47.1 46.3 18.6 37.6 2.5 57.4 16.1 71.1 47.1
+  rect 19 44.6 62 8.7 3.7
+
+T4_SAVANT.A                     # a brain
+  path M 50 12 Q 70 6 82 18 Q 98 26 94 46 Q 100 64 86 74 Q 80 90 60 88 L 50 92 L 40 88 Q 20 90 14 74 Q 0 64 6 46 Q 2 26 18 18 Q 30 6 50 12 Z
+  cut stroke 4 path M 50 14 L 50 88
+  cut stroke 4 path M 22 36 Q 34 30 40 42
+  cut stroke 4 path M 78 36 Q 66 30 60 42
+  cut stroke 4 path M 18 62 Q 32 56 40 66
+  cut stroke 4 path M 82 62 Q 68 56 60 66
+T4_SAVANT.B                     # a lightbulb
+  path M 50 4 Q 84 6 84 40 Q 84 58 66 70 L 66 78 L 34 78 L 34 70 Q 16 58 16 40 Q 16 6 50 4 Z
+  rect 36 80 28 8 3
+  rect 40 90 20 8 3
+  cut stroke 4 path M 30 34 Q 32 20 46 16
+
+T4_FORBIDDEN_SCHOLAR.A          # a chained book
+  rect 12 10 76 84 6
+  cut rect 12 78 76 4
+  stroke 7 path M 4 40 Q 50 56 96 40
+  stroke 7 path M 4 66 Q 50 50 96 66
+  rect 40 42 20 22 3
+  cut circle 50 50 3
+T4_FORBIDDEN_SCHOLAR.B          # the open book with a skull
+  path M 2 40 Q 26 30 50 42 Q 74 30 98 40 L 98 92 Q 74 82 50 94 Q 26 82 2 92 Z
+  cut line 50 44 50 90 3
+  circle 50 18 15
+  rect 42 28 16 10 3
+  cut circle 45 18 4
+  cut circle 55 18 4
+
+T4_ENLIGHTENED.A                # the open book with a halo
+  path M 2 40 Q 26 30 50 42 Q 74 30 98 40 L 98 92 Q 74 82 50 94 Q 26 82 2 92 Z
+  cut line 50 44 50 90 3
+  stroke 6 ellipse 50 18 24 8
+T4_ENLIGHTENED.B                # a third eye
+  path M 2 50 Q 50 2 98 50 Q 50 98 2 50 Z
+  cut path M 14 50 Q 50 16 86 50 Q 50 84 14 50 Z
+  circle 50 50 16
+  cut circle 50 50 6
+  line 50 2 50 14 6
+  line 20 10 28 22 6
+  line 80 10 72 22 6
+
+
+# ---- Alchemist family
+T4_CHEMIST.A                    # a molecule
+  line 50 50 18 22 8
+  line 50 50 84 26 8
+  line 50 50 50 88 8
+  circle 50 50 16
+  circle 18 22 13
+  circle 84 26 11
+  circle 50 88 11
+T4_CHEMIST.B                    # a beaker
+  path M 18 6 L 82 6 L 76 14 L 76 92 Q 76 98 70 98 L 30 98 Q 24 98 24 92 L 24 14 Z
+  cut rect 30 14 40 34
+  cut rect 64 56 12 4
+  cut rect 64 70 12 4
+
+T4_ELIXIR_SPECIALIST.A          # a potion with a heart
+  circle 50 64 34
+  rect 39 14 22 30 3
+  rect 33 10 34 8 3
+  cut path M 50 58.5 C 50 50 33 50 33 60.2 C 33 70.4 50 74.5 50 82.3 C 50 74.5 67 70.4 67 60.2 C 67 50 50 50 50 58.5 Z
+T4_ELIXIR_SPECIALIST.B          # an ornate elixir bottle
+  path M 50 26 Q 86 40 80 70 Q 74 98 50 98 Q 26 98 20 70 Q 14 40 50 26 Z
+  rect 42 10 16 20 3
+  circle 50 8 8
+  cut poly 50 52 54.2 63.8 66 68 54.2 72.2 50 84 45.8 72.2 34 68 45.8 63.8
+
+T4_VAPOUR_ADDICT.A              # a flask breathing vapour
+  circle 50 64 34
+  rect 39 14 22 30 3
+  rect 33 10 34 8 3
+  circle 30 6 8
+  circle 46 0 7
+  circle 64 4 9
+  circle 80 10 7
+T4_VAPOUR_ADDICT.B              # a curl of vapour
+  stroke 11 path M 30 98 Q 10 76 30 60 Q 50 46 32 30 Q 22 18 40 4
+  stroke 9 path M 64 98 Q 48 80 64 66 Q 80 52 66 36
+
+T4_MIASMA_LORD.A                # a toxic cloud with a skull
+  circle 28 56 22
+  circle 50 38 28
+  circle 74 54 22
+  rect 8 56 84 32 14
+  cut circle 42 50 6
+  cut circle 58 50 6
+  cut rect 44 62 12 6 2
+T4_MIASMA_LORD.B                # a toxic bottle with a crown
+  poly 36 18 64 18 80 40 80 96 20 96 20 40
+  cut circle 40 58 7
+  cut circle 60 58 7
+  cut rect 44 72 12 6 2
+  poly 30 4 30 -10 40 -2 50 -12 60 -2 70 -10 70 4
+  rect 36 4 28 14 3
+
+T4_DRAGONKIN_ALCHEMIST.A        # a dragon head
+  path M 10 96 L 22 60 Q 14 46 22 30 L 18 8 L 34 22 Q 46 14 60 18 L 96 30 L 90 44 L 66 44 L 70 54 L 54 56 L 46 96 Z
+  cut circle 48 32 6
+T4_DRAGONKIN_ALCHEMIST.B        # a flask with a dragon wing
+  circle 50 64 34
+  rect 39 14 22 30 3
+  rect 33 10 34 8 3
+  path M 80 60 Q 100 40 96 10 Q 88 26 76 28 Q 82 40 76 52 Z
+  path M 20 60 Q 0 40 4 10 Q 12 26 24 28 Q 18 40 24 52 Z
+
+T4_THE_GOOBOUND.A               # a slime with eyes
+  path M 6 92 Q 4 60 22 44 Q 34 14 54 14 Q 78 16 84 44 Q 98 60 94 92 Z
+  cut ellipse 38 52 6 8
+  cut ellipse 62 52 6 8
+  circle 39 54 2.5
+  circle 63 54 2.5
+T4_THE_GOOBOUND.B               # a bottle overflowing with goo
+  poly 38 36 62 36 80 58 80 96 20 96 20 58
+  rect 40 22 20 16 3
+  path M 26 26 Q 24 4 50 4 Q 76 4 74 26 Q 66 20 60 26 L 40 26 Q 32 20 26 26 Z
+  rect 24 18 12 44 6
+  rect 66 18 12 56 6
+  cut circle 40 72 6
+  cut circle 60 72 6
+
+T4_MATTER_SHIFTER.A             # a cube becoming a sphere
+  poly 4 30 28 18 52 30 52 70 28 82 4 70
+  cut line 28 42 28 80 3
+  cut line 4 30 28 42 3
+  cut line 52 30 28 42 3
+  circle 70 50 28
+  cut stroke 4 path M 58 36 Q 64 30 72 30
+T4_MATTER_SHIFTER.B             # two arrows chasing in a circle
+  stroke 10 path M 50 10 Q 88 10 90 46
+  poly 78 42 100 42 90 60
+  stroke 10 path M 50 90 Q 12 90 10 54
+  poly 22 58 0 58 10 40
+
+T4_PHILOSOPHERS_ALCHEMIST.A     # the squared circle
+  stroke 5 circle 50 50 46
+  stroke 5 poly 50 8 90 74 10 74
+  stroke 5 rect 30 38 40 36
+  stroke 5 circle 50 56 18
+T4_PHILOSOPHERS_ALCHEMIST.B     # the philosopher's stone
+  poly 30 10 70 10 94 40 70 92 30 92 6 40
+  cut poly 30 10 70 10 60 32 40 32
+  cut stroke 3 path M 6 40 L 40 32 L 30 92
+  cut stroke 3 path M 94 40 L 60 32 L 70 92
+
+T4_UNSTABLE_TRANSFORMER.A       # the transmutation circle cracked
+  circle 50 50 44
+  cut circle 50 50 34
+  poly 50 12 84 70 16 70
+  cut poly 50 30 68 62 32 62
+  cut stroke 6 path M 50 2 L 44 28 L 58 46 L 46 70 L 54 98
+T4_UNSTABLE_TRANSFORMER.B       # an exploding flask
+  circle 50 64 34
+  rect 39 30 22 14 3
+  poly 50 -4 53.8 8.8 65.6 2.4 59.2 14.2 72 18 59.2 21.8 65.6 33.6 53.8 27.2 50 40 46.2 27.2 34.4 33.6 40.8 21.8 28 18 40.8 14.2 34.4 2.4 46.2 8.8
+
+T4_ATTUNER.A                    # a tuning fork
+  stroke 11 path M 30 4 L 30 44 Q 30 62 50 62 Q 70 62 70 44 L 70 4
+  line 50 62 50 98 11
+  stroke 5 path M 84 18 Q 94 30 84 42
+  stroke 5 path M 16 18 Q 6 30 16 42
+T4_ATTUNER.B                    # a gem humming with rings
+  poly 24 10 76 10 98 36 50 96 2 36
+  cut poly 2 36 98 36 98 40 2 40
+  stroke 4 path M 2 70 Q 50 110 98 70
+
+T4_ENCHANTER.A                  # a gem with a sparkle
+  poly 24 10 76 10 98 36 50 96 2 36
+  cut poly 2 36 98 36 98 40 2 40
+  poly 84 -4 87.5 8.5 100 12 87.5 15.5 84 28 80.5 15.5 68 12 80.5 8.5
+T4_ENCHANTER.B                  # a wand tipped with a gem
+  line 10 94 62 42 9
+  poly 62 22 82 22 92 34 72 62 52 34
+
+T4_AWAKENER.A                   # a gem with an opening eye
+  poly 24 10 76 10 98 36 50 96 2 36
+  cut path M 24 50 Q 50 30 76 50 Q 50 70 24 50 Z
+  circle 50 50 9
+T4_AWAKENER.B                   # a gem rising like the sun
+  poly 50 10 59.8 23.3 75 16.7 76.9 33.1 93.3 35 86.7 50.2 100 60 86.7 69.8 93.3 85 76.9 86.9 75 103.3 59.8 96.7 50 110 40.2 96.7 25 103.3 23.1 86.9 6.7 85 13.3 69.8 0 60 13.3 50.2 6.7 35 23.1 33.1 25 16.7 40.2 23.3
+  cut circle 50 60 32
+  poly 37 39 63 39 74 52 50 82 26 52
+  cut poly 26 52 74 52 74 54 26 54
+
+
+# ---- Jester family
+T4_JOKER_2.A                    # a wide clown grin
+  circle 50 60 36
+  poly 22 40 14 4 50 26 86 4 78 40
+  circle 14 4 6
+  circle 86 4 6
+  cut circle 50 62 9
+  cut path M 24 62 Q 50 98 76 62 Q 50 80 24 62 Z
+  cut circle 38 48 5
+  cut circle 62 48 5
+T4_JOKER_2.B                    # a jack-in-the-box
+  rect 14 58 72 40 4
+  cut rect 14 70 72 4
+  stroke 6 path M 50 58 L 40 50 L 60 42 L 40 34
+  circle 50 22 14
+  poly 36 18 30 0 50 12 70 0 64 18
+
+T4_COMEDIAN.A                   # a microphone
+  rect 34 6 32 46 16
+  cut rect 34 28 32 4
+  stroke 7 path M 22 40 Q 22 66 50 66 Q 78 66 78 40
+  line 50 66 50 90 7
+  rect 30 88 40 10 4
+T4_COMEDIAN.B                   # a laughing mask
+  path M 10 8 Q 50 22 90 8 Q 96 62 50 96 Q 4 62 10 8 Z
+  cut path M 22 40 Q 32 28 44 40 Q 32 34 22 40 Z
+  cut path M 56 40 Q 68 28 78 40 Q 68 34 56 40 Z
+  cut path M 28 58 Q 50 90 72 58 Z
+
+T4_TWITCH_STREAMER.A            # a gaming headset
+  stroke 9 path M 16 60 L 16 44 Q 16 10 50 10 Q 84 10 84 44 L 84 60
+  rect 6 48 22 36 8
+  rect 72 48 22 36 8
+  stroke 6 path M 22 84 Q 30 98 46 94
+  circle 50 94 6
+T4_TWITCH_STREAMER.B            # a webcam
+  circle 50 40 34
+  cut circle 50 40 16
+  circle 50 40 8
+  rect 40 72 20 12
+  rect 22 84 56 12 4
+
+T4_TAVERN_BRAWLER.A             # a tavern barstool
+  ellipse 50 20 40 12
+  rect 10 18 80 8
+  line 22 26 12 98 8
+  line 78 26 88 98 8
+  line 40 28 36 98 7
+  line 60 28 64 98 7
+  line 16 72 84 72 6
+T4_TAVERN_BRAWLER.B             # a broken bottle
+  path M 30 98 L 30 54 Q 30 42 40 38 L 40 22 L 34 12 L 44 16 L 50 4 L 56 14 L 66 10 L 60 22 L 60 38 Q 70 42 70 54 L 70 98 Z
+  cut rect 30 64 40 8
+
+T4_THE_DRUNKEN_FIST.A           # a drinking gourd
+  path M 50 18 Q 66 18 66 34 Q 66 42 60 46 Q 88 56 86 76 Q 82 98 50 98 Q 18 98 14 76 Q 12 56 40 46 Q 34 42 34 34 Q 34 18 50 18 Z
+  rect 44 4 12 16 3
+  cut rect 30 46 40 5
+  stroke 5 path M 60 50 Q 92 40 90 20
+T4_THE_DRUNKEN_FIST.B           # a fist with bubbles
+  path M 14 54 Q 14 34 32 34 L 72 34 Q 90 34 90 54 L 90 76 Q 90 96 66 96 L 36 96 Q 14 96 14 76 Z
+  cut line 36 36 36 56 5
+  cut line 54 36 54 56 5
+  cut line 72 36 72 56 5
+  circle 30 14 9
+  circle 52 8 7
+  circle 70 18 6
+
+T4_ALCOHOL_MISUSE_DISORDER.A    # a tipped, empty bottle
+  path M 98 72 L 46 72 Q 34 72 30 62 L 10 62 L 10 46 L 30 46 Q 34 36 46 36 L 98 36 Z
+  cut rect 52 42 40 24 3
+  path M 8 66 Q 13.5 76.6 17 83.7 Q 19 92 8 92 Q -3 92 -1 83.7 Q 2.5 76.6 8 66 Z
+T4_ALCOHOL_MISUSE_DISORDER.B    # a bottle and an empty glass
+  path M 6 98 L 6 54 Q 6 42 16 38 L 16 10 L 36 10 L 36 38 Q 46 42 46 54 L 46 98 Z
+  path M 56 50 L 94 50 L 88 98 L 62 98 Z
+  cut path M 62 56 L 88 56 L 84 92 L 66 92 Z
+
+T4_SIREN.A                      # a mermaid's tail
+  path M 40 2 L 60 2 Q 66 40 58 66 Q 70 80 96 82 Q 74 96 50 90 Q 26 96 4 82 Q 30 80 42 66 Q 34 40 40 2 Z
+  cut stroke 3 path M 42 26 Q 50 32 58 26
+  cut stroke 3 path M 42 44 Q 50 50 58 44
+T4_SIREN.B                      # a shell with a music note
+  path M 50 96 L 10 44 Q 14 12 50 8 Q 86 12 90 44 Z
+  cut stroke 4 path M 50 92 L 30 18
+  cut stroke 4 path M 50 92 L 50 10
+  cut stroke 4 path M 50 92 L 70 18
+  line 86 4 86 30 5
+  circle 80 32 7
+
+T4_SUCCUBUS.A                   # a heart with bat wings
+  path M 50 36 C 50 22 22 22 22 38.8 C 22 55.6 50 62.3 50 75.2 C 50 62.3 78 55.6 78 38.8 C 78 22 50 22 50 36 Z
+  path M 26 40 L 2 24 L 6 44 L 0 54 L 22 56 Z
+  path M 74 40 L 98 24 L 94 44 L 100 54 L 78 56 Z
+  path M 34 28 Q 28 12 34 2 Q 38 16 42 22 Z
+  path M 66 28 Q 72 12 66 2 Q 62 16 58 22 Z
+T4_SUCCUBUS.B                   # a pointed devil's tail
+  stroke 9 path M 10 94 Q 10 60 40 56 Q 76 50 70 24
+  poly 56 26 70 0 84 26 70 18
+
+T4_CHARMER.A                    # the lips with a heart
+  path M 2 50 Q 20 22 38 30 Q 46 34 50 38 Q 54 34 62 30 Q 80 22 98 50 Q 78 84 50 84 Q 22 84 2 50 Z
+  cut path M 10 50 Q 50 60 90 50 Q 50 56 10 50 Z
+  path M 80 10.5 C 80 4 67 4 67 11.8 C 67 19.6 80 22.7 80 28.7 C 80 22.7 93 19.6 93 11.8 C 93 4 80 4 80 10.5 Z
+T4_CHARMER.B                    # a rose
+  path M 50 6 Q 74 6 72 26 Q 70 44 50 46 Q 30 44 28 26 Q 26 6 50 6 Z
+  cut stroke 4 path M 40 20 Q 50 30 60 18
+  line 50 46 50 98 7
+  path M 50 70 Q 70 60 82 66 Q 70 78 50 74 Z
+
+T4_BARD.A                       # a lute
+  path M 30 58 Q 6 66 10 86 Q 16 100 36 96 Q 56 92 58 70 Q 60 54 48 50 Z
+  line 46 54 86 14 8
+  rect 80 4 16 16 3
+  cut circle 32 76 7
+T4_BARD.B                       # a quill and music note
+  path M 10 96 Q 18 50 70 12 Q 66 50 18 90 Z
+  line 80 30 80 70 6
+  ellipse 72 72 10 8
+  poly 80 30 96 36 80 42
+
+T4_PAINTER.A                    # a paintbrush
+  line 10 90 60 40 9
+  path M 56 44 L 70 30 L 76 36 L 62 50 Z
+  path M 70 30 Q 86 6 98 2 Q 96 18 76 36 Z
+T4_PAINTER.B                    # an easel
+  line 50 2 22 98 7
+  line 50 2 78 98 7
+  line 50 2 50 98 7
+  rect 12 18 76 48 3
+  rect 8 64 84 8 3
+
+T4_ACTOR.A                      # comedy and tragedy masks
+  path M 4 8 Q 30 18 56 8 Q 60 48 30 70 Q 0 48 4 8 Z
+  cut ellipse 18 28 6 4
+  cut ellipse 42 28 6 4
+  cut path M 16 42 Q 30 58 44 42 Z
+  path M 44 30 Q 70 40 96 30 Q 100 70 70 92 Q 40 70 44 30 Z
+  cut ellipse 58 50 6 4
+  cut ellipse 82 50 6 4
+  cut path M 58 76 Q 70 62 82 76 Q 70 70 58 76 Z
+T4_ACTOR.B                      # a star on a dressing-room door
+  rect 18 4 64 92 4
+  cut poly 50 18 55.3 32.7 70.9 33.2 58.6 42.8 62.9 57.8 50 49 37.1 57.8 41.4 42.8 29.1 33.2 44.7 32.7
+  cut circle 70 60 4
+

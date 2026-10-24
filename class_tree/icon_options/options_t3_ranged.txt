@@ -1,0 +1,187 @@
+# Tier 3 RANGED options (same format as class_glyphs.txt). The chosen ones get copied over.
+
+T3_LONGBOWMAN.A                 # a tall, long bow shape
+  path M 22 0 L 34 0 C 64 0 80 26 80 50 C 80 74 64 100 34 100 L 22 100 Z
+  poly 76 38 99 50 76 62
+T3_LONGBOWMAN.B                 # a long arrow through it
+  symbol
+  rect 0 45 84 10
+  poly 82 34 100 50 82 66
+  poly 0 36 12 45 12 55 0 64
+
+T3_DEADEYE.A                    # a bullseye in the middle
+  symbol
+  poly 80 38 99 50 80 62
+  cut circle 44 50 20
+  circle 44 50 13
+  cut circle 44 50 7
+T3_DEADEYE.B                    # a narrowed eye
+  symbol
+  poly 80 38 99 50 80 62
+  cut path M 22 50 Q 44 34 70 50 Q 44 62 22 50 Z
+  circle 46 49 6
+
+T3_CROSSBOWMAN.A                # bolt and stock: a crossbow
+  symbol
+  poly 82 40 99 50 82 60
+  rect 0 42 18 16 3
+T3_CROSSBOWMAN.B                # the bow arms across it
+  symbol
+  poly 82 40 99 50 82 60
+  rect 36 0 14 100 4
+
+T3_SHADOWSTALKER.A              # a pointed hood
+  path M 14 92 L 14 30 Q 20 0 52 4 Q 88 14 88 50 C 88 73 69 92 46 92 Z
+  poly 80 38 99 50 80 62
+  cut rect 40 40 30 7 3
+T3_SHADOWSTALKER.B              # a hood peak
+  symbol
+  poly 14 14 20 -6 46 10
+  poly 80 38 99 50 80 62
+  cut rect 40 40 30 7 3
+
+T3_TAMER.A                      # a collar
+  symbol
+  poly 22 14 26 -2 40 12
+  poly 48 10 60 -2 64 16
+  cut rect 18 64 64 8 4
+  circle 50 84 9
+T3_TAMER.B                      # a leash ring
+  symbol
+  poly 22 14 26 -2 40 12
+  poly 48 10 60 -2 64 16
+  stroke 8 circle 88 74 12
+
+T3_TRAPPER.A                    # trap jaws
+  symbol
+  poly 22 14 26 -2 40 12
+  poly 48 10 60 -2 64 16
+  cut poly 100 26 58 50 100 74
+T3_TRAPPER.B                    # a snare loop
+  symbol
+  poly 22 14 26 -2 40 12
+  poly 48 10 60 -2 64 16
+  cut circle 52 58 17
+  circle 52 58 9
+
+T3_TRACKER.A                    # a paw print
+  symbol
+  poly 22 14 26 -2 40 12
+  poly 48 10 60 -2 64 16
+  cut ellipse 50 66 13 11
+  cut circle 34 46 6
+  cut circle 50 38 6
+  cut circle 66 46 6
+T3_TRACKER.B                    # a sniffing snout
+  symbol
+  poly 22 14 26 -2 40 12
+  poly 48 10 60 -2 64 16
+  ellipse 84 62 16 12
+  cut circle 94 58 4
+
+T3_SURVIVALIST.A                # a tent
+  path M 14 92 L 14 34 L 44 2 L 72 22 C 84 32 88 42 88 54 C 88 75 70 92 48 92 Z
+  cut poly 36 92 48 56 60 92
+T3_SURVIVALIST.B                # a campfire flame
+  symbol
+  poly 22 14 26 -2 40 12
+  poly 48 10 60 -2 64 16
+  cut path M 48 34 Q 66 54 62 70 Q 58 82 48 82 Q 36 82 34 70 Q 32 56 48 34 Z
+
+T3_PISTOLERO.A                  # a pistol
+  rect 6 18 92 22 4
+  poly 10 36 42 36 36 94 4 94
+  stroke 7 circle 48 48 9
+T3_PISTOLERO.B                  # a lawman's star
+  path M 20 18 L 50 18 Q 84 20 99 50 Q 84 80 50 82 L 20 82 Z
+  rect 8 10 14 80 3
+  cut poly 46.0 30.0 51.3 42.7 65.0 43.8 54.6 52.8 57.8 66.2 46.0 59.0 34.2 66.2 37.4 52.8 27.0 43.8 40.7 42.7
+
+T3_SOLDIER.A                    # an army helmet
+  path M 8 70 Q 10 12 50 10 Q 90 12 92 70 Z
+  rect 0 64 100 14 7
+T3_SOLDIER.B                    # a rank chevron
+  path M 20 18 L 50 18 Q 84 20 99 50 Q 84 80 50 82 L 20 82 Z
+  rect 8 10 14 80 3
+  cut poly 30 34 50 52 70 34 70 46 50 64 30 46
+
+T3_SNIPER.A                     # a scope crosshair
+  path M 20 18 L 50 18 Q 84 20 99 50 Q 84 80 50 82 L 20 82 Z
+  rect 8 10 14 80 3
+  cut stroke 5 circle 52 50 15
+  cut line 52 30 52 70 3
+  cut line 32 50 72 50 3
+T3_SNIPER.B                     # a long rifle round
+  path M 6 32 L 48 32 Q 82 34 100 50 Q 82 66 48 68 L 6 68 Z
+  rect 0 26 10 48 2
+
+T3_BUCKSHOT_BARRY.A             # a shotgun shell
+  rect 30 12 66 76 8
+  rect 6 6 28 88 4
+  cut rect 28 12 4 76
+T3_BUCKSHOT_BARRY.B             # a shell spraying pellets
+  rect 22 16 52 68 8
+  rect 4 10 24 80 4
+  circle 80 28 10
+  circle 90 50 10
+  circle 80 72 10
+
+T3_SPEAR_THROWER.A              # the rock becomes a spearhead
+  path M 50 0 Q 84 30 74 62 L 58 74 L 58 100 L 42 100 L 42 74 L 26 62 Q 16 30 50 0 Z
+T3_SPEAR_THROWER.B              # a spear through the rock
+  poly 18 10 52 6 80 18 94 46 86 76 60 94 18 90 12 50
+  line 4 96 82 18 10
+  poly 70 12 100 0 88 30
+
+T3_BOMBER.A                     # a round bomb
+  circle 46 58 38
+  rect 52 12 20 16 3
+  stroke 6 path M 66 14 Q 74 0 90 4
+  poly 92.0 -4.0 94.8 3.2 102.0 6.0 94.8 8.8 92.0 16.0 89.2 8.8 82.0 6.0 89.2 3.2
+T3_BOMBER.B                     # the rock lit like a bomb
+  poly 18 10 52 6 80 18 94 46 86 76 60 94 18 90 12 50
+  stroke 6 path M 66 16 Q 76 0 92 4
+  poly 93.0 -5.0 95.8 2.2 103.0 5.0 95.8 7.8 93.0 15.0 90.2 7.8 83.0 5.0 90.2 2.2
+
+T3_BIG_CHUCK.A                  # a huge boulder with a crack
+  poly 6 20 40 2 78 6 98 34 96 74 70 98 20 96 2 64
+  cut stroke 6 path M 40 4 L 48 30 L 38 46 L 50 64
+T3_BIG_CHUCK.B                  # a chunk knocked off
+  poly 6 20 40 2 78 6 98 34 96 74 70 98 20 96 2 64
+  cut poly 52 -4 104 -4 104 52 72 30
+
+T3_BOOMERANGER.A                # a boomerang
+  stroke 20 path M 10 24 L 50 76 L 90 24
+T3_BOOMERANGER.B                # a thick curved throw
+  stroke 22 path M 22 10 Q 98 50 22 90
+
+T3_SLING_MASTER.A               # a stone in the pouch
+  path M 14 8 L 46 8 C 69.2 8 88 26.8 88 50 C 88 73.2 69.2 92 46 92 L 14 92 Q 36 50 14 8 Z
+  circle 16 50 14
+T3_SLING_MASTER.B               # the cord whirling
+  path M 14 8 L 46 8 C 69.2 8 88 26.8 88 50 C 88 73.2 69.2 92 46 92 L 14 92 Q 36 50 14 8 Z
+  stroke 7 path M 14 10 Q 2 -2 -4 10
+
+T3_BLOWGUN_SPECIALIST.A         # a blowgun tube through it
+  path M 14 8 L 46 8 C 69.2 8 88 26.8 88 50 C 88 73.2 69.2 92 46 92 L 14 92 Q 36 50 14 8 Z
+  rect 0 44 100 12 4
+T3_BLOWGUN_SPECIALIST.B         # a dart
+  path M 0 40 L 14 50 L 0 60 L 24 56 L 80 56 L 100 50 L 80 44 L 24 44 Z
+
+T3_NETCASTER.A                  # a net
+  path M 14 8 L 46 8 C 69.2 8 88 26.8 88 50 C 88 73.2 69.2 92 46 92 L 14 92 Q 36 50 14 8 Z
+  cut poly 52 22 62 36 52 50 42 36
+  cut poly 52 50 62 64 52 78 42 64
+  cut poly 70 36 80 50 70 64 60 50
+T3_NETCASTER.B                  # bola weights on the ends
+  path M 14 8 L 46 8 C 69.2 8 88 26.8 88 50 C 88 73.2 69.2 92 46 92 L 14 92 Q 36 50 14 8 Z
+  circle 16 10 12
+  circle 16 90 12
+
+T3_TRICKSTER.A                  # curled jester points
+  path M 14 8 L 46 8 C 69.2 8 88 26.8 88 50 C 88 73.2 69.2 92 46 92 L 14 92 Q 0 92 2 80 Q 12 86 18 78 Q 36 50 18 22 Q 12 14 2 20 Q 0 8 14 8 Z
+T3_TRICKSTER.B                  # a question mark
+  path M 14 8 L 46 8 C 69.2 8 88 26.8 88 50 C 88 73.2 69.2 92 46 92 L 14 92 Q 36 50 14 8 Z
+  cut stroke 7 path M 44 38 Q 46 24 58 26 Q 70 30 64 42 Q 56 50 56 58
+  cut circle 56 72 5
+

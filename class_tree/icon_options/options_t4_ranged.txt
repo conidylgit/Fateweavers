@@ -1,0 +1,736 @@
+# Tier 4 Ranged options (bold). Same format as class_glyphs.txt.
+
+# ---- Bowman family
+T4_SHARPSHOOTER.A               # a drawn bow with an arrow
+  stroke 10 path M 34 4 Q 92 50 34 96
+  line 34 4 22 50 4
+  line 22 50 34 96 4
+  line 14 50 90 50 6
+  poly 84 40 100 50 84 60
+  poly 14 50 4 42 10 50 4 58
+T4_SHARPSHOOTER.B               # the longbow with a crosshair
+  path M 22 0 L 34 0 C 64 0 80 26 80 50 C 80 74 64 100 34 100 L 22 100 Z
+  poly 76 38 99 50 76 62
+  cut stroke 5 circle 46 50 16
+  cut line 46 26 46 74 4
+  cut line 22 50 70 50 4
+
+T4_FLETCHER.A                   # a big quill feather
+  path M 16 98 Q 24 40 86 4 Q 84 62 22 90 Z
+  cut stroke 4 path M 18 96 Q 46 50 82 8
+T4_FLETCHER.B                   # an arrow's feathered tail
+  line 50 16 50 98 8
+  poly 36 22 50 0 64 22
+  poly 50 56 26 70 26 98 50 84
+  poly 50 56 74 70 74 98 50 84
+
+T4_LOOKOUT.A                    # a spyglass
+  poly 6 70 66 28 80 50 20 92
+  poly 62 22 86 6 100 30 76 46
+  line 4 84 16 76 16
+T4_LOOKOUT.B                    # a watchtower
+  poly 16 32 50 4 84 32
+  rect 24 30 52 28
+  cut rect 36 36 28 14
+  line 30 58 16 98 9
+  line 70 58 84 98 9
+  line 24 80 76 80 7
+
+T4_AMBUSHER.A                   # eyes hidden in a bush
+  circle 28 56 22
+  circle 50 40 26
+  circle 74 54 22
+  rect 8 56 84 40 14
+  cut poly 32 56 46 60 34 66
+  cut poly 68 56 54 60 66 66
+T4_AMBUSHER.B                   # a dark D with watching eyes
+  path M 14 8 L 46 8 C 69.2 8 88 26.8 88 50 C 88 73.2 69.2 92 46 92 L 14 92 Z
+  cut poly 26 44 44 50 28 56
+  cut poly 66 44 48 50 64 56
+
+T4_TRICKSHOTTER.A               # an arrow that bends around
+  stroke 11 path M 8 92 Q 4 18 66 22
+  poly 60 8 92 24 62 38
+  poly 4 98 2 78 14 84 20 96
+T4_TRICKSHOTTER.B               # an apple split by an arrow
+  path M 50 41 C 50 22 12 22 12 44.8 C 12 67.6 50 76.7 50 94.2 C 50 76.7 88 67.6 88 44.8 C 88 22 50 22 50 41 Z
+  rect 46 10 8 20 3
+  path M 54 18 Q 66 2 84 8 Q 74 24 54 22 Z
+  cut line 4 62 96 62 7
+  line 0 62 100 62 5
+  poly 86 52 100 62 86 72
+
+T4_BULLSEYE.A                   # a target with an arrow in the centre
+  circle 50 54 44
+  cut stroke 6 circle 50 54 28
+  cut stroke 6 circle 50 54 12
+  line 50 54 92 8 6
+  poly 86 2 96 4 98 14 90 16
+T4_BULLSEYE.B                   # a target on a stand
+  circle 50 40 36
+  cut stroke 6 circle 50 40 22
+  circle 50 40 8
+  line 50 70 50 98 7
+  line 34 96 50 72 6
+  line 66 96 50 72 6
+
+T4_ARBALIST.A                   # a heavy crossbow
+  stroke 12 path M 4 38 Q 50 10 96 38
+  rect 42 14 16 84 4
+  rect 34 70 32 16 4
+  line 4 38 50 50 3
+  line 96 38 50 50 3
+T4_ARBALIST.B                   # a crossbow with a winding crank
+  symbol
+  poly 82 40 99 50 82 60
+  rect 0 42 18 16 3
+  circle 10 50 14
+  cut circle 10 50 5
+  line 10 50 10 76 6
+
+T4_SEMI_AUTOMATIC_CROSSBOWMAN.A # a crossbow with a magazine
+  symbol
+  poly 82 40 99 50 82 60
+  rect 0 42 18 16 3
+  rect 26 0 32 20 3
+  cut rect 30 4 24 4
+T4_SEMI_AUTOMATIC_CROSSBOWMAN.B # a crossbow with a drum magazine
+  symbol
+  poly 82 40 99 50 82 60
+  rect 0 42 18 16 3
+  circle 40 78 20
+  cut circle 40 78 7
+
+T4_PAVISE_BEARER.A              # a tall pavise shield
+  path M 16 96 L 16 18 Q 50 0 84 18 L 84 96 Z
+  cut rect 46 18 8 70 3
+T4_PAVISE_BEARER.B              # a pavise with a bolt poking out
+  path M 6 96 L 6 18 Q 36 2 66 18 L 66 96 Z
+  cut rect 32 18 8 70 3
+  line 60 50 92 50 7
+  poly 88 40 100 50 88 60
+
+T4_HITMAN.A                     # a fedora
+  path M 4 72 Q 50 88 96 72 Q 92 62 80 62 L 76 30 Q 72 18 60 22 L 50 28 L 40 22 Q 28 18 24 30 L 20 62 Q 8 62 4 72 Z
+  cut rect 21 50 58 7
+T4_HITMAN.B                     # a sniper crosshair
+  stroke 8 circle 50 50 38
+  line 50 2 50 36 7
+  line 50 64 50 98 7
+  line 2 50 36 50 7
+  line 64 50 98 50 7
+  circle 50 50 5
+
+T4_STALKER.A                    # a big boot print
+  ellipse 50 32 24 30
+  rect 38 52 24 26 6
+  ellipse 50 82 18 16
+T4_STALKER.B                    # a hooded head with glaring eyes
+  symbol
+  poly 14 14 20 -6 46 10
+  poly 80 38 99 50 80 62
+  cut poly 30 40 44 46 32 50
+  cut poly 64 40 50 46 62 50
+
+T4_DRIFTER.A                    # a bindle on a stick
+  line 6 96 70 22 7
+  circle 72 30 22
+  path M 60 10 Q 74 4 84 12 L 72 20 Z
+T4_DRIFTER.B                    # a tumbleweed
+  circle 50 54 42
+  cut stroke 5 path M 20 50 Q 50 20 80 50 Q 50 80 26 60
+  cut stroke 5 path M 36 30 Q 70 40 62 80
+
+
+# ---- Hunter family
+T4_BEAST_MASTER.A               # a lion head with a mane
+  path M 50 2 Q 64 10 74 6 Q 78 18 90 22 Q 88 36 98 46 Q 90 58 96 70 Q 84 76 82 88 Q 68 88 60 98 Q 50 90 40 98 Q 32 88 18 88 Q 16 76 4 70 Q 10 58 2 46 Q 12 36 10 22 Q 22 18 26 6 Q 36 10 50 2 Z
+  cut stroke 5 circle 50 55 25
+  cut circle 42 50 4
+  cut circle 58 50 4
+  cut poly 44 62 56 62 50 70
+T4_BEAST_MASTER.B               # a coiled whip
+  rect 6 70 12 28 4
+  stroke 8 path M 12 70 Q 14 30 50 24 Q 88 22 88 50 Q 86 76 58 74 Q 36 72 40 52 Q 44 40 60 44
+
+T4_SHAPE_SHIFTER.A              # half human, half wolf
+  path M 50 8 Q 14 8 14 52 Q 16 92 50 96 Z
+  circle 14 50 9
+  poly 50 96 50 8 64 10 84 -2 82 30 96 56 66 96
+  cut line 50 6 50 98 3
+  cut circle 34 46 6
+  cut poly 60 42 76 38 70 50
+T4_SHAPE_SHIFTER.B              # the D head with a swirl
+  path M 14 8 L 46 8 C 69.2 8 88 26.8 88 50 C 88 73.2 69.2 92 46 92 L 14 92 Z
+  poly 22 14 26 -2 40 12
+  poly 48 10 60 -2 64 16
+  cut stroke 6 path M 50 64 Q 38 64 40 52 Q 42 42 54 44 Q 64 48 60 56
+
+T4_COMMUNICATOR.A               # a speech bubble with a paw
+  rect 4 6 92 66 24
+  poly 20 64 12 98 46 70
+  cut ellipse 50 46 11 9
+  cut circle 36 30 5
+  cut circle 50 24 5
+  cut circle 64 30 5
+T4_COMMUNICATOR.B               # a dog whistle
+  circle 62 60 32
+  rect 2 28 60 24 6
+  cut rect 40 28 14 12 2
+  stroke 5 circle 80 22 8
+
+T4_SWEEPER.A                    # a landmine
+  path M 6 82 Q 6 40 50 40 Q 94 40 94 82 Z
+  rect 0 78 100 14 4
+  rect 42 20 16 24 3
+  rect 34 14 32 10 3
+T4_SWEEPER.B                    # a broom
+  line 80 4 46 56 8
+  path M 40 50 L 58 62 L 46 98 L 4 74 Z
+  cut line 34 62 20 84 3
+  cut line 44 68 34 92 3
+
+T4_WEBWEAVER.A                  # a spider
+  ellipse 50 62 18 22
+  circle 50 34 12
+  stroke 7 path M 36 52 L 16 38 L 6 50
+  stroke 7 path M 34 64 L 10 62 L 2 78
+  stroke 7 path M 64 52 L 84 38 L 94 50
+  stroke 7 path M 66 64 L 90 62 L 98 78
+  stroke 7 path M 38 76 L 24 92
+  stroke 7 path M 62 76 L 76 92
+  stroke 7 path M 42 40 L 30 22 L 34 8
+  stroke 7 path M 58 40 L 70 22 L 66 8
+T4_WEBWEAVER.B                  # a spider web
+  line 50 50 50 2 5
+  line 50 50 50 98 5
+  line 50 50 2 50 5
+  line 50 50 98 50 5
+  line 50 50 16 16 5
+  line 50 50 84 16 5
+  line 50 50 16 84 5
+  line 50 50 84 84 5
+  stroke 5 poly 50 32 62.7 37.3 68 50 62.7 62.7 50 68 37.3 62.7 32 50 37.3 37.3
+  stroke 5 poly 50 14 75.5 24.5 86 50 75.5 75.5 50 86 24.5 75.5 14 50 24.5 24.5
+
+T4_BIG_RED_BUTTON_GUY.A         # a big button
+  path M 22 60 Q 22 22 50 22 Q 78 22 78 60 Z
+  rect 4 56 92 18 6
+  rect 10 72 80 24 4
+  cut path M 34 46 Q 38 34 48 32
+T4_BIG_RED_BUTTON_GUY.B         # a detonator plunger
+  rect 12 50 76 46 6
+  rect 46 18 8 34
+  rect 22 10 56 12 5
+  cut rect 22 64 56 8
+
+T4_ANALYST.A                    # a magnifying glass on a paw print
+  stroke 10 circle 40 40 30
+  line 62 62 94 94 14
+  ellipse 40 48 10 8
+  circle 28 34 5
+  circle 40 28 5
+  circle 52 34 5
+T4_ANALYST.B                    # a clipboard
+  rect 14 12 72 86 6
+  rect 34 4 32 14 4
+  cut rect 24 26 52 62 3
+  stroke 8 path M 32 56 L 44 68 L 68 40
+
+T4_TRIBESMAN.A                  # a tribal mask
+  path M 50 2 Q 86 6 84 42 Q 82 76 50 98 Q 18 76 16 42 Q 14 6 50 2 Z
+  cut poly 26 36 44 40 28 48
+  cut poly 74 36 56 40 72 48
+  cut rect 38 66 24 6 3
+  cut line 50 10 50 26 5
+T4_TRIBESMAN.B                  # a tribal shield
+  ellipse 50 50 34 48
+  cut poly 50 10 60 50 50 90 40 50
+  line 50 0 50 100 4
+
+T4_HIKER.A                      # a backpack
+  rect 16 20 68 76 14
+  rect 28 6 44 22 10
+  cut rect 36 12 28 10 4
+  cut rect 28 50 44 6
+  rect 24 62 52 26 6
+T4_HIKER.B                      # a hiking boot
+  path M 24 4 L 56 4 L 58 52 Q 90 54 96 74 L 96 86 L 18 86 Z
+  rect 14 84 84 12 3
+  cut rect 30 18 20 4
+  cut rect 30 30 20 4
+
+T4_STOIC.A                      # a stone moai head
+  path M 26 98 L 24 30 Q 24 4 50 4 Q 76 4 76 30 L 80 98 Z
+  cut rect 30 30 40 8
+  poly 46 36 56 36 62 66 44 66
+  cut rect 38 76 26 5
+T4_STOIC.B                      # a campfire
+  path M 50 6 Q 51.6 23.9 59.8 30.4 Q 61.4 20.7 67.9 14.1 Q 69.5 35.3 79.3 51.6 Q 87.4 74.4 66.3 76 L 33.7 76 Q 12.6 74.4 20.7 51.6 Q 27.2 38.6 33.7 33.7 Q 35.3 43.4 41.9 45.1 Q 38.6 23.9 50 6 Z
+  line 8 92 92 78 10
+  line 8 78 92 92 10
+
+T4_SCAVENGER.A                  # a vulture
+  path M 30 98 Q 20 60 34 40 Q 30 18 46 10 Q 62 4 72 14 L 94 22 L 74 30 Q 66 38 56 40 Q 76 56 70 98 Z
+  cut circle 58 18 4
+  path M 30 44 Q 8 50 2 72 Q 20 64 34 62 Z
+T4_SCAVENGER.B                  # a sack of salvage
+  path M 16 96 Q 8 52 34 36 L 66 36 Q 92 52 84 96 Z
+  rect 36 26 28 12 4
+  poly 82.2 12 86.4 14.1 85.6 17.7 80.9 17.6 79.4 19.9 81.3 24.2 78.3 26.3 74.8 23.3 72.1 24.1 70.8 28.5 67.1 28.3 66.4 23.7 63.9 22.6 60 25.2 57.3 22.7 59.7 18.6 58.5 16.2 53.8 15.7 53.4 12 57.9 10.5 58.5 7.8 55.3 4.4 57.3 1.3 61.7 3 63.9 1.4 63.6 -3.3 67.1 -4.3 69.4 -0.2 72.1 -0.1 74.9 -3.8 78.3 -2.3 77.4 2.2 79.4 4.1 83.9 3 85.6 6.3 82 9.3
+  line 30 30 18 4 8
+
+T4_PRIMAL.A                     # a big fang
+  path M 16 6 Q 50 0 84 6 Q 84 40 66 68 Q 52 90 30 98 Q 42 74 36 48 Q 26 28 16 6 Z
+T4_PRIMAL.B                     # a cave-painting handprint
+  path M 24 98 L 22 60 Q 16 48 8 38 Q 4 30 12 30 Q 20 32 28 44 L 28 14 Q 28 6 34 6 Q 40 6 40 14 L 42 38 L 44 6 Q 44 0 50 0 Q 56 0 56 6 L 58 38 L 62 10 Q 62 4 68 4 Q 74 4 74 10 L 72 42 L 78 22 Q 80 16 86 18 Q 92 20 90 28 L 82 64 L 80 98 Z
+
+
+# ---- Gunslinger family
+T4_SHERIFF.A                    # a sheriff's star badge
+  poly 50 4 62 31.2 91.6 28 74 52 91.6 76 62 72.8 50 100 38 72.8 8.4 76 26 52 8.4 28 38 31.2
+  circle 50 52 22
+  circle 50 6 6
+  circle 89.8 29 6
+  circle 89.8 75 6
+  circle 50 98 6
+  circle 10.2 75 6
+  circle 10.2 29 6
+  cut stroke 4 circle 50 52 14
+T4_SHERIFF.B                    # a cowboy hat with a star
+  path M 4 66 Q 50 82 96 66 Q 88 56 76 58 L 70 22 Q 50 12 30 22 L 24 58 Q 12 56 4 66 Z
+  cut poly 50 28 52.9 36 61.4 36.3 54.8 41.5 57.1 49.7 50 45 42.9 49.7 45.2 41.5 38.6 36.3 47.1 36
+
+T4_DESPERADO.A                  # a bandana-masked face
+  rect 0 28 100 10 5
+  rect 26 2 48 32 8
+  circle 50 64 32
+  cut ellipse 38 56 6 4
+  cut ellipse 62 56 6 4
+  cut rect 16 66 68 5
+  poly 72 86 92 98 96 80
+T4_DESPERADO.B                  # a wanted poster
+  rect 12 4 76 92 4
+  cut circle 50 42 18
+  circle 50 46 12
+  cut rect 24 68 52 6
+  cut rect 30 80 40 5
+  cut rect 24 14 52 6
+
+T4_GUNGHO_GARRY.A               # two pistols crossed
+  line 20 74 84 14 13
+  line 26 70 14 96 14
+  line 80 74 16 14 13
+  line 74 70 86 96 14
+T4_GUNGHO_GARRY.B               # a pistol with a muzzle flash
+  rect 4.3 39 66.2 15.8 2.9
+  poly 7.2 51.9 30.2 51.9 25.9 93.7 2.9 93.7
+  stroke 7 circle 34.6 60.6 6.5
+  poly 84 12 87.5 21.9 97.9 20 91 28 97.9 36 87.5 34.1 84 44 80.5 34.1 70.1 36 77 28 70.1 20 80.5 21.9
+
+T4_COMMANDER.A                  # an officer's peaked cap
+  path M 6 42 Q 50 6 94 42 L 86 66 L 14 66 Z
+  path M 14 64 L 86 64 Q 92 76 70 82 L 30 82 Q 8 76 14 64 Z
+  cut poly 50 28 52.9 36 61.4 36.3 54.8 41.5 57.1 49.7 50 45 42.9 49.7 45.2 41.5 38.6 36.3 47.1 36
+T4_COMMANDER.B                  # the helmet with rank chevrons
+  path M 8 70 Q 10 12 50 10 Q 90 12 92 70 Z
+  rect 0 64 100 14 7
+  cut stroke 6 path M 32 52 L 50 40 L 68 52
+  cut stroke 6 path M 32 36 L 50 24 L 68 36
+
+T4_MACHINE_GUNNER.A             # a machine gun on a tripod
+  rect 30 26 40 22 4
+  rect 66 30 34 10 2
+  poly 4 30 30 28 30 46 10 52
+  rect 38 46 10 14
+  line 50 50 26 96 7
+  line 50 50 74 96 7
+  rect 34 20 20 8 2
+T4_MACHINE_GUNNER.B             # an ammo box
+  rect 6 48 88 48 6
+  cut rect 6 62 88 5
+  path M 18 50 L 18 22 Q 25 6 32 22 L 32 50 Z
+  path M 43 50 L 43 22 Q 50 6 57 22 L 57 50 Z
+  path M 68 50 L 68 22 Q 75 6 82 22 L 82 50 Z
+
+T4_COMBAT_MEDIC.A               # the helmet with a medic cross
+  path M 8 70 Q 10 12 50 10 Q 90 12 92 70 Z
+  rect 0 64 100 14 7
+  cut rect 44 20 12 38 3
+  cut rect 31 33 38 12 3
+T4_COMBAT_MEDIC.B               # a field medkit
+  rect 6 28 88 64 10
+  stroke 8 path M 34 30 L 34 18 Q 34 10 42 10 L 58 10 Q 66 10 66 18 L 66 30
+  cut rect 44 40 12 40 3
+  cut rect 30 54 40 12 3
+
+T4_RECONNAISSANCE_SNIPER.A      # binoculars
+  rect 10 30 32 60 12
+  rect 58 30 32 60 12
+  rect 36 40 28 22 4
+  rect 16 14 20 20 4
+  rect 64 14 20 20 4
+  cut circle 26 74 9
+  cut circle 74 74 9
+T4_RECONNAISSANCE_SNIPER.B      # a rifle scope
+  rect 22 38 56 24 6
+  path M 2 30 L 22 36 L 22 64 L 2 70 Z
+  path M 98 26 L 78 36 L 78 64 L 98 74 Z
+  rect 42 24 16 16 3
+  rect 40 60 20 14 3
+
+T4_RAILGUNNER.A                 # a railgun
+  rect 4 40 92 22 3
+  cut rect 30 48 70 6
+  poly 4 40 30 40 22 72 0 72
+  rect 30 60 12 22 3
+  poly 58 20 50 40 60 40 52 58 72 32 62 32 70 20
+T4_RAILGUNNER.B                 # the rifle round with a lightning bolt
+  path M 6 32 L 48 32 Q 82 34 100 50 Q 82 66 48 68 L 6 68 Z
+  rect 0 26 10 48 2
+  cut poly 56 30 40 52 52 52 44 70 66 46 54 46 62 30
+
+T4_GHILLIE_SUIT_SNIPER.A        # a leafy bush with a barrel poking out
+  circle 30 62 26
+  circle 52 44 26
+  circle 70 66 24
+  rect 6 66 86 30 12
+  rect 56 38 44 9 3
+T4_GHILLIE_SUIT_SNIPER.B        # a leaf with a crosshair
+  path M 10 94 Q 2 28 90 6 Q 98 80 10 94 Z
+  cut stroke 5 circle 52 50 18
+  cut line 52 24 52 76 4
+  cut line 26 50 78 50 4
+
+T4_FLAMETHROWER_FRANKIE.A       # a flamethrower nozzle with flame
+  rect 2 54 46 18 4
+  rect 6 70 14 24 3
+  rect 40 50 14 26 3
+  path M 104 60 Q 90.2 61.3 85.2 67.5 Q 92.7 68.8 97.7 73.8 Q 81.4 75.1 68.8 82.6 Q 51.3 88.9 50 72.6 L 50 47.4 Q 51.3 31.1 68.8 37.4 Q 78.9 42.4 82.7 47.4 Q 75.1 48.7 73.9 53.7 Q 90.2 51.2 104 60 Z
+T4_FLAMETHROWER_FRANKIE.B       # a fuel tank with a flame
+  rect 22 16 56 80 18
+  rect 40 4 20 14 3
+  cut path M 50 40 Q 51 50.7 55.9 54.7 Q 56.8 48.8 60.7 44.9 Q 61.7 57.6 67.6 67.3 Q 72.5 81 59.8 82 L 40.2 82 Q 27.5 81 32.4 67.3 Q 36.3 59.5 40.2 56.6 Q 41.2 62.5 45.1 63.4 Q 43.2 50.7 50 40 Z
+
+T4_ROCKET_LAUNCHER_RANDY.A      # a rocket
+  path M 50 0 Q 72 18 70 48 L 70 76 L 30 76 L 30 48 Q 28 18 50 0 Z
+  poly 30 56 10 84 30 82
+  poly 70 56 90 84 70 82
+  poly 38 76 62 76 56 98 44 98
+  cut circle 50 34 8
+T4_ROCKET_LAUNCHER_RANDY.B      # a rocket launcher tube
+  rect 2 30 80 30 6
+  path M 80 30 L 86 30 Q 100 45 86 60 L 80 60 Z
+  rect 24 58 12 26 3
+  rect 46 58 12 18 3
+  rect 30 18 16 14 3
+
+T4_BUCKSHOT_BARRY_WITH_ANOTHER_SHOTGUN.A# two shotgun shells
+  rect 10 14 34 70 6
+  rect 56 14 34 70 6
+  rect 4 80 92 16 3
+  cut rect 10 74 34 4
+  cut rect 56 74 34 4
+  cut rect 48 80 4 16
+T4_BUCKSHOT_BARRY_WITH_ANOTHER_SHOTGUN.B# double barrels, head on
+  rect 4 18 92 64 32
+  cut circle 30 50 18
+  cut circle 70 50 18
+  line 50 82 50 98 10
+
+
+# ---- Hurler family
+T4_TRIDENT_MASTER.A             # a trident
+  rect 44 40 12 60 3
+  path M 16 48 L 16 14 L 24 0 L 30 14 L 30 34 L 70 34 L 70 14 L 76 0 L 84 14 L 84 48 Z
+  poly 42 36 50 0 58 36
+T4_TRIDENT_MASTER.B             # a trident thrown at an angle
+  line 53.4 45.1 21.3 91 10
+  path M 26.6 31.2 L 44.9 4.9 L 58.7 -2.5 L 55.6 12.4 L 44.1 28.8 L 72 48.3 L 83.4 31.9 L 96.4 23.9 L 94.1 39.4 L 75.7 65.6 Z
+  poly 51.1 36.2 77.5 10.7 62.6 44.2
+
+T4_HARPOONER.A                  # a barbed harpoon with rope
+  line 50 30 50 98 8
+  poly 50 0 68 30 58 28 58 42 42 42 42 28 32 30
+  stroke 6 path M 54 98 Q 86 92 84 70 Q 82 54 66 62
+T4_HARPOONER.B                  # a whale's tail
+  path M 50 98 L 44 60 Q 30 40 4 36 Q 14 20 34 22 Q 46 26 50 40 Q 54 26 66 22 Q 86 20 96 36 Q 70 40 56 60 Z
+
+T4_IMPALER.A                    # a tall sharpened stake
+  poly 50 0 66 26 62 98 38 98 34 26
+  cut line 50 30 50 90 3
+  rect 20 86 60 12 4
+T4_IMPALER.B                    # a spearhead dripping blood
+  path M 50 0 Q 84 30 74 62 L 58 74 L 58 100 L 42 100 L 42 74 L 26 62 Q 16 30 50 0 Z
+  path M 72 64 Q 78.4 76.3 82.4 84.5 Q 84.8 94 72 94 Q 59.2 94 61.6 84.5 Q 65.6 76.3 72 64 Z
+
+T4_ARSONIST.A                   # a Molotov cocktail
+  path M 32 98 L 32 54 Q 32 42 42 38 L 42 22 L 58 22 L 58 38 Q 68 42 68 54 L 68 98 Z
+  cut rect 32 64 36 8
+  rect 40 14 20 10 3
+  path M 54 -8 Q 54.6 -1.9 57.3 0.4 Q 57.9 -3 60.1 -5.2 Q 60.7 2 64 7.6 Q 66.8 15.4 59.6 16 L 48.4 16 Q 41.2 15.4 44 7.6 Q 46.2 3.2 48.4 1.5 Q 49 4.8 51.2 5.4 Q 50.1 -1.9 54 -8 Z
+T4_ARSONIST.B                   # a lit match
+  line 30 96 64 30 10
+  ellipse 68 26 12 14
+  path M 70 -6 Q 70.5 -0.4 73.1 1.7 Q 73.6 -1.4 75.6 -3.4 Q 76.1 3.2 79.2 8.3 Q 81.8 15.5 75.1 16 L 64.9 16 Q 58.2 15.5 60.8 8.3 Q 62.8 4.2 64.9 2.7 Q 65.4 5.8 67.4 6.3 Q 66.4 -0.4 70 -6 Z
+
+T4_INCISIONIST.A                # a time bomb with a clock
+  circle 46 58 38
+  rect 52 12 20 16 3
+  stroke 6 path M 66 14 Q 74 0 90 4
+  poly 92.0 -4.0 94.8 3.2 102.0 6.0 94.8 8.8 92.0 16.0 89.2 8.8 82.0 6.0 89.2 3.2
+  cut circle 46 58 24
+  line 46 58 46 38 6
+  line 46 58 60 64 6
+  circle 46 58 5
+T4_INCISIONIST.B                # a grenade
+  ellipse 50 62 32 36
+  rect 38 14 24 16 3
+  stroke 6 circle 76 18 10
+  path M 60 18 L 80 30 L 76 54 L 68 40 Z
+  cut rect 18 56 64 6
+  cut rect 47 26 6 72
+
+T4_ANARCHIST.A                  # a bomb with a skull
+  circle 46 58 38
+  rect 52 12 20 16 3
+  stroke 6 path M 66 14 Q 74 0 90 4
+  poly 92.0 -4.0 94.8 3.2 102.0 6.0 94.8 8.8 92.0 16.0 89.2 8.8 82.0 6.0 89.2 3.2
+  cut circle 36 54 7
+  cut circle 56 54 7
+  cut rect 40 68 12 6 2
+T4_ANARCHIST.B                  # a bundle of dynamite
+  rect 8 30 26 66 5
+  rect 37 30 26 66 5
+  rect 66 30 26 66 5
+  rect 4 56 92 10 3
+  stroke 6 path M 50 30 Q 50 12 66 10
+  poly 74 -2 76.8 5.2 84 8 76.8 10.8 74 18 71.2 10.8 64 8 71.2 5.2
+
+T4_BOWLING_BOB.A                # a bowling ball
+  circle 50 50 46
+  cut circle 38 32 7
+  cut circle 56 26 7
+  cut circle 48 48 7
+T4_BOWLING_BOB.B                # a bowling pin
+  path M 50 2 Q 64 2 64 16 Q 64 26 58 34 Q 80 56 76 78 Q 72 98 50 98 Q 28 98 24 78 Q 20 56 42 34 Q 36 26 36 16 Q 36 2 50 2 Z
+  cut rect 36 34 28 5
+
+T4_CINDER_BLOCK_CINDY.A         # a cinder block
+  rect 2 26 96 54 3
+  cut rect 12 36 32 34 2
+  cut rect 56 36 32 34 2
+T4_CINDER_BLOCK_CINDY.B         # two cinder blocks stacked
+  rect 4 52 92 44 3
+  cut rect 12 60 30 28 2
+  cut rect 58 60 30 28 2
+  rect 16 6 70 46 3
+  cut rect 24 14 22 28 2
+  cut rect 56 14 22 28 2
+
+T4_BIGGER_CHUCK.A               # an even bigger boulder, cracked twice
+  poly 0 18 36 0 80 2 100 30 100 76 74 100 18 100 0 70
+  cut stroke 6 path M 36 0 L 46 30 L 34 48 L 48 70
+  cut stroke 6 path M 100 50 L 76 56 L 70 76
+T4_BIGGER_CHUCK.B               # a boulder stacked on a boulder
+  poly 0 60 20 42 62 40 96 56 100 86 80 100 14 100 0 84
+  poly 22 42 30 18 52 6 72 14 78 36 62 42
+
+T4_GLAIVE_THROWER.A             # a bladed chakram ring
+  poly 50 0 64.5 14.9 85.4 14.6 85.1 35.5 100 50 85.1 64.5 85.4 85.4 64.5 85.1 50 100 35.5 85.1 14.6 85.4 14.9 64.5 0 50 14.9 35.5 14.6 14.6 35.5 14.9
+  cut circle 50 50 24
+T4_GLAIVE_THROWER.B             # a glaive polearm blade
+  line 16 98 50 46 9
+  path M 42 56 L 62 2 Q 102 22 80 60 Z
+
+T4_REELER.A                     # a yo-yo on its string
+  circle 50 62 34
+  cut stroke 6 circle 50 62 18
+  circle 50 62 6
+  line 50 2 50 30 6
+  rect 40 0 20 8 4
+T4_REELER.B                     # a fishing hook
+  stroke 11 path M 64 6 L 64 66 Q 64 92 40 92 Q 18 92 18 70
+  poly 10 74 18 56 28 72
+  stroke 7 circle 64 6 6
+
+T4_THE_BUSHRANGER.A             # an iron bushranger helmet
+  path M 18 98 L 18 30 Q 18 4 50 4 Q 82 4 82 30 L 82 98 Z
+  cut rect 26 40 48 9
+  rect 4 96 92 4
+T4_THE_BUSHRANGER.B             # a bush hat with a boomerang
+  path M 2 66 Q 50 80 98 66 Q 90 56 78 58 L 72 26 Q 50 14 28 26 L 22 58 Q 10 56 2 66 Z
+  cut stroke 6 path M 30 50 Q 50 36 70 50
+
+
+# ---- Slingshotter family
+T4_HUNTER_OF_GIANTS.A           # a sling holding a stone
+  stroke 6 circle 50 10 8
+  line 50 16 26 70 6
+  line 50 16 74 70 6
+  path M 20 66 Q 50 100 80 66 Q 50 80 20 66 Z
+  circle 50 74 16
+T4_HUNTER_OF_GIANTS.B           # a cracked giant's helmet
+  path M 14 98 L 14 46 Q 14 10 50 10 Q 86 10 86 46 L 86 98 Z
+  path M 14 44 Q 0 30 4 4 Q 16 22 24 30 Z
+  path M 86 44 Q 100 30 96 4 Q 84 22 76 30 Z
+  cut rect 24 52 52 9
+  cut stroke 5 path M 50 10 L 42 26 L 54 36 L 46 50
+
+T4_SLING_SAVANT.A               # the sling with a glowing star stone
+  path M 14 8 L 46 8 C 69.2 8 88 26.8 88 50 C 88 73.2 69.2 92 46 92 L 14 92 Q 36 50 14 8 Z
+  circle 16 50 18
+  cut poly 16 38 18.8 47.2 28 50 18.8 52.8 16 62 13.2 52.8 4 50 13.2 47.2
+T4_SLING_SAVANT.B               # a flying stone with a trail
+  circle 64 60 30
+  poly 2 18 50 34 42 80
+
+T4_FLAIL_LORD.A                 # a flail: ball and chain
+  rect 6 66 14 32 4
+  stroke 6 path M 13 66 Q 20 40 46 36
+  circle 66 36 24
+  poly 66 2 74.4 15.7 90 12 86.3 27.6 100 36 86.3 44.4 90 60 74.4 56.3 66 70 57.6 56.3 42 60 45.7 44.4 32 36 45.7 27.6 42 12 57.6 15.7
+T4_FLAIL_LORD.B                 # a spiked morning star
+  poly 50 0 63 18.6 85.4 14.6 81.4 37 100 50 81.4 63 85.4 85.4 63 81.4 50 100 37 81.4 14.6 85.4 18.6 63 0 50 18.6 37 14.6 14.6 37 18.6
+  circle 50 50 34
+  cut circle 50 50 10
+
+T4_TRANQUILIZER.A               # a tranquilizer dart
+  rect 30 38 44 24 6
+  line 74 50 100 50 4
+  poly 2 36 30 44 30 56 2 64
+  cut rect 40 44 24 6
+T4_TRANQUILIZER.B               # a sleepy closed eye
+  path M 2 36 Q 50 96 98 36 Q 50 66 2 36 Z
+  line 20 56 10 74 7
+  line 50 66 50 88 7
+  line 80 56 90 74 7
+
+T4_WITCH_DOCTOR.A               # a tall tribal mask
+  path M 50 0 Q 80 8 78 48 Q 76 82 50 100 Q 24 82 22 48 Q 20 8 50 0 Z
+  cut ellipse 38 38 8 5
+  cut ellipse 62 38 8 5
+  cut rect 38 70 24 10 3
+  poly 22 30 2 22 22 44
+  poly 78 30 98 22 78 44
+T4_WITCH_DOCTOR.B               # a skull on a staff
+  line 50 50 50 100 8
+  circle 50 26 22
+  rect 38 38 24 16 4
+  cut circle 42 26 6
+  cut circle 58 26 6
+  line 30 56 70 56 6
+
+T4_BLOWGUN_SNIPER.A             # a blowpipe with a scope
+  rect 2 44 96 12 4
+  rect 30 26 34 12 4
+  rect 40 36 8 10
+  rect 2 40 12 20 3
+T4_BLOWGUN_SNIPER.B             # a dart inside a crosshair
+  stroke 7 circle 50 50 42
+  path M 0 40 L 14 50 L 0 60 L 24 56 L 80 56 L 100 50 L 80 44 L 24 44 Z
+
+T4_BOLA_MASTER.A                # a three-ball bola
+  line 50 50 50 12 6
+  line 50 50 16 76 6
+  line 50 50 84 76 6
+  circle 50 14 13
+  circle 16 78 13
+  circle 84 78 13
+  circle 50 50 7
+T4_BOLA_MASTER.B                # a spinning two-ball bola
+  circle 18 22 16
+  circle 82 78 16
+  stroke 7 path M 18 22 Q 70 20 50 50 Q 30 80 82 78
+  circle 50 50 8
+
+T4_GOO_GUNNER.A                 # a splat of goo
+  path M 50 8 Q 64 8 66 24 Q 82 14 90 26 Q 96 38 80 46 Q 98 56 92 70 Q 84 82 68 74 Q 66 96 50 96 Q 34 96 32 74 Q 16 82 8 70 Q 2 56 20 46 Q 4 38 10 26 Q 18 14 34 24 Q 36 8 50 8 Z
+T4_GOO_GUNNER.B                 # a goo gun
+  path M 4 30 L 64 30 Q 80 30 80 46 Q 80 62 64 62 L 4 62 Z
+  rect 10 56 18 34 4
+  circle 86 46 12
+  path M 86 60 Q 91.1 69.8 94.3 76.4 Q 96.2 84 86 84 Q 75.8 84 77.7 76.4 Q 80.9 69.8 86 60 Z
+
+T4_ICE_MONKEY.A                 # a monkey face
+  circle 50 48 34
+  circle 12 48 13
+  circle 88 48 13
+  cut path M 26 50 Q 26 30 42 32 Q 50 36 58 32 Q 74 30 74 50 Q 74 74 50 76 Q 26 74 26 50 Z
+  circle 42 46 5
+  circle 58 46 5
+  rect 40 60 20 4 2
+T4_ICE_MONKEY.B                 # a snowball
+  circle 50 54 42
+  cut stroke 5 path M 22 40 Q 34 26 48 24
+  cut circle 66 70 5
+
+T4_JOKER.A                      # a joker playing card
+  rect 14 4 72 92 8
+  cut rect 22 12 56 76 4
+  path M 30 72 L 30 44 L 22 26 L 40 38 L 50 20 L 60 38 L 78 26 L 70 44 L 70 72 Z
+T4_JOKER.B                      # a grinning jester face
+  path M 14 8 L 46 8 C 69.2 8 88 26.8 88 50 C 88 73.2 69.2 92 46 92 L 14 92 Q 0 92 2 80 Q 12 86 18 78 Q 36 50 18 22 Q 12 14 2 20 Q 0 8 14 8 Z
+  cut path M 32 58 Q 50 76 68 58 Q 50 66 32 58 Z
+  cut circle 38 38 5
+  cut circle 60 38 5
+
+T4_ILLUSIONIST.A                # a top hat with a wand
+  rect 22 14 52 64 4
+  rect 4 74 88 14 6
+  cut rect 22 58 52 8
+  line 66 24 96 6 7
+T4_ILLUSIONIST.B                # a magic wand with a sparkle
+  line 10 94 64 40 9
+  cut line 18 86 26 78 10
+  line 18 86 26 78 4
+  poly 74 2 80.4 21.6 100 28 80.4 34.4 74 54 67.6 34.4 48 28 67.6 21.6
+
+T4_NINJA.A                      # a shuriken
+  poly 85.4 14.6 66 50 85.4 85.4 50 66 14.6 85.4 34 50 14.6 14.6 50 34
+  cut circle 50 50 8
+T4_NINJA.B                      # a ninja mask
+  circle 50 50 44
+  cut rect 14 40 72 14 7
+  path M 86 30 Q 100 40 98 60 L 90 50 Z
+
+
+# ---- requested changes
+
+T4_DRIFTER.C                    # three claw marks
+  path M 24 2 Q 34 50 4 98 Q 50 54 34 2 Z
+  path M 54 2 Q 64 50 34 98 Q 80 54 64 2 Z
+  path M 84 2 Q 94 50 64 98 Q 110 54 94 2 Z
+
+T4_STOIC.C                      # Sisyphus pushing his boulder uphill
+  poly 0 100 0 94 100 74 100 100
+  circle 68 52 24
+  line 18 92 24 72 8
+  line 12 94 18 80 7
+  line 24 72 34 54 11
+  circle 30 44 7.5
+  line 34 56 46 52 7
+
+T4_GUNGHO_GARRY.C               # a pistol with a speed trail
+  rect 34 22 64 16 3
+  poly 37 34 60 34 56 78 34 78
+  stroke 5 circle 60 46 7
+  line 4 26 34 26 6
+  line 12 40 34 40 6
+  line 2 54 34 54 6
+
+T4_ICE_MONKEY.C                 # a monkey face with snowflakes
+  circle 50 48 34
+  circle 12 48 13
+  circle 88 48 13
+  cut path M 26 50 Q 26 30 42 32 Q 50 36 58 32 Q 74 30 74 50 Q 74 74 50 76 Q 26 74 26 50 Z
+  circle 42 46 5
+  circle 58 46 5
+  rect 40 60 20 4 2
+  line 15 9 15 31 3.5
+  line 5.5 14.5 24.5 25.5 3.5
+  line 5.5 25.5 24.5 14.5 3.5
+  line 85 9 85 31 3.5
+  line 75.5 14.5 94.5 25.5 3.5
+  line 75.5 25.5 94.5 14.5 3.5
+

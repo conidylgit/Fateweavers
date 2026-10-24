@@ -1,0 +1,181 @@
+# Tier 3 HEAVY_MELEE options (same format as class_glyphs.txt). The chosen ones get copied over.
+
+T3_NEANDERTHAL.A                # a heavy brow
+  poly 16 14 40 10 58 16 86 12 90 40 84 62 90 88 60 86 36 90 12 86 16 62 10 38
+  cut poly 18 34 84 30 82 40 20 44
+T3_NEANDERTHAL.B                # a caveman club
+  rect 10 4 80 58 28
+  poly 30 48 70 48 62 96 38 96
+
+T3_OGRE_KIN.A                   # tusks
+  poly 16 14 40 10 58 16 86 12 90 40 84 62 90 88 60 86 36 90 12 86 16 62 10 38
+  cut poly 28 88 24 58 38 78
+  cut poly 72 88 76 58 62 78
+T3_OGRE_KIN.B                   # big ears
+  poly 16 14 40 10 58 16 86 12 90 40 84 62 90 88 60 86 36 90 12 86 16 62 10 38
+  ellipse 6 46 10 16
+  ellipse 94 46 10 16
+
+T3_STICK_MASTER.A               # a big knobbed stick
+  line 18 90 80 16 18
+  circle 82 14 14
+T3_STICK_MASTER.B               # a stone on a stick
+  poly 30 8 70 2 94 20 90 46 56 50 28 40
+  rect 42 44 16 54 3
+
+T3_THROGG.A                     # a smashing crack
+  poly 16 14 40 10 58 16 86 12 90 40 84 62 90 88 60 86 36 90 12 86 16 62 10 38
+  cut stroke 7 path M 54 14 L 44 40 L 58 56 L 46 84
+T3_THROGG.B                     # a horned brute
+  poly 16 14 40 10 58 16 86 12 90 40 84 62 90 88 60 86 36 90 12 86 16 62 10 38
+  path M 16 20 Q 2 4 6 -6 Q 22 6 30 14 Z
+  path M 84 20 Q 98 4 94 -6 Q 78 6 70 14 Z
+
+T3_KNIGHT.A                     # a helm with a plume
+  rect 14 30 72 64 4
+  ellipse 50 32 36 22
+  cut rect 22 46 56 8
+  path M 50 14 Q 58 -4 82 0 Q 64 6 62 16 Z
+T3_KNIGHT.B                     # a chess knight
+  path M 18 94 L 82 94 L 76 80 L 70 80 Q 66 58 80 46 Q 88 30 68 12 L 56 2 L 50 14 Q 22 22 14 46 L 26 56 L 44 48 Q 40 66 30 80 L 24 80 Z
+  cut circle 56 26 5
+
+T3_SPEARMAN.A                   # a spearhead on top
+  rect 14 40 72 56
+  poly 32 42 50 0 68 42
+  cut rect 24 60 52 8
+T3_SPEARMAN.B                   # a spiked helmet
+  symbol
+  cut rect 24 38 52 9
+  poly 42 14 50 -6 58 14
+
+T3_COMMANDER.A                  # a crown
+  poly 12 30 26 8 38 22 50 2 62 22 74 8 88 30 88 92 12 92
+  cut rect 24 50 52 9
+T3_COMMANDER.B                  # a crest
+  rect 12 26 76 66
+  path M 14 28 Q 50 -14 86 28 Z
+  cut rect 24 48 52 9
+
+T3_FLAG_BEARER.A                # a flag above the helm
+  rect 12 34 76 60
+  cut rect 24 52 52 9
+  rect 70 0 7 36
+  poly 77 0 100 8 77 18
+T3_FLAG_BEARER.B                # the square becomes a banner
+  rect 8 0 10 100 3
+  poly 18 6 92 6 92 74 55 60 18 74
+  cut rect 34 28 40 8
+
+T3_VALKYRIE.A                   # a winged helm
+  symbol
+  cut rect 44 22 12 56
+  cut rect 28 36 44 12
+  path M 12 30 Q -6 12 -2 -2 Q 12 12 20 12 Z
+  path M 88 30 Q 106 12 102 -2 Q 88 12 80 12 Z
+T3_VALKYRIE.B                   # wings off the sides
+  symbol
+  cut rect 44 22 12 56
+  cut rect 28 36 44 12
+  poly 12 20 -4 8 4 44 12 52
+  poly 88 20 104 8 96 44 88 52
+
+T3_CRUSADER.A                   # a shield with a cross
+  poly 12 8 88 8 88 54 50 96 12 54
+  cut rect 44 20 12 54
+  cut rect 26 32 48 12
+T3_CRUSADER.B                   # a cross that splits it in four
+  symbol
+  cut rect 45 12 10 76
+  cut rect 12 40 76 10
+
+T3_TEMPLAR.A                    # a flared cross
+  symbol
+  cut poly 40 20 60 20 54 44 80 40 80 60 54 56 60 80 40 80 46 56 20 60 20 40 46 44
+T3_TEMPLAR.B                    # a chapel arch with a cross
+  path M 12 94 L 12 44 Q 14 18 50 4 Q 86 18 88 44 L 88 94 Z
+  cut rect 44 30 12 50
+  cut rect 30 42 40 12
+
+T3_THE_OATHBOUND.A              # a chain ring hanging
+  symbol
+  cut rect 44 22 12 56
+  cut rect 28 36 44 12
+  stroke 8 circle 50 94 9
+T3_THE_OATHBOUND.B              # a wax seal
+  symbol
+  cut rect 44 22 12 56
+  cut rect 28 36 44 12
+  circle 84 84 16
+  cut circle 84 84 6
+
+T3_VIKING.A                     # a hammer with horns
+  rect 10 8 80 52
+  rect 42 60 16 36
+  path M 10 20 Q -6 4 0 -8 Q 10 6 22 8 Z
+  path M 90 20 Q 106 4 100 -8 Q 90 6 78 8 Z
+T3_VIKING.B                     # a bearded axe
+  path M 40 6 L 84 6 Q 98 24 94 58 Q 72 58 62 46 L 56 30 L 40 30 Z
+  rect 32 0 14 100 3
+
+T3_DWARF.A                      # the handle becomes a beard
+  rect 10 4 80 32
+  poly 14 36 86 36 78 66 60 72 50 100 40 72 22 66
+  cut poly 28 42 50 52 72 42 72 48 50 58 28 48
+T3_DWARF.B                      # a pickaxe
+  path M 2 36 Q 50 -8 98 36 L 92 42 Q 50 14 8 42 Z
+  rect 42 12 16 86 3
+
+T3_SMITH.A                      # an anvil
+  path M 2 26 Q 18 30 30 24 L 96 24 L 96 40 L 72 44 L 66 62 L 82 74 L 82 90 L 18 90 L 18 74 L 34 62 L 30 44 Q 14 40 2 26 Z
+T3_SMITH.B                      # a hammer on an anvil
+  path M 2 50 Q 18 54 30 48 L 96 48 L 96 60 L 72 64 L 68 76 L 82 84 L 82 96 L 18 96 L 18 84 L 32 76 L 30 64 Q 14 60 2 50 Z
+  rect 30 4 46 22 2
+  rect 47 26 12 22
+
+T3_WRECKER.A                    # a wrecking ball
+  circle 50 62 34
+  rect 44 2 12 30
+  stroke 7 circle 50 8 8
+T3_WRECKER.B                    # a cracked sledgehammer
+  rect 10 8 80 52
+  rect 42 60 16 36
+  cut stroke 6 path M 36 8 L 46 24 L 38 36 L 50 52
+
+T3_BULWARK.A                    # a tower shield
+  rect 14 2 72 96 12
+  cut rect 46 14 8 72 3
+T3_BULWARK.B                    # battlements on the shield
+  rect 12 10 76 40
+  ellipse 50 53 38 41
+  cut rect 30 10 12 14
+  cut rect 58 10 12 14
+
+T3_DEFENDER.A                   # a shield boss
+  rect 12 10 76 40
+  ellipse 50 53 38 41
+  cut stroke 7 circle 50 52 18
+T3_DEFENDER.B                   # a bold chevron
+  rect 12 10 76 40
+  ellipse 50 53 38 41
+  cut poly 24 36 50 60 76 36 76 50 50 74 24 50
+
+T3_BASTION.A                    # a castle tower
+  rect 12 26 76 70
+  rect 12 6 18 24
+  rect 41 6 18 24
+  rect 70 6 18 24
+  cut path M 38 96 L 38 70 Q 50 56 62 70 L 62 96 Z
+T3_BASTION.B                    # a tower set into the shield
+  rect 12 10 76 40
+  ellipse 50 53 38 41
+  cut poly 36 30 42 30 42 38 47 38 47 30 53 30 53 38 58 38 58 30 64 30 64 76 36 76
+
+T3_EVADE_TANK.A                 # a small buckler
+  circle 50 50 40
+  cut stroke 8 circle 50 50 22
+T3_EVADE_TANK.B                 # a swerve cut through
+  rect 12 10 76 40
+  ellipse 50 53 38 41
+  cut stroke 8 path M 22 76 Q 30 34 80 24
+

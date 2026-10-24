@@ -1,0 +1,139 @@
+# Tier 3 LIGHT_MELEE options (same format as class_glyphs.txt). The chosen ones get copied over.
+
+T3_GOBLIN.A                     # a goblin head with big ears
+  wire poly 30 16 70 16 76 34 98 22 82 52 72 86 28 86 18 52 2 22 24 34
+T3_GOBLIN.B                     # the sack grows ears
+  wire poly 22 30 40 22 34 14 66 14 60 22 78 30 86 84 14 84
+  wire poly 22 32 2 22 18 48
+  wire poly 78 32 98 22 82 48
+
+T3_BURGLAR.A                    # a burglar's mask
+  wire path M 4 40 Q 4 26 26 28 Q 42 30 50 38 Q 58 30 74 28 Q 96 26 96 40 Q 96 66 70 64 Q 56 62 50 54 Q 44 62 30 64 Q 4 66 4 40 Z
+T3_BURGLAR.B                    # a crowbar
+  stroke 13 path M 76 94 L 34 12 Q 28 2 16 6 Q 8 10 12 20
+
+T3_CRIMINAL.A                   # handcuffs
+  wire circle 28 62 18
+  wire circle 72 62 18
+  line 44 52 56 52 11
+T3_CRIMINAL.B                   # ball and chain
+  wire circle 60 62 28
+  wire circle 20 18 10
+  line 28 26 40 40 11
+
+T3_OUTLAW.A                     # a cowboy hat
+  wire path M 6 66 Q 50 80 94 66 Q 88 56 76 58 L 70 24 Q 50 16 30 24 L 24 58 Q 12 56 6 66 Z
+T3_OUTLAW.B                     # a bandana
+  wire poly 10 30 90 30 50 88
+  line 10 30 2 16 11
+  line 90 30 98 16 11
+
+T3_PATHFINDER.A                 # a compass
+  wire circle 50 50 38
+  poly 50 16 60 50 50 84 40 50
+T3_PATHFINDER.B                 # a flag on a peak
+  wire poly 6 92 50 34 94 92
+  line 50 36 50 4 11
+  poly 50 -2 80 8 50 18
+
+T3_OUTRIDER.A                   # a horseshoe
+  stroke 13 path M 22 8 L 22 50 Q 22 90 50 90 Q 78 90 78 50 L 78 8
+T3_OUTRIDER.B                   # a lance with a pennant
+  line 10 92 82 20 11
+  poly 74 8 100 0 92 26
+  wire poly 52 44 62 30 70 58
+
+T3_VANGUARD_SCOUT.A             # a swallowtail banner
+  wire poly 16 30 84 30 84 88 16 88
+  line 22 30 22 2 11
+  poly 22 -4 62 -4 52 8 62 20 22 20
+T3_VANGUARD_SCOUT.B             # an arrow pointing forward
+  wire poly 50 6 92 48 70 48 70 92 30 92 30 48 8 48
+
+T3_SURVEYOR.A                   # a spyglass
+  wire poly 8 74 22 88 92 30 74 10
+T3_SURVEYOR.B                   # a map scroll
+  wire poly 20 20 80 20 80 80 20 80
+  wire circle 20 20 10
+  wire circle 80 80 10
+
+T3_SHADOWDANCER.A               # a hood
+  wire poly 50 4 86 32 84 62 50 94 16 62 14 32
+T3_SHADOWDANCER.B               # a scarf trailing
+  wire poly 16 14 84 14 84 58 50 92 16 58
+  stroke 11 path M 80 18 Q 96 10 98 -2
+
+T3_POISONER.A                   # a poison drop
+  wire path M 50 6 Q 82 46 78 66 Q 74 92 50 92 Q 26 92 22 66 Q 18 46 50 6 Z
+T3_POISONER.B                   # a poison bottle
+  wire poly 40 6 60 6 60 30 82 50 82 92 18 92 18 50 40 30
+
+T3_EXECUTIONER.A                # a half-moon axe
+  wire path M 64 38 L 40 28 Q 22 20 10 8 Q 0 46 10 84 Q 22 72 40 64 L 64 54 Z
+  line 68 2 68 98 11
+T3_EXECUTIONER.B                # an executioner's hood
+  wire poly 50 2 88 52 88 92 12 92 12 52
+
+T3_MASTER_ASSASSIN.A            # the point gets a crown
+  wire poly 16 26 30 6 40 20 50 2 60 20 70 6 84 26 84 60 50 94 16 60
+T3_MASTER_ASSASSIN.B            # a dagger
+  wire poly 42 4 58 4 58 30 78 30 78 42 58 42 56 72 50 96 44 72 42 42 22 42 22 30 42 30
+
+T3_PUGILIST.A                   # a boxing glove
+  wire path M 24 92 L 24 62 Q 10 54 14 34 Q 20 8 52 8 Q 86 8 86 44 Q 86 64 72 70 L 72 92 Z
+T3_PUGILIST.B                   # the burst becomes a star
+  wire poly 50.0 6.0 60.4 30.4 86.0 23.3 73.4 46.7 94.8 62.2 68.8 67.0 70.0 93.4 50.0 76.0 30.0 93.4 31.2 67.0 5.2 62.2 26.6 46.7 14.0 23.3 39.6 30.4
+
+T3_GRAPPLER.A                   # a champion's belt
+  wire poly 4 36 96 36 96 64 4 64
+  wire circle 50 50 20
+T3_GRAPPLER.B                   # a grappling hook
+  line 50 6 50 74 11
+  stroke 11 path M 16 50 Q 16 88 50 88 Q 84 88 84 50
+  wire circle 50 10 8
+
+T3_KICKBOXER.A                  # a kicking boot
+  wire path M 22 6 L 50 6 L 52 56 Q 86 56 92 76 L 92 92 L 18 92 Z
+T3_KICKBOXER.B                  # a footprint
+  wire path M 50 30 Q 78 32 72 62 Q 68 92 50 92 Q 30 92 30 64 Q 26 32 50 30 Z
+  wire circle 34 12 7
+  wire circle 54 8 7
+
+T3_MARTIAL_ARTIST.A             # a tied belt
+  wire poly 6 30 94 30 94 48 6 48
+  wire poly 42 48 30 92 46 92 52 54
+  wire poly 58 48 70 92 54 92 50 54
+T3_MARTIAL_ARTIST.B             # yin and yang
+  wire circle 50 50 40
+  stroke 11 path M 50 10 Q 28 30 50 50 Q 72 70 50 90
+
+T3_FENCER.A                     # a foil with a bell guard
+  line 30 70 94 6 5
+  stroke 11 path M 12 54 Q 26 40 46 52
+  line 26 74 10 90 11
+T3_FENCER.B                     # a fencing mask
+  wire path M 20 28 Q 20 6 50 6 Q 80 6 80 28 L 80 62 Q 80 80 50 80 Q 20 80 20 62 Z
+  wire poly 30 80 70 80 74 96 26 96
+
+T3_BLADE_DANCER.A               # a curved scimitar
+  wire path M 20 92 Q 14 40 64 6 Q 52 46 34 92 Z
+T3_BLADE_DANCER.B               # the square spins, rapier through
+  wire poly 50 10 90 50 50 90 10 50
+  line 4 96 96 4 5
+
+T3_SWASHBUCKLER.A               # a tricorn hat
+  wire path M 4 44 Q 20 58 50 58 Q 80 58 96 44 Q 90 72 70 76 Q 50 86 30 76 Q 10 72 4 44 Z
+  wire path M 26 58 Q 30 22 50 20 Q 70 22 74 58
+T3_SWASHBUCKLER.B               # a cutlass
+  wire path M 30 70 Q 40 30 86 6 Q 72 48 42 78 Z
+  stroke 11 path M 30 70 Q 12 84 28 94 Q 40 100 46 84
+
+T3_SWORDSMAN.A                  # a longsword
+  wire poly 42 64 42 14 50 2 58 14 58 64
+  line 18 70 82 70 11
+  line 50 76 50 96 11
+T3_SWORDSMAN.B                  # a sword through the square
+  symbol
+  line 50 0 50 100 5
+  line 30 82 70 82 11
+

@@ -1,0 +1,185 @@
+# Tier 3 Magic options (same format as class_glyphs.txt). The chosen ones get copied over.
+
+# ---- Novice Elementalist family (split tip)
+T3_FIRE_MAGE.A                  # tips curl into flames
+  path M 6 88 L 30 42 Q 22 24 32 6 Q 38 28 50 36 Q 54 16 70 2 Q 66 26 72 42 L 94 88 Z
+T3_FIRE_MAGE.B                  # the whole body is a flame
+  path M 50 4 Q 52 26 62 34 Q 64 22 72 14 Q 74 40 86 60 Q 96 88 70 90 L 30 90 Q 4 88 14 60 Q 22 44 30 38 Q 32 50 40 52 Q 36 26 50 4 Z
+
+T3_ICE_MAGE.A                   # tips become ice shards
+  poly 6 88 22 50 28 60 36 6 46 44 50 36 56 44 66 12 72 60 78 50 94 88
+T3_ICE_MAGE.B                   # snowflake cut into it
+  poly 6 88 36 20 50 36 64 20 94 88
+  cut line 37 66 63 66 5
+  cut line 43.5 54.7 56.5 77.3 5
+  cut line 56.5 54.7 43.5 77.3 5
+
+T3_EARTH_MAGE.A                 # lumpy rock mountain
+  poly 6 88 22 48 32 34 42 40 52 18 66 26 72 46 94 88
+T3_EARTH_MAGE.B                 # a crack running into it
+  poly 6 88 36 20 50 36 64 20 94 88
+  cut stroke 5 path M 10 76 L 32 64 L 44 72 L 58 62
+
+T3_AIR_MAGE.A                   # tips swept sideways by wind
+  path M 6 88 L 32 40 Q 34 18 56 10 Q 44 22 46 36 Q 58 20 84 18 Q 64 30 66 46 L 94 88 Z
+T3_AIR_MAGE.B                   # a swirl cut into it
+  poly 6 88 36 20 50 36 64 20 94 88
+  cut stroke 6 path M 50 76 Q 34 76 36 62 Q 38 50 52 52 Q 62 56 56 64
+
+# ---- Novice Support Mage family (orb at the tip)
+T3_PRIEST.A                     # orb becomes a halo
+  poly 6 88 50 22 94 88
+  stroke 6 circle 50 16 12
+T3_PRIEST.B                     # orb becomes a cross
+  poly 6 88 50 30 94 88
+  rect 44 2 12 38 3
+  rect 33 11 34 12 3
+
+T3_DRUID.A                      # orb becomes a leaf
+  poly 6 88 50 30 94 88
+  path M 50 36 Q 30 10 76 0 Q 80 32 50 36 Z
+  cut line 56 30 70 10 3
+T3_DRUID.B                      # antler branches
+  poly 6 88 34 34 24 14 36 26 40 8 46 30 50 38 54 30 60 8 64 26 76 14 66 34 94 88
+
+T3_VITALITY_MAGE.A              # orb becomes a heart
+  poly 6 88 50 30 94 88
+  circle 42 18 10
+  circle 58 18 10
+  poly 32.4 21 67.6 21 50 40
+T3_VITALITY_MAGE.B              # a sprout at the tip
+  poly 6 88 50 30 94 88
+  line 50 36 50 18 5
+  path M 50 22 Q 34 24 26 10 Q 42 4 50 22 Z
+  path M 50 20 Q 64 22 74 6 Q 56 2 50 20 Z
+
+T3_BARRIER_MAGE.A               # a dome over the tip
+  poly 6 88 50 22 94 88
+  stroke 7 path M 22 60 Q 50 -54 78 60
+T3_BARRIER_MAGE.B               # orb becomes a bubble ward
+  poly 6 88 50 30 94 88
+  stroke 7 circle 50 24 18
+
+# ---- Novice Dark Mage family (crescent bite)
+T3_NECROMANCER.A                # skull face
+  symbol
+  cut circle 6 46 32
+  cut circle 50 62 8
+  cut circle 69 62 8
+  cut rect 52 76 15 5 2
+T3_NECROMANCER.B                # tip hooks into a scythe
+  symbol
+  cut circle 6 46 32
+  path M 50 10 Q 26 -2 4 12 Q 28 8 44 22 Z
+
+T3_BLOOD_MAGE.A                 # a bitten blood drop
+  path M 50 4 Q 72 40 86 64 Q 94 92 50 92 Q 6 92 14 64 Q 28 40 50 4 Z
+  cut circle 0 52 26
+T3_BLOOD_MAGE.B                 # a drop cut out of it
+  symbol
+  cut circle 6 46 32
+  cut path M 62 42 Q 74 60 75 68 Q 75 80 62 80 Q 49 80 49 68 Q 50 60 62 42 Z
+
+T3_CURSE_MAGE.A                 # evil eye
+  symbol
+  cut circle 6 46 32
+  cut path M 38 66 Q 58 50 80 66 Q 58 82 38 66 Z
+  circle 59 66 5.5
+T3_CURSE_MAGE.B                 # a cursed pin stuck in
+  symbol
+  cut circle 6 46 32
+  line 92 24 60 56 5
+  circle 92 24 7
+
+T3_ADVANCED_DARK_MAGE.A         # bitten from both sides
+  symbol
+  cut circle 6 46 32
+  cut circle 94 46 32
+T3_ADVANCED_DARK_MAGE.B         # a crescent moon inside
+  symbol
+  cut circle 6 46 32
+  cut circle 62 64 16
+  circle 69 58 13
+
+# ---- Novice Wizard family (hat brim)
+T3_SPELLBLADE.A                 # hat turns into a sword
+  poly 37 74 50 0 63 74
+  rect 8 68 84 12 4
+  rect 44 78 12 16 2
+  circle 50 95 6
+T3_SPELLBLADE.B                 # a sword through the hat
+  poly 18 78 50 6 82 78
+  rect 2 74 96 14 5
+  rect 4 45 90 8
+  poly 92 41 104 49 92 57
+  line 14 34 14 64 8
+
+T3_ARCANE_WIZARD.A              # star at the tip
+  poly 18 78 50 18 82 78
+  rect 2 74 96 14 5
+  poly 50 0 56 12 70 16 56 20 50 34 44 20 30 16 44 12
+T3_ARCANE_WIZARD.B              # crescent moon cut into the hat
+  poly 18 78 50 6 82 78
+  rect 2 74 96 14 5
+  cut circle 50 54 13
+  circle 55 50 11
+
+T3_SPIRIT_MAGE.A                # the hat becomes a ghost
+  path M 50 4 Q 76 40 84 84 Q 76 94 67 84 Q 58 94 50 84 Q 42 94 33 84 Q 24 94 16 84 Q 24 40 50 4 Z
+T3_SPIRIT_MAGE.B                # tip curls like a wisp
+  path M 18 78 L 44 20 Q 48 2 64 4 Q 76 8 68 20 Q 62 10 54 16 L 82 78 Z
+  rect 2 74 96 14 5
+
+T3_ESOTERICIST.A                # all-seeing eye
+  poly 18 78 50 6 82 78
+  rect 2 74 96 14 5
+  cut path M 32 56 Q 50 40 68 56 Q 50 70 32 56 Z
+  circle 50 56 5.5
+T3_ESOTERICIST.B                # a keyhole
+  poly 18 78 50 6 82 78
+  rect 2 74 96 14 5
+  cut circle 50 46 8
+  cut poly 45 50 55 50 59 68 41 68
+
+# ---- Novice Artificer family (stepped like machinery)
+T3_GOLEM_SMITH.A                # the steps get a golem face
+  poly 50 8 58 22 58 34 68 34 68 50 78 50 78 66 88 66 94 88 6 88 12 66 22 66 22 50 32 50 32 34 42 34 42 22
+  cut rect 37 54 8 8
+  cut rect 55 54 8 8
+T3_GOLEM_SMITH.B                # a blocky golem
+  rect 36 6 28 22 2
+  rect 18 30 64 28 2
+  rect 6 60 88 30 2
+  cut rect 41 13 6 7
+  cut rect 53 13 6 7
+
+T3_ADVANCED_ARTIFICER.A         # a gear set into the steps
+  poly 50 8 58 22 58 34 68 34 68 50 78 50 78 66 88 66 94 88 6 88 12 66 22 66 22 50 32 50 32 34 42 34 42 22
+  cut circle 50 66 14
+  circle 50 66 6
+T3_ADVANCED_ARTIFICER.B         # a cog on top of the steps
+  poly 32 34 68 34 68 50 78 50 78 66 88 66 94 88 6 88 12 66 22 66 22 50 32 50
+  circle 50 22 13
+  rect 46 2 8 10
+  rect 30 18 10 8
+  rect 60 18 10 8
+  cut circle 50 22 5
+
+T3_RUNESMITH_ARMORNAUT.A        # a rune cut into the steps
+  poly 50 8 58 22 58 34 68 34 68 50 78 50 78 66 88 66 94 88 6 88 12 66 22 66 22 50 32 50 32 34 42 34 42 22
+  cut line 50 46 50 80 5
+  cut line 50 62 38 48 5
+  cut line 50 62 62 48 5
+T3_RUNESMITH_ARMORNAUT.B        # a great helm
+  poly 50 6 66 20 80 60 90 88 10 88 20 60 34 20
+  cut rect 24 48 52 8
+  cut rect 46 48 8 28
+
+T3_TECHNOMANCER.A               # a lightning bolt cut through
+  poly 50 8 58 22 58 34 68 34 68 50 78 50 78 66 88 66 94 88 6 88 12 66 22 66 22 50 32 50 32 34 42 34 42 22
+  cut poly 56 30 36 62 50 62 42 86 66 50 52 50 62 30
+T3_TECHNOMANCER.B               # a circuit trace
+  poly 50 8 58 22 58 34 68 34 68 50 78 50 78 66 88 66 94 88 6 88 12 66 22 66 22 50 32 50 32 34 42 34 42 22
+  cut line 50 92 50 66 5
+  cut line 50 66 64 52 5
+  cut circle 64 52 6
