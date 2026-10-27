@@ -77,6 +77,8 @@ A fantasy reimagining of **FTL: Faster Than Light**.
 
 ## 4. Tech and development status
 
+> **Current build status (25 Oct 2026):** Module 1 is the Java Swing sandbox in this folder (`src/`, run with `run.bat`). For what the game does today read `README.md`; for the latest changes, placeholder numbers and open questions read `03_Latest_Handoff.md`. The bullets below are the original 23 Oct plan and are kept for history.
+
 - **Stack:** Java 17+. The long-term target is **LibGDX** (chosen over Python, which felt too small-scale, and over C++/custom engine). Current runnable prototypes are **single-file Java Swing** programs.
 - **My setup:** Windows; the prototype is at `C:\Users\Coni\Downloads\FateWeavers\Fateweavers.java` and runs with `java Fateweavers.java` (Java had to be installed/added to PATH).
 - **Art direction:** clean, readable, FTL-style "blueprint/schematic" UI with procedural graphics. Characters are simple pixel-outlined sprites (faceless two-tone head, tunic, swinging arms, boots, based on a reference sprite I generated). I want smooth animation polish like in *Furious Fowl*.
@@ -271,6 +273,8 @@ A fantasy reimagining of **FTL: Faster Than Light**.
 ---
 
 ## 6. What's next
+
+> **Updated 25 Oct 2026 (evening):** Module 1 now has items, three shields, the enemy camp with a ballista and mana gun, doors with pads, mana and stamina bars, every info card, **the Loom test route (camp → Goblin Shop → Sage → Goblin Boss)** and **our ballista mount**. Next: the rest of P4 (personal weapons, towers), P5–P9. Details in `03_Latest_Handoff.md`.
 
 1. **Module 1 (Living Bastion Sandbox):** keep polishing or rebuilding the movable fortress, character animation, doors and click handling with the 5 basic classes. Core rooms: Weapons Tower, Chrysalis Ward, Fateweaver Loom.
 2. **Tier 5 naming:** Ranged (120), Light Melee (120), Heavy Melee (120), Supporter (120). Next up: **Bowman** (Sharpshooter, Fletcher, Lookout, Ambusher…).
