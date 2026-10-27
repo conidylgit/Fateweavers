@@ -1,4 +1,4 @@
-# Fateweavers: start here (updated 24 Oct 2026)
+# Fateweavers: start here (updated 26 Oct 2026, after save 81)
 
 The game folder: the current build, the class tree data and the notes that go with them.
 
@@ -11,40 +11,110 @@ The full source of Argon's early engines (`FateLoomEngine`, `FortressSubsystemEn
 
 ---
 
-## 1. The game (`src/`, `test/`): the current build ✅
-**Module 1: Fortress and character sandbox.** Run it with `run.bat` (Java 17+). `test.bat` compiles and runs `LogicTests`, and also renders screenshots into `test/`.
+## 1. The game (`src/`, `test/`): the current build ✅ (updated 26 Oct 2026, save 81)
+**Module 1: Fortress and character sandbox, plus the first slice of the map.** Run it with `run.bat` (Java 17+). `test.bat` compiles and runs `LogicTests` (1,320 checks) and renders every screenshot into `test/` (the `QolShots` harness also prints PASS / FAIL lines for the R1 map fixes and the R2 cards); `bots.bat` plays headless bot games. The full log of what changed (R1 saves 23–27, R2 saves 28–32, R4 saves 33–36, the T4 table save 37, personal weapons saves 38–39, the open items saves 40–41, ranged combat save 42, duos 43, A3 44–46, pause and dev tools 47, the blob mounts 48, the surge 49, then saves 50–81 below), every placeholder number and the open questions are in **`03_Latest_Handoff.md`**; the rules as built are `design/systems/stat_system.md` v8.3 in the project.
+
+### New since save 80 (save 81, the design thread's bottom bar)
+- **The bottom bar** (concept 1, FTL reactors): the **mana reactor** counts **free** mana ("0 free of 4", blue pips for what's free), then each system (Permeator, Loom, Pedestals, Weapons) has its pips over an **icon tile** that lights blue while it's powered. **Click a tile** to power the next one, right-click to switch the last off (the pips still work). Weapons fades back when no staff is wielded. The **stamina reactor** (amber) and **Mounts** follow. A damaged system shows its integrity on its tile as a fraction, **"2/3"** (red "0/3" when broken).
+- **The buttons on the right** are grouped and labelled: **CREW POSTS** (Save posts, Return) and **DOORS** (Open all, Close all). The control hints moved behind the round **"?"** at the far right (hover it, or click to keep it open; Esc closes it). Notices show in the middle of the bar.
+- The icons on the bar are the mock-up's sketches (PLACEHOLDER until the design thread picks them).
+
+### New since save 69 (saves 70–80, the design-thread build)
+- **Blob renderer parity:** the game draws every model in `class_tree/class_blobs.txt` exactly as `tools/BlobPreview` does (check with `blobcheck.bat`). The crew card and class card draw the class's own model.
+- **The approved device and item art:** Furnace A, Training stand A and the cel-shaded item icons (`swing/SvgArt`, `swing/ItemSvgDefs`), with attuned items tinted in their colour.
+- **Hands free:** a blob's equipped weapon shows in its hand as a black silhouette with a steel or gem accent (it floats beside blobs with no hands; `swing/EquipArt`). A `hand x y [angle]` line in `class_blobs.txt` moves it. Armour tints the torso and shoulders: Plate steel with a shine, Leather brown, Mana violet.
+- **Your notes on it (save 73):** daggers are held blade-down, swords tilted higher, and blobs with hip items wear a **belt** instead of a headband (the nearest headband or belt in a model's lineage wins). A one-sided hip item hangs on the back hip, away from the weapon hand (save 74).
+- **The Ward, the class card and the rerolls (save 75):** the class card keeps its colours in promotion mode; no more rerolls (a promotion may raise each attunement one rarity, Luck sets the chance); the Ward room card is back; the side card takes clicks before the HUD buttons under it; the Ward is Restoration-attuned on its card.
+- **The lineage strip (saves 76–77):** every next class shows, "?" while it's still in the fog; hover a ring for its name.
+- **The stats panel (save 78):** the crew card's attributes are grouped value bars in four families (value out of the cap, green XP line, MAX, Spend N points → Done), and the stats book opens with a profile shape chart.
+- **Levelling (save 79):** the level takes half of every attribute XP (the same curve), so taking two attributes to the cap = the level cap; the crew start at level 1.
+- **Hands (save 80):** every model holds its weapon where you placed it on the Hand Placer (`hand x y angle`, `hand none`, `hand bow x y` for one weapon); Throgg and the Pugilist fight with their fists; the hammer is a small war hammer; the Swashbuckler lost his parrot.
+
+### New since save 64 (saves 65–69, 26 Oct night)
+- **System integrity:** a mount's bolt that takes a bar also takes a point off a system in the room (−33% of every number; 3 points = broken). Repairs mend the bars, then one point at a time; a destroyed system's first point takes twice as long. A damaged system wears an amber "67%" tag on the map, and "2/3" on its tile on the bottom bar (save 81).
+- **A stolen Permeator** costs a mana and runs only in one of your Utility Rooms. **The Mana Blade** scales Arcana + Dexterity.
+- **The picked icons** (52 attunements, 11 attributes, the stats book) are drawn from SVG (`swing/SvgIcons`, `swing/IconSvgDefs`).
+- **The event screen:** an event (the Sage) is a dialogue bar over the dimmed map (`swing/EventBar`). The selected blob talks; choices show their attribute icon and chance; below the recommended 20 a choice is a long shot (chance × attribute ÷ 20, never below 1%).
+- **The class card:** the class tree's side card is the dark C2 card (blob on its attunement's glow, attribute chips, perks, lineage, the gate as two bars, NEEDS / PROMOTE! / OPEN CLASS PAGE).
+
+### New since save 48 (saves 49–63, 26 Oct)
+Each line's details are in `03_Latest_Handoff.md` under its save.
+- **49 The Permeator's surge:** a blob on its post spends a spare mana on a 10 s surge (Arcana).
+- **50–51 Small changes, device slots:** every pedestal, station and Anchorstone card has a slot row: drag between the device and its operator's hands (no Unslot or WORK IT buttons). Mounts power themselves when someone climbs on.
+- **52 Stealing:** in a cleared room, a Thief drags an enemy device into its hands (anyone can take a crate); a charge bar (Dexterity + Luck), a hit resets it, the nearest enemy comes for the thief.
+- **53–54 Rooms:** the Workshop (2x3: Workbench + Furnace), the Training Room (3x2: the training stand + an empty Anchorstone), a 5x4 storage rack, the quiver's own slot. Every Anchorstone device can be lifted and set down on any empty Anchorstone; a stolen campfire heals at home.
+- **55 Crafting:** stacks of 20, a 3-input + tool Workbench, 21+ recipes (the Workbench's book page lists them), raws at the shop and in chests, essence (on deaths and level-up rerolls), the level-up reroll pop-up (both rerolls removed in save 75), the Protection Amulet.
+- **56 The shop page:** a full-screen goblin market with tabs (Weapons, Devices, Ammo, Materials, Services); it pauses the game.
+- **57–58 Morale, Madness, alignment:** two thin bars and an alignment icon on the crew card; inspired / shaken; desertion at 0 (TALK DOWN); madness episodes at 100; classes start Good or Evil by path. Posts (right-click a device or its slot to send the selected blob to its post), duo damage types, the Axe, gem staffs, the Furnace trains Strength + Knowledge.
+- **59 The Loom-Web:** a generated tapestry of 10 columns; SLEEP opens the Loom-Web page, click a knot to weave there; the Unspoolers fray a column a sleep after 2; Treasure Caches, Healing Springs, Faith and Attunement Shrines; Deeper or Home after the miniboss.
+- **60 The evening answers:** the Mana Blade (the gem's attunement + Finesse, Magic + Piercing); any Quintessence + a Glass Orb makes that orb (a Mana shield carrying it); RESTART starts a fresh run.
+- **61 The camp's devices** are now the same objects as yours (stealing takes the very ballista engine or campfire).
+- **62 System damage:** a mount's bolt that takes a bar also breaks a system in the room (both sides). BROKEN shows under it; whoever repairs the room mends the bars, then the system.
+- **63 The Siege fortress:** a Siege knot is an enemy fortress behind walls: Entrance Hall (their gate), Mount Room (a Ranger Platform and their shooter with a Longbow), Pedestal Room (a Stone shield), Utility Room (a Permeator: break or steal it and their rooms vent), Treasure Room. Three crew; kill them all to take it.
 
 - **Code layout:** `fateweavers.logic` is the rules and state (no Swing, no `java.awt`, so it moves to LibGDX unchanged). `fateweavers.swing` is drawing, the info panel and input.
-- **The map, left to right:** your fortress, then your **Entrance Hall**, **No Man's Land** (two halves with a **gate** between), the **Camp Entrance**, and the **Bandit Camp**. Tiles are 56 px (`Room.TILE`); everything fits in 1440 x 760 with no scrolling.
-- **Your fortress rooms:** Turret (Fire Gem pedestal), Control Room (Glass Orb shield), Fateweaver Loom, Permeator (makes the Aether), Chrysalis Ward (heals; class changes), East Room (empty), Entrance Hall. Every room has 4 pads; pad 0 is the station.
-- **Controls:**
-  - Left-click a blob, room or door to open its info panel. Click empty space (or **Esc**) to deselect.
-  - Right-click a tile to send the selected blob there. Pathfinding goes through doors and re-routes if one is locked.
-  - Keys **1-9** select crew. **Space** pauses. **S** shield. **Tab** opens the class tree. Backtick opens the dev console.
-  - Door panel: Auto / Held open / Locked. There are **Open all** and **Close all** buttons under the map.
-  - Mouse wheel scrolls long info panels.
+- **The map, left to right:** your fortress, your **Entrance Hall**, **No Man's Land** (two halves with a **gate**), the **Camp Entrance** and the **Bandit Camp**. Tiles are 56 px (`Room.TILE`).
+- **Your rooms:** three **Utility Rooms** (the storage rack, the Workbench, the Permeator: each room card's sub-line says which), two Pedestal Rooms (the Fire Gem's and the shield orb's), Fateweaver Loom, Chrysalis Ward (heals, class changes), Mount Room (the ballista mount), **Battlement** (above the Mount Room, two stations: the Scorpion and the Ranger Platform), Entrance Hall. Every device stands **in the middle of its room on a round base** (one slot per 2x2 room, two per 2x3, the Ward's in the middle of its 3x3). Conduits sit on **pedestals**, siege engines on **mounts**, utility devices on **Anchorstones**. **A station is a spot beside its device:** the operator stands left of it on our side, right of it on the camp's, facing it.
+- **The Loom test route:** four nodes east of the gate, Bandit Camp → Goblin Shop → The Sage → Goblin Boss. Sleep at a full Loom to weave to the next one; the node you leave is erased. **The camp starts neutral** (R4, 26 Oct): it does nothing until it sees aggression (you powering a weapon or mount, firing, or a blob of yours entering No Man's Land; a shield doesn't count), then it fights as before. **You can't sleep while hostiles remain** (a hostile band, the shop's guards once robbed, the boss); a neutral camp counts as none. **Units** are the money (header, top; they were "Fate shards" until 26 Oct). Shop: buy / repair / hire / rob. Sage: select a blob, pick one of five choices with the chance shown. Boss: rocks, a belly slam with goblins, a rage; win by killing, feeding (Food from the shop) or the sage's hint.
+- **Start:** all four crew start on a station (both Pedestal Rooms, Loom, Workshop) and the Fire Gem, Loom, shield and Permeator start powered.
+- **Every attribute starts at 1.** Players read "Enemies" (proper names like Bandit Camp stay).
+- **The power system (R2, 26 Oct):** eleven attributes (Strength, Vitality, Dexterity, Perception, Arcana, Faith, Psyche, Knowledge, Resolve, Charisma, Luck); attribute point n costs 20 + 2n XP, and since save 79 a level costs the same and fills from half of every attribute XP (two capped attributes = the level cap; the crew start at level 1); the tier cap holds gifted points too (overflow is banked until promotion); a class needs its favourite attribute at the gate as well as the level; an Unclassed blob picks its own star (the empty star slots on its card) until level 5; the green ▲ follows the most practised attribute; mana and stamina pools follow a square-root curve of the crew's attributes. Tier 1 classes carry their path's attunement (Arcane / Heavy / Martial / Range / Knowledge); a duo's part is worth 60%; damage types (Slashing, Piercing, Bludgeoning, Neutral, Magic, Mental, Soul, True) never match attunements; rarity rolls are for blobs only; Resolve softens Mental and Soul damage and breaks doors faster, Charisma lowers the shop's prices, Luck crits in melee.
 
-### The Entrance Hall, No Man's Land and the gate
-- The **Entrance Hall** (2 x 2) is off the East Room and is your front door. It borders **No Man's Land**.
-- **No Man's Land** is two 2 x 4 halves with the **gate** between them. Your crew can walk out, hold the gate, fight there and raid the camp. Aether only exists inside your fortress; outdoors it is always 100%.
-- **Gate control:** each blob standing in either half adds **gate strength = 1 + Strength / 10**. The side with the higher total controls the gate; a tie means nobody does. Only the controlling side can open or close it (the gate panel buttons do nothing otherwise). A closed gate opens only for its controller, and the other side can break it. The gate has **3x** a normal door's health. A pennant and a "You N : N Bandits" tally show who is ahead.
+### Controls
+- Left-click a blob, room, door or device to open its card. Hover outlines hug what you'll click (a blob's drawn body, a device and its base; the rack, the crystal and the Permeator too). Clicking on the left half of the screen opens the card on the **right**. Click empty space (or **Esc**) to deselect.
+- A weapon's fire button or AUTO hides the card so you can pick the room; the card stays closed after the pick (double-click the weapon image to toggle its power, which keeps the card).
+- Right-click a tile to send the selected blob there. Sending a blob into a device room puts them on the free station.
+- **Your crew don't attack on their own** (26 Oct): right-click an enemy to attack it (the target flashes red; they follow it), right-click an enemy device to wreck its room. A move order cancels the attack.
+- **1-9** select crew. **Space** pauses. **S** raises the Fire shield. **Tab** opens the class tree. Backtick (or the Dev button) opens the dev console: Test Mode, **free class picks** (any class at once, no requirements), +1 / +5 levels or to the tier cap for the selected blob (or the whole crew), free points, Luck, test shots. **The game pauses while a page covers the fortress** (a book page or the class tree).
+- **The bottom bar** (save 81): the mana reactor (free mana), then the Permeator and Loom with their own columns; everything else shares a column per kind (**Pedestals**, **Weapons** for staffs; **Mounts** after the stamina reactor). **Click a system's icon tile** (or its pips) to power the next member, right-click to switch the last one off; hover to see the members. Capacity = round(3.11 + 0.256 × √(everyone's Arcana + Faith + Psyche)); stamina the same from Strength + Vitality + Dexterity + Resolve.
+- **CREW POSTS: Save posts / Return** sends everyone back to their saved spots; **DOORS: Open all / Close all**. The round **"?"** at the far right shows these controls (hover, or click to keep it open).
+- **Mount:** the Mount Room's ballista draws **stamina** (the amber reactor on the bottom bar) and uses the bolts of the crates in its room (no tick row any more). Someone on it climbs on for 2 s before it charges (**14 s**), and takes 2 s to climb off when ordered away. AUTO / single shots like the Fire Gem. **The Scorpion** (Goblin Shop, 35 Units): half the damage, twice the rate, no stamina; with it on the rack, the mount card offers "Fit the Scorpion" (a swap).
+- **The Battlement and blob mounts (26 Oct, save 48):** every mount sits on a **station**, and **any mount fits any station** ("Fit …" on its card): the Ballista, the Scorpion, the **Ranger Platform** and the **Stage** (Goblin Shop, 30 Units). Both blob mounts draw 1 stamina and take 2 s to climb on or off.
+  - **Ranger Platform:** anyone can climb on. The blob shoots its own ranged weapon (arrows, a staff's mana) at an enemy in **any room, indoor or out, within its range + 2 tiles** for the height. It's the only way to shoot out of the fortress, on a high lob. Shield rules apply: the camp's Mana shield stops a staff's spark, arrows pass. Without a ranged weapon or ammo it stands by. Select the shooter to see the ring.
+  - **Stage:** the performer only performs. Enemies within **1 + Charisma/20 doors** (at most **1 + Charisma/10** at once) walk to the Stage and attack the performer. Every 3 s each rolls to break free (1% per Resolve point, max 60%). The rooms in reach light up gold while it's selected; taunted enemies wear a gold star.
+  - The Guard Post is scrapped for now (parked as a door upgrade).
+- **Items:** each blob carries one item. Drag items between a blob's hands slot, the Storeroom rack, the workbench and pedestals in the info panel, or click a slot for the obvious move. **Unslot** puts a conduit in the operator's hands (swapping with what they hold if it fits the pedestal).
+
+### Shields (the shield Pedestal Room; the orb decides the shield)
+- **Glass Orb = Mana shield:** automatic bars that stop magic and mental shots.
+- **Stone Orb = Stone shield:** charges 20 s, then stands until broken. Piercing and slashing bounce off; blunt hits it ×3; while it stands, enemies can't come through your outer doors.
+- **Fire Orb = Fire parry:** press **S** as the shrinking ring reaches the target ring ("S!" shows in the parry window). A perfect parry destroys the shot and sets the room that fired it on fire; a late one blocks for a bar. The Fire and Stone orbs start on the Storeroom rack.
 
 ### The Bandit Camp
-- **Layout:** a green column of three 2 x 2 rooms plus the Camp Entrance: **Bandit Shield** (top), **Bandit Quarters** (middle, with a campfire) and **Archer Tower** (bottom, with the ballista). Camp rooms have 3 health bars like yours.
-- **Bandits:** three **Level 1 "Bandit-Wannabe"** blobs with no class yet (red name and health bar, shown as "Level 1 Blob"). Each has a job: **SHIELD** mans the camp shield, **GUNNER** mans the ballista, **GUARD** defends the camp and leads boarding. Clicking one inspects it.
-- **Ballista:** 10 bolts, one every 7 seconds after a 1-second wind-up with a red aim marker (the first shot comes after 5 seconds). Bolts **ignore your shield** completely, so all you can do is take the hit and repair. A bolt knocks out 1 bar of a room. It needs a bandit on its station and a standing tower. If the gunner dies, another free bandit takes over (gunner, then guard, then shield bandit); if nobody is free for 3 seconds they board anyway.
-- **Camp shield:** 1 layer, 8-second recharge. Each layer stops one Fire Gem shot at the camp. It is 0 if its room is wrecked.
-- **Your Fire Gem** shoots a camp room (default Archer Tower; choose another from that room's panel). A hit takes 1 bar off the room and does **5x weapon damage to every bandit inside**.
-- **Boarding:** when the ballista is out of bolts the bandits walk through No Man's Land and the gate, break your doors and chase your crew. In rooms nobody is defending they knock out **1 bar every 5 seconds**. Your Heavy Melee still strengthens your doors.
-- **Victory:** when every bandit is dead a "Camp cleared!" banner shows, and a fresh camp (rooms and doors mended, 10 bolts, three new bandits) moves in after 8 seconds. It is a repeatable test bench. If all your crew die, a "Fortress fallen" card shows with a Restart button.
+- Four Level 1 enemies with jobs: **Shield**, **Gunner**, **Caster**, **Guard**. Bandit Shield (top), a Utility Room with a **campfire** where enemies heal (middle), the Battlement with a **ballista** and a **Glass Gem** mana gun, each with its own operator (bottom).
+- The gunner shoots the ballista at your shield pedestal while your shield is up, and swaps to the faster mana gun once it's down. **Bolts meet your shield** like any shot: Mana lets them through, Stone bounces them, Fire can parry them. Out of both ammo types, the enemies board.
+- Your Fire Gem shoots a camp room; click a room while it charges to arm the shot. Rarity is rolled for every conduit, device and door (with a rolling animation).
+- **Treasure Room** (right of the campfire): its door is padlocked until every enemy is dead. Its chest works like the storage rack and is refilled with each new band (2 rolls: conduits or a weapon).
+- **Victory:** kill every enemy; a fresh camp moves in after 8 s. If your crew all die, Restart.
 
-### Combat
-- **Auto-fight, FTL-style:** hostile blobs in the same room trade a blow **once a second**. Walking blobs do not swing but can be hit.
-- **Damage:** melee dps = 5 + 0.25 per point of Strength, and all melee is **bludgeoning** for now. Every hit goes through one place (`Fortress.applyHit`): armour by damage type, then resist or weakness by attunement, then health. The Fire Gem is fire **magic**; the ballista bolt is neutral **piercing**.
-- **Doors:** a door has an owner side. A closed door opens only for its side. Enemies stuck at one hit it for **40% of their melee dps**. A broken door stays open until someone of its side stands next to it (**8 seconds** to mend).
-- **Reading a fight:** panels show "Taking N dmg/s, down in N s" on fighting blobs, and floating numbers use the hit's attunement colour.
-- Fighting trains Strength; taking damage trains Resolve and Vitality. Numbers marked placeholder in `logic/StatRules.java` are still to be tuned.
-- Full stat, attunement and damage rules: the project doc `claude/stat_system.md`.
+### Doors and combat
+- Doors are **Open** or **Closed**; closed doors open for their own side. Base health 20; each blob of that side standing on a door pad adds +10% (+1% per Strength), and a Heavy Melee in the room reinforces it without a pad. The gate has 3× health and the side with more strength in No Man's Land (Heavy 3, Light 2, others 1) controls it.
+- Hostile blobs in the same room trade blows. Fists are **neutral** damage, one blow a second; a weapon sets its own rate. Every hit goes through `Fortress.applyHit` (armour, attunement, health). Full rules: project doc `claude/stat_system.md`.
+
+### Personal weapons (A1, 26 Oct)
+- Every blob has four slots: **Hands, Weapon, Armour, Accessory** (Armour and Accessory stay empty for now). The crew card shows them, with the weapon's name, dps and type and a book icon for its page.
+- Eight weapons (numbers PLACEHOLDER): Sword, Rapier, Hammer, Wrecking ball, Longbow, Rapid crossbow, Spellsword, Glass Magic Staff. Each has a damage type, an attunement, a rate and two scaling attributes (+1% damage per point each). Ranged weapons fight anyone in their own room, and **from an outdoor room (No Man's Land, the camp, the boss arena) they shoot into other outdoor rooms within range**: 2 + 0.8 × √(Perception − 1) tiles. Select a ranged blob outdoors to see its dashed range ring; ordered at a far enemy, it walks to the first spot in range and stops. Your fortress is indoor: no shooting out.
+- **Start:** Aldric Sword, Brenna Longbow, Cedric Hammer, Daria Glass Magic Staff; the other four weapons wait on the storage rack.
+- **Changing weapons only in the Storeroom:** with the blob there, drag a weapon from the rack onto its Weapon slot (a swap), or drag it back to unequip.
+- The Goblin Shop sells two random weapons; the treasure chest can roll one (20% a roll).
+- **Finesse** (a new attunement on the Rapier and Rapid crossbow): +10% crit chance. The Spellsword is Slashing.
+
+### Ammo, quivers and the Staff (26 Oct, A3)
+- **Ammo lives in rooms:** a bolt crate (5 bolts, shop 5 Units) set down in a room feeds any mount there (at most 2 crates). Take a crate in a blob's hands (Storeroom card) and **drag it from the hands slot onto a room on the map**: the blob carries it there. The Mount Room starts with 1 crate.
+- **Bows shoot arrows from a quiver** in the Accessory slot (16). Empty = fists until you buy a quiver (refills the emptiest). Brenna starts with one; a spare is on the rack. Put quivers on in the Storeroom.
+- **The Glass Magic Staff needs a mana bar** (the Weapons column); unpowered, Daria uses fists. The bar is full at the start, so switch something off to power it.
+- **The camp** now loads its ballista in 14 s too, its crew's stats scale its devices like yours, its Glass Gem never runs dry, and it boards when its 10 bolts are gone.
+
+### Training and attunements (26 Oct)
+- **Using a thing trains every attribute it scales with:** a gem trains Arcana + Dexterity, the mount Strength + Dexterity, the Loom Arcana + Knowledge, the Ward Vitality + Faith, a weapon its two attributes.
+- No Man's Land trains Perception (lookout) as well as Resolve; the blob haggling in the shop learns Charisma from buying; every node woven to gives the whole crew +1 Luck. Healing (the Ward, the camp's campfire) reads Vitality and Faith.
+- **A class with two attunements carries them as one duo:** one card, one rarity, one points pool; each part matched gives ×0.6, both ×1.2.
+- The class tree says why a next class is locked ("Needs level 5", "Needs Arcana 5"); attunement pages list the classes that carry them.
+
+### Info cards
+Every card uses the v7 skeleton (header, image box with a meter, icon cards, STATS + book icon, AIM FOR, buttons): Player, Enemy blob, Pedestal (gem / each orb / empty), Mount, Loom, Door, Enemy door, Gate, No Man's Land, Enemy Pedestal, Enemy Mount, Storage rack, Workbench, Chrysalis Ward, Permeator, Campfire; all matched to the "Info Cards: Pedestal" canvas. Room cards are the Floor Plan design; a device row on them opens the device's card.
+
+**Info pages (26 Oct):** every card with STATS has the book icon, and one builder (`logic/InfoSpec`) makes the page for anything with stats: gems, orbs, the Loom, the mount, doors and the gate, the enemies' three devices, the Workbench, the Ward, the Permeator, the campfire, blobs (the stats ledger) and classes. `swing/BookPage` draws them all with the same layout.
 
 ## 2. `class_tree/`: the up-to-date class database ✅
 This **replaces** the old `seed_locked_classes.sql`, `seed_remaining_143_classes.sql`, `seed_tier5_*.sql` files, which contain outdated draft names (e.g. "Giga-Crog", "Knuckle-Duster Danny").
@@ -63,7 +133,7 @@ This **replaces** the old `seed_locked_classes.sql`, `seed_remaining_143_classes
 - **Names only:** stats and mechanics aren't included, since those were never decided.
 
 ## Class tree screen (in the running game)
-Press **Tab** or click **Class tree** in the fortress header: the tree opens on Unclassed and the five paths. Or select a crew member and click **View in class tree** in their panel: it opens on that person's class, lit up with its route to the centre. Tab, or the **Fortress** button, goes back. The fortress keeps running meanwhile.
+Press **Tab** or click **Class tree** in the fortress header: the tree opens on Unclassed (the root class is simply "Unclassed" since 26 Oct; its id is still `T0_UNCLASSED_SURVIVOR`) and the five paths. Or select a crew member and click **View in class tree** in their panel: it opens on that person's class, lit up with its route to the centre. Tab, or the **Fortress** button, goes back. The fortress keeps running meanwhile.
 
 - Unclassed sits in the middle. Each tier is a ring further out, and each path has its own wedge (Heavy Melee at the top, then Magic, Ranged, Supporter, Light Melee going clockwise).
 - **Scroll** zooms toward the mouse. **Drag** moves the view. **F** (or the **Fit** button) shows the whole tree. **+ / -** zoom too.
